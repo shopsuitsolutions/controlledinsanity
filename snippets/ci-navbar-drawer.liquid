@@ -1,0 +1,174 @@
+{% liquid
+  assign lists = '' | split: ''
+  if primary_menu != blank
+    assign lists = lists | concat: primary_menu.links
+  endif
+  if secondary_menu != blank
+    assign lists = lists | concat: secondary_menu.links
+  endif
+%}
+
+<ci-navbar-drawer class="ci-drawer" id="{{ section.id }}-drawer" data-drawer hidden>
+  <div class="ci-drawer__backdrop" data-drawer-close></div>
+  <div class="ci-drawer__dialog color-{{ section.settings.drawer_color_scheme }}" role="dialog" aria-modal="true" aria-label="Menu">
+    <form action="{{ routes.search_url }}" method="get" role="search" class="ci-drawer__search">
+      <button type="button" class="ci-drawer__close" data-drawer-close aria-label="Close">
+        {{- 'icon-close.svg' | inline_asset_content -}}
+      </button>
+      <label class="ci-drawer__search-field">
+        <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search" class="ci-drawer__search-input" autocomplete="off">
+      </label>
+      <button type="submit" class="ci-drawer__search-submit" aria-label="Search">
+        {{- 'icon-search.svg' | inline_asset_content -}}
+      </button>
+    </form>
+
+    <div class="ci-drawer__panels" data-drawer-panels>
+      <div class="ci-drawer__panel is-active" data-drawer-panel="root">
+        <ul class="ci-drawer__list" role="list">
+          {% for item in lists %}
+            {% liquid
+              assign item_kids = item.links
+              if section.settings.submenu_ov_item != blank and item.title == section.settings.submenu_ov_item and section.settings.submenu_ov_menu != blank
+                assign ov_list = linklists[section.settings.submenu_ov_menu]
+                if ov_list.links.size > 0
+                  assign item_kids = ov_list.links
+                endif
+              elsif section.settings.submenu_ov2_item != blank and item.title == section.settings.submenu_ov2_item and section.settings.submenu_ov2_menu != blank
+                assign ov_list = linklists[section.settings.submenu_ov2_menu]
+                if ov_list.links.size > 0
+                  assign item_kids = ov_list.links
+                endif
+              endif
+            %}
+            <li class="ci-drawer__item">
+              {% if item_kids.size > 0 %}
+                <button type="button" class="ci-drawer__row" data-drawer-push="p-{{ forloop.index0 }}">
+                  <span class="ci-drawer__label">{{ item.title }}</span>
+                  <span class="ci-drawer__chevron" aria-hidden="true">{{ 'icon-chevron-right.svg' | inline_asset_content }}</span>
+                </button>
+              {% elsif item.url == '#' or item.url == blank %}
+                <span class="ci-drawer__row"><span class="ci-drawer__label">{{ item.title }}</span></span>
+              {% else %}
+                <a href="{{ item.url }}" class="ci-drawer__row"><span class="ci-drawer__label">{{ item.title }}</span></a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+
+        <div class="ci-drawer__socials">
+          {% if shop.customer_accounts_enabled %}
+            <a href="{{ routes.account_url }}" class="ci-drawer__social">
+              {{ 'icon-account.svg' | inline_asset_content }}<span>Account</span>
+            </a>
+          {% endif %}
+          {% for social in (1..5) %}
+            {% liquid
+              assign k_label = 'social_' | append: social | append: '_label'
+              assign k_link = 'social_' | append: social | append: '_link'
+              assign k_icon = 'social_' | append: social | append: '_icon'
+              assign label = section.settings[k_label]
+              assign url = section.settings[k_link]
+              assign icon = section.settings[k_icon]
+            %}
+            {% if label != blank and url != blank %}
+              <a href="{{ url }}" class="ci-drawer__social" target="_blank" rel="noopener">
+                {% if icon != blank %}{{ icon | inline_asset_content }}{% endif %}<span>{{ label }}</span>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      {% for item in lists %}
+        {% liquid
+          assign item_kids = item.links
+          if section.settings.submenu_ov_item != blank and item.title == section.settings.submenu_ov_item and section.settings.submenu_ov_menu != blank
+            assign ov_list = linklists[section.settings.submenu_ov_menu]
+            if ov_list.links.size > 0
+              assign item_kids = ov_list.links
+            endif
+          endif
+        %}
+        {% if item_kids.size > 0 %}
+          <div class="ci-drawer__panel" data-drawer-panel="p-{{ forloop.index0 }}" hidden>
+            <button type="button" class="ci-drawer__back" data-drawer-back>
+              <span class="ci-drawer__back-icon" aria-hidden="true">{{ 'icon-chevron-left.svg' | inline_asset_content }}</span>
+              <span class="ci-drawer__back-title">{{ item.title }}</span>
+            </button>
+            <ul class="ci-drawer__list" role="list">
+              {% for child in item_kids %}
+                <li class="ci-drawer__item">
+                  {% if child.links.size > 0 %}
+                    <button type="button" class="ci-drawer__row" data-drawer-push="p-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}">
+                      <span class="ci-drawer__label">{{ child.title }}</span>
+                      <span class="ci-drawer__chevron" aria-hidden="true">{{ 'icon-chevron-right.svg' | inline_asset_content }}</span>
+                    </button>
+                  {% elsif child.url == '#' or child.url == blank %}
+                    <span class="ci-drawer__row"><span class="ci-drawer__label">{{ child.title }}</span></span>
+                  {% else %}
+                    <a href="{{ child.url }}" class="ci-drawer__row"><span class="ci-drawer__label">{{ child.title }}</span></a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+            {% liquid
+              assign p_a = '1'
+              assign p_b = '2'
+              if section.settings.promo_ov1_menu != blank and section.settings.promo_ov1_menu == item.title
+                assign p_a = 'ov1_1'
+                assign p_b = 'ov1_2'
+              elsif section.settings.promo_ov2_menu != blank and section.settings.promo_ov2_menu == item.title
+                assign p_a = 'ov2_1'
+                assign p_b = 'ov2_2'
+              elsif section.settings.promo_ov3_menu != blank and section.settings.promo_ov3_menu == item.title
+                assign p_a = 'ov3_1'
+                assign p_b = 'ov3_2'
+              endif
+              assign ka_img = 'promo_' | append: p_a | append: '_image'
+              assign ka_title = 'promo_' | append: p_a | append: '_title'
+              assign has_promo = false
+              if section.settings[ka_img] != blank or section.settings[ka_title] != blank
+                assign has_promo = true
+              endif
+            %}
+            {% if section.settings.show_promos and has_promo %}
+              <div class="ci-drawer__promos" data-drawer-slider>
+                <div class="ci-drawer__promos-track" data-drawer-slider-track>
+                  {% render 'ci-navbar-promo', section: section, key: p_a %}
+                  {% render 'ci-navbar-promo', section: section, key: p_b %}
+                </div>
+                <div class="ci-drawer__slider" aria-hidden="true">
+                  <span class="ci-drawer__slider-thumb" data-drawer-slider-thumb></span>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+
+          {% for child in item_kids %}
+            {% if child.links.size > 0 %}
+              <div class="ci-drawer__panel" data-drawer-panel="p-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" hidden>
+                <button type="button" class="ci-drawer__back" data-drawer-back>
+                  <span class="ci-drawer__back-icon" aria-hidden="true">{{ 'icon-chevron-left.svg' | inline_asset_content }}</span>
+                  <span class="ci-drawer__back-title">{{ child.title }}</span>
+                </button>
+                <ul class="ci-drawer__list ci-drawer__list--sub" role="list">
+                  {% for grandchild in child.links %}
+                    <li class="ci-drawer__item">
+                      <a href="{{ grandchild.url }}" class="ci-drawer__row ci-drawer__row--sub"><span class="ci-drawer__label">{{ grandchild.title }}</span></a>
+                    </li>
+                  {% endfor %}
+                  {% unless child.url == '#' or child.url == blank %}
+                    <li class="ci-drawer__item">
+                      <a href="{{ child.url }}" class="ci-drawer__row ci-drawer__row--sub ci-drawer__viewall">View all</a>
+                    </li>
+                  {% endunless %}
+                </ul>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</ci-navbar-drawer>

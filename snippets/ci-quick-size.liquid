@@ -1,0 +1,125 @@
+{%- doc -%}
+  Renders the Controlled Insanity quick-size add-to-cart row over a product card image.
+  On mobile the basket icon opens a bottom-sheet listing every size with Add to bag.
+
+  @param {object} product - The product object
+  @param {object} [block] - The block object the snippet is rendered in
+  @param {object} [section] - The section object the snippet is rendered in
+{%- enddoc -%}
+
+{%- liquid
+  assign product = product | default: closest.product
+  assign current_variant = product.selected_or_first_available_variant
+  assign form_id = 'CiQuickSize-' | append: product.id | append: '-' | append: block.id
+
+  assign size_position = 0
+  assign size_values = ''
+  for option in product.options_with_values
+    assign option_name = option.name | downcase
+    if option_name == 'size'
+      assign size_position = forloop.index
+      assign size_values = option.values
+      break
+    endif
+  endfor
+
+  assign color_position = 0
+  for option in product.options_with_values
+    assign option_name = option.name | downcase
+    if option_name == 'color' or option_name == 'colour'
+      assign color_position = forloop.index
+      break
+    endif
+  endfor
+
+  assign current_color = ''
+  case color_position
+    when 1
+      assign current_color = current_variant.option1
+    when 2
+      assign current_color = current_variant.option2
+    when 3
+      assign current_color = current_variant.option3
+  endcase
+-%}
+
+{%- if product.available and size_position > 0 and size_values.size > 1 -%}
+  <product-form-component
+    class="ci-quick-size"
+    data-section-id="{{ section.id }}"
+    data-product-id="{{ product.id }}"
+    on:submit="/handleSubmit"
+  >
+    <button type="button" class="ci-quick-size__bag" style="color: {{ settings.quick_add_icon_color | default: '#000000' }};" aria-label="{{ 'actions.add' | t }}" data-ci-quick-size-toggle>
+      <svg viewBox="0 0 15 13" width="15" height="13" fill="none" aria-hidden="true" role="presentation">
+        <path d="M13.2327 4.1157H1.71298C1.54936 4.11239 1.3871 4.14593 1.23821 4.21384C1.08932 4.28174 0.957614 4.38228 0.85285 4.508C0.748086 4.63371 0.672949 4.78139 0.633004 4.94008C0.593059 5.09878 0.589329 5.26443 0.622092 5.42476L1.82207 11.4246C1.87307 11.6747 2.01016 11.8991 2.20949 12.0585C2.40881 12.218 2.65774 12.3025 2.91295 12.2973H12.0328C12.288 12.3025 12.5369 12.218 12.7362 12.0585C12.9355 11.8991 13.0726 11.6747 13.1236 11.4246L14.3236 5.42476C14.3564 5.26443 14.3526 5.09878 14.3127 4.94008C14.2728 4.78139 14.1976 4.63371 14.0929 4.508C13.9881 4.38228 13.8564 4.28174 13.7075 4.21384C13.5586 4.14593 13.3963 4.11239 13.2327 4.1157Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        <path d="M9.65468 0.297668L11.8364 4.11577" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        <path d="M3.10936 4.11577L5.29113 0.297668" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="ci-quick-size__backdrop" data-ci-quick-size-toggle aria-hidden="true"></div>
+    {%- form 'product', product, id: form_id, novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+      <input type="hidden" name="id" ref="variantId" value="{{ current_variant.id }}">
+      <input type="hidden" name="quantity" value="1">
+      <div class="ci-quick-size__panel">
+        <div class="ci-quick-size__head">
+          <span class="ci-quick-size__heading">Quick add</span>
+          <button type="button" class="ci-quick-size__close" data-ci-quick-size-toggle aria-label="{{ 'accessibility.close_dialog' | t }}">
+            <span class="svg-wrapper">{{ 'icon-close.svg' | inline_asset_content }}</span>
+          </button>
+        </div>
+        <div class="ci-quick-size__product">
+          {%- if product.featured_image -%}
+            <img class="ci-quick-size__product-image" src="{{ product.featured_image | image_url: width: 160 }}" alt="" width="80" height="80" loading="lazy">
+          {%- endif -%}
+          <div class="ci-quick-size__product-meta">
+            {%- if current_color != blank -%}<span class="ci-quick-size__product-color">{{ current_color }}</span>{%- endif -%}
+            <span class="ci-quick-size__product-title">{{ product.title }}</span>
+            <span class="ci-quick-size__product-price">{{ product.price | money }}</span>
+          </div>
+        </div>
+        <div class="ci-quick-size__row">
+          {%- for value in size_values -%}
+              {%- liquid
+                assign target_variant = blank
+                for variant in product.variants
+                  case size_position
+                    when 1
+                      assign v_size = variant.option1
+                    when 2
+                      assign v_size = variant.option2
+                    when 3
+                      assign v_size = variant.option3
+                  endcase
+                  if v_size != value
+                    continue
+                  endif
+                  if color_position == 0
+                    assign target_variant = variant
+                    break
+                  endif
+                  case color_position
+                    when 1
+                      assign v_color = variant.option1
+                    when 2
+                      assign v_color = variant.option2
+                    when 3
+                      assign v_color = variant.option3
+                  endcase
+                  if v_color == current_color
+                    assign target_variant = variant
+                    break
+                  endif
+                endfor
+              -%}
+              {%- if target_variant != blank and target_variant.available -%}
+                <button type="submit" name="add" class="ci-quick-size__cell{% if target_variant.id == current_variant.id %} is-selected{% endif %}" data-variant-id="{{ target_variant.id }}"><span class="ci-quick-size__cell-label">{{ value }}</span></button>
+              {%- else -%}
+                <button type="button" class="ci-quick-size__cell is-unavailable" disabled aria-disabled="true"><span class="ci-quick-size__cell-label">{{ value }}</span></button>
+              {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endform -%}
+  </product-form-component>
+{%- endif -%}

@@ -1,0 +1,98 @@
+{%- liquid
+  assign rec_product = cart.items.first.product
+  assign found = false
+  for c in rec_product.collections
+    if c.all_products_count > 1 and found == false
+      assign rec_list = c.products
+      assign found = true
+    endif
+  endfor
+  unless found
+    assign rec_list = collections['frontpage'].products
+  endunless
+  if rec_list.size == 0
+    assign rec_list = collections['all'].products
+  endif
+-%}
+{%- if rec_list.size > 0 -%}
+  <ci-cart-recs class="ci-cart-recommendations">
+    <div class="ci-cart-recommendations__head">
+      <h3 class="ci-cart-recommendations__heading h4">{{ 'content.ci_you_might_like' | t }}</h3>
+      <div class="ci-cart-recommendations__nav">
+        <button type="button" class="ci-cart-recommendations__arrow" data-dir="prev" aria-label="{{ 'accessibility.previous' | t }}">
+          <svg viewBox="0 0 20 20" width="20" height="20" fill="none" aria-hidden="true"><path d="M13 4L7.14427 9.67692C7.09873 9.71836 7.06243 9.76841 7.03761 9.82397C7.0128 9.87954 7 9.93945 7 10C7 10.0606 7.0128 10.1205 7.03761 10.176C7.06243 10.2316 7.09873 10.2816 7.14427 10.3231L13 16" stroke="currentColor" stroke-width="1.1" stroke-linecap="square"/></svg>
+        </button>
+        <button type="button" class="ci-cart-recommendations__arrow" data-dir="next" aria-label="{{ 'accessibility.next' | t }}">
+          <svg viewBox="0 0 20 20" width="20" height="20" fill="none" aria-hidden="true"><path d="M7 16L12.8557 10.3231C12.9013 10.2816 12.9376 10.2316 12.9624 10.176C12.9872 10.1205 13 10.0606 13 10C13 9.93945 12.9872 9.87954 12.9624 9.82397C12.9376 9.76841 12.9013 9.71836 12.8557 9.67692L7 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="square"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="ci-cart-recommendations__row">
+      {%- assign shown = 0 -%}
+      {%- for p in rec_list -%}
+        {%- if p.id == rec_product.id -%}{%- continue -%}{%- endif -%}
+        {%- if shown >= 10 -%}{%- break -%}{%- endif -%}
+        {%- assign shown = shown | plus: 1 -%}
+        {%- liquid
+          assign card_colour = ''
+          assign has_quick_size = false
+          for opt in p.options_with_values
+            assign opt_name = opt.name | downcase
+            if opt_name == 'color' or opt_name == 'colour'
+              assign card_colour = opt.values.first
+            endif
+            if opt_name == 'size' and opt.values.size > 1 and p.available
+              assign has_quick_size = true
+            endif
+          endfor
+          if card_colour == '' or card_colour == blank
+            assign cp = p.metafields.shopify['color-pattern'].value
+            assign card_colour = cp.first.label | default: cp.label
+          endif
+          assign review_count = p.metafields.loox.num_reviews.value | default: 0
+          assign review_avg = p.metafields.loox.avg_rating.value | default: 0
+          assign review_stars = review_avg | round
+        -%}
+        <div class="ci-rec-card">
+          <div class="ci-rec-card__media-wrap">
+            <a class="ci-rec-card__media" href="{{ p.url }}">
+              {%- if p.featured_image -%}
+                {{ p.featured_image | image_url: width: 358 | image_tag: loading: 'lazy', widths: '179, 358', sizes: '179px', class: 'ci-rec-card__img' }}
+              {%- endif -%}
+            </a>
+            {%- if has_quick_size -%}
+              {% render 'ci-quick-size', product: p %}
+            {%- else -%}
+              <a class="ci-rec-card__bag" href="{{ p.url }}" style="color: {{ settings.quick_add_icon_color | default: '#000000' }};" aria-label="{{ 'content.ci_add_to_bag' | t }}">
+                <svg viewBox="0 0 15 13" width="15" height="13" fill="none" aria-hidden="true">
+                  <path d="M13.2327 4.1157H1.71298C1.54936 4.11239 1.3871 4.14593 1.23821 4.21384C1.08932 4.28174 0.957614 4.38228 0.85285 4.508C0.748086 4.63371 0.672949 4.78139 0.633004 4.94008C0.593059 5.09878 0.589329 5.26443 0.622092 5.42476L1.82207 11.4246C1.87307 11.6747 2.01016 11.8991 2.20949 12.0585C2.40881 12.218 2.65774 12.3025 2.91295 12.2973H12.0328C12.288 12.3025 12.5369 12.218 12.7362 12.0585C12.9355 11.8991 13.0726 11.6747 13.1236 11.4246L14.3236 5.42476C14.3564 5.26443 14.3526 5.09878 14.3127 4.94008C14.2728 4.78139 14.1976 4.63371 14.0929 4.508C13.9881 4.38228 13.8564 4.28174 13.7075 4.21384C13.5586 4.14593 13.3963 4.11239 13.2327 4.1157Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                  <path d="M9.65468 0.297668L11.8364 4.11577" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                  <path d="M3.10936 4.11577L5.29113 0.297668" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            {%- endif -%}
+          </div>
+          <div class="ci-rec-card__info">
+            {%- if card_colour != '' and card_colour != blank -%}<span class="ci-rec-card__eyebrow">{{ card_colour }}</span>{%- endif -%}
+            <a class="ci-rec-card__title" href="{{ p.url }}">{{ p.title }}</a>
+            <span class="ci-rec-card__price">{{ p.price | money }}</span>
+            {%- if review_count > 0 -%}
+              <span class="ci-rec-card__rating">
+                <span class="ci-rec-card__stars">
+                  {%- for i in (1..5) -%}
+                    <svg class="ci-rec-card__star{% if i > review_stars %} ci-rec-card__star--off{% endif %}" viewBox="0 0 14 14" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M7 1.3 8.6 5l4 .3-3 2.6.9 3.9L7 9.7l-3.5 2.1.9-3.9-3-2.6 4-.3Z"/></svg>
+                  {%- endfor -%}
+                </span>
+                <span class="ci-rec-card__review-count">({{ review_count }})</span>
+              </span>
+            {%- endif -%}
+            <a class="ci-rec-card__btn button" href="{{ p.url }}">{{ 'content.ci_add_to_bag' | t }}</a>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class="ci-cart-recommendations__progress" hidden>
+      <span class="ci-cart-recommendations__progress-thumb"></span>
+    </div>
+  </ci-cart-recs>
+{%- endif -%}

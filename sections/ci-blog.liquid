@@ -1,0 +1,219 @@
+{% liquid
+  assign cats = section.settings.categories | default: 'Team News, Our Athletes, Events, Drops, Size Guides' | split: ','
+  assign total = blog.articles.size
+  assign initial = section.settings.initial_count
+  if initial > total
+    assign initial = total
+  endif
+%}
+<div
+  class="ci-blog section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} spacing-style{% unless section.settings.columns_mobile == '2' %} ci-blog--mobile-bleed{% endunless %}"
+  style="{% render 'spacing-style', settings: section.settings %} --ci-blog-cols: {{ section.settings.columns_desktop | default: 3 }}; --ci-blog-cols-mobile: {{ section.settings.columns_mobile | default: 1 }};"
+  data-initial="{{ section.settings.initial_count }}"
+  data-batch="{{ section.settings.load_count }}"
+  {{ section.shopify_attributes }}
+>
+  <div class="ci-blog__bar">
+    <div class="ci-blog__tabs" role="tablist">
+      <button type="button" class="ci-blog__tab is-active" role="tab" aria-selected="true" data-tag="all">{{ section.settings.all_label | default: 'All' }}</button>
+      {% for c in cats %}
+        {% assign cat = c | strip %}
+        <button type="button" class="ci-blog__tab" role="tab" aria-selected="false" data-tag="{{ cat | handleize }}">{{ cat }}</button>
+      {% endfor %}
+    </div>
+    <label class="ci-blog__sort-wrap">
+      <span class="ci-blog__sort-label">{{ section.settings.sort_label | default: 'Sort' }}</span>
+      <select class="ci-blog__sort" data-blog-sort>
+        <option value="newest">{{ section.settings.sort_newest | default: 'Newest' }}</option>
+        <option value="oldest">{{ section.settings.sort_oldest | default: 'Oldest' }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="ci-blog__grid" data-blog-grid>
+    {% for article in blog.articles %}
+      <article
+        class="ci-blog__card"
+        data-blog-card
+        data-tags="{% for t in article.tags %}{{ t | handleize }} {% endfor %}"
+        data-date="{{ article.published_at | date: '%s' }}"
+      >
+        <a href="{{ article.url }}" class="ci-blog__media">
+          {% if article.image %}
+            {{ article.image | image_url: width: 800 | image_tag: class: 'ci-blog__img', loading: 'lazy', widths: '400, 600, 800', sizes: '(max-width: 749px) 90vw, 33vw', alt: article.title }}
+          {% else %}
+            <span class="ci-blog__img ci-blog__img--empty"></span>
+          {% endif %}
+        </a>
+        <div class="ci-blog__body">
+          <p class="ci-blog__date">{{ article.published_at | date: '%d/%m/%y' }}</p>
+          <a href="{{ article.url }}" class="ci-blog__title-link">
+            <h2 class="ci-blog__title">{{ article.title }}</h2>
+          </a>
+          <p class="ci-blog__excerpt">
+            {%- if article.excerpt != blank -%}
+              {{ article.excerpt | strip_html | truncatewords: 22 }}
+            {%- else -%}
+              {{ article.content | strip_html | truncatewords: 22 }}
+            {%- endif -%}
+          </p>
+          <a href="{{ article.url }}" class="ci-blog__more">{{ section.settings.read_more_label | default: 'Read more' }}</a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <div class="ci-blog__more-wrap" data-blog-more {% if total <= initial %}hidden{% endif %}>
+    <p class="ci-blog__count"><span data-blog-shown>{{ initial }}</span> out of <span data-blog-total>{{ total }}</span></p>
+    <button type="button" class="button ci-blog__load" data-blog-load>{{ section.settings.load_more_label | default: 'Load more' }}</button>
+  </div>
+
+  {% if total == 0 %}
+    <p class="ci-blog__empty">{{ 'blogs.article.no_articles' | t | default: 'No posts yet.' }}</p>
+  {% endif %}
+</div>
+
+<script src="{{ 'ci-blog.js' | asset_url }}" type="module" fetchpriority="low"></script>
+
+{% stylesheet %}
+  .ci-blog__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-block-end: 32px;
+    border-block-end: 1px solid rgb(var(--color-foreground-rgb) / 0.15);
+    padding-block-end: 16px;
+  }
+  .ci-blog__tabs {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .ci-blog__tabs::-webkit-scrollbar { display: none; }
+  .ci-blog__tabs.has-more {
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+  }
+  .ci-blog__tab {
+    flex: 0 0 auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-subdued-text));
+    text-underline-offset: 4px;
+  }
+  .ci-blog__tab.is-active {
+    color: rgb(var(--color-foreground-rgb));
+    text-decoration: underline;
+  }
+  .ci-blog__sort-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 auto;
+    font-size: 0.875rem;
+  }
+  .ci-blog__sort {
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  .ci-blog__grid {
+    display: grid;
+    grid-template-columns: repeat(var(--ci-blog-cols, 3), 1fr);
+    column-gap: 8px;
+    row-gap: 48px;
+  }
+  .ci-blog__card[hidden] { display: none; }
+  .ci-blog__media {
+    display: block;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background-color: rgb(var(--color-foreground-rgb) / 0.06);
+  }
+  .ci-blog__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .ci-blog__img--empty { display: block; }
+  .ci-blog__body { padding-block-start: 12px; }
+  .ci-blog__date {
+    margin: 0 0 6px;
+    font-size: 0.75rem;
+    color: rgb(var(--color-foreground-rgb) / 0.6);
+  }
+  .ci-blog__title-link { text-decoration: none; color: inherit; }
+  .ci-blog__title {
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+  }
+  .ci-blog__excerpt {
+    margin: 0 0 12px;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: rgb(var(--color-foreground-rgb) / 0.8);
+  }
+  .ci-blog__more {
+    font-size: 0.75rem;
+    font-weight: var(--font-subheading--weight, 600);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .ci-blog__more-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-block-start: 48px;
+  }
+  .ci-blog__more-wrap[hidden] { display: none; }
+  .ci-blog__count {
+    margin: 0;
+    font-size: 0.8125rem;
+    color: rgb(var(--color-foreground-rgb) / 0.7);
+  }
+  .ci-blog__empty { text-align: center; }
+  @media screen and (max-width: 749px) {
+    .ci-blog__grid { grid-template-columns: repeat(var(--ci-blog-cols-mobile, 1), 1fr); column-gap: 8px; row-gap: 32px; }
+    .ci-blog__title { font-size: 1rem; }
+    .ci-blog--mobile-bleed .ci-blog__media { margin-inline: calc(50% - 50vw); }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "CI Blog",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "all_label", "label": "All tab label", "default": "All" },
+    { "type": "text", "id": "categories", "label": "Category tabs (comma separated, match article tags)", "default": "Team News, Our Athletes, Events, Drops, Size Guides" },
+    { "type": "text", "id": "sort_label", "label": "Sort label", "default": "Sort" },
+    { "type": "text", "id": "read_more_label", "label": "Read more label", "default": "Read more" },
+    { "type": "range", "id": "columns_desktop", "label": "Columns (desktop)", "min": 2, "max": 4, "step": 1, "default": 3 },
+    { "type": "select", "id": "columns_mobile", "label": "Columns (mobile)", "options": [ { "value": "1", "label": "1" }, { "value": "2", "label": "2" } ], "default": "1" },
+    { "type": "range", "id": "initial_count", "label": "Posts shown before Load more", "min": 3, "max": 30, "step": 1, "default": 9 },
+    { "type": "range", "id": "load_count", "label": "Posts revealed per Load more", "min": 3, "max": 15, "step": 3, "default": 9 },
+    { "type": "text", "id": "load_more_label", "label": "Load more label", "default": "Load more" },
+    { "type": "header", "content": "Layout" },
+    { "type": "select", "id": "section_width", "label": "Width", "options": [ { "value": "page-width", "label": "Page" }, { "value": "full-width", "label": "Full" } ], "default": "page-width" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding-block-start", "label": "Top padding", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding-block-end", "label": "Bottom padding", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 80 }
+  ],
+  "presets": [ { "name": "CI Blog" } ]
+}
+{% endschema %}

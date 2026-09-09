@@ -1,0 +1,195 @@
+{%- liquid
+  assign block_settings = block.settings
+  assign product = closest.product
+
+  assign ns = block_settings.metafield_namespace | default: 'custom'
+  assign key = block_settings.metafield_key | default: 'variant_products'
+  assign siblings = product.metafields[ns][key].value
+
+  assign colour_ns = block_settings.colour_namespace | default: 'custom'
+  assign colour_key = block_settings.colour_key | default: 'colour'
+  assign name_suffix = block_settings.name_suffix
+  assign current_colour = product.metafields[colour_ns][colour_key].value
+  if current_colour == blank
+    assign current_colour = product.title | replace: name_suffix, '' | strip
+  endif
+
+  assign current_in_list = false
+  for sibling in siblings
+    if sibling.id == product.id
+      assign current_in_list = true
+      break
+    endif
+  endfor
+-%}
+
+{%- if siblings != blank and siblings.size > 0 -%}
+  <div class="ci-colors" style="--ci-colors-gap: {{ block_settings.swatch_gap | default: 8 }}px;" {{ block.shopify_attributes }}>
+    <div class="ci-colors__label-row">
+      <span class="ci-colors__label">{{ block_settings.label }}</span>
+      <span class="ci-colors__value">{{ current_colour }}</span>
+    </div>
+    <div class="ci-colors__swatches">
+      {%- unless current_in_list -%}
+        <span
+          class="ci-colors__swatch ci-colors__swatch--selected"
+          aria-current="true"
+          title="{{ current_colour }}"
+        >
+          {%- if product.featured_image -%}
+            {{ product.featured_image | image_url: width: 180 | image_tag: loading: 'lazy', widths: '120, 180', alt: current_colour }}
+          {%- endif -%}
+        </span>
+      {%- endunless -%}
+      {%- for sibling in siblings -%}
+        {%- liquid
+          assign is_current = false
+          if sibling.id == product.id
+            assign is_current = true
+          endif
+          assign sibling_colour = sibling.metafields[colour_ns][colour_key].value
+          if sibling_colour == blank
+            assign sibling_colour = sibling.title | replace: name_suffix, '' | strip
+          endif
+        -%}
+        <a
+          class="ci-colors__swatch{% if is_current %} ci-colors__swatch--selected{% endif %}"
+          href="{{ sibling.url }}"
+          title="{{ sibling_colour }}"
+          {% if is_current %}aria-current="true"{% endif %}
+        >
+          {%- if sibling.featured_image -%}
+            {{ sibling.featured_image | image_url: width: 180 | image_tag: loading: 'lazy', widths: '120, 180', alt: sibling_colour }}
+          {%- endif -%}
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .ci-colors {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ci-colors__label-row {
+    display: flex;
+    gap: 6px;
+    font-size: 0.875rem;
+  }
+
+  .ci-colors__label {
+    color: var(--color-foreground-subtle, rgb(from var(--color-foreground) r g b / 0.6));
+  }
+
+  .ci-colors__value {
+    color: var(--color-foreground);
+  }
+
+  .ci-colors__swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ci-colors-gap, 8px);
+  }
+
+  .ci-colors__swatch {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 0;
+    background: var(--ci-eggshell, #f1f0ec);
+    cursor: pointer;
+  }
+
+  .ci-colors__swatch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ci-colors__swatch:hover::after,
+  .ci-colors__swatch--selected::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--color-foreground);
+    pointer-events: none;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Colour variants",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "Colour"
+    },
+    {
+      "type": "range",
+      "id": "swatch_gap",
+      "label": "Gap between variants",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Linked products metafield"
+    },
+    {
+      "type": "text",
+      "id": "metafield_namespace",
+      "label": "Namespace",
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "metafield_key",
+      "label": "Key",
+      "default": "variant_products",
+      "info": "Product list metafield holding the colourway siblings."
+    },
+    {
+      "type": "header",
+      "content": "Colour name metafield"
+    },
+    {
+      "type": "text",
+      "id": "colour_namespace",
+      "label": "Namespace",
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "colour_key",
+      "label": "Key",
+      "default": "colour",
+      "info": "Single line text metafield with the colour name. Falls back to the title minus the suffix below."
+    },
+    {
+      "type": "text",
+      "id": "name_suffix",
+      "label": "Name suffix to strip",
+      "default": "Pump Cover",
+      "info": "Removed from the product title to derive the colour name when no colour metafield is set."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Colour variants",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}

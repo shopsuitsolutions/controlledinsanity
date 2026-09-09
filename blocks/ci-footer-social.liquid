@@ -1,0 +1,112 @@
+{% liquid
+  assign s = block.settings
+  assign links = ''
+  if s.discord_url != blank
+    assign links = links | append: 'discord|' | append: s.discord_url | append: ',,'
+  endif
+  if s.instagram_url != blank
+    assign links = links | append: 'instagram|' | append: s.instagram_url | append: ',,'
+  endif
+  if s.tiktok_url != blank
+    assign links = links | append: 'tiktok|' | append: s.tiktok_url | append: ',,'
+  endif
+  if s.youtube_url != blank
+    assign links = links | append: 'youtube|' | append: s.youtube_url | append: ',,'
+  endif
+  assign link_list = links | split: ',,'
+%}
+<div class="ci-footer-social spacing-style" style="{% render 'spacing-style', settings: s %}" {{ block.shopify_attributes }}>
+  {% for entry in link_list %}
+    {% assign parts = entry | split: '|' %}
+    {% assign platform = parts[0] %}
+    {% assign url = parts[1] %}
+    <a href="{{ url }}" class="ci-footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="{{ platform | capitalize }}">
+      <span class="svg-wrapper">{{ 'icon-ci-' | append: platform | append: '.svg' | inline_asset_content }}</span>
+    </a>
+  {% endfor %}
+</div>
+
+{% stylesheet %}
+  .ci-footer-social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ci-footer-social__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-foreground);
+  }
+  .ci-footer-social__link .svg-wrapper {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+  }
+  .ci-footer-social__link .svg-wrapper svg {
+    width: 100%;
+    height: 100%;
+  }
+  .ci-footer-social__link:hover {
+    opacity: 0.7;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Social row",
+  "tag": null,
+  "settings": [
+    {
+      "type": "url",
+      "id": "discord_url",
+      "label": "Discord"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram"
+    },
+    {
+      "type": "url",
+      "id": "tiktok_url",
+      "label": "TikTok"
+    },
+    {
+      "type": "url",
+      "id": "youtube_url",
+      "label": "YouTube"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social row",
+      "category": "t:categories.footer"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,132 @@
+<div
+  class="ci-collapsible section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} spacing-style"
+  style="{% render 'spacing-style', settings: section.settings %}"
+  {{ section.shopify_attributes }}
+>
+  <div class="ci-collapsible__inner">
+    {% if section.settings.heading != blank %}
+      <h1 class="ci-collapsible__title">{{ section.settings.heading }}</h1>
+    {% endif %}
+    {% if section.settings.intro != blank %}
+      <div class="ci-collapsible__intro rte">{{ section.settings.intro }}</div>
+    {% endif %}
+
+    <div class="ci-collapsible__list">
+      {% for block in section.blocks %}
+        <details
+          class="ci-collapsible__item"
+          {% if forloop.first and section.settings.first_open %}open{% endif %}
+          {{ block.shopify_attributes }}
+        >
+          <summary class="ci-collapsible__head">
+            <span class="ci-collapsible__label">{{ block.settings.heading }}</span>
+            <span class="ci-collapsible__icon svg-wrapper icon-plus">{{ 'icon-plus.svg' | inline_asset_content }}</span>
+          </summary>
+          <div class="ci-collapsible__content rte">{{ block.settings.content }}</div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .ci-collapsible__inner {
+    width: 100%;
+  }
+  .ci-collapsible__title {
+    text-align: center;
+    margin-block: 0 var(--gap-lg, 32px);
+  }
+  .ci-collapsible__intro {
+    text-align: center;
+    margin-block-end: 32px;
+    color: rgb(var(--color-foreground-rgb) / 0.8);
+  }
+  .ci-collapsible__item {
+    border-block-start: 1px solid rgb(var(--color-foreground-rgb) / 0.15);
+  }
+  .ci-collapsible__list .ci-collapsible__item:last-child {
+    border-block-end: 1px solid rgb(var(--color-foreground-rgb) / 0.15);
+  }
+  .ci-collapsible__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-block: 20px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: var(--font-subheading--weight, 600);
+  }
+  .ci-collapsible__head::-webkit-details-marker { display: none; }
+  .ci-collapsible__head .ci-collapsible__icon {
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+    overflow: visible;
+  }
+  .ci-collapsible__head .ci-collapsible__icon svg {
+    width: 16px !important;
+    height: 16px !important;
+    transform-origin: center center;
+    transition: transform 0.2s ease;
+  }
+  .ci-collapsible__head .ci-collapsible__icon svg .vertical,
+  .ci-collapsible__head .ci-collapsible__icon svg .horizontal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .ci-collapsible__item[open] .ci-collapsible__head .ci-collapsible__icon svg {
+    transform: rotate(45deg);
+  }
+  .ci-collapsible__content {
+    padding-block-end: 24px;
+    overflow-x: auto;
+  }
+  .ci-collapsible__content table {
+    width: 100% !important;
+    min-width: 32rem;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+  .ci-collapsible__content td,
+  .ci-collapsible__content th {
+    width: auto !important;
+    padding: 10px 12px;
+    border-block-end: 1px solid rgb(var(--color-foreground-rgb) / 0.12);
+    text-align: left;
+    vertical-align: top;
+  }
+  .ci-collapsible__content tr:first-child td {
+    font-weight: var(--font-subheading--weight, 600);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "CI Collapsible",
+  "tag": "section",
+  "max_blocks": 50,
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "intro", "label": "Intro (optional)" },
+    { "type": "checkbox", "id": "first_open", "label": "Open first item by default", "default": false },
+    { "type": "header", "content": "Layout" },
+    { "type": "select", "id": "section_width", "label": "Width", "options": [ { "value": "page-width", "label": "Page" }, { "value": "full-width", "label": "Full" } ], "default": "page-width" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding-block-start", "label": "Top padding", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 80 },
+    { "type": "range", "id": "padding-block-end", "label": "Bottom padding", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 80 }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Collapsible row",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Heading" },
+        { "type": "html", "id": "content", "label": "Content" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "CI Collapsible", "blocks": [] } ]
+}
+{% endschema %}

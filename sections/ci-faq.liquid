@@ -1,0 +1,225 @@
+{% liquid
+  assign order_raw = section.settings.category_order | default: 'Sizing, Stock Enquiries, Shipping, Payments, General'
+  assign ordered = order_raw | split: ','
+  assign present = ''
+  for block in section.blocks
+    assign c = block.settings.category | default: 'General' | strip
+    unless present contains c
+      assign present = present | append: c | append: '||'
+    endunless
+  endfor
+%}
+<div
+  class="ci-faq section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} spacing-style"
+  style="{% render 'spacing-style', settings: section.settings %}"
+  {{ section.shopify_attributes }}
+>
+  <div class="ci-faq__inner">
+    {% if section.settings.heading != blank %}
+      <h1 class="ci-faq__title">{{ section.settings.heading }}</h1>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <div class="ci-faq__tabs" role="tablist">
+        <button type="button" class="ci-faq__tab is-active" data-cat="all">{{ section.settings.all_label | default: 'All' }}</button>
+        {% for c in ordered %}
+          {% assign cat = c | strip %}
+          {% if present contains cat %}
+            <button type="button" class="ci-faq__tab" data-cat="{{ cat | handleize }}">{{ cat }}</button>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="ci-faq__list">
+        {% for block in section.blocks %}
+          {% assign cat = block.settings.category | default: 'General' | strip %}
+          <details class="ci-faq__item" data-cat="{{ cat | handleize }}" {{ block.shopify_attributes }}>
+            <summary class="ci-faq__q">
+              <span class="ci-faq__q-text">{{ block.settings.question }}</span>
+              <span class="ci-faq__icon svg-wrapper icon-plus">{{ 'icon-plus.svg' | inline_asset_content }}</span>
+            </summary>
+            <div class="ci-faq__a rte">{{ block.settings.answer }}</div>
+          </details>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if section.settings.cta_heading != blank or section.settings.cta_label != blank %}
+      <div class="ci-faq__cta">
+        {% if section.settings.cta_heading != blank %}
+          <p class="ci-faq__cta-heading">{{ section.settings.cta_heading }}</p>
+        {% endif %}
+        {% if section.settings.cta_label != blank %}
+          <a href="{{ section.settings.cta_link | default: '#' }}" class="button ci-faq__cta-btn">{{ section.settings.cta_label }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<script src="{{ 'ci-faq.js' | asset_url }}" type="module" fetchpriority="low"></script>
+
+{% stylesheet %}
+  .ci-faq__inner {
+    width: 100%;
+    max-width: 920px;
+    margin-inline: auto;
+    min-width: 0;
+  }
+  .ci-faq__title {
+    text-align: center;
+    margin-block: 0 var(--gap-xl, 40px);
+  }
+  .ci-faq__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-block-end: 32px;
+    padding-block-end: 4px;
+    width: 0;
+    min-width: 100%;
+  }
+  .ci-faq__tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .ci-faq__tab {
+    flex: 0 0 auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-subdued-text));
+    text-underline-offset: 4px;
+    white-space: nowrap;
+  }
+  .ci-faq__tab.is-active {
+    color: rgb(var(--color-foreground-rgb));
+    text-decoration: underline;
+  }
+  .ci-faq__item {
+    border-block-start: 1px solid rgb(var(--color-foreground-rgb) / 0.15);
+  }
+  .ci-faq__list .ci-faq__item:last-child {
+    border-block-end: 1px solid rgb(var(--color-foreground-rgb) / 0.15);
+  }
+  .ci-faq__item[hidden] {
+    display: none;
+  }
+  .ci-faq__q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-block: 24px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: var(--font-subheading--weight, 600);
+  }
+  .ci-faq__q::-webkit-details-marker {
+    display: none;
+  }
+  .ci-faq__icon {
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+  }
+  .ci-faq__icon svg {
+    width: 16px !important;
+    height: 16px !important;
+    transform-origin: center center;
+    transition: transform 0.2s ease;
+  }
+  .ci-faq__icon svg .vertical,
+  .ci-faq__icon svg .horizontal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .ci-faq__item[open] .ci-faq__icon svg {
+    transform: rotate(45deg);
+  }
+  .ci-faq__a {
+    padding-block-end: 24px;
+    max-width: 80ch;
+    color: rgb(var(--color-foreground-rgb) / 0.85);
+  }
+  .ci-faq__a a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .ci-faq__cta {
+    text-align: center;
+    margin-block-start: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .ci-faq__cta-heading {
+    margin: 0;
+    color: rgb(var(--color-foreground-rgb) / 0.85);
+  }
+  @media screen and (max-width: 749px) {
+    .ci-faq__title {
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: -0.22px;
+      margin-block-end: 24px;
+      max-width: 280px;
+      margin-inline: auto;
+    }
+    .ci-faq__tabs {
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .ci-faq__tab {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  @media screen and (max-width: 374px) {
+    .ci-faq__tabs {
+      gap: 6px;
+    }
+    .ci-faq__tab {
+      font-size: 11px;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "CI FAQ",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Frequently Asked Questions" },
+    { "type": "text", "id": "all_label", "label": "All tab label", "default": "All" },
+    { "type": "text", "id": "category_order", "label": "Category order (comma separated)", "default": "Sizing, Stock Enquiries, Shipping, Payments, General" },
+    { "type": "header", "content": "Footer CTA" },
+    { "type": "text", "id": "cta_heading", "label": "CTA heading", "default": "Can’t find an answer to your question?" },
+    { "type": "text", "id": "cta_label", "label": "CTA button label", "default": "Get in touch" },
+    { "type": "url", "id": "cta_link", "label": "CTA button link" },
+    { "type": "header", "content": "Layout" },
+    { "type": "select", "id": "section_width", "label": "Width", "options": [ { "value": "page-width", "label": "Page" }, { "value": "full-width", "label": "Full" } ], "default": "page-width" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding-block-start", "label": "Top padding", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 80 },
+    { "type": "range", "id": "padding-block-end", "label": "Bottom padding", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 80 }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "richtext", "id": "answer", "label": "Answer" },
+        { "type": "select", "id": "category", "label": "Category", "options": [ { "value": "Sizing", "label": "Sizing" }, { "value": "Stock Enquiries", "label": "Stock Enquiries" }, { "value": "Shipping", "label": "Shipping" }, { "value": "Payments", "label": "Payments" }, { "value": "General", "label": "General" } ], "default": "General" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "CI FAQ", "blocks": [] } ]
+}
+{% endschema %}

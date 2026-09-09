@@ -1,0 +1,66 @@
+{% liquid
+  assign chart_raw = product.metafields.custom.size_chart.value
+  assign chart_image = product.metafields.custom.size_chart_image.value
+%}
+{% if chart_raw != blank or chart_image != blank %}
+  {% assign chart_rows = chart_raw | strip | newline_to_br | split: '<br />' %}
+  {{ 'ci-size-chart.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'ci-size-chart.js' | asset_url }}" type="module"></script>
+  <ci-size-chart class="ci-size-chart" hidden>
+    <div class="ci-size-chart__backdrop" data-chart-close></div>
+    <aside class="ci-size-chart__panel color-scheme-1" role="dialog" aria-modal="true" aria-label="{{ 'Size guide' }}">
+      <button type="button" class="ci-size-chart__close" data-chart-close aria-label="Close">
+        {{- 'icon-close.svg' | inline_asset_content -}}
+      </button>
+      <h3 class="ci-size-chart__title">Size guide</h3>
+      {% if chart_image != blank %}
+        <img
+          class="ci-size-chart__image"
+          src="{{ chart_image | image_url: width: 1080 }}"
+          srcset="{{ chart_image | image_url: width: 540 }} 540w, {{ chart_image | image_url: width: 1080 }} 1080w"
+          sizes="(max-width: 749px) 100vw, 506px"
+          alt="{{ product.title | escape }} size chart"
+          loading="lazy"
+        >
+      {% endif %}
+      {% if chart_raw != blank %}
+      <div class="ci-size-chart__units" role="group" aria-label="Measurement unit">
+        <button type="button" class="ci-size-chart__unit" data-unit="in" aria-pressed="false">In</button>
+        <button type="button" class="ci-size-chart__unit is-active" data-unit="cm" aria-pressed="true">Cm</button>
+      </div>
+      {% endif %}
+      <div class="ci-size-chart__scroll">
+        {% if chart_raw != blank %}
+        <table class="ci-size-chart__table">
+          {% for row in chart_rows %}
+            {% assign line = row | strip %}
+            {% if line == blank %}{% continue %}{% endif %}
+            {% assign cells = line | split: ',' %}
+            {% if forloop.first %}
+              <thead>
+                <tr>
+                  {% for cell in cells %}
+                    <th scope="col">{{ cell | strip }}</th>
+                  {% endfor %}
+                </tr>
+              </thead>
+              <tbody>
+            {% else %}
+              <tr>
+                {% for cell in cells %}
+                  {% if forloop.first %}
+                    <th scope="row">{{ cell | strip }}</th>
+                  {% else %}
+                    <td data-cm="{{ cell | strip }}">{{ cell | strip }}</td>
+                  {% endif %}
+                {% endfor %}
+              </tr>
+            {% endif %}
+          {% endfor %}
+          </tbody>
+        </table>
+        {% endif %}
+      </div>
+    </aside>
+  </ci-size-chart>
+{% endif %}

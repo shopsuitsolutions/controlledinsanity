@@ -1,0 +1,117 @@
+{% assign s = block.settings %}
+<div
+  class="ci-sizing-tip"
+  style="--tip-bg: {{ s.background_color }}; --tip-color: {{ s.text_color }}; --tip-radius: {{ s.corner_radius }}px;"
+  {{ block.shopify_attributes }}
+>
+  {% if s.show_icon %}
+    <svg class="ci-sizing-tip__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M8 1.5a4.5 4.5 0 0 0-2.5 8.24c.44.3.75.77.75 1.3v.46h3.5v-.46c0-.53.3-1 .75-1.3A4.5 4.5 0 0 0 8 1.5Z" stroke="currentColor"/>
+      <path d="M6.5 13.5h3M7 15h2" stroke="currentColor" stroke-linecap="round"/>
+    </svg>
+  {% endif %}
+  <p class="ci-sizing-tip__text">
+    {% if s.label != blank %}<strong>{{ s.label }}</strong>{% endif %}
+    {{ s.text }}
+    {% if s.link_label != blank and s.link != blank %}
+      <a class="ci-sizing-tip__link" href="{{ s.link }}">{{ s.link_label }}</a>
+    {% endif %}
+  </p>
+</div>
+
+{% stylesheet %}
+  .ci-sizing-tip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 10px 16px;
+    background: var(--tip-bg);
+    color: var(--tip-color);
+    border-radius: var(--tip-radius);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+  }
+
+  .ci-sizing-tip__icon {
+    flex-shrink: 0;
+  }
+
+  .ci-sizing-tip__text {
+    margin: 0;
+  }
+
+  .ci-sizing-tip__link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 500;
+    margin-left: 4px;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "CI Sizing tip",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "Tip:"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "Size-up for an oversized fit"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_icon",
+      "label": "Show icon",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f5f5f2"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "Corner radius",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "CI Sizing tip"
+    }
+  ]
+}
+{% endschema %}

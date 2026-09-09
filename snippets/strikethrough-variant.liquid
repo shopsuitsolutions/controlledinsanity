@@ -1,0 +1,36 @@
+{% doc %}
+  Renders a strikethrough line SVG for unavailable product options.
+
+  @param {object} product_option - The product option object. Renders the strikethrough when product_option.available is false.
+  @param {boolean} [square] - Use square geometry (corner-to-corner) for square swatches instead of the wide button aspect.
+{% enddoc %}
+
+{% unless product_option.available %}
+  {% liquid
+    if square
+      assign strike_viewbox = '0 0 100 100'
+      assign strike_y2 = 100
+    else
+      assign strike_viewbox = '0 0 100 46'
+      assign strike_y2 = 46
+    endif
+  %}
+  <svg
+    viewBox="{{ strike_viewbox }}"
+    preserveAspectRatio="xMidYMid slice"
+    class="variant-option__strikethrough"
+    aria-hidden="true"
+  >
+    <line x1="100" y1="0" x2="0" y2="{{ strike_y2 }}" vector-effect="non-scaling-stroke" />
+    {% # duplicate line for motion overlay %}
+    <line x1="100" y1="0" x2="0" y2="{{ strike_y2 }}" vector-effect="non-scaling-stroke" />
+  </svg>
+{% endunless %}
+
+{% stylesheet %}
+  .variant-option__button-label--has-swatch .variant-option__strikethrough {
+    aspect-ratio: 1;
+    height: auto;
+    bottom: auto;
+  }
+{% endstylesheet %}

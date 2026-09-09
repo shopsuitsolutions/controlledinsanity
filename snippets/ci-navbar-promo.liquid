@@ -1,0 +1,30 @@
+{% liquid
+  assign k_image = 'promo_' | append: key | append: '_image'
+  assign k_title = 'promo_' | append: key | append: '_title'
+  assign k_subtitle = 'promo_' | append: key | append: '_subtitle'
+  assign k_link = 'promo_' | append: key | append: '_link'
+  assign image = section.settings[k_image]
+  assign title = section.settings[k_title]
+  assign subtitle = section.settings[k_subtitle]
+  assign url = section.settings[k_link]
+%}
+{% if image != blank or title != blank %}
+  <a href="{{ url | default: '#' }}" class="ci-nav__promo">
+    {% if image != blank %}
+      {{
+        image
+        | image_url: width: 720
+        | image_tag:
+          loading: 'lazy',
+          sizes: '(min-width: 750px) 25vw, 90vw',
+          widths: '360, 540, 720',
+          class: 'ci-nav__promo-img'
+      }}
+    {% endif %}
+    <span class="ci-nav__promo-overlay" aria-hidden="true"></span>
+    <span class="ci-nav__promo-content">
+      {% if title != blank %}<span class="ci-nav__promo-title">{{ title }}</span>{% endif %}
+      {% if subtitle != blank %}<span class="ci-nav__promo-sub">{{ subtitle }}</span>{% endif %}
+    </span>
+  </a>
+{% endif %}

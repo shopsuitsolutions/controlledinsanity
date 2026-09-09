@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "faq": {
+      "type": "ci-faq",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "How long will it take to get my order?",
+            "answer": "<p>Orders are processed within 1-2 business days. Delivery times then vary depending on your location and the shipping method selected at checkout. You will receive tracking details once your order ships.</p>",
+            "category": "Shipping"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I track my order?",
+            "answer": "<p>Once your order is processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the progress of your shipment. If you have any questions or issues with tracking, please reach out to our <a href=\"/pages/contact\">customer support team</a> for assistance.</p>",
+            "category": "Shipping"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<p>We accept all major credit and debit cards, PayPal, and Shop Pay. All available options are shown at checkout.</p>",
+            "category": "Payments"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes, we ship worldwide. Shipping costs and estimated delivery times are calculated at checkout based on your destination.</p>",
+            "category": "Shipping"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I contact your customer support team?",
+            "answer": "<p>You can reach our team through the <a href=\"/pages/contact\">contact page</a>. We aim to respond within 1-2 business days.</p>",
+            "category": "General"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I change or cancel my order after it's been placed?",
+            "answer": "<p>If you need to change or cancel an order, please contact us as soon as possible. Once an order has been shipped we are unable to make changes to it.</p>",
+            "category": "General"
+          }
+        },
+        "q7": {
+          "type": "faq",
+          "settings": {
+            "question": "Is an item back in stock?",
+            "answer": "<p>If an item is sold out, you can sign up on the product page to be notified by email as soon as it is restocked.</p>",
+            "category": "Stock Enquiries"
+          }
+        },
+        "q8": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the sizing chart for your products?",
+            "answer": "<p>Sizing information is available on each product page. You can also view our full <a href=\"/pages/sizing-chart\">sizing chart</a> for detailed measurements.</p>",
+            "category": "Sizing"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "all_label": "All",
+        "category_order": "Sizing, Stock Enquiries, Shipping, Payments, General",
+        "cta_heading": "Can’t find an answer to your question?",
+        "cta_label": "Get in touch",
+        "cta_link": "/pages/contact",
+        "section_width": "page-width",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": ["faq"]
+}

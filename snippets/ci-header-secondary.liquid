@@ -1,0 +1,35 @@
+{% if menu != blank and menu.links.size > 0 %}
+  <nav class="ci-header-secondary" aria-label="{{ menu.title | default: 'Secondary' | escape }}">
+    <ul class="ci-header-secondary__list" role="list">
+      {% for link in menu.links %}
+        {% if link.links != blank %}
+          <li class="ci-header-secondary__item ci-header-secondary__item--has-mega">
+            <a
+              href="{{ link.url }}"
+              class="ci-header-secondary__link{% if link.active or link.child_active %} is-active{% endif %}"
+              aria-haspopup="true"
+              {% if link.active %}aria-current="page"{% endif %}
+            >
+              {{ link.title | escape }}
+            </a>
+            <div class="ci-header-secondary__submenu">
+              <div class="mega-menu section section--full-width-margin section--{{ section.settings.section_width }}">
+                {% render 'ci-mega-menu', parent_link: link, block: section, section: section %}
+              </div>
+            </div>
+          </li>
+        {% else %}
+          <li class="ci-header-secondary__item">
+            <a
+              href="{{ link.url }}"
+              class="ci-header-secondary__link{% if link.active %} is-active{% endif %}"
+              {% if link.active %}aria-current="page"{% endif %}
+            >
+              {{ link.title | escape }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

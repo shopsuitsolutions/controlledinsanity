@@ -1,0 +1,355 @@
+{% doc %}
+  @prompt
+    make me a password input, so they can login to store, can you center the password , the password box is off the the left, i need it centered in the middle, also i dont need any other text other than password box and enter
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-password-login-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ai-password-login-container-{{ ai_gen_id }} {
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding }}px;
+    border-radius: {{ block.settings.border_radius }}px;
+    width: 100%;
+    max-width: {{ block.settings.max_width }}px;
+  }
+
+  .ai-password-login-form-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.spacing }}px;
+    align-items: center;
+  }
+
+  .ai-password-login-input-{{ ai_gen_id }} {
+    padding: 14px 16px;
+    border: {{ block.settings.input_border_width }}px solid {{ block.settings.input_border_color }};
+    border-radius: {{ block.settings.input_border_radius }}px;
+    background-color: {{ block.settings.input_background }};
+    color: {{ block.settings.input_text_color }};
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ai-password-login-input-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.input_hover_background }};
+  }
+
+  .ai-password-login-input-{{ ai_gen_id }}:focus {
+    outline: 2px solid {{ block.settings.button_color }};
+    outline-offset: 2px;
+  }
+
+  .ai-password-login-button-{{ ai_gen_id }} {
+    padding: 14px 32px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    border: {{ block.settings.button_border_width }}px solid {{ block.settings.button_border_color }};
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: {{ block.settings.button_text_case }};
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .ai-password-login-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.button_hover_border_color }};
+  }
+
+  .ai-password-login-error-{{ ai_gen_id }} {
+    color: {{ block.settings.error_color }};
+    font-size: 14px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-password-login-container-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding | times: 0.7 }}px;
+    }
+  }
+{% endstyle %}
+
+<password-login-{{ ai_gen_id }}
+  class="ai-password-login-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-password-login-container-{{ ai_gen_id }}">
+    {% form 'storefront_password' %}
+      <div class="ai-password-login-form-{{ ai_gen_id }}">
+        <input
+          type="password"
+          name="password"
+          class="ai-password-login-input-{{ ai_gen_id }}"
+          placeholder="{{ block.settings.input_placeholder }}"
+          autocomplete="current-password"
+          aria-label="Password"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="ai-password-login-error-{{ ai_gen_id }}"
+          {% endif %}
+          required
+        >
+
+        <button
+          type="submit"
+          class="ai-password-login-button-{{ ai_gen_id }}"
+        >
+          {{ block.settings.button_text }}
+        </button>
+
+        {% if form.errors %}
+          <div
+            id="ai-password-login-error-{{ ai_gen_id }}"
+            class="ai-password-login-error-{{ ai_gen_id }}"
+          >
+            {{ form.errors.messages.form }}
+          </div>
+        {% endif %}
+      </div>
+    {% endform %}
+  </div>
+</password-login-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class PasswordLogin{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        const input = this.querySelector('input[type="password"]');
+
+        if (input && input.hasAttribute('aria-invalid')) {
+          input.focus();
+        }
+      }
+    }
+
+    customElements.define('password-login-{{ ai_gen_id }}', PasswordLogin{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Password login",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "input_placeholder",
+      "label": "Input placeholder",
+      "default": "Password"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Enter"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Maximum width",
+      "min": 300,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "spacing",
+      "label": "Spacing",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "error_color",
+      "label": "Error",
+      "default": "#D82C0D"
+    },
+    {
+      "type": "header",
+      "content": "Input"
+    },
+    {
+      "type": "color",
+      "id": "input_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "input_hover_background",
+      "label": "Hover background",
+      "default": "#fafafa"
+    },
+    {
+      "type": "color",
+      "id": "input_text_color",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "input_border_color",
+      "label": "Border",
+      "default": "#dfdfdf"
+    },
+    {
+      "type": "range",
+      "id": "input_border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "input_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Hover background",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Hover border",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "button_border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "button_text_case",
+      "label": "Text case",
+      "options": [
+        {
+          "value": "none",
+          "label": "Default"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        }
+      ],
+      "default": "uppercase"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Password login"
+    }
+  ]
+}
+{% endschema %}

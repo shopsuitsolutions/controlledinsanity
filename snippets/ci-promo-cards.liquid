@@ -1,0 +1,59 @@
+{% liquid
+  assign variant = variant | default: 'mega'
+  assign prefix = 'promo_'
+  for i in (1..3)
+    assign menu_key = 'promo_ov' | append: i | append: '_menu'
+    assign menu_val = block.settings[menu_key]
+    if menu_val != blank and menu_val == menu_item
+      assign prefix = 'promo_ov' | append: i | append: '_'
+      break
+    endif
+  endfor
+
+  assign k1_image = prefix | append: '1_image'
+  assign k1_title = prefix | append: '1_title'
+  assign k1_sub = prefix | append: '1_subtitle'
+  assign k1_link = prefix | append: '1_link'
+  assign k2_image = prefix | append: '2_image'
+  assign k2_title = prefix | append: '2_title'
+  assign k2_sub = prefix | append: '2_subtitle'
+  assign k2_link = prefix | append: '2_link'
+  assign c1_image = block.settings[k1_image]
+  assign c1_title = block.settings[k1_title]
+  assign c1_sub = block.settings[k1_sub]
+  assign c1_link = block.settings[k1_link]
+  assign c2_image = block.settings[k2_image]
+  assign c2_title = block.settings[k2_title]
+  assign c2_sub = block.settings[k2_sub]
+  assign c2_link = block.settings[k2_link]
+%}
+{% if c1_image != blank or c1_title != blank or c2_image != blank or c2_title != blank %}
+  <div class="ci-promos ci-promos--{{ variant }}">
+    {% for n in (1..2) %}
+      {% liquid
+        if n == 1
+          assign cimg = c1_image
+          assign ctitle = c1_title
+          assign csub = c1_sub
+          assign curl = c1_link
+        else
+          assign cimg = c2_image
+          assign ctitle = c2_title
+          assign csub = c2_sub
+          assign curl = c2_link
+        endif
+      %}
+      {% if cimg != blank or ctitle != blank %}
+        <a href="{{ curl | default: '#' }}" class="ci-promo">
+          {% if cimg != blank %}
+            {{ cimg | image_url: width: 720 | image_tag: class: 'ci-promo__img', loading: 'lazy', widths: '283, 360, 567, 720', sizes: '(max-width: 749px) 283px, 360px' }}
+          {% endif %}
+          <span class="ci-promo__text">
+            {% if ctitle != blank %}<span class="ci-promo__title">{{ ctitle | escape }}</span>{% endif %}
+            {% if csub != blank %}<span class="ci-promo__sub">{{ csub | escape }}</span>{% endif %}
+          </span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

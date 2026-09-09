@@ -1,0 +1,53 @@
+{% liquid
+  assign categories = parent_link.links
+  assign has_children = false
+  for cat in categories
+    if cat.links != blank
+      assign has_children = true
+      break
+    endif
+  endfor
+%}
+<div class="ci-mega" data-ci-mega>
+  <div class="ci-mega__links{% unless has_children %} ci-mega__links--flat{% endunless %}">
+    <ul class="ci-mega__cats list-unstyled" role="list">
+      {% for cat in categories %}
+        <li>
+          <a
+            href="{{ cat.url }}"
+            class="ci-mega__cat{% if forloop.first and has_children %} is-active{% endif %}"
+            data-ci-cat="{{ forloop.index }}"
+            {% if cat.links != blank %}data-has-children="true"{% endif %}
+          >
+            <span class="ci-mega__cat-label">{{ cat.title | escape }}</span>
+            {% if cat.links != blank %}
+              <span class="ci-mega__chevron svg-wrapper icon-caret icon-caret--forward">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% if has_children %}
+      <div class="ci-mega__divider" aria-hidden="true"></div>
+      <div class="ci-mega__panels">
+        {% for cat in categories %}
+          {% if cat.links != blank %}
+            <ul
+              class="ci-mega__panel list-unstyled{% if forloop.first %} is-active{% endif %}"
+              data-ci-panel="{{ forloop.index }}"
+              role="list"
+            >
+              {% for child in cat.links %}
+                <li><a href="{{ child.url }}" class="ci-mega__child">{{ child.title | escape }}</a></li>
+              {% endfor %}
+              <li><a href="{{ cat.url }}" class="ci-mega__viewall">{{ 'actions.view_all' | t | default: 'View all' }}</a></li>
+            </ul>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  {% render 'ci-promo-cards', block: block, variant: 'mega', menu_item: parent_link.title %}
+</div>
+<script src="{{ 'ci-mega-menu.js' | asset_url }}" type="module" fetchpriority="low"></script>

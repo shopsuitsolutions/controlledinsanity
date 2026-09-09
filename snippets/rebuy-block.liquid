@@ -1,0 +1,13 @@
+{%- liquid
+  assign rebuy_id = id | default: ''
+-%}
+{%- if rebuy_id != blank -%}
+  <ci-rebuy-block class="rebuy-block rebuy-block--{{ placement | default: 'default' }}">
+    <div
+      data-rebuy-id="{{ rebuy_id }}"
+      data-skip-node-update
+      data-skip-subtree-update
+      {%- if product_id != blank %} data-rebuy-shopify-product-ids="{{ product_id }}"{% endif -%}
+    ></div>
+  </ci-rebuy-block>
+{%- endif -%}

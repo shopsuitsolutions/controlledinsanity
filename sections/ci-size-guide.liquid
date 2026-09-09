@@ -1,0 +1,386 @@
+{%- liquid
+  assign ns = section.settings.metafield_namespace | default: 'custom'
+  assign key = section.settings.metafield_key | default: 'size_guide'
+  assign entries = closest.product.metafields[ns][key].value
+-%}
+
+{%- if entries != blank and entries.size > 0 -%}
+  <div class="section-background color-{{ section.settings.color_scheme }}"></div>
+  <div
+    id="ci-size-guide"
+    class="section section--page-width color-{{ section.settings.color_scheme }} spacing-style"
+    style="{% render 'spacing-style', settings: section.settings %} scroll-margin-top: 100px; --ci-size-guide-gap: {{ section.settings.card_gap | default: 2 }}px;"
+  >
+    <ci-slider class="ci-size-guide__slider">
+      <div class="ci-size-guide__header">
+        <h3 class="ci-size-guide__title">{{ section.settings.heading }}</h3>
+        <div class="ci-size-guide__controls">
+          <div class="ci-size-guide__nav">
+            <button type="button" class="ci-size-guide__arrow" data-dir="prev" aria-label="{{ 'accessibility.previous' | t }}">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" aria-hidden="true"><path d="M13 4L7.14427 9.67692C7.09873 9.71836 7.06243 9.76841 7.03761 9.82397C7.0128 9.87954 7 9.93945 7 10C7 10.0606 7.0128 10.1205 7.03761 10.176C7.06243 10.2316 7.09873 10.2816 7.14427 10.3231L13 16" stroke="currentColor" stroke-width="1.1" stroke-linecap="square"/></svg>
+            </button>
+            <button type="button" class="ci-size-guide__arrow" data-dir="next" aria-label="{{ 'accessibility.next' | t }}">
+              <svg viewBox="0 0 20 20" width="20" height="20" fill="none" aria-hidden="true"><path d="M7 16L12.8557 10.3231C12.9013 10.2816 12.9376 10.2316 12.9624 10.176C12.9872 10.1205 13 10.0606 13 10C13 9.93945 12.9872 9.87954 12.9624 9.82397C12.9376 9.76841 12.9013 9.71836 12.8557 9.67692L7 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="square"/></svg>
+            </button>
+          </div>
+          {%- liquid
+            assign sg_link = section.settings.link
+            if sg_link == blank
+              assign sg_link = section.settings.fallback_url
+            endif
+            if sg_link == blank
+              assign sg_link = '/pages/sizing-chart'
+            endif
+          -%}
+          <a class="ci-size-guide__link" href="{{ sg_link }}">{{ section.settings.link_label }}</a>
+        </div>
+      </div>
+
+      <div class="ci-size-guide__row" data-slider-row>
+      {%- for entry in entries -%}
+        {%- liquid
+          assign size_label = entry.size_name.value
+          assign model_height = entry.model_height.value
+          assign model_weight = entry.model_weight.value
+          assign sg_image = entry.image.value
+        -%}
+        <div class="ci-size-guide__card">
+          <div class="ci-size-guide__media">
+            {% if sg_image != blank %}
+              {{
+                sg_image
+                | image_url: width: 904
+                | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 30vw, 80vw', widths: '452, 678, 904', alt: size_label
+              }}
+            {% else %}
+              {{ 'product-apparel-1' | placeholder_svg_tag: 'ci-size-guide__placeholder' }}
+            {% endif %}
+          </div>
+          <div class="ci-size-guide__meta">
+            <p class="ci-size-guide__size">{{ size_label }}</p>
+            {% if model_height != blank or model_weight != blank %}
+              <p class="ci-size-guide__model">
+                <span class="ci-size-guide__model-label">Model Height/Weight:</span>
+                <span class="ci-size-guide__model-value">
+                  {{ model_height }}
+                  {% if model_height != blank and model_weight != blank %}
+                    <span class="ci-size-guide__divider"></span>
+                  {% endif %}
+                  {{ model_weight }}
+                </span>
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      {%- endfor -%}
+      </div>
+
+      <div class="ci-size-guide__progress" data-slider-progress hidden>
+        <span class="ci-size-guide__progress-thumb" data-slider-thumb></span>
+      </div>
+    </ci-slider>
+  </div>
+{%- else -%}
+  <script>
+    (function () {
+      var fallback = {{ section.settings.fallback_url | default: '/pages/sizing-chart' | json }};
+      if (!fallback) return;
+      document.querySelectorAll('a[href="#ci-size-guide"]').forEach(function (link) {
+        link.setAttribute('href', fallback);
+      });
+    })();
+  </script>
+{%- endif -%}
+
+{% stylesheet %}
+  .ci-size-guide__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--gap-md);
+    margin-block-end: var(--gap-2xl);
+  }
+
+  .ci-size-guide__title {
+    margin: 0;
+  }
+
+  .ci-size-guide__controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .ci-size-guide__nav {
+    display: flex;
+    gap: 6px;
+  }
+
+  .ci-size-guide__arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--color-foreground);
+    cursor: pointer;
+  }
+
+  .ci-size-guide__arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  .ci-size-guide__link {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+  }
+
+  .ci-size-guide__row {
+    display: flex;
+    gap: var(--ci-size-guide-gap, 2px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-block-end: 4px;
+  }
+
+  .ci-size-guide__row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ci-size-guide__card {
+    flex: 0 0 auto;
+    width: clamp(260px, 30vw, 452px);
+    scroll-snap-align: start;
+  }
+
+  .ci-size-guide__progress {
+    position: relative;
+    height: 2px;
+    background-color: #f1f0ec;
+    margin-top: 40px;
+  }
+
+  .ci-size-guide__progress[hidden] {
+    display: none;
+  }
+
+  .ci-size-guide__progress-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 20%;
+    background-color: #000000;
+    transition: left 0.12s linear;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ci-size-guide__progress {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ci-size-guide__nav {
+      display: none;
+    }
+  }
+
+  .ci-size-guide__media {
+    aspect-ratio: 452 / 638;
+    overflow: hidden;
+    background: var(--ci-eggshell, #f1f0ec);
+  }
+
+  .ci-size-guide__media img,
+  .ci-size-guide__media svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ci-size-guide__meta {
+    padding-block-start: var(--gap-md);
+  }
+
+  .ci-size-guide__size {
+    margin: 0;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+
+  .ci-size-guide__model {
+    margin: var(--gap-2xs) 0 0;
+    display: flex;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: var(--color-foreground);
+  }
+
+  .ci-size-guide__model-label {
+    font-weight: 400;
+  }
+
+  .ci-size-guide__model-value {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+  }
+
+  .ci-size-guide__divider {
+    width: 1px;
+    height: 0.875em;
+    background: currentColor;
+    opacity: 0.4;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Size guide",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Cards are pulled from the product's Size guide metafield (Content > Metaobjects > Size guide card). The section is hidden automatically when the product has no entries."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Size Guide"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link label",
+      "default": "View Size Guide"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "url",
+      "id": "fallback_url",
+      "label": "Fallback size chart page",
+      "info": "When a product has no Size guide entries, the buy-box Size guide links are sent here instead. Defaults to /pages/sizing-chart."
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Gap between cards",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "header",
+      "content": "Metafield source"
+    },
+    {
+      "type": "text",
+      "id": "metafield_namespace",
+      "label": "Namespace",
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "metafield_key",
+      "label": "Key",
+      "default": "size_guide",
+      "info": "Product list.metaobject_reference metafield holding the Size guide entries."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "fit_card",
+      "name": "Fit card (legacy)",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "size_label",
+          "label": "Size label",
+          "default": "Size Small"
+        },
+        {
+          "type": "text",
+          "id": "model_height",
+          "label": "Model height",
+          "default": "6'2\""
+        },
+        {
+          "type": "text",
+          "id": "model_weight",
+          "label": "Model weight",
+          "default": "180lbs"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Size guide",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}

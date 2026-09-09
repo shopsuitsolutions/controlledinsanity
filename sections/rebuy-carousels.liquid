@@ -1,0 +1,134 @@
+<div class="{{ section.class }}">
+  <div class="rebuy-accordion-toggles">
+    {% for block in section.blocks %}
+      <button class="rebuy-accordion-toggle{% if forloop.first %} is-active{% endif %}">
+        {{ block.settings.title }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <div class="rebuy-accordion-panels">
+    {% for block in section.blocks %}
+      <div
+        class="rebuy-accordion-panel{% if forloop.first %} is-active{% endif %}"
+        data-rebuy-id="{{ block.settings.widget_id }}">
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+document.addEventListener('rebuy.loaded', () => {
+  document.addEventListener('click', (e) => {
+    const toggle = e.target.closest('.rebuy-accordion-toggle');
+    if (!toggle) return;
+
+    const accordion = toggle.closest('.rebuy-accordion');
+    if (!accordion) return;
+
+    const toggles = accordion.querySelectorAll('.rebuy-accordion-toggle');
+    const panels = accordion.querySelectorAll('.rebuy-accordion-panel');
+    const index = Array.from(toggles).indexOf(toggle);
+
+    toggles.forEach(t => t.classList.remove('is-active'));
+    panels.forEach(p => p.classList.remove('is-active'));
+
+    toggle.classList.add('is-active');
+    panels[index]?.classList.add('is-active');
+
+    requestAnimationFrame(() => {
+      window.dispatchEvent(new Event('resize'));
+      window.dispatchEvent(new Event('scroll'));
+    });
+  });
+});
+</script>
+
+<style>
+.rebuy-accordion-toggles {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-inline: 4px;
+  margin-top: 30px;
+}
+.rebuy-accordion-toggle {
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid transparent;
+  background: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+}
+.rebuy-accordion-toggle.is-active {
+  border-color: #000;
+}
+.rebuy-accordion-panels {
+  padding-bottom: 30px;
+}
+.rebuy-accordion-panel {
+  display: none;
+}
+.rebuy-accordion-panel.is-active {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .rebuy-accordion {
+    max-width: 90%;
+    margin: auto !important;
+  }
+}
+@media (max-width: 480px) {
+  .rebuy-accordion {
+    padding-inline: 20px;
+  }
+  .rebuy-accordion-toggles {
+    overflow: auto;
+    justify-content: flex-start;
+  }
+  .rebuy-accordion-toggles::-webkit-scrollbar {
+    height: 0;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Rebuy Carousel Accordion",
+  "tag": "section",
+  "class": "rebuy-accordion",
+  "max_blocks": 5,
+  "settings": [],
+  "blocks": [
+    {
+      "type": "widget",
+      "name": "Carousel Widget",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "widget_id",
+          "label": "Widget ID"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rebuy Carousel Accordion",
+      "blocks": [
+        {
+          "type": "widget"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

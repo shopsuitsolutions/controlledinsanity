@@ -1,0 +1,130 @@
+.ci-size-chart__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 40%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: calc(var(--layer-overlay, 16) + 1);
+}
+
+.ci-size-chart__panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100dvh;
+  width: min(570px, 100vw);
+  background: var(--color-background, #fff);
+  color: var(--color-foreground, #000);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: calc(var(--layer-overlay, 16) + 2);
+  display: flex;
+  flex-direction: column;
+  padding: 88px 32px 40px;
+}
+
+.ci-size-chart[data-open] .ci-size-chart__backdrop {
+  opacity: 1;
+}
+
+.ci-size-chart[data-open] .ci-size-chart__panel {
+  transform: none;
+}
+
+.ci-size-chart__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+.ci-size-chart__close svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ci-size-chart__title {
+  margin: 0 0 28px;
+}
+
+.ci-size-chart__units {
+  display: inline-flex;
+  align-self: flex-start;
+  background: rgb(0 0 0 / 5%);
+  border-radius: 999px;
+  padding: 3px;
+  margin-bottom: 36px;
+}
+
+.ci-size-chart__unit {
+  appearance: none;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: inherit;
+  cursor: pointer;
+}
+
+.ci-size-chart__unit.is-active {
+  background: var(--color-background, #fff);
+  border-color: var(--color-foreground, #000);
+}
+
+.ci-size-chart__scroll {
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.ci-size-chart__table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.ci-size-chart__table thead th {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(from var(--color-foreground, #000) r g b / 55%);
+  padding: 0 12px 14px 0;
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+}
+
+.ci-size-chart__table tbody th {
+  font-weight: 700;
+  padding: 16px 12px 16px 0;
+  border-bottom: 1px solid rgb(0 0 0 / 8%);
+}
+
+.ci-size-chart__table tbody td {
+  padding: 16px 12px 16px 0;
+  border-bottom: 1px solid rgb(0 0 0 / 8%);
+}
+
+@media screen and (max-width: 749px) {
+  .ci-size-chart__panel {
+    padding: 72px 20px 32px;
+  }
+}
+
+.ci-size-chart__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 28px;
+}

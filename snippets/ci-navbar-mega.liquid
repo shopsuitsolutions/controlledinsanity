@@ -1,0 +1,110 @@
+{% liquid
+  assign parent = link
+  assign promo_a = blank
+  assign promo_b = blank
+
+  if section.settings.promo_ov1_menu != blank and section.settings.promo_ov1_menu == parent.title
+    assign promo_a = 'ov1_1'
+    assign promo_b = 'ov1_2'
+  elsif section.settings.promo_ov2_menu != blank and section.settings.promo_ov2_menu == parent.title
+    assign promo_a = 'ov2_1'
+    assign promo_b = 'ov2_2'
+  elsif section.settings.promo_ov3_menu != blank and section.settings.promo_ov3_menu == parent.title
+    assign promo_a = 'ov3_1'
+    assign promo_b = 'ov3_2'
+  else
+    assign promo_a = '1'
+    assign promo_b = '2'
+  endif
+
+  assign children = kids | default: parent.links
+
+  assign has_single_column = true
+  for c in children
+    if c.links.size > 0
+      assign has_single_column = false
+      break
+    endif
+  endfor
+%}
+
+<div class="ci-nav__mega" data-mega>
+  <div class="ci-nav__mega-inner spacing-style">
+    <div class="ci-nav__mega-nav">
+      <ul class="ci-nav__mega-l1" role="list" data-mega-l1>
+        {% for child in children %}
+          {% liquid
+            assign is_first = false
+            if forloop.first
+              assign is_first = true
+            endif
+          %}
+          <li class="ci-nav__mega-l1-item">
+            {% liquid
+              assign l1_tag = 'a'
+              if child.url == '#' or child.url == blank
+                assign l1_tag = 'button'
+              endif
+            %}
+            <{{ l1_tag }}
+              {% if l1_tag == 'a' %}href="{{ child.url }}"{% else %}type="button"{% endif %}
+              class="ci-nav__l1-link{% if child.child_active %} is-active{% endif %}"
+              {% if child.links.size > 0 %}
+                data-mega-cat="{{ forloop.index0 }}"
+                aria-controls="{{ section.id }}-{{ parent.title | handleize }}-col-{{ forloop.index0 }}"
+                {% if is_first %}aria-current="true"{% endif %}
+              {% endif %}
+            >
+              <span>{{ child.title }}</span>
+              {% if child.links.size > 0 and section.settings.show_chevrons %}
+                <span class="ci-nav__chevron" aria-hidden="true">
+                  {{- 'icon-chevron-right.svg' | inline_asset_content -}}
+                </span>
+              {% endif %}
+            </{{ l1_tag }}>
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% unless has_single_column %}
+        <span class="ci-nav__mega-divider" aria-hidden="true"></span>
+      {% endunless %}
+
+      <div class="ci-nav__mega-l2-wrap" data-mega-l2-wrap>
+        {% for child in children %}
+          {% if child.links.size > 0 %}
+            <ul
+              class="ci-nav__mega-l2{% if forloop.first %} is-active{% endif %}"
+              role="list"
+              id="{{ section.id }}-{{ parent.title | handleize }}-col-{{ forloop.index0 }}"
+              data-mega-col="{{ forloop.index0 }}"
+              {% unless forloop.first %}hidden{% endunless %}
+            >
+              {% for grandchild in child.links %}
+                <li>
+                  <a href="{{ grandchild.url }}" class="ci-nav__sublink{% if grandchild.active %} is-active{% endif %}">
+                    {{- grandchild.title -}}
+                  </a>
+                </li>
+              {% endfor %}
+              {% unless child.url == '#' or child.url == blank %}
+                <li>
+                  <a href="{{ child.url }}" class="ci-nav__viewall">
+                    View all
+                  </a>
+                </li>
+              {% endunless %}
+            </ul>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if section.settings.show_promos %}
+      <div class="ci-nav__mega-promos">
+        {% render 'ci-navbar-promo', section: section, key: promo_a %}
+        {% render 'ci-navbar-promo', section: section, key: promo_b %}
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,122 @@
+{% assign s = block.settings %}
+<div class="ci-footer-legal spacing-style" style="{% render 'spacing-style', settings: s %}" {{ block.shopify_attributes }}>
+  <a href="{{ routes.root_url }}" class="ci-footer-legal__logo" aria-label="{{ shop.name | escape }}">
+    <span class="svg-wrapper">{{ 'ci-footer-logo.svg' | inline_asset_content }}</span>
+  </a>
+  <span class="ci-footer-legal__copy">&copy; {{ 'now' | date: '%Y' }}, {{ shop.name }}</span>
+  <span class="ci-footer-legal__links">
+    {% assign has_native_cookie = false %}
+    {% for policy in shop.policies %}
+      {% if policy.url contains 'ConsentBanner' %}
+        {% assign has_native_cookie = true %}
+      {% endif %}
+      {% unless policy.url contains 'privacy' %}
+        <a href="{{ policy.url }}" class="ci-footer-legal__link">{{ policy.title }}</a>
+      {% endunless %}
+    {% endfor %}
+    {% if s.show_cookie_preferences and has_native_cookie == false %}
+      <button type="button" class="ci-footer-legal__link ci-footer-legal__cookie" data-ci-cookie-prefs>{{ s.cookie_label }}</button>
+    {% endif %}
+  </span>
+</div>
+
+{% if s.show_cookie_preferences %}
+  <script>
+    document.querySelectorAll('[data-ci-cookie-prefs]').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (window.privacyBanner && typeof window.privacyBanner.showPreferences === 'function') {
+          window.privacyBanner.showPreferences();
+        } else if (window.Shopify && window.Shopify.customerPrivacy && typeof window.Shopify.customerPrivacy.openConsentBanner === 'function') {
+          window.Shopify.customerPrivacy.openConsentBanner();
+        }
+      });
+    });
+  </script>
+{% endif %}
+
+{% stylesheet %}
+  .ci-footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-foreground);
+    flex-wrap: wrap;
+  }
+  .ci-footer-legal__logo {
+    display: inline-flex;
+    color: var(--color-foreground);
+    flex-shrink: 0;
+  }
+  .ci-footer-legal__logo .svg-wrapper {
+    display: inline-flex;
+    width: 80px;
+    height: 55px;
+  }
+  .ci-footer-legal__logo .svg-wrapper svg {
+    width: 100%;
+    height: 100%;
+  }
+  .ci-footer-legal__copy {
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  .ci-footer-legal__links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .ci-footer-legal__link {
+    font-size: 0.75rem;
+    color: var(--color-foreground);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .ci-footer-legal__link:hover {
+    opacity: 0.7;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ci-footer-legal {
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+    }
+    .ci-footer-legal__links {
+      justify-content: center;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Legal row",
+  "tag": null,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_cookie_preferences",
+      "label": "Show cookie preferences link",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cookie_label",
+      "label": "Cookie preferences label",
+      "default": "Cookie preferences"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Legal row",
+      "category": "t:categories.footer"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,384 @@
+{% liquid
+  assign s = section.settings
+  assign primary_menu = linklists[s.primary_menu]
+  assign secondary_menu = linklists[s.secondary_menu]
+
+  assign transparent = false
+  if s.transparent_home and template.name == 'index'
+    assign transparent = true
+  elsif s.transparent_product and template.name == 'product'
+    assign transparent = true
+  elsif s.transparent_collection and template.name == 'collection'
+    assign transparent = true
+  endif
+
+  assign logo_image = s.logo | default: settings.logo
+  assign logo_inverse = s.logo_inverse | default: logo_image
+
+  case s.nav_font
+    when 'heading'
+      assign nav_font = settings.type_heading_font
+    when 'subheading'
+      assign nav_font = settings.type_subheading_font
+    when 'accent'
+      assign nav_font = settings.type_accent_font
+    else
+      assign nav_font = settings.type_body_font
+  endcase
+  case s.sub_font
+    when 'heading'
+      assign sub_font = settings.type_heading_font
+    when 'subheading'
+      assign sub_font = settings.type_subheading_font
+    when 'accent'
+      assign sub_font = settings.type_accent_font
+    else
+      assign sub_font = settings.type_body_font
+  endcase
+  case s.promo_title_font
+    when 'subheading'
+      assign promo_font = settings.type_subheading_font
+    when 'accent'
+      assign promo_font = settings.type_accent_font
+    when 'body'
+      assign promo_font = settings.type_body_font
+    else
+      assign promo_font = settings.type_heading_font
+  endcase
+%}
+
+{% capture nav_vars %}
+    --ci-nav-font: {{ nav_font.family }}, {{ nav_font.fallback_families }};
+    --ci-nav-weight: {{ nav_font.weight }};
+    --ci-nav-size: {{ s.nav_font_size | divided_by: 16.0 }}rem;
+    --ci-nav-ls: {{ s.nav_letter_spacing }}px;
+    --ci-nav-case: {{ s.nav_case }};
+    --ci-sub-font: {{ sub_font.family }}, {{ sub_font.fallback_families }};
+    --ci-sub-weight: {{ sub_font.weight }};
+    --ci-sub-size: {{ s.sub_font_size | divided_by: 16.0 }}rem;
+    --ci-promo-font: {{ promo_font.family }}, {{ promo_font.fallback_families }};
+    --ci-promo-weight: {{ promo_font.weight }};
+    --ci-promo-title-size: {{ s.promo_title_size | divided_by: 16.0 }}rem;
+    --ci-promo-sub-size: {{ s.promo_sub_size | divided_by: 16.0 }}rem;
+    --ci-promo-min-h: {{ s.promo_min_height | default: 0 }}px;
+    --ci-nav-pad-y: {{ s.nav_padding_y }}px;
+    --ci-nav-pad-x: {{ s.nav_padding_x }}px;
+    --ci-link-gap: {{ s.link_gap }}px;
+    --ci-icon-size: {{ s.icon_size }}px;
+    --ci-icon-gap: {{ s.icon_gap }}px;
+    --ci-logo-width: {{ s.logo_width }}px;
+    --ci-logo-inverse-width: {{ s.logo_inverse_width | default: s.logo_width }}px;
+    --ci-mega-pad: {{ s.mega_padding }}px;
+    --ci-mega-col: {{ s.mega_col_width }}px;
+    --ci-mega-l1-gap: {{ s.mega_l1_gap }}px;
+    --ci-mega-l2-gap: {{ s.mega_l2_gap }}px;
+    --ci-ann-pad-y: {{ s.announcement_padding_y }}px;
+    --ci-ann-size: {{ s.announcement_size | divided_by: 16.0 }}rem;
+    --ci-ann-ls: {{ s.announcement_letter_spacing }}px;
+{% endcapture %}
+
+{{ 'ci-navbar.css' | asset_url | stylesheet_tag }}
+
+{% capture icons_cluster %}
+  <div class="ci-nav__icons">
+    {% render 'header-actions', section: section, display_style: 'icon', customer_account_menu: s.customer_account_menu %}
+    {% if s.show_search %}
+      <a href="{{ routes.search_url }}" class="ci-nav__icon-btn ci-nav__search-btn" aria-label="Search">
+        {{- 'icon-search.svg' | inline_asset_content -}}
+      </a>
+    {% endif %}
+  </div>
+{% endcapture %}
+
+<ci-navbar-component
+  class="ci-navbar{% if transparent %} is-transparent{% endif %}"
+  id="ci-navbar-{{ section.id }}"
+  {% if transparent %}transparent{% endif %}
+  {% if s.enable_sticky %}sticky{% endif %}
+  data-state="{% if transparent %}transparent{% else %}solid{% endif %}"
+  data-scheme-solid="color-{{ s.color_scheme_solid }}"
+  data-scheme-transparent="color-{{ s.color_scheme_transparent }}"
+  style="{{ nav_vars | strip_newlines }}"
+>
+  <span class="ci-navbar__sentinel" data-sentinel aria-hidden="true"></span>
+
+  {% if section.blocks.size > 0 %}
+    <div class="ci-navbar__announcement color-{{ s.announcement_scheme }}" data-announcement style="--ci-ann-speed: {{ s.announcement_autoplay_speed }}s;">
+      <div class="ci-navbar__announcement-track" data-announcement-track>
+        {% for block in section.blocks %}
+          <div class="ci-navbar__announcement-item" {{ block.shopify_attributes }}>
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}" class="ci-navbar__announcement-link">{{ block.settings.text }}</a>
+            {% else %}
+              <span>{{ block.settings.text }}</span>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  <header class="ci-navbar__bar {% if transparent %}color-{{ s.color_scheme_transparent }}{% else %}color-{{ s.color_scheme_solid }}{% endif %} section section--{{ s.section_width }}">
+    <div class="ci-navbar__inner">
+      <div class="ci-navbar__group ci-navbar__group--left">
+        <button type="button" class="ci-nav__icon-btn ci-navbar__burger" data-drawer-open aria-label="Menu" aria-expanded="false">
+          {{- 'icon-menu.svg' | inline_asset_content -}}
+        </button>
+        {% if s.show_search %}
+          <a href="{{ routes.search_url }}" class="ci-nav__icon-btn ci-navbar__burger-search" aria-label="Search">
+            {{- 'icon-search.svg' | inline_asset_content -}}
+          </a>
+        {% endif %}
+
+        {% if primary_menu != blank %}
+          <nav class="ci-nav__menu-wrap" aria-label="Primary navigation">
+            <ul class="ci-nav__menu" role="list">
+              {% for item in primary_menu.links %}
+                {% liquid
+                  assign item_kids = item.links
+                  if s.submenu_ov_item != blank and item.title == s.submenu_ov_item and s.submenu_ov_menu != blank
+                    assign ov_list = linklists[s.submenu_ov_menu]
+                    if ov_list.links.size > 0
+                      assign item_kids = ov_list.links
+                    endif
+                  elsif s.submenu_ov2_item != blank and item.title == s.submenu_ov2_item and s.submenu_ov2_menu != blank
+                    assign ov_list = linklists[s.submenu_ov2_menu]
+                    if ov_list.links.size > 0
+                      assign item_kids = ov_list.links
+                    endif
+                  endif
+                %}
+                <li class="ci-nav__item{% if item_kids.size > 0 %} has-mega{% endif %}" data-nav-item>
+                  {% if item.url == '#' or item.url == blank %}
+                    <button type="button" class="ci-nav__link{% if item.active or item.child_active %} is-active{% endif %}"{% if item_kids.size > 0 %} aria-haspopup="true" aria-expanded="false"{% endif %}>
+                      {{- item.title -}}
+                    </button>
+                  {% else %}
+                    <a href="{{ item.url }}" class="ci-nav__link{% if item.active or item.child_active %} is-active{% endif %}"{% if item_kids.size > 0 %} aria-haspopup="true" aria-expanded="false"{% endif %}>
+                      {{- item.title -}}
+                    </a>
+                  {% endif %}
+                  {% if item_kids.size > 0 %}
+                    {% render 'ci-navbar-mega', link: item, kids: item_kids, section: section %}
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        {% endif %}
+      </div>
+
+      <div class="ci-navbar__group ci-navbar__group--center">
+        <a href="{{ routes.root_url }}" class="ci-nav__logo" aria-label="{{ shop.name }}">
+          {% if logo_image != blank %}
+            {{ logo_image | image_url: width: 520 | image_tag: class: 'ci-nav__logo-img ci-nav__logo-img--default', widths: '180,360,520', alt: shop.name }}
+            {{ logo_inverse | image_url: width: 520 | image_tag: class: 'ci-nav__logo-img ci-nav__logo-img--inverse', widths: '180,360,520', alt: shop.name }}
+          {% else %}
+            <span class="ci-nav__logo-text">{{ shop.name }}</span>
+          {% endif %}
+        </a>
+      </div>
+
+      <div class="ci-navbar__group ci-navbar__group--right">
+        {% if secondary_menu != blank %}
+          <nav class="ci-nav__menu-wrap ci-nav__menu-wrap--secondary" aria-label="Secondary navigation">
+            <ul class="ci-nav__menu" role="list">
+              {% for item in secondary_menu.links %}
+                {% liquid
+                  assign item_kids = item.links
+                  if s.submenu_ov_item != blank and item.title == s.submenu_ov_item and s.submenu_ov_menu != blank
+                    assign ov_list = linklists[s.submenu_ov_menu]
+                    if ov_list.links.size > 0
+                      assign item_kids = ov_list.links
+                    endif
+                  elsif s.submenu_ov2_item != blank and item.title == s.submenu_ov2_item and s.submenu_ov2_menu != blank
+                    assign ov_list = linklists[s.submenu_ov2_menu]
+                    if ov_list.links.size > 0
+                      assign item_kids = ov_list.links
+                    endif
+                  endif
+                %}
+                <li class="ci-nav__item{% if item_kids.size > 0 %} has-mega{% endif %}" data-nav-item>
+                  {% if item.url == '#' or item.url == blank %}
+                    <button type="button" class="ci-nav__link{% if item.active or item.child_active %} is-active{% endif %}"{% if item_kids.size > 0 %} aria-haspopup="true" aria-expanded="false"{% endif %}>
+                      {{- item.title -}}
+                    </button>
+                  {% else %}
+                    <a href="{{ item.url }}" class="ci-nav__link{% if item.active or item.child_active %} is-active{% endif %}"{% if item_kids.size > 0 %} aria-haspopup="true" aria-expanded="false"{% endif %}>
+                      {{- item.title -}}
+                    </a>
+                  {% endif %}
+                  {% if item_kids.size > 0 %}
+                    {% render 'ci-navbar-mega', link: item, kids: item_kids, section: section %}
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        {% endif %}
+        {{ icons_cluster }}
+      </div>
+    </div>
+  </header>
+
+  {% render 'ci-navbar-drawer', section: section, primary_menu: primary_menu, secondary_menu: secondary_menu %}
+</ci-navbar-component>
+
+{% if transparent %}
+  <style>
+    #shopify-section-{{ section.id }}:has(ci-navbar-component[transparent]) + .shopify-section .section:first-child,
+    #shopify-section-{{ section.id }} + .shopify-section > .shopify-section:first-child .section {
+      --ci-transparent-pull: {{ s.nav_padding_y | times: 2 | plus: 40 }}px;
+    }
+  </style>
+{% endif %}
+
+<script src="{{ 'ci-navbar.js' | asset_url }}" type="module"></script>
+
+{% schema %}
+{
+  "name": "CI Navbar",
+  "tag": "section",
+  "class": "ci-navbar-section",
+  "enabled_on": { "groups": ["header"] },
+  "settings": [
+    { "type": "header", "content": "Menus" },
+    { "type": "link_list", "id": "primary_menu", "label": "Primary menu", "info": "Left of the logo. Supports 3 levels." },
+    { "type": "link_list", "id": "secondary_menu", "label": "Secondary menu", "info": "Right of the logo, before the icons." },
+    { "type": "link_list", "id": "customer_account_menu", "label": "Customer account menu", "default": "customer-account-main-menu" },
+    { "type": "text", "id": "submenu_ov_item", "label": "Submenu override · applies to item titled", "info": "Exact top-level menu item title, e.g. COLLECTIONS" },
+    { "type": "link_list", "id": "submenu_ov_menu", "label": "Submenu override · menu to display", "info": "Replaces that item's dropdown so it can be reordered as its own menu" },
+    { "type": "text", "id": "submenu_ov2_item", "label": "Submenu override 2 · applies to item titled", "info": "Exact top-level menu item title, e.g. PRODUCTS" },
+    { "type": "link_list", "id": "submenu_ov2_menu", "label": "Submenu override 2 · menu to display" },
+
+    { "type": "header", "content": "Logo" },
+    { "type": "image_picker", "id": "logo", "label": "Logo", "info": "Falls back to the theme logo." },
+    { "type": "range", "id": "logo_width", "min": 60, "max": 260, "step": 2, "unit": "px", "label": "Logo width", "default": 180 },
+    { "type": "image_picker", "id": "logo_inverse", "label": "Logo (transparent / inverse state)", "info": "Shown over the hero. Can be a different shape (e.g. 1:1 monogram)." },
+    { "type": "range", "id": "logo_inverse_width", "min": 24, "max": 200, "step": 2, "unit": "px", "label": "Transparent logo width", "default": 48 },
+
+    { "type": "header", "content": "Layout" },
+    { "type": "select", "id": "section_width", "label": "Width", "options": [ { "value": "page-width", "label": "Page" }, { "value": "full-width", "label": "Full" } ], "default": "full-width" },
+    { "type": "range", "id": "nav_padding_y", "min": 0, "max": 28, "step": 1, "unit": "px", "label": "Bar vertical padding", "default": 8 },
+    { "type": "range", "id": "nav_padding_x", "min": 0, "max": 80, "step": 2, "unit": "px", "label": "Bar horizontal padding", "default": 40 },
+    { "type": "range", "id": "link_gap", "min": 8, "max": 48, "step": 1, "unit": "px", "label": "Nav link gap", "default": 24 },
+    { "type": "range", "id": "icon_size", "min": 16, "max": 32, "step": 1, "unit": "px", "label": "Icon size", "default": 24 },
+    { "type": "range", "id": "icon_gap", "min": 4, "max": 24, "step": 1, "unit": "px", "label": "Icon gap", "default": 12 },
+
+    { "type": "header", "content": "Typography" },
+    { "type": "select", "id": "nav_font", "label": "Nav link font", "options": [ { "value": "heading", "label": "Heading" }, { "value": "subheading", "label": "Subheading" }, { "value": "body", "label": "Body" }, { "value": "accent", "label": "Accent" } ], "default": "subheading" },
+    { "type": "range", "id": "nav_font_size", "min": 10, "max": 18, "step": 1, "unit": "px", "label": "Nav link size", "default": 12 },
+    { "type": "range", "id": "nav_letter_spacing", "min": 0, "max": 3, "step": 0.1, "unit": "px", "label": "Nav link letter spacing", "default": 0 },
+    { "type": "select", "id": "nav_case", "label": "Nav link case", "options": [ { "value": "uppercase", "label": "Uppercase" }, { "value": "none", "label": "None" } ], "default": "uppercase" },
+    { "type": "select", "id": "sub_font", "label": "Sub-link font", "options": [ { "value": "heading", "label": "Heading" }, { "value": "subheading", "label": "Subheading" }, { "value": "body", "label": "Body" }, { "value": "accent", "label": "Accent" } ], "default": "body" },
+    { "type": "range", "id": "sub_font_size", "min": 12, "max": 18, "step": 1, "unit": "px", "label": "Sub-link size", "default": 14 },
+    { "type": "select", "id": "promo_title_font", "label": "Promo title font", "options": [ { "value": "heading", "label": "Heading" }, { "value": "subheading", "label": "Subheading" }, { "value": "body", "label": "Body" }, { "value": "accent", "label": "Accent" } ], "default": "heading" },
+    { "type": "range", "id": "promo_title_size", "min": 16, "max": 40, "step": 1, "unit": "px", "label": "Promo title size", "default": 28 },
+    { "type": "range", "id": "promo_sub_size", "min": 12, "max": 18, "step": 1, "unit": "px", "label": "Promo subtitle size", "default": 14 },
+    { "type": "range", "id": "promo_min_height", "min": 0, "max": 600, "step": 10, "unit": "px", "label": "Promo image min height", "info": "0 keeps the automatic height.", "default": 0 },
+
+    { "type": "header", "content": "Mega menu" },
+    { "type": "checkbox", "id": "show_chevrons", "label": "Show chevrons on parent items", "default": true },
+    { "type": "checkbox", "id": "show_promos", "label": "Show promo cards", "default": true },
+    { "type": "checkbox", "id": "promo_gradient", "label": "Promo gradient overlay", "default": true },
+    { "type": "range", "id": "mega_padding", "min": 16, "max": 64, "step": 2, "unit": "px", "label": "Panel padding", "default": 40 },
+    { "type": "range", "id": "mega_col_width", "min": 240, "max": 440, "step": 10, "unit": "px", "label": "Column width", "default": 360 },
+    { "type": "range", "id": "mega_l1_gap", "min": 8, "max": 40, "step": 1, "unit": "px", "label": "Category row gap", "default": 20 },
+    { "type": "range", "id": "mega_l2_gap", "min": 8, "max": 40, "step": 1, "unit": "px", "label": "Sub-link row gap", "default": 12 },
+
+    { "type": "header", "content": "Behavior" },
+    { "type": "checkbox", "id": "enable_sticky", "label": "Sticky header", "default": true },
+    { "type": "checkbox", "id": "show_search", "label": "Show search icon", "default": true },
+
+    { "type": "header", "content": "Colors" },
+    { "type": "color_scheme", "id": "color_scheme_solid", "label": "Solid state scheme", "default": "scheme-1" },
+    { "type": "color_scheme", "id": "color_scheme_transparent", "label": "Transparent state scheme", "default": "scheme-6" },
+    { "type": "color_scheme", "id": "drawer_color_scheme", "label": "Mobile drawer scheme", "default": "scheme-1" },
+
+    { "type": "header", "content": "Transparent header" },
+    { "type": "checkbox", "id": "transparent_home", "label": "Transparent on home", "default": true },
+    { "type": "checkbox", "id": "transparent_product", "label": "Transparent on product", "default": false },
+    { "type": "checkbox", "id": "transparent_collection", "label": "Transparent on collection", "default": false },
+
+    { "type": "header", "content": "Announcement bar" },
+    { "type": "color_scheme", "id": "announcement_scheme", "label": "Color scheme", "default": "scheme-5" },
+    { "type": "range", "id": "announcement_padding_y", "min": 2, "max": 16, "step": 1, "unit": "px", "label": "Vertical padding", "default": 6 },
+    { "type": "range", "id": "announcement_size", "min": 9, "max": 16, "step": 1, "unit": "px", "label": "Text size", "default": 10 },
+    { "type": "range", "id": "announcement_letter_spacing", "min": 0, "max": 3, "step": 0.1, "unit": "px", "label": "Letter spacing", "default": 0.4 },
+    { "type": "range", "id": "announcement_autoplay_speed", "min": 3, "max": 12, "step": 1, "unit": "s", "label": "Rotation speed", "default": 5 },
+
+    { "type": "header", "content": "Mega promo cards — defaults" },
+    { "type": "image_picker", "id": "promo_1_image", "label": "Card 1 image" },
+    { "type": "text", "id": "promo_1_title", "label": "Card 1 title" },
+    { "type": "text", "id": "promo_1_subtitle", "label": "Card 1 subtitle" },
+    { "type": "url", "id": "promo_1_link", "label": "Card 1 link" },
+    { "type": "image_picker", "id": "promo_2_image", "label": "Card 2 image" },
+    { "type": "text", "id": "promo_2_title", "label": "Card 2 title" },
+    { "type": "text", "id": "promo_2_subtitle", "label": "Card 2 subtitle" },
+    { "type": "url", "id": "promo_2_link", "label": "Card 2 link" },
+
+    { "type": "header", "content": "Promo override — menu A" },
+    { "type": "text", "id": "promo_ov1_menu", "label": "Applies to parent item titled", "info": "Exact menu item title, e.g. Events" },
+    { "type": "image_picker", "id": "promo_ov1_1_image", "label": "Card 1 image" },
+    { "type": "text", "id": "promo_ov1_1_title", "label": "Card 1 title" },
+    { "type": "text", "id": "promo_ov1_1_subtitle", "label": "Card 1 subtitle" },
+    { "type": "url", "id": "promo_ov1_1_link", "label": "Card 1 link" },
+    { "type": "image_picker", "id": "promo_ov1_2_image", "label": "Card 2 image" },
+    { "type": "text", "id": "promo_ov1_2_title", "label": "Card 2 title" },
+    { "type": "text", "id": "promo_ov1_2_subtitle", "label": "Card 2 subtitle" },
+    { "type": "url", "id": "promo_ov1_2_link", "label": "Card 2 link" },
+
+    { "type": "header", "content": "Promo override — menu B" },
+    { "type": "text", "id": "promo_ov2_menu", "label": "Applies to parent item titled" },
+    { "type": "image_picker", "id": "promo_ov2_1_image", "label": "Card 1 image" },
+    { "type": "text", "id": "promo_ov2_1_title", "label": "Card 1 title" },
+    { "type": "text", "id": "promo_ov2_1_subtitle", "label": "Card 1 subtitle" },
+    { "type": "url", "id": "promo_ov2_1_link", "label": "Card 1 link" },
+    { "type": "image_picker", "id": "promo_ov2_2_image", "label": "Card 2 image" },
+    { "type": "text", "id": "promo_ov2_2_title", "label": "Card 2 title" },
+    { "type": "text", "id": "promo_ov2_2_subtitle", "label": "Card 2 subtitle" },
+    { "type": "url", "id": "promo_ov2_2_link", "label": "Card 2 link" },
+
+    { "type": "header", "content": "Promo override — menu C" },
+    { "type": "text", "id": "promo_ov3_menu", "label": "Applies to parent item titled" },
+    { "type": "image_picker", "id": "promo_ov3_1_image", "label": "Card 1 image" },
+    { "type": "text", "id": "promo_ov3_1_title", "label": "Card 1 title" },
+    { "type": "text", "id": "promo_ov3_1_subtitle", "label": "Card 1 subtitle" },
+    { "type": "url", "id": "promo_ov3_1_link", "label": "Card 1 link" },
+    { "type": "image_picker", "id": "promo_ov3_2_image", "label": "Card 2 image" },
+    { "type": "text", "id": "promo_ov3_2_title", "label": "Card 2 title" },
+    { "type": "text", "id": "promo_ov3_2_subtitle", "label": "Card 2 subtitle" },
+    { "type": "url", "id": "promo_ov3_2_link", "label": "Card 2 link" },
+
+    { "type": "header", "content": "Mobile socials" },
+    { "type": "text", "id": "social_1_label", "label": "Social 1 label", "default": "Discord" },
+    { "type": "url", "id": "social_1_link", "label": "Social 1 link" },
+    { "type": "select", "id": "social_1_icon", "label": "Social 1 icon", "options": [ { "value": "", "label": "None" }, { "value": "icon-ci-discord.svg", "label": "Discord" }, { "value": "icon-ci-instagram.svg", "label": "Instagram" }, { "value": "icon-ci-tiktok.svg", "label": "TikTok" }, { "value": "icon-ci-youtube.svg", "label": "YouTube" } ], "default": "icon-ci-discord.svg" },
+    { "type": "text", "id": "social_2_label", "label": "Social 2 label", "default": "Instagram" },
+    { "type": "url", "id": "social_2_link", "label": "Social 2 link" },
+    { "type": "select", "id": "social_2_icon", "label": "Social 2 icon", "options": [ { "value": "", "label": "None" }, { "value": "icon-ci-discord.svg", "label": "Discord" }, { "value": "icon-ci-instagram.svg", "label": "Instagram" }, { "value": "icon-ci-tiktok.svg", "label": "TikTok" }, { "value": "icon-ci-youtube.svg", "label": "YouTube" } ], "default": "icon-ci-instagram.svg" },
+    { "type": "text", "id": "social_3_label", "label": "Social 3 label", "default": "TikTok" },
+    { "type": "url", "id": "social_3_link", "label": "Social 3 link" },
+    { "type": "select", "id": "social_3_icon", "label": "Social 3 icon", "options": [ { "value": "", "label": "None" }, { "value": "icon-ci-discord.svg", "label": "Discord" }, { "value": "icon-ci-instagram.svg", "label": "Instagram" }, { "value": "icon-ci-tiktok.svg", "label": "TikTok" }, { "value": "icon-ci-youtube.svg", "label": "YouTube" } ], "default": "icon-ci-tiktok.svg" },
+    { "type": "text", "id": "social_4_label", "label": "Social 4 label", "default": "YouTube" },
+    { "type": "url", "id": "social_4_link", "label": "Social 4 link" },
+    { "type": "select", "id": "social_4_icon", "label": "Social 4 icon", "options": [ { "value": "", "label": "None" }, { "value": "icon-ci-discord.svg", "label": "Discord" }, { "value": "icon-ci-instagram.svg", "label": "Instagram" }, { "value": "icon-ci-tiktok.svg", "label": "TikTok" }, { "value": "icon-ci-youtube.svg", "label": "YouTube" } ], "default": "icon-ci-youtube.svg" },
+    { "type": "text", "id": "social_5_label", "label": "Social 5 label" },
+    { "type": "url", "id": "social_5_link", "label": "Social 5 link" },
+    { "type": "select", "id": "social_5_icon", "label": "Social 5 icon", "options": [ { "value": "", "label": "None" }, { "value": "icon-ci-discord.svg", "label": "Discord" }, { "value": "icon-ci-instagram.svg", "label": "Instagram" }, { "value": "icon-ci-tiktok.svg", "label": "TikTok" }, { "value": "icon-ci-youtube.svg", "label": "YouTube" } ], "default": "" }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "Announcement",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text", "default": "Flavors now live" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "CI Navbar", "blocks": [ { "type": "announcement" } ] }
+  ]
+}
+{% endschema %}
