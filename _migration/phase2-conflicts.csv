@@ -1,0 +1,1410 @@
+family,field,sibling_title,current_value,proposed_action
+Evergreen Pump Cover,price,Blackout Pump Cover,$55.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,UNC Blue Pump Cover,$55.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Cool Grey Pump Cover,$55.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Oreo Pump Cover,$55.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Midnight Black Pump Cover,$55.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Cherry Blossom Pump Cover,$60.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Navy Pump Cover,$55.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Gunmetal Grey Pump Cover,$55.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Amethyst Pump Cover,$55.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Amethyst Camo Pump Cover,$60.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,price,Arctic Camo Pump Cover,$60.0,keep per-variant (Rule G3)
+Evergreen Pump Cover,body_html,Blackout Pump Cover,612 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,UNC Blue Pump Cover,615 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Cool Grey Pump Cover,612 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Oreo Pump Cover,608 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Midnight Black Pump Cover,618 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Cherry Blossom Pump Cover,888 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Navy Pump Cover,952 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Gunmetal Grey Pump Cover,1034 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Amethyst Pump Cover,412 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Amethyst Camo Pump Cover,412 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,body_html,Arctic Camo Pump Cover,326 chars,longest wins (Rule G7a)
+Evergreen Pump Cover,type,Blackout Pump Cover,Evergreen Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,UNC Blue Pump Cover,Evergreen Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Cool Grey Pump Cover,Evergreen Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Oreo Pump Cover,Evergreen Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Midnight Black Pump Cover,Evergreen Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Cherry Blossom Pump Cover,Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Navy Pump Cover,Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Gunmetal Grey Pump Cover,Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Amethyst Pump Cover,Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Amethyst Camo Pump Cover,Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,type,Arctic Camo Pump Cover,Pump Cover,most common (G4/G5/G6)
+Evergreen Pump Cover,template,Blackout Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,UNC Blue Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,Cool Grey Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,Oreo Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,Midnight Black Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,Cherry Blossom Pump Cover,Default product,most common (G4/G5/G6)
+Evergreen Pump Cover,template,Navy Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,Gunmetal Grey Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,Amethyst Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,Amethyst Camo Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,template,Arctic Camo Pump Cover,(null),most common (G4/G5/G6)
+Evergreen Pump Cover,tag:size-2xl,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,DROP (Rule G1 exception)
+Evergreen Pump Cover,tag:size-3xl,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,DROP (Rule G1 exception)
+Evergreen Pump Cover,tag:tops,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Oreo Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G1)
+Evergreen Pump Cover,tag:size-4xl,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover, Cherry Blossom Pump Cover",on some siblings only,DROP (Rule G1 exception)
+Evergreen Pump Cover,tag:restockdroppart1,"Amethyst Pump Cover, Amethyst Camo Pump Cover, Arctic Camo Pump Cover",on some siblings only,UNION (Rule G1)
+Evergreen Pump Cover,tag:size-s,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,DROP (Rule G1 exception)
+Evergreen Pump Cover,tag:evergreen pumpcover,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Oreo Pump Cover, Midnight Black Pump Cover, Navy Pump Cover, Gunmetal Grey Pump Cover",on some siblings only,UNION (Rule G1)
+Evergreen Pump Cover,tag:size-5xl,"Blackout Pump Cover, Midnight Black Pump Cover",on some siblings only,DROP (Rule G1 exception)
+Evergreen Pump Cover,tag:japandroppart1,Cherry Blossom Pump Cover,on some siblings only,UNION (Rule G1)
+Evergreen Pump Cover,tag:size-m,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,DROP (Rule G1 exception)
+Evergreen Pump Cover,tag:size-l,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,DROP (Rule G1 exception)
+Evergreen Pump Cover,tag:size-xl,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,DROP (Rule G1 exception)
+Evergreen Pump Cover,collection:trending,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover, Cherry Blossom Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:size-4xl,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover, Cherry Blossom Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:japan-restock,"Cherry Blossom Pump Cover, Amethyst Camo Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:size-s,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:size-5xl,"Blackout Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:new-evergreen,"Navy Pump Cover, Gunmetal Grey Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:in-stock,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover, Cherry Blossom Pump Cover, Navy Pump Cover, Gunmetal Grey Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:march-restock,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:japan-drop-part-1,Cherry Blossom Pump Cover,on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:japan-drop-part-1-2,Cherry Blossom Pump Cover,on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:evergreen-collection,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Oreo Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:size-l,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:size-2xl,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:dark-matter,Amethyst Pump Cover,on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:size-3xl,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:arctic-drop,Arctic Camo Pump Cover,on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:japan-drop-part-2,Cherry Blossom Pump Cover,on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:cherry-restock-discord-exclusive,Cherry Blossom Pump Cover,on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:tops,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Oreo Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:tiktok-shop-collection,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:restock-drop-part-1,"Amethyst Pump Cover, Amethyst Camo Pump Cover, Arctic Camo Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:size-m,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:size-xl,"Blackout Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,collection:black-friday,"Blackout Pump Cover, UNC Blue Pump Cover, Cool Grey Pump Cover, Midnight Black Pump Cover, Cherry Blossom Pump Cover, Navy Pump Cover, Gunmetal Grey Pump Cover",on some siblings only,UNION (Rule G2)
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Blackout Pump Cover,shopify--target-gender.female,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],UNC Blue Pump Cover,shopify--target-gender.female,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Cool Grey Pump Cover,shopify--target-gender.female,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Oreo Pump Cover,shopify--target-gender.female,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Midnight Black Pump Cover,shopify--target-gender.female,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Cherry Blossom Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Amethyst Camo Pump Cover,shopify--target-gender.unisex,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Blackout Pump Cover,pumpCover,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],UNC Blue Pump Cover,pumpCover,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Cool Grey Pump Cover,pumpCover,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Oreo Pump Cover,pumpCover,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Midnight Black Pump Cover,pumpCover,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Cherry Blossom Pump Cover,pumpCover,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.family [single_line_text_field],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Blackout Pump Cover,shopify--fabric.cotton,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],UNC Blue Pump Cover,shopify--fabric.cotton,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Cool Grey Pump Cover,shopify--fabric.cotton,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Oreo Pump Cover,shopify--fabric.cotton,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Midnight Black Pump Cover,shopify--fabric.cotton,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Cherry Blossom Pump Cover,shopify--fabric.cotton,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Blackout Pump Cover,shopify--color-pattern.black-3,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],UNC Blue Pump Cover,shopify--color-pattern.black-3,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cool Grey Pump Cover,shopify--color-pattern.black-3,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Oreo Pump Cover,shopify--color-pattern.black-3,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Midnight Black Pump Cover,shopify--color-pattern.black-3,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cherry Blossom Pump Cover,shopify--color-pattern.floral,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Amethyst Camo Pump Cover,"shopify--color-pattern.gray-2, shopify--color-pattern.camouflage, shopify--color-pattern.purple",per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Arctic Camo Pump Cover,shopify--color-pattern.whiteout,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Blackout Pump Cover,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl, shopify--size.5xl",per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],UNC Blue Pump Cover,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl, shopify--size.5xl",per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Cool Grey Pump Cover,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl, shopify--size.5xl",per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Oreo Pump Cover,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl, shopify--size.5xl",per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Midnight Black Pump Cover,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl, shopify--size.5xl",per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Cherry Blossom Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Amethyst Pump Cover,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.size [list.metaobject_reference],Arctic Camo Pump Cover,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Blackout Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],UNC Blue Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Cool Grey Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Oreo Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Midnight Black Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Cherry Blossom Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Navy Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Gunmetal Grey Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Amethyst Camo Pump Cover,PUMP_COVER.jpg,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Blackout Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],UNC Blue Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Cool Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Oreo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Midnight Black Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Cherry Blossom Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Navy Pump Cover,1604,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Gunmetal Grey Pump Cover,212,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Amethyst Camo Pump Cover,167,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Blackout Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],UNC Blue Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Cool Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Oreo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Midnight Black Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Cherry Blossom Pump Cover,shopify--bra-closure-type.back,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-closure-type [list.metaobject_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Blackout Pump Cover,212,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],UNC Blue Pump Cover,212,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Cool Grey Pump Cover,212,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Oreo Pump Cover,212,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Midnight Black Pump Cover,212,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Cherry Blossom Pump Cover,214,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Navy Pump Cover,1604,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Gunmetal Grey Pump Cover,212,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Amethyst Camo Pump Cover,167,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Blackout Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],UNC Blue Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Cool Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Oreo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Midnight Black Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Cherry Blossom Pump Cover,shopify--bra-features.breathable-design,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-features [list.metaobject_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Blackout Pump Cover,shopify--neckline.round,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],UNC Blue Pump Cover,shopify--neckline.round,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Cool Grey Pump Cover,shopify--neckline.round,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Oreo Pump Cover,shopify--neckline.round,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Midnight Black Pump Cover,shopify--neckline.round,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Cherry Blossom Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.neckline [list.metaobject_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Blackout Pump Cover,#000000,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],UNC Blue Pump Cover,#7baedc,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Cool Grey Pump Cover,#bfbfbf,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Oreo Pump Cover,#f2f2f2,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Midnight Black Pump Cover,#1a1a1a,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Cherry Blossom Pump Cover,#d98ca3,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: custom.color [single_line_text_field],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Blackout Pump Cover,adult,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],UNC Blue Pump Cover,adult,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Cool Grey Pump Cover,adult,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Oreo Pump Cover,adult,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Midnight Black Pump Cover,adult,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Cherry Blossom Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Amethyst Camo Pump Cover,adult,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: mm-google-shopping.age_group [string],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Blackout Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],UNC Blue Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Cool Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Oreo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Midnight Black Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Cherry Blossom Pump Cover,shopify--bra-coverage.full,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.bra-coverage [list.metaobject_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Blackout Pump Cover,shopify--age-group.adults,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],UNC Blue Pump Cover,shopify--age-group.adults,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Cool Grey Pump Cover,shopify--age-group.adults,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Oreo Pump Cover,shopify--age-group.adults,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Midnight Black Pump Cover,shopify--age-group.adults,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Cherry Blossom Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Amethyst Camo Pump Cover,shopify--age-group.adults,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Blackout Pump Cover,shopify--top-length-type.long,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],UNC Blue Pump Cover,shopify--top-length-type.long,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Cool Grey Pump Cover,shopify--top-length-type.long,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Oreo Pump Cover,shopify--top-length-type.long,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Midnight Black Pump Cover,shopify--top-length-type.long,per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Cherry Blossom Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Navy Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Gunmetal Grey Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Amethyst Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Amethyst Camo Pump Cover,(null),per Rule G8
+Evergreen Pump Cover,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Arctic Camo Pump Cover,(null),per Rule G8
+Blank Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Blank pump cover,shopify--color-pattern.gray-2,per Rule G8
+Blank Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Blank Pumpcover,shopify--color-pattern.black-7,per Rule G8
+Blank Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Blank pump cover,shopify--age-group.adults,per Rule G8
+Blank Pump Cover,metafield:Metafield: shopify.age-group [list.metaobject_reference],Blank Pumpcover,(null),per Rule G8
+Cropped Pump Cover,body_html,Cropped Blackout Pumpcover,2357 chars,longest wins (Rule G7a)
+Cropped Pump Cover,body_html,Cropped Cool Grey Pumpcover,2357 chars,longest wins (Rule G7a)
+Cropped Pump Cover,body_html,Cropped Midnight Pumpcover,2356 chars,longest wins (Rule G7a)
+Cropped Pump Cover,tag:size-xl,"Cropped Blackout Pumpcover, Cropped Midnight Pumpcover",on some siblings only,DROP (Rule G1 exception)
+Cropped Pump Cover,collection:product-templates,Cropped Blackout Pumpcover,on some siblings only,UNION (Rule G2)
+Cropped Pump Cover,collection:size-xl,"Cropped Blackout Pumpcover, Cropped Midnight Pumpcover",on some siblings only,UNION (Rule G2)
+Cropped Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cropped Blackout Pumpcover,shopify--color-pattern.black-7,per Rule G8
+Cropped Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cropped Cool Grey Pumpcover,shopify--color-pattern.grey,per Rule G8
+Cropped Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cropped Midnight Pumpcover,shopify--color-pattern.black-7,per Rule G8
+Long Sleeve Pump Cover,body_html,Blackout Long Sleeve Pump Cover,2338 chars,longest wins (Rule G7a)
+Long Sleeve Pump Cover,body_html,Midnight Long Sleeve Pump Cover,2336 chars,longest wins (Rule G7a)
+Long Sleeve Pump Cover,tag:tops,Blackout Long Sleeve Pump Cover,on some siblings only,UNION (Rule G1)
+Long Sleeve Pump Cover,tag:wls,Midnight Long Sleeve Pump Cover,on some siblings only,UNION (Rule G1)
+Long Sleeve Pump Cover,tag:bls,Blackout Long Sleeve Pump Cover,on some siblings only,UNION (Rule G1)
+Long Sleeve Pump Cover,collection:tops,Blackout Long Sleeve Pump Cover,on some siblings only,UNION (Rule G2)
+Long Sleeve Pump Cover,collection:wls,Midnight Long Sleeve Pump Cover,on some siblings only,UNION (Rule G2)
+Long Sleeve Pump Cover,collection:bls,Blackout Long Sleeve Pump Cover,on some siblings only,UNION (Rule G2)
+Long Sleeve Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Blackout Long Sleeve Pump Cover,shopify--color-pattern.black-6,per Rule G8
+Long Sleeve Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Midnight Long Sleeve Pump Cover,shopify--color-pattern.black-white,per Rule G8
+Smoke Pump Cover,body_html,Smoke Pump Cover Dusk,2660 chars,longest wins (Rule G7a)
+Smoke Pump Cover,body_html,Smoke Pump Cover Off White,2660 chars,longest wins (Rule G7a)
+Smoke Pump Cover,body_html,Butterfly Blue Pump Cover,2490 chars,longest wins (Rule G7a)
+Smoke Pump Cover,body_html,Glossy Gray Pump Cover,2322 chars,longest wins (Rule G7a)
+Smoke Pump Cover,body_html,Paranorman Black Pump Cover,2397 chars,longest wins (Rule G7a)
+Smoke Pump Cover,body_html,Paranorman Blood Red Pump Cover,2388 chars,longest wins (Rule G7a)
+Smoke Pump Cover,body_html,Smoked Out Gray in Black Pump Cover,5843 chars,longest wins (Rule G7a)
+Smoke Pump Cover,tag:size-2xl,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White",on some siblings only,DROP (Rule G1 exception)
+Smoke Pump Cover,tag:PNCover,"Butterfly Blue Pump Cover, Glossy Gray Pump Cover, Paranorman Black Pump Cover, Paranorman Blood Red Pump Cover, Smoked Out Gray in Black Pump Cover",on some siblings only,UNION (Rule G1)
+Smoke Pump Cover,tag:size-3xl,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White",on some siblings only,DROP (Rule G1 exception)
+Smoke Pump Cover,tag:size-xl,Smoke Pump Cover Dusk,on some siblings only,DROP (Rule G1 exception)
+Smoke Pump Cover,tag:size-4xl,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White",on some siblings only,DROP (Rule G1 exception)
+Smoke Pump Cover,collection:size-2xl,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White",on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:size-3xl,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White",on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:pncover,"Butterfly Blue Pump Cover, Glossy Gray Pump Cover, Paranorman Black Pump Cover, Paranorman Blood Red Pump Cover, Smoked Out Gray in Black Pump Cover",on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:smoke-drop,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White",on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:product-templates,Butterfly Blue Pump Cover,on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:size-4xl,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White",on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:in-stock,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White, Butterfly Blue Pump Cover, Glossy Gray Pump Cover, Paranorman Black Pump Cover, Paranorman Blood Red Pump Cover",on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:paranorman-drop,"Butterfly Blue Pump Cover, Glossy Gray Pump Cover, Paranorman Black Pump Cover, Paranorman Blood Red Pump Cover, Smoked Out Gray in Black Pump Cover",on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:size-xl,Smoke Pump Cover Dusk,on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,collection:black-friday,"Smoke Pump Cover Dusk, Smoke Pump Cover Off White, Butterfly Blue Pump Cover, Glossy Gray Pump Cover, Paranorman Black Pump Cover, Paranorman Blood Red Pump Cover",on some siblings only,UNION (Rule G2)
+Smoke Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Smoke Pump Cover Dusk,shopify--fabric.cotton,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Smoke Pump Cover Off White,shopify--fabric.cotton,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Butterfly Blue Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Glossy Gray Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Paranorman Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Paranorman Blood Red Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.fabric [list.metaobject_reference],Smoked Out Gray in Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Smoke Pump Cover Dusk,"shopify--color-pattern.black-3, shopify--color-pattern.grey",per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Smoke Pump Cover Off White,"shopify--color-pattern.black-3, shopify--color-pattern.cream",per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Butterfly Blue Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Glossy Gray Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Paranorman Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Paranorman Blood Red Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Smoked Out Gray in Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Smoke Pump Cover Dusk,shopify--sleeve-length-type.long,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Smoke Pump Cover Off White,shopify--sleeve-length-type.long,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Butterfly Blue Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Glossy Gray Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Paranorman Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Paranorman Blood Red Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Smoked Out Gray in Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Smoke Pump Cover Dusk,shopify--activewear-clothing-features.breathable-design,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Smoke Pump Cover Off White,shopify--activewear-clothing-features.breathable-design,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Butterfly Blue Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Glossy Gray Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Paranorman Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Paranorman Blood Red Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Smoked Out Gray in Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Smoke Pump Cover Dusk,5322,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Smoke Pump Cover Off White,5322,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Butterfly Blue Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Glossy Gray Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Paranorman Black Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Paranorman Blood Red Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Smoked Out Gray in Black Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Smoke Pump Cover Dusk,5322,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Smoke Pump Cover Off White,5322,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Butterfly Blue Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Glossy Gray Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Paranorman Black Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Paranorman Blood Red Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Smoked Out Gray in Black Pump Cover,166,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activity [list.metaobject_reference],Smoke Pump Cover Dusk,shopify--activity.universal,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activity [list.metaobject_reference],Smoke Pump Cover Off White,shopify--activity.universal,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activity [list.metaobject_reference],Butterfly Blue Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activity [list.metaobject_reference],Glossy Gray Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activity [list.metaobject_reference],Paranorman Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activity [list.metaobject_reference],Paranorman Blood Red Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.activity [list.metaobject_reference],Smoked Out Gray in Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Smoke Pump Cover Dusk,shopify--target-gender.unisex,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Smoke Pump Cover Off White,shopify--target-gender.unisex,per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Butterfly Blue Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Glossy Gray Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Paranorman Black Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Paranorman Blood Red Pump Cover,(null),per Rule G8
+Smoke Pump Cover,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Smoked Out Gray in Black Pump Cover,(null),per Rule G8
+Graffiti Pump Cover,body_html,Black with White Graffiti Pump Cover,1238 chars,longest wins (Rule G7a)
+Graffiti Pump Cover,body_html,Black with Blue Graffiti Pump Cover,1261 chars,longest wins (Rule G7a)
+Graffiti Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Black with White Graffiti Pump Cover,shopify--color-pattern.black-white,per Rule G8
+Graffiti Pump Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Black with Blue Graffiti Pump Cover,(null),per Rule G8
+Inferno Pump Cover,body_html,Blood red Inferno Pump Cover,1641 chars,longest wins (Rule G7a)
+Inferno Pump Cover,body_html,Electric Inferno Pump Cover,1691 chars,longest wins (Rule G7a)
+Inferno Pump Cover,body_html,Flame Pump Cover,1089 chars,longest wins (Rule G7a)
+Inferno Pump Cover,body_html,Smoke Inferno Pump Cover,1618 chars,longest wins (Rule G7a)
+Inferno Pump Cover,body_html,Toxic Inferno Pump Cover,1669 chars,longest wins (Rule G7a)
+Inferno Pump Cover,template,Blood red Inferno Pump Cover,(null),most common (G4/G5/G6)
+Inferno Pump Cover,template,Electric Inferno Pump Cover,(null),most common (G4/G5/G6)
+Inferno Pump Cover,template,Flame Pump Cover,japan-collection,most common (G4/G5/G6)
+Inferno Pump Cover,template,Smoke Inferno Pump Cover,(null),most common (G4/G5/G6)
+Inferno Pump Cover,template,Toxic Inferno Pump Cover,(null),most common (G4/G5/G6)
+Inferno Pump Cover,tag:tops,Flame Pump Cover,on some siblings only,UNION (Rule G1)
+Inferno Pump Cover,tag:japanpart2,Flame Pump Cover,on some siblings only,UNION (Rule G1)
+Inferno Pump Cover,collection:trending,Flame Pump Cover,on some siblings only,UNION (Rule G2)
+Inferno Pump Cover,collection:tops,Flame Pump Cover,on some siblings only,UNION (Rule G2)
+Inferno Pump Cover,collection:japan-restock,Flame Pump Cover,on some siblings only,UNION (Rule G2)
+Inferno Pump Cover,collection:in-stock,"Blood red Inferno Pump Cover, Electric Inferno Pump Cover, Smoke Inferno Pump Cover, Toxic Inferno Pump Cover",on some siblings only,UNION (Rule G2)
+Inferno Pump Cover,collection:japan-drop-part-3,Flame Pump Cover,on some siblings only,UNION (Rule G2)
+Inferno Pump Cover,collection:japan-drop-part-1-2,Flame Pump Cover,on some siblings only,UNION (Rule G2)
+Inferno Pump Cover,collection:supercharged,"Blood red Inferno Pump Cover, Electric Inferno Pump Cover, Smoke Inferno Pump Cover, Toxic Inferno Pump Cover",on some siblings only,UNION (Rule G2)
+Inferno Pump Cover,collection:black-friday,"Blood red Inferno Pump Cover, Electric Inferno Pump Cover, Smoke Inferno Pump Cover, Toxic Inferno Pump Cover",on some siblings only,UNION (Rule G2)
+Inferno Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Blood red Inferno Pump Cover,PUMP_COVER.jpg,per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Electric Inferno Pump Cover,PUMP_COVER.jpg,per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Flame Pump Cover,(null),per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Smoke Inferno Pump Cover,PUMP_COVER.jpg,per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Toxic Inferno Pump Cover,(null),per Rule G8
+Inferno Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Blood red Inferno Pump Cover,5322,per Rule G8
+Inferno Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Electric Inferno Pump Cover,166,per Rule G8
+Inferno Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Flame Pump Cover,505667,per Rule G8
+Inferno Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Smoke Inferno Pump Cover,166,per Rule G8
+Inferno Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Toxic Inferno Pump Cover,5322,per Rule G8
+Inferno Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Blood red Inferno Pump Cover,5322,per Rule G8
+Inferno Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Electric Inferno Pump Cover,166,per Rule G8
+Inferno Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Flame Pump Cover,(null),per Rule G8
+Inferno Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Smoke Inferno Pump Cover,166,per Rule G8
+Inferno Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Toxic Inferno Pump Cover,5322,per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart [multi_line_text_field],Blood red Inferno Pump Cover,(null),per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart [multi_line_text_field],Electric Inferno Pump Cover,(null),per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart [multi_line_text_field],Flame Pump Cover,"Size,Chest,Waist
+S,121.9,91.4
+M,127,96.5
+L,134.6,104.1
+XL,139.7,109.2
+2XL,147.3,116.8
+3XL,152.4,121.9
+4XL,157.5,127",per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart [multi_line_text_field],Smoke Inferno Pump Cover,(null),per Rule G8
+Inferno Pump Cover,metafield:Metafield: custom.size_chart [multi_line_text_field],Toxic Inferno Pump Cover,(null),per Rule G8
+Inferno Cropped Pump Cover,body_html,Inferno Cropped Pink Pump Cover,1502 chars,longest wins (Rule G7a)
+Inferno Cropped Pump Cover,body_html,Inferno Cropped Red Pump Cover,1526 chars,longest wins (Rule G7a)
+Inferno Cropped Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Inferno Cropped Pink Pump Cover,CROPPED_PUMP_COVER.jpg,per Rule G8
+Inferno Cropped Pump Cover,metafield:Metafield: custom.size_chart_image [file_reference],Inferno Cropped Red Pump Cover,PUMP_COVER.jpg,per Rule G8
+Inferno Cropped Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Inferno Cropped Pink Pump Cover,212,per Rule G8
+Inferno Cropped Pump Cover,metafield:Metafield: mc-facebook.google_product_category [string],Inferno Cropped Red Pump Cover,166,per Rule G8
+Inferno Cropped Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Inferno Cropped Pink Pump Cover,212,per Rule G8
+Inferno Cropped Pump Cover,metafield:Metafield: mm-google-shopping.google_product_category [string],Inferno Cropped Red Pump Cover,166,per Rule G8
+Heavyweight Sweatpants,price,Gunmetal Gray Heavyweight Sweatpants,$75.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Faded Black Heavyweight Sweatpants,$75.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Navy Heavyweight Sweatpants,$65.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Forest Green Heavyweight Sweatpants,$65.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Washed Red Heavyweight Sweatpants,$65.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Heather grey Heavyweight Sweatpants,$65.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Pitch Black Heavyweight Sweatpants,$65.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Amethyst Heavyweight Sweatpants,$70.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Amethyst Camo Heavyweight Sweatpants,$75.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Arctic Camo Heavyweight Sweatpants,$75.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,price,Cherry Blossom Heavyweight Sweats,$75.0,keep per-variant (Rule G3)
+Heavyweight Sweatpants,body_html,Gunmetal Gray Heavyweight Sweatpants,1279 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Faded Black Heavyweight Sweatpants,1301 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Navy Heavyweight Sweatpants,524 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Forest Green Heavyweight Sweatpants,500 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Washed Red Heavyweight Sweatpants,530 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Heather grey Heavyweight Sweatpants,532 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Pitch Black Heavyweight Sweatpants,531 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Amethyst Heavyweight Sweatpants,303 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Amethyst Camo Heavyweight Sweatpants,268 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Arctic Camo Heavyweight Sweatpants,266 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,body_html,Cherry Blossom Heavyweight Sweats,1261 chars,longest wins (Rule G7a)
+Heavyweight Sweatpants,type,Gunmetal Gray Heavyweight Sweatpants,Evergreen Sweats,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Faded Black Heavyweight Sweatpants,Evergreen Sweats,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Navy Heavyweight Sweatpants,Evergreen Sweats,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Forest Green Heavyweight Sweatpants,Evergreen Sweats,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Washed Red Heavyweight Sweatpants,Evergreen Sweats,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Heather grey Heavyweight Sweatpants,Evergreen Sweats,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Pitch Black Heavyweight Sweatpants,Evergreen Sweats,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Amethyst Heavyweight Sweatpants,Sweatpants,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Amethyst Camo Heavyweight Sweatpants,Sweatpants,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Arctic Camo Heavyweight Sweatpants,Sweatpants,most common (G4/G5/G6)
+Heavyweight Sweatpants,type,Cherry Blossom Heavyweight Sweats,Sweatpants,most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Gunmetal Gray Heavyweight Sweatpants,platmart-swatch-product,most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Faded Black Heavyweight Sweatpants,platmart-swatch-product,most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Navy Heavyweight Sweatpants,(null),most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Forest Green Heavyweight Sweatpants,(null),most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Washed Red Heavyweight Sweatpants,(null),most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Heather grey Heavyweight Sweatpants,(null),most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Pitch Black Heavyweight Sweatpants,(null),most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Amethyst Heavyweight Sweatpants,(null),most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Amethyst Camo Heavyweight Sweatpants,(null),most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Arctic Camo Heavyweight Sweatpants,(null),most common (G4/G5/G6)
+Heavyweight Sweatpants,template,Cherry Blossom Heavyweight Sweats,japan-collection,most common (G4/G5/G6)
+Heavyweight Sweatpants,tag:size-2xl,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,DROP (Rule G1 exception)
+Heavyweight Sweatpants,tag:Flavors,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G1)
+Heavyweight Sweatpants,tag:EGSweatpants,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G1)
+Heavyweight Sweatpants,tag:restockdroppart1,"Amethyst Camo Heavyweight Sweatpants, Arctic Camo Heavyweight Sweatpants",on some siblings only,UNION (Rule G1)
+Heavyweight Sweatpants,tag:evergreen sweats,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G1)
+Heavyweight Sweatpants,tag:size-s,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,DROP (Rule G1 exception)
+Heavyweight Sweatpants,tag:bottoms,Cherry Blossom Heavyweight Sweats,on some siblings only,UNION (Rule G1)
+Heavyweight Sweatpants,tag:japandroppart1,Cherry Blossom Heavyweight Sweats,on some siblings only,UNION (Rule G1)
+Heavyweight Sweatpants,tag:sale,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G1)
+Heavyweight Sweatpants,tag:size-m,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,DROP (Rule G1 exception)
+Heavyweight Sweatpants,tag:75-100,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants, Amethyst Camo Heavyweight Sweatpants, Arctic Camo Heavyweight Sweatpants, Cherry Blossom Heavyweight Sweats",on some siblings only,UNION (Rule G1)
+Heavyweight Sweatpants,tag:size-l,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,DROP (Rule G1 exception)
+Heavyweight Sweatpants,tag:size-xl,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants, Cherry Blossom Heavyweight Sweats",on some siblings only,DROP (Rule G1 exception)
+Heavyweight Sweatpants,collection:neutral-drop,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:neutral-sweats,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:japan-restock,"Amethyst Camo Heavyweight Sweatpants, Cherry Blossom Heavyweight Sweats",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:size-s,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:flavors-evergreen,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:eg-sweatpants,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:in-stock,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants, Cherry Blossom Heavyweight Sweats",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:march-restock,Cherry Blossom Heavyweight Sweats,on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:japan-drop-part-1,Cherry Blossom Heavyweight Sweats,on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:japan-drop-part-1-2,Cherry Blossom Heavyweight Sweats,on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:size-l,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:size-2xl,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:black-friday,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants, Cherry Blossom Heavyweight Sweats",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:dark-matter,Amethyst Heavyweight Sweatpants,on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:product-templates,Heather grey Heavyweight Sweatpants,on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:arctic-drop,Arctic Camo Heavyweight Sweatpants,on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:japan-drop-part-2,Cherry Blossom Heavyweight Sweats,on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:cherry-restock-discord-exclusive,Cherry Blossom Heavyweight Sweats,on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:tiktok-shop-collection,"Faded Black Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:restock-drop-part-1,"Amethyst Camo Heavyweight Sweatpants, Arctic Camo Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:sale,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:size-m,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:size-xl,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Navy Heavyweight Sweatpants, Forest Green Heavyweight Sweatpants, Washed Red Heavyweight Sweatpants, Heather grey Heavyweight Sweatpants, Pitch Black Heavyweight Sweatpants, Cherry Blossom Heavyweight Sweats",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,collection:75-100,"Gunmetal Gray Heavyweight Sweatpants, Faded Black Heavyweight Sweatpants, Amethyst Camo Heavyweight Sweatpants, Arctic Camo Heavyweight Sweatpants, Cherry Blossom Heavyweight Sweats",on some siblings only,UNION (Rule G2)
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Navy Heavyweight Sweatpants,shopify--waist-rise.mid,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Forest Green Heavyweight Sweatpants,shopify--waist-rise.mid,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Washed Red Heavyweight Sweatpants,shopify--waist-rise.mid,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Heather grey Heavyweight Sweatpants,shopify--waist-rise.mid,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Pitch Black Heavyweight Sweatpants,shopify--waist-rise.mid,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Amethyst Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.waist-rise [list.metaobject_reference],Cherry Blossom Heavyweight Sweats,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Navy Heavyweight Sweatpants,shopify--fabric.cotton,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Forest Green Heavyweight Sweatpants,shopify--fabric.cotton,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Washed Red Heavyweight Sweatpants,shopify--fabric.cotton,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Heather grey Heavyweight Sweatpants,shopify--fabric.cotton,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Pitch Black Heavyweight Sweatpants,shopify--fabric.cotton,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Amethyst Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Cherry Blossom Heavyweight Sweats,shopify--fabric.cotton,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Faded Black Heavyweight Sweatpants,shopify--color-pattern.gray-1,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Navy Heavyweight Sweatpants,shopify--color-pattern.navy,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Forest Green Heavyweight Sweatpants,shopify--color-pattern.forest-green-new,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Washed Red Heavyweight Sweatpants,shopify--color-pattern.red,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Heather grey Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Pitch Black Heavyweight Sweatpants,shopify--color-pattern.black-7,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Amethyst Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Arctic Camo Heavyweight Sweatpants,shopify--color-pattern.white,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cherry Blossom Heavyweight Sweats,shopify--color-pattern.floral,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Gunmetal Gray Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Faded Black Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Navy Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Forest Green Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Washed Red Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Heather grey Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Pitch Black Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Amethyst Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Amethyst Camo Heavyweight Sweatpants,"shopify--size.small, shopify--size.medium, shopify--size.large, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Arctic Camo Heavyweight Sweatpants,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.size [list.metaobject_reference],Cherry Blossom Heavyweight Sweats,"shopify--size.small, shopify--size.medium, shopify--size.large, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Gunmetal Gray Heavyweight Sweatpants,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Faded Black Heavyweight Sweatpants,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Navy Heavyweight Sweatpants,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Forest Green Heavyweight Sweatpants,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Washed Red Heavyweight Sweatpants,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Heather grey Heavyweight Sweatpants,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Pitch Black Heavyweight Sweatpants,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Amethyst Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart_image [file_reference],Cherry Blossom Heavyweight Sweats,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Navy Heavyweight Sweatpants,shopify--pants-length-type.long,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Forest Green Heavyweight Sweatpants,shopify--pants-length-type.long,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Washed Red Heavyweight Sweatpants,shopify--pants-length-type.long,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Heather grey Heavyweight Sweatpants,shopify--pants-length-type.long,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Pitch Black Heavyweight Sweatpants,shopify--pants-length-type.long,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Amethyst Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Cherry Blossom Heavyweight Sweats,shopify--pants-length-type.long,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Navy Heavyweight Sweatpants,"shopify--activewear-clothing-features.adjustable-waistband, shopify--activewear-clothing-features.breathable-design",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Forest Green Heavyweight Sweatpants,"shopify--activewear-clothing-features.adjustable-waistband, shopify--activewear-clothing-features.breathable-design",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Washed Red Heavyweight Sweatpants,"shopify--activewear-clothing-features.adjustable-waistband, shopify--activewear-clothing-features.breathable-design",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Heather grey Heavyweight Sweatpants,"shopify--activewear-clothing-features.adjustable-waistband, shopify--activewear-clothing-features.breathable-design",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Pitch Black Heavyweight Sweatpants,"shopify--activewear-clothing-features.adjustable-waistband, shopify--activewear-clothing-features.breathable-design",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Amethyst Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Cherry Blossom Heavyweight Sweats,"shopify--activewear-clothing-features.body-contouring-fit, shopify--activewear-clothing-features.breathable-design, shopify--activewear-clothing-features.four-way-stretch",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Navy Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Forest Green Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Washed Red Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Heather grey Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Pitch Black Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Amethyst Camo Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Cherry Blossom Heavyweight Sweats,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Navy Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Forest Green Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Washed Red Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Heather grey Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Pitch Black Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Amethyst Camo Heavyweight Sweatpants,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Cherry Blossom Heavyweight Sweats,5322,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Navy Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Forest Green Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Washed Red Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Heather grey Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Pitch Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Amethyst Camo Heavyweight Sweatpants,"Size,Waist,Inseam,Front Rise
+S,37.5,79,31.6
+M,40.5,79.5,32.6
+L,43.5,80,33.6
+XL,46,80.5,34.6
+2XL,49,81,35.6
+",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Arctic Camo Heavyweight Sweatpants,"Size,Waist,Front Rise
+S,114.3,34.9
+M,119.4,36.2
+L,124.5,37.5
+XL,129.5,38.7
+2XL,134.6,40",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: custom.size_chart [multi_line_text_field],Cherry Blossom Heavyweight Sweats,"Size,Waist,Front Rise
+S,114.3,34.9
+M,119.4,36.2
+L,124.5,37.5
+XL,129.5,38.7
+2XL,134.6,40",per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Navy Heavyweight Sweatpants,shopify--activity.universal,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Forest Green Heavyweight Sweatpants,shopify--activity.universal,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Washed Red Heavyweight Sweatpants,shopify--activity.universal,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Heather grey Heavyweight Sweatpants,shopify--activity.universal,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Pitch Black Heavyweight Sweatpants,shopify--activity.universal,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Amethyst Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.activity [list.metaobject_reference],Cherry Blossom Heavyweight Sweats,shopify--activity.universal,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Gunmetal Gray Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Faded Black Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Navy Heavyweight Sweatpants,shopify--target-gender.male,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Forest Green Heavyweight Sweatpants,shopify--target-gender.male,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Washed Red Heavyweight Sweatpants,shopify--target-gender.male,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Heather grey Heavyweight Sweatpants,shopify--target-gender.male,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Pitch Black Heavyweight Sweatpants,shopify--target-gender.male,per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Amethyst Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Amethyst Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Arctic Camo Heavyweight Sweatpants,(null),per Rule G8
+Heavyweight Sweatpants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Cherry Blossom Heavyweight Sweats,shopify--target-gender.unisex,per Rule G8
+Heavyweight Pullover,compare_at_price,Heather Grey Heavyweight Pullover,$75.0,keep per-variant (Rule G3)
+Heavyweight Pullover,compare_at_price,Forest Green Heavyweight Pullover,$None,keep per-variant (Rule G3)
+Heavyweight Pullover,compare_at_price,Navy Heavyweight Pullover,$None,keep per-variant (Rule G3)
+Heavyweight Pullover,compare_at_price,Washed Red Heavyweight Pullover,$None,keep per-variant (Rule G3)
+Heavyweight Pullover,compare_at_price,Pitch Black Heavyweight Pullover,$75.0,keep per-variant (Rule G3)
+Heavyweight Pullover,compare_at_price,Gunmetal Grey Heavyweight Pullover,$75.0,keep per-variant (Rule G3)
+Heavyweight Pullover,compare_at_price,Faded Black Heavyweight Pullover,$75.0,keep per-variant (Rule G3)
+Heavyweight Pullover,body_html,Heather Grey Heavyweight Pullover,486 chars,longest wins (Rule G7a)
+Heavyweight Pullover,body_html,Forest Green Heavyweight Pullover,443 chars,longest wins (Rule G7a)
+Heavyweight Pullover,body_html,Navy Heavyweight Pullover,474 chars,longest wins (Rule G7a)
+Heavyweight Pullover,body_html,Washed Red Heavyweight Pullover,475 chars,longest wins (Rule G7a)
+Heavyweight Pullover,body_html,Pitch Black Heavyweight Pullover,476 chars,longest wins (Rule G7a)
+Heavyweight Pullover,body_html,Gunmetal Grey Heavyweight Pullover,478 chars,longest wins (Rule G7a)
+Heavyweight Pullover,body_html,Faded Black Heavyweight Pullover,476 chars,longest wins (Rule G7a)
+Heavyweight Pullover,collection:for-sale,"Heather Grey Heavyweight Pullover, Pitch Black Heavyweight Pullover, Gunmetal Grey Heavyweight Pullover, Faded Black Heavyweight Pullover",on some siblings only,UNION (Rule G2)
+Heavyweight Pullover,collection:product-templates,Heather Grey Heavyweight Pullover,on some siblings only,UNION (Rule G2)
+Heavyweight Pullover,collection:tiktok-shop-collection,"Pitch Black Heavyweight Pullover, Faded Black Heavyweight Pullover",on some siblings only,UNION (Rule G2)
+Heavyweight Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Heather Grey Heavyweight Pullover,shopify--color-pattern.grey,per Rule G8
+Heavyweight Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Forest Green Heavyweight Pullover,shopify--color-pattern.forest-green-new,per Rule G8
+Heavyweight Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Navy Heavyweight Pullover,shopify--color-pattern.navy,per Rule G8
+Heavyweight Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Washed Red Heavyweight Pullover,shopify--color-pattern.red,per Rule G8
+Heavyweight Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Pitch Black Heavyweight Pullover,shopify--color-pattern.black-7,per Rule G8
+Heavyweight Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Gunmetal Grey Heavyweight Pullover,shopify--color-pattern.gunmetal-gray,per Rule G8
+Heavyweight Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Faded Black Heavyweight Pullover,shopify--color-pattern.black-7,per Rule G8
+Heavyweight Zip Up,price,Faded Black Heavyweight Zip Up,$60.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,price,Forest Green Heavyweight Zip Up,$65.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,price,Gunmetal Grey Heavyweight Zip Up,$60.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,price,Navy Heavyweight Zip Up,$65.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,price,Washed Red Heavyweight Zip Up,$65.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,price,Pitch Black Heavyweight Zip Up,$65.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,price,Heather Grey Heavyweight Zip Up,$60.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,compare_at_price,Faded Black Heavyweight Zip Up,$75.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,compare_at_price,Forest Green Heavyweight Zip Up,$None,keep per-variant (Rule G3)
+Heavyweight Zip Up,compare_at_price,Gunmetal Grey Heavyweight Zip Up,$75.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,compare_at_price,Navy Heavyweight Zip Up,$None,keep per-variant (Rule G3)
+Heavyweight Zip Up,compare_at_price,Washed Red Heavyweight Zip Up,$None,keep per-variant (Rule G3)
+Heavyweight Zip Up,compare_at_price,Pitch Black Heavyweight Zip Up,$None,keep per-variant (Rule G3)
+Heavyweight Zip Up,compare_at_price,Heather Grey Heavyweight Zip Up,$75.0,keep per-variant (Rule G3)
+Heavyweight Zip Up,body_html,Faded Black Heavyweight Zip Up,576 chars,longest wins (Rule G7a)
+Heavyweight Zip Up,body_html,Forest Green Heavyweight Zip Up,577 chars,longest wins (Rule G7a)
+Heavyweight Zip Up,body_html,Gunmetal Grey Heavyweight Zip Up,578 chars,longest wins (Rule G7a)
+Heavyweight Zip Up,body_html,Navy Heavyweight Zip Up,574 chars,longest wins (Rule G7a)
+Heavyweight Zip Up,body_html,Washed Red Heavyweight Zip Up,575 chars,longest wins (Rule G7a)
+Heavyweight Zip Up,body_html,Pitch Black Heavyweight Zip Up,576 chars,longest wins (Rule G7a)
+Heavyweight Zip Up,body_html,Heather Grey Heavyweight Zip Up,577 chars,longest wins (Rule G7a)
+Heavyweight Zip Up,collection:for-sale,"Faded Black Heavyweight Zip Up, Gunmetal Grey Heavyweight Zip Up, Heather Grey Heavyweight Zip Up",on some siblings only,UNION (Rule G2)
+Heavyweight Zip Up,collection:cropped-pumps,Pitch Black Heavyweight Zip Up,on some siblings only,UNION (Rule G2)
+Heavyweight Zip Up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Faded Black Heavyweight Zip Up,shopify--color-pattern.black-7,per Rule G8
+Heavyweight Zip Up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Forest Green Heavyweight Zip Up,shopify--color-pattern.forest-green-new,per Rule G8
+Heavyweight Zip Up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Gunmetal Grey Heavyweight Zip Up,shopify--color-pattern.gunmetal-gray,per Rule G8
+Heavyweight Zip Up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Navy Heavyweight Zip Up,shopify--color-pattern.navy,per Rule G8
+Heavyweight Zip Up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Washed Red Heavyweight Zip Up,shopify--color-pattern.red,per Rule G8
+Heavyweight Zip Up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Pitch Black Heavyweight Zip Up,shopify--color-pattern.black-7,per Rule G8
+Heavyweight Zip Up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Heather Grey Heavyweight Zip Up,shopify--color-pattern.grey,per Rule G8
+Waffleknit Zip Up,body_html,Waffleknit Zip Up Black with Black Print,1665 chars,longest wins (Rule G7a)
+Waffleknit Zip Up,body_html,Waffleknit Zip Up Navy with Navy Print,1742 chars,longest wins (Rule G7a)
+Waffleknit Zip Up,body_html,Waffleknit Zip Up Grey with Grey Print,1647 chars,longest wins (Rule G7a)
+Waffleknit Sweatpants,body_html,Waffleknit Sweatpants Black with Black,1649 chars,longest wins (Rule G7a)
+Waffleknit Sweatpants,body_html,Waffleknit Sweatpants Navy with Navy Print,1683 chars,longest wins (Rule G7a)
+Waffleknit Sweatpants,body_html,Waffleknit Sweatpants Grey with Grey Print,1683 chars,longest wins (Rule G7a)
+Waffleknit Pullover,body_html,Waffleknit Pullover Black with Black Print,1543 chars,longest wins (Rule G7a)
+Waffleknit Pullover,body_html,Waffleknit Pullover Navy with Navy Print,1683 chars,longest wins (Rule G7a)
+Waffleknit Pullover,body_html,Waffleknit Pullover Grey with Grey Print,1677 chars,longest wins (Rule G7a)
+Outlaw Waffleknit Zip Up,body_html,Outlaw Waffleknit Zip Up Black with Grey Print,1698 chars,longest wins (Rule G7a)
+Outlaw Waffleknit Zip Up,body_html,Outlaw Waffleknit Zip Up Black with Beige Print,1776 chars,longest wins (Rule G7a)
+Outlaw Waffleknit Zip Up,body_html,Outlaw Waffleknit Zip Up Black with Red Print,1776 chars,longest wins (Rule G7a)
+Outlaw Waffleknit Zip Up,body_html,Outlaw Waffleknit Zip Up Grey with Beige Print,1741 chars,longest wins (Rule G7a)
+Reaper Waffleknit Sweatpants,body_html,Reaper Waffleknit Sweatpants Black with Grey Print,1774 chars,longest wins (Rule G7a)
+Reaper Waffleknit Sweatpants,body_html,Reaper Waffleknit Sweatpants Black with Beige Print,1838 chars,longest wins (Rule G7a)
+Reaper Waffleknit Sweatpants,body_html,Reaper Waffleknit Sweatpants Black with Red Print,1804 chars,longest wins (Rule G7a)
+Reaper Waffleknit Sweatpants,body_html,Reaper Waffleknit Sweatpants Grey with Beige Print,1830 chars,longest wins (Rule G7a)
+Reaper Waffleknit Pullover,body_html,Reaper Waffleknit Pullover Black with Grey Print,1798 chars,longest wins (Rule G7a)
+Reaper Waffleknit Pullover,body_html,Reaper Waffleknit Pullover Black with Beige Print,1785 chars,longest wins (Rule G7a)
+Reaper Waffleknit Pullover,body_html,Reaper Waffleknit Pullover Black with Red Print,1785 chars,longest wins (Rule G7a)
+Reaper Waffleknit Pullover,body_html,Reaper Waffleknit Pullover Black with Purple Print,1810 chars,longest wins (Rule G7a)
+Reaper Waffleknit Pullover,body_html,Reaper Waffleknit Pullover Grey with Beige Print,1806 chars,longest wins (Rule G7a)
+Reaper Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Reaper Waffleknit Pullover Black with Grey Print,shopify--color-pattern.black-7,per Rule G8
+Reaper Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Reaper Waffleknit Pullover Black with Beige Print,shopify--color-pattern.black-7,per Rule G8
+Reaper Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Reaper Waffleknit Pullover Black with Red Print,shopify--color-pattern.black-7,per Rule G8
+Reaper Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Reaper Waffleknit Pullover Black with Purple Print,shopify--color-pattern.black-7,per Rule G8
+Reaper Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Reaper Waffleknit Pullover Grey with Beige Print,shopify--color-pattern.grey,per Rule G8
+Tombstone Waffleknit Pullover,body_html,Tombstone Waffleknit Pullover Black with Grey Print,1807 chars,longest wins (Rule G7a)
+Tombstone Waffleknit Pullover,body_html,Tombstone Waffleknit Pullover Black with Beige Print,1836 chars,longest wins (Rule G7a)
+Tombstone Waffleknit Pullover,body_html,Tombstone Waffleknit Pullover Black with Red Print,1811 chars,longest wins (Rule G7a)
+Tombstone Waffleknit Pullover,body_html,Tombstone Waffleknit Pullover Grey with Beige Print,1834 chars,longest wins (Rule G7a)
+Tombstone Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Tombstone Waffleknit Pullover Black with Grey Print,shopify--color-pattern.black-7,per Rule G8
+Tombstone Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Tombstone Waffleknit Pullover Black with Beige Print,shopify--color-pattern.black-7,per Rule G8
+Tombstone Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Tombstone Waffleknit Pullover Black with Red Print,shopify--color-pattern.black-7,per Rule G8
+Tombstone Waffleknit Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Tombstone Waffleknit Pullover Grey with Beige Print,shopify--color-pattern.grey,per Rule G8
+Butterfly Wide Leg Sweats,body_html,Black with White Butterfly Wide Leg Sweats,674 chars,longest wins (Rule G7a)
+Butterfly Wide Leg Sweats,body_html,Black with Blue Butterfly Wide Leg Sweats,695 chars,longest wins (Rule G7a)
+Butterfly Wide Leg Sweats,body_html,Beige with Black Butterfly Wide Leg Sweats,714 chars,longest wins (Rule G7a)
+Butterfly Wide Leg Sweats,collection:in-stock,Black with White Butterfly Wide Leg Sweats,on some siblings only,UNION (Rule G2)
+Butterfly Wide Leg Sweats,collection:black-friday,Black with White Butterfly Wide Leg Sweats,on some siblings only,UNION (Rule G2)
+Butterfly Zip Up,body_html,Butterfly Zip Up Black with White Print,1894 chars,longest wins (Rule G7a)
+Butterfly Zip Up,body_html,Butterfly Zip Up Black with Blue Print,1928 chars,longest wins (Rule G7a)
+Butterfly Zip Up,body_html,Butterfly Zip Up Beige with Black Print,1928 chars,longest wins (Rule G7a)
+Butterfly Off The Shoulder Crewneck,body_html,Butterfly Off The Shoulder Crewneck Black,841 chars,longest wins (Rule G7a)
+Butterfly Off The Shoulder Crewneck,body_html,Butterfly Off The Shoulder Crewneck Grey,900 chars,longest wins (Rule G7a)
+Butterfly Off The Shoulder Crewneck,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Butterfly Off The Shoulder Crewneck Black,shopify--color-pattern.black-7,per Rule G8
+Butterfly Off The Shoulder Crewneck,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Butterfly Off The Shoulder Crewneck Grey,shopify--color-pattern.grey,per Rule G8
+Wide Leg Sweats,price,Butterfly Blue Wide Leg Sweats,$75.0,keep per-variant (Rule G3)
+Wide Leg Sweats,price,Paranorman Black Wide Leg Sweats,$75.0,keep per-variant (Rule G3)
+Wide Leg Sweats,price,Blood Red Wide Leg Sweats,$75.0,keep per-variant (Rule G3)
+Wide Leg Sweats,price,Glossy Gray Wide Leg Sweats,$75.0,keep per-variant (Rule G3)
+Wide Leg Sweats,price,Venom Green Wide Leg Sweats,$75.0,keep per-variant (Rule G3)
+Wide Leg Sweats,price,Paranorman Purple Wide Leg Sweats,$75.0,keep per-variant (Rule G3)
+Wide Leg Sweats,price,Wide Leg Sweats Dusk,$65.0,keep per-variant (Rule G3)
+Wide Leg Sweats,price,Wide Leg Sweats Black,$65.0,keep per-variant (Rule G3)
+Wide Leg Sweats,body_html,Butterfly Blue Wide Leg Sweats,1789 chars,longest wins (Rule G7a)
+Wide Leg Sweats,body_html,Paranorman Black Wide Leg Sweats,1688 chars,longest wins (Rule G7a)
+Wide Leg Sweats,body_html,Blood Red Wide Leg Sweats,1727 chars,longest wins (Rule G7a)
+Wide Leg Sweats,body_html,Glossy Gray Wide Leg Sweats,1743 chars,longest wins (Rule G7a)
+Wide Leg Sweats,body_html,Venom Green Wide Leg Sweats,1750 chars,longest wins (Rule G7a)
+Wide Leg Sweats,body_html,Paranorman Purple Wide Leg Sweats,1918 chars,longest wins (Rule G7a)
+Wide Leg Sweats,body_html,Wide Leg Sweats Dusk,663 chars,longest wins (Rule G7a)
+Wide Leg Sweats,body_html,Wide Leg Sweats Black,663 chars,longest wins (Rule G7a)
+Wide Leg Sweats,tag:size-2xl,"Wide Leg Sweats Dusk, Wide Leg Sweats Black",on some siblings only,DROP (Rule G1 exception)
+Wide Leg Sweats,tag:evergreen sweats,"Wide Leg Sweats Dusk, Wide Leg Sweats Black",on some siblings only,UNION (Rule G1)
+Wide Leg Sweats,tag:size-s,Wide Leg Sweats Dusk,on some siblings only,DROP (Rule G1 exception)
+Wide Leg Sweats,tag:PNSweats,"Butterfly Blue Wide Leg Sweats, Paranorman Black Wide Leg Sweats, Blood Red Wide Leg Sweats, Glossy Gray Wide Leg Sweats, Venom Green Wide Leg Sweats, Paranorman Purple Wide Leg Sweats",on some siblings only,UNION (Rule G1)
+Wide Leg Sweats,tag:size-m,Wide Leg Sweats Dusk,on some siblings only,DROP (Rule G1 exception)
+Wide Leg Sweats,tag:size-l,"Wide Leg Sweats Dusk, Wide Leg Sweats Black",on some siblings only,DROP (Rule G1 exception)
+Wide Leg Sweats,tag:size-xl,"Wide Leg Sweats Dusk, Wide Leg Sweats Black",on some siblings only,DROP (Rule G1 exception)
+Wide Leg Sweats,collection:size-2xl,"Wide Leg Sweats Dusk, Wide Leg Sweats Black",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:size-xl,"Wide Leg Sweats Dusk, Wide Leg Sweats Black",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:black-friday,"Butterfly Blue Wide Leg Sweats, Paranorman Black Wide Leg Sweats, Blood Red Wide Leg Sweats, Glossy Gray Wide Leg Sweats, Venom Green Wide Leg Sweats, Paranorman Purple Wide Leg Sweats, Wide Leg Sweats Dusk",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:product-templates,Butterfly Blue Wide Leg Sweats,on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:smoke-drop,"Wide Leg Sweats Dusk, Wide Leg Sweats Black",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:size-s,Wide Leg Sweats Dusk,on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:in-stock,"Butterfly Blue Wide Leg Sweats, Paranorman Black Wide Leg Sweats, Blood Red Wide Leg Sweats, Glossy Gray Wide Leg Sweats, Venom Green Wide Leg Sweats, Paranorman Purple Wide Leg Sweats, Wide Leg Sweats Dusk",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:size-m,Wide Leg Sweats Dusk,on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:paranorman-drop,"Butterfly Blue Wide Leg Sweats, Paranorman Black Wide Leg Sweats, Blood Red Wide Leg Sweats, Glossy Gray Wide Leg Sweats, Venom Green Wide Leg Sweats, Paranorman Purple Wide Leg Sweats",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:size-l,"Wide Leg Sweats Dusk, Wide Leg Sweats Black",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:75-100,"Butterfly Blue Wide Leg Sweats, Paranorman Black Wide Leg Sweats, Blood Red Wide Leg Sweats, Glossy Gray Wide Leg Sweats, Venom Green Wide Leg Sweats, Paranorman Purple Wide Leg Sweats",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,collection:pnsweats,"Butterfly Blue Wide Leg Sweats, Paranorman Black Wide Leg Sweats, Blood Red Wide Leg Sweats, Glossy Gray Wide Leg Sweats, Venom Green Wide Leg Sweats, Paranorman Purple Wide Leg Sweats",on some siblings only,UNION (Rule G2)
+Wide Leg Sweats,metafield:Metafield: shopify.fabric [list.metaobject_reference],Butterfly Blue Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.fabric [list.metaobject_reference],Paranorman Black Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.fabric [list.metaobject_reference],Blood Red Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.fabric [list.metaobject_reference],Glossy Gray Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.fabric [list.metaobject_reference],Venom Green Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.fabric [list.metaobject_reference],Paranorman Purple Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.fabric [list.metaobject_reference],Wide Leg Sweats Dusk,shopify--fabric.cotton,per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.fabric [list.metaobject_reference],Wide Leg Sweats Black,shopify--fabric.cotton,per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Butterfly Blue Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Paranorman Black Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Blood Red Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Glossy Gray Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Venom Green Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Paranorman Purple Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Wide Leg Sweats Dusk,"shopify--color-pattern.gray-2, shopify--color-pattern.black-7",per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Wide Leg Sweats Black,"shopify--color-pattern.black-3, shopify--color-pattern.beige-new",per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart_image [file_reference],Butterfly Blue Wide Leg Sweats,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart_image [file_reference],Paranorman Black Wide Leg Sweats,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart_image [file_reference],Blood Red Wide Leg Sweats,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart_image [file_reference],Glossy Gray Wide Leg Sweats,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart_image [file_reference],Venom Green Wide Leg Sweats,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart_image [file_reference],Paranorman Purple Wide Leg Sweats,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart_image [file_reference],Wide Leg Sweats Dusk,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart_image [file_reference],Wide Leg Sweats Black,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Butterfly Blue Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Paranorman Black Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Blood Red Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Glossy Gray Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Venom Green Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Paranorman Purple Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Wide Leg Sweats Dusk,shopify--pants-length-type.long,per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Wide Leg Sweats Black,shopify--pants-length-type.long,per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Butterfly Blue Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Paranorman Black Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Blood Red Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Glossy Gray Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Venom Green Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Paranorman Purple Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Wide Leg Sweats Dusk,"shopify--activewear-clothing-features.adjustable-waistband, shopify--activewear-clothing-features.breathable-design",per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activewear-clothing-features [list.metaobject_reference],Wide Leg Sweats Black,"shopify--activewear-clothing-features.adjustable-waistband, shopify--activewear-clothing-features.breathable-design",per Rule G8
+Wide Leg Sweats,metafield:Metafield: mm-google-shopping.google_product_category [string],Butterfly Blue Wide Leg Sweats,1604,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mm-google-shopping.google_product_category [string],Paranorman Black Wide Leg Sweats,5322,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mm-google-shopping.google_product_category [string],Blood Red Wide Leg Sweats,1604,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mm-google-shopping.google_product_category [string],Glossy Gray Wide Leg Sweats,166,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mm-google-shopping.google_product_category [string],Venom Green Wide Leg Sweats,166,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mm-google-shopping.google_product_category [string],Paranorman Purple Wide Leg Sweats,166,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mm-google-shopping.google_product_category [string],Wide Leg Sweats Dusk,5322,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mm-google-shopping.google_product_category [string],Wide Leg Sweats Black,5322,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mc-facebook.google_product_category [string],Butterfly Blue Wide Leg Sweats,1604,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mc-facebook.google_product_category [string],Paranorman Black Wide Leg Sweats,5322,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mc-facebook.google_product_category [string],Blood Red Wide Leg Sweats,1604,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mc-facebook.google_product_category [string],Glossy Gray Wide Leg Sweats,166,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mc-facebook.google_product_category [string],Venom Green Wide Leg Sweats,166,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mc-facebook.google_product_category [string],Paranorman Purple Wide Leg Sweats,166,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mc-facebook.google_product_category [string],Wide Leg Sweats Dusk,5322,per Rule G8
+Wide Leg Sweats,metafield:Metafield: mc-facebook.google_product_category [string],Wide Leg Sweats Black,5322,per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart [multi_line_text_field],Butterfly Blue Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart [multi_line_text_field],Paranorman Black Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart [multi_line_text_field],Blood Red Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart [multi_line_text_field],Glossy Gray Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart [multi_line_text_field],Venom Green Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart [multi_line_text_field],Paranorman Purple Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart [multi_line_text_field],Wide Leg Sweats Dusk,"Size,Waist,Front Rise
+S,114.3,34.9
+M,119.4,36.2
+L,124.5,37.5
+XL,129.5,38.7
+2XL,134.6,40",per Rule G8
+Wide Leg Sweats,metafield:Metafield: custom.size_chart [multi_line_text_field],Wide Leg Sweats Black,"Size,Waist,Front Rise
+S,114.3,34.9
+M,119.4,36.2
+L,124.5,37.5
+XL,129.5,38.7
+2XL,134.6,40",per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activity [list.metaobject_reference],Butterfly Blue Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activity [list.metaobject_reference],Paranorman Black Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activity [list.metaobject_reference],Blood Red Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activity [list.metaobject_reference],Glossy Gray Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activity [list.metaobject_reference],Venom Green Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activity [list.metaobject_reference],Paranorman Purple Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activity [list.metaobject_reference],Wide Leg Sweats Dusk,shopify--activity.universal,per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.activity [list.metaobject_reference],Wide Leg Sweats Black,shopify--activity.universal,per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Butterfly Blue Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Paranorman Black Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Blood Red Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Glossy Gray Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Venom Green Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Paranorman Purple Wide Leg Sweats,(null),per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Wide Leg Sweats Dusk,shopify--target-gender.unisex,per Rule G8
+Wide Leg Sweats,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Wide Leg Sweats Black,shopify--target-gender.unisex,per Rule G8
+Morph Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Morph Wide Leg Sweats Black,shopify--color-pattern.black-7,per Rule G8
+Morph Wide Leg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Morph Wide Leg Sweats Grey,shopify--color-pattern.grey,per Rule G8
+Signature Wideleg Sweats,body_html,Signature Wideleg Sweats - Pitch Black,956 chars,longest wins (Rule G7a)
+Signature Wideleg Sweats,body_html,Signature Wideleg Sweats Grey,1000 chars,longest wins (Rule G7a)
+Signature Wideleg Sweats,body_html,Signature Wideleg Sweats Faded Black,993 chars,longest wins (Rule G7a)
+Signature Wideleg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Wideleg Sweats - Pitch Black,shopify--color-pattern.black-3,per Rule G8
+Signature Wideleg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Wideleg Sweats Grey,shopify--color-pattern.gray-2,per Rule G8
+Signature Wideleg Sweats,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Wideleg Sweats Faded Black,shopify--color-pattern.black-3,per Rule G8
+Form Straight Leggings,body_html,Form Straight Leggings Black,1324 chars,longest wins (Rule G7a)
+Form Straight Leggings,body_html,Form Straight Leggings Blue,1323 chars,longest wins (Rule G7a)
+Form Straight Leggings,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Form Straight Leggings Black,shopify--color-pattern.black-7,per Rule G8
+Form Straight Leggings,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Form Straight Leggings Blue,shopify--color-pattern.blue,per Rule G8
+Ghost Zip Up,body_html,Ghost Zip Up Blood Red,1452 chars,longest wins (Rule G7a)
+Ghost Zip Up,body_html,Ghost Zip Up Glossy Pink,1378 chars,longest wins (Rule G7a)
+Ghost Zip Up,body_html,Ghost Zip Up Creme,1396 chars,longest wins (Rule G7a)
+Ghost Zip Up,body_html,Ghost Zip Up Dusk,1420 chars,longest wins (Rule G7a)
+Ghost Zip Up,body_html,Ghost Zip Up Toxic Green,1470 chars,longest wins (Rule G7a)
+Ghost Zip Up,metafield:Metafield: mc-facebook.google_product_category [string],Ghost Zip Up Blood Red,212,per Rule G8
+Ghost Zip Up,metafield:Metafield: mc-facebook.google_product_category [string],Ghost Zip Up Glossy Pink,212,per Rule G8
+Ghost Zip Up,metafield:Metafield: mc-facebook.google_product_category [string],Ghost Zip Up Creme,5322,per Rule G8
+Ghost Zip Up,metafield:Metafield: mc-facebook.google_product_category [string],Ghost Zip Up Dusk,212,per Rule G8
+Ghost Zip Up,metafield:Metafield: mc-facebook.google_product_category [string],Ghost Zip Up Toxic Green,5322,per Rule G8
+Ghost Zip Up,metafield:Metafield: mm-google-shopping.google_product_category [string],Ghost Zip Up Blood Red,212,per Rule G8
+Ghost Zip Up,metafield:Metafield: mm-google-shopping.google_product_category [string],Ghost Zip Up Glossy Pink,212,per Rule G8
+Ghost Zip Up,metafield:Metafield: mm-google-shopping.google_product_category [string],Ghost Zip Up Creme,5322,per Rule G8
+Ghost Zip Up,metafield:Metafield: mm-google-shopping.google_product_category [string],Ghost Zip Up Dusk,212,per Rule G8
+Ghost Zip Up,metafield:Metafield: mm-google-shopping.google_product_category [string],Ghost Zip Up Toxic Green,5322,per Rule G8
+Ghost Sweatpants,body_html,Ghost Sweatpants Toxic Green,1520 chars,longest wins (Rule G7a)
+Ghost Sweatpants,body_html,Ghost Sweatpants Blood Red,1473 chars,longest wins (Rule G7a)
+Ghost Sweatpants,body_html,Ghost Sweatpants Glossy Pink,1457 chars,longest wins (Rule G7a)
+Ghost Sweatpants,body_html,Ghost Sweatpants Dusk,1379 chars,longest wins (Rule G7a)
+Ghost Sweatpants,collection:in-stock,"Ghost Sweatpants Toxic Green, Ghost Sweatpants Blood Red, Ghost Sweatpants Dusk",on some siblings only,UNION (Rule G2)
+Ghost Sweatpants,collection:black-friday,"Ghost Sweatpants Toxic Green, Ghost Sweatpants Blood Red, Ghost Sweatpants Dusk",on some siblings only,UNION (Rule G2)
+Chained Baby Tee,body_html,Chained Baby Tee Midnight,1244 chars,longest wins (Rule G7a)
+Chained Baby Tee,body_html,Chained Baby Tee Glossy Pink,1226 chars,longest wins (Rule G7a)
+Chained Baby Tee,body_html,Chained Baby Tee Grey,1169 chars,longest wins (Rule G7a)
+Chained Baby Tee,body_html,Chained Baby Tee Creme,1135 chars,longest wins (Rule G7a)
+Chained Baby Tee,type,Chained Baby Tee Midnight,baby tee,most common (G4/G5/G6)
+Chained Baby Tee,type,Chained Baby Tee Glossy Pink,baby tee,most common (G4/G5/G6)
+Chained Baby Tee,type,Chained Baby Tee Grey,baby tee,most common (G4/G5/G6)
+Chained Baby Tee,type,Chained Baby Tee Creme,Cropped Tank,most common (G4/G5/G6)
+Chained Baby Tee,tag:herTops,Chained Baby Tee Creme,on some siblings only,UNION (Rule G1)
+Chained Baby Tee,collection:her-tops,Chained Baby Tee Creme,on some siblings only,UNION (Rule G2)
+Chained Baby Tee,metafield:Metafield: mc-facebook.google_product_category [string],Chained Baby Tee Midnight,1604,per Rule G8
+Chained Baby Tee,metafield:Metafield: mc-facebook.google_product_category [string],Chained Baby Tee Glossy Pink,1604,per Rule G8
+Chained Baby Tee,metafield:Metafield: mc-facebook.google_product_category [string],Chained Baby Tee Grey,1604,per Rule G8
+Chained Baby Tee,metafield:Metafield: mc-facebook.google_product_category [string],Chained Baby Tee Creme,212,per Rule G8
+Chained Baby Tee,metafield:Metafield: mm-google-shopping.google_product_category [string],Chained Baby Tee Midnight,1604,per Rule G8
+Chained Baby Tee,metafield:Metafield: mm-google-shopping.google_product_category [string],Chained Baby Tee Glossy Pink,1604,per Rule G8
+Chained Baby Tee,metafield:Metafield: mm-google-shopping.google_product_category [string],Chained Baby Tee Grey,1604,per Rule G8
+Chained Baby Tee,metafield:Metafield: mm-google-shopping.google_product_category [string],Chained Baby Tee Creme,212,per Rule G8
+Cropped Chain Tank,body_html,Cropped Chain Tank Midnight,1146 chars,longest wins (Rule G7a)
+Cropped Chain Tank,body_html,Cropped Chain Tank Glossy Pink,1332 chars,longest wins (Rule G7a)
+Cropped Chain Tank,body_html,Cropped Chain Tank Gray,1269 chars,longest wins (Rule G7a)
+Cropped Chain Tank,body_html,Cropped Chain Tank Creme,1323 chars,longest wins (Rule G7a)
+Cropped Chain Tank,collection:product-templates,Cropped Chain Tank Gray,on some siblings only,UNION (Rule G2)
+Cropped Chain Tank,metafield:Metafield: mc-facebook.google_product_category [string],Cropped Chain Tank Midnight,212,per Rule G8
+Cropped Chain Tank,metafield:Metafield: mc-facebook.google_product_category [string],Cropped Chain Tank Glossy Pink,1604,per Rule G8
+Cropped Chain Tank,metafield:Metafield: mc-facebook.google_product_category [string],Cropped Chain Tank Gray,1604,per Rule G8
+Cropped Chain Tank,metafield:Metafield: mc-facebook.google_product_category [string],Cropped Chain Tank Creme,1604,per Rule G8
+Cropped Chain Tank,metafield:Metafield: mm-google-shopping.google_product_category [string],Cropped Chain Tank Midnight,212,per Rule G8
+Cropped Chain Tank,metafield:Metafield: mm-google-shopping.google_product_category [string],Cropped Chain Tank Glossy Pink,1604,per Rule G8
+Cropped Chain Tank,metafield:Metafield: mm-google-shopping.google_product_category [string],Cropped Chain Tank Gray,1604,per Rule G8
+Cropped Chain Tank,metafield:Metafield: mm-google-shopping.google_product_category [string],Cropped Chain Tank Creme,1604,per Rule G8
+Chrome Thermal,body_html,Chrome Thermal,1579 chars,longest wins (Rule G7a)
+Chrome Thermal,body_html,Chrome Thermal Glossy Pink,1443 chars,longest wins (Rule G7a)
+Chrome Thermal,body_html,Chrome Thermal Toxic Green,1424 chars,longest wins (Rule G7a)
+Chrome Thermal,body_html,Chrome Thermal Electric Blue,1413 chars,longest wins (Rule G7a)
+Chrome Thermal,metafield:Metafield: mc-facebook.google_product_category [string],Chrome Thermal,1604,per Rule G8
+Chrome Thermal,metafield:Metafield: mc-facebook.google_product_category [string],Chrome Thermal Glossy Pink,1604,per Rule G8
+Chrome Thermal,metafield:Metafield: mc-facebook.google_product_category [string],Chrome Thermal Toxic Green,212,per Rule G8
+Chrome Thermal,metafield:Metafield: mc-facebook.google_product_category [string],Chrome Thermal Electric Blue,1604,per Rule G8
+Chrome Thermal,metafield:Metafield: mm-google-shopping.google_product_category [string],Chrome Thermal,1604,per Rule G8
+Chrome Thermal,metafield:Metafield: mm-google-shopping.google_product_category [string],Chrome Thermal Glossy Pink,1604,per Rule G8
+Chrome Thermal,metafield:Metafield: mm-google-shopping.google_product_category [string],Chrome Thermal Toxic Green,212,per Rule G8
+Chrome Thermal,metafield:Metafield: mm-google-shopping.google_product_category [string],Chrome Thermal Electric Blue,1604,per Rule G8
+Hombre Thermal,body_html,Hombre Thermal Grey Faded,1299 chars,longest wins (Rule G7a)
+Hombre Thermal,body_html,Hombre Thermal Beige Faded,1305 chars,longest wins (Rule G7a)
+Hombre Thermal,metafield:Metafield: mc-facebook.google_product_category [string],Hombre Thermal Grey Faded,212,per Rule G8
+Hombre Thermal,metafield:Metafield: mc-facebook.google_product_category [string],Hombre Thermal Beige Faded,5322,per Rule G8
+Hombre Thermal,metafield:Metafield: mm-google-shopping.google_product_category [string],Hombre Thermal Grey Faded,212,per Rule G8
+Hombre Thermal,metafield:Metafield: mm-google-shopping.google_product_category [string],Hombre Thermal Beige Faded,5322,per Rule G8
+Signature Long Sleeve Compression,body_html,Signature Long Sleeve Compression Blue,1078 chars,longest wins (Rule G7a)
+Signature Long Sleeve Compression,body_html,Signature Long Sleeve Compression Lilac Purple,1531 chars,longest wins (Rule G7a)
+Signature Long Sleeve Compression,body_html,Signature Long Sleeve Compression Black with White Text,1659 chars,longest wins (Rule G7a)
+Signature Long Sleeve Compression,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Long Sleeve Compression Blue,shopify--color-pattern.blue,per Rule G8
+Signature Long Sleeve Compression,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Long Sleeve Compression Lilac Purple,shopify--color-pattern.purple,per Rule G8
+Signature Long Sleeve Compression,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Long Sleeve Compression Black with White Text,shopify--color-pattern.black-7,per Rule G8
+Signature Short Sleeve Compression,body_html,Signature Short Sleeve Compression Lilac Purple,1532 chars,longest wins (Rule G7a)
+Signature Short Sleeve Compression,body_html,Signature Short Sleeve Compression Blue,1079 chars,longest wins (Rule G7a)
+Signature Short Sleeve Compression,body_html,Signature Short Sleeve Compression Black with White Text,1660 chars,longest wins (Rule G7a)
+Signature Short Sleeve Compression,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Short Sleeve Compression Lilac Purple,shopify--color-pattern.purple,per Rule G8
+Signature Short Sleeve Compression,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Short Sleeve Compression Blue,shopify--color-pattern.blue,per Rule G8
+Signature Short Sleeve Compression,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Short Sleeve Compression Black with White Text,shopify--color-pattern.black-7,per Rule G8
+Prime Layer Shorts,body_html,Prime Layer Frost Blue Shorts,1068 chars,longest wins (Rule G7a)
+Prime Layer Shorts,body_html,Prime Layer Midnight Black Shorts,1072 chars,longest wins (Rule G7a)
+Prime Layer Shorts,body_html,Prime Layer Forest Green Shorts,1070 chars,longest wins (Rule G7a)
+Prime Layer Shorts,tag:shorts,"Prime Layer Frost Blue Shorts, Prime Layer Forest Green Shorts",on some siblings only,UNION (Rule G1)
+Prime Layer Shorts,collection:shorts,"Prime Layer Frost Blue Shorts, Prime Layer Forest Green Shorts",on some siblings only,UNION (Rule G2)
+Prime Layer Shorts,collection:bottoms,"Prime Layer Frost Blue Shorts, Prime Layer Forest Green Shorts",on some siblings only,UNION (Rule G2)
+Prime Layer Shorts,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Prime Layer Frost Blue Shorts,shopify--color-pattern.sky-blue,per Rule G8
+Prime Layer Shorts,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Prime Layer Midnight Black Shorts,shopify--color-pattern.midnight-black-new,per Rule G8
+Prime Layer Shorts,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Prime Layer Forest Green Shorts,shopify--color-pattern.forest-green-new,per Rule G8
+Prime Layer Shorts,var_metafield:Variant Metafield: harmonized_system_code [string],Prime Layer Frost Blue Shorts,620349,per Rule G9
+Prime Layer Shorts,var_metafield:Variant Metafield: harmonized_system_code [string],Prime Layer Midnight Black Shorts,620349,per Rule G9
+Prime Layer Shorts,var_metafield:Variant Metafield: harmonized_system_code [string],Prime Layer Forest Green Shorts,620343,per Rule G9
+Prime Layer Track Jacket,body_html,Prime Layer Frost Blue Track Jacket,1207 chars,longest wins (Rule G7a)
+Prime Layer Track Jacket,body_html,Prime Layer Forest Green Track Jacket,1214 chars,longest wins (Rule G7a)
+Prime Layer Track Jacket,body_html,Prime Layer Midnight Black Track Jacket,1224 chars,longest wins (Rule G7a)
+Prime Layer Track Jacket,tag:sweatshirts,Prime Layer Forest Green Track Jacket,on some siblings only,UNION (Rule G1)
+Prime Layer Track Jacket,collection:sweatshirts,Prime Layer Forest Green Track Jacket,on some siblings only,UNION (Rule G2)
+Prime Layer Track Jacket,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Prime Layer Frost Blue Track Jacket,shopify--color-pattern.sky-blue,per Rule G8
+Prime Layer Track Jacket,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Prime Layer Forest Green Track Jacket,shopify--color-pattern.forest-green-new,per Rule G8
+Prime Layer Track Jacket,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Prime Layer Midnight Black Track Jacket,shopify--color-pattern.midnight-black-new,per Rule G8
+Prime Layer Track Jacket,var_metafield:Variant Metafield: harmonized_system_code [string],Prime Layer Frost Blue Track Jacket,610910,per Rule G9
+Prime Layer Track Jacket,var_metafield:Variant Metafield: harmonized_system_code [string],Prime Layer Forest Green Track Jacket,"610910, 620339",per Rule G9
+Prime Layer Track Jacket,var_metafield:Variant Metafield: harmonized_system_code [string],Prime Layer Midnight Black Track Jacket,"610910, 620333",per Rule G9
+Prime Layer Track Pants,body_html,Prime Layer Frost Blue Track Pants,1120 chars,longest wins (Rule G7a)
+Prime Layer Track Pants,body_html,Prime Layer Forest Green Track Pants,1101 chars,longest wins (Rule G7a)
+Prime Layer Track Pants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Prime Layer Frost Blue Track Pants,shopify--color-pattern.sky-blue,per Rule G8
+Prime Layer Track Pants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Prime Layer Forest Green Track Pants,shopify--color-pattern.forest-green-new,per Rule G8
+Prime Layer Track Pants,var_metafield:Variant Metafield: harmonized_system_code [string],Prime Layer Frost Blue Track Pants,"610910, 620343",per Rule G9
+Prime Layer Track Pants,var_metafield:Variant Metafield: harmonized_system_code [string],Prime Layer Forest Green Track Pants,"610910, 620343",per Rule G9
+Track Jacket,compare_at_price,Varsity Blue & Gray Track Jacket,$75.0,keep per-variant (Rule G3)
+Track Jacket,compare_at_price,Forest Green Track Jacket,$0.0,keep per-variant (Rule G3)
+Track Jacket,tag:crewNeck,Forest Green Track Jacket,on some siblings only,UNION (Rule G1)
+Track Jacket,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Varsity Blue & Gray Track Jacket,shopify--color-pattern.varsity-blue-gray-new,per Rule G8
+Track Jacket,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Forest Green Track Jacket,shopify--color-pattern.forest-green-new,per Rule G8
+Track Jacket,var_metafield:Variant Metafield: harmonized_system_code [string],Varsity Blue & Gray Track Jacket,610910,per Rule G9
+Track Jacket,var_metafield:Variant Metafield: harmonized_system_code [string],Forest Green Track Jacket,620332,per Rule G9
+Track Pants,compare_at_price,Varsity Blue & Gray Track Pants,$0.0,keep per-variant (Rule G3)
+Track Pants,compare_at_price,Forest Green Track Pants,$70.0,keep per-variant (Rule G3)
+Track Pants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Varsity Blue & Gray Track Pants,shopify--color-pattern.varsity-blue-gray-new,per Rule G8
+Track Pants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Forest Green Track Pants,shopify--color-pattern.forest-green-new,per Rule G8
+Track Pants,var_metafield:Variant Metafield: harmonized_system_code [string],Varsity Blue & Gray Track Pants,610910,per Rule G9
+Track Pants,var_metafield:Variant Metafield: harmonized_system_code [string],Forest Green Track Pants,610343,per Rule G9
+Forged in Failure Crewneck,price,Black Forged in Failure Crewneck,$70.0,keep per-variant (Rule G3)
+Forged in Failure Crewneck,price,Brown Forged in Failure Crewneck,$40.0,keep per-variant (Rule G3)
+Forged in Failure Crewneck,price,Orange Forged in Failure Crewneck,$40.0,keep per-variant (Rule G3)
+Forged in Failure Crewneck,price,UNC Blue Forged in Failure Crewneck,$40.0,keep per-variant (Rule G3)
+Forged in Failure Crewneck,compare_at_price,Black Forged in Failure Crewneck,$None,keep per-variant (Rule G3)
+Forged in Failure Crewneck,compare_at_price,Brown Forged in Failure Crewneck,$None,keep per-variant (Rule G3)
+Forged in Failure Crewneck,compare_at_price,Orange Forged in Failure Crewneck,$70.0,keep per-variant (Rule G3)
+Forged in Failure Crewneck,compare_at_price,UNC Blue Forged in Failure Crewneck,$None,keep per-variant (Rule G3)
+Forged in Failure Crewneck,tag:25-50,"Brown Forged in Failure Crewneck, Orange Forged in Failure Crewneck, UNC Blue Forged in Failure Crewneck",on some siblings only,UNION (Rule G1)
+Forged in Failure Crewneck,tag:50-75,Black Forged in Failure Crewneck,on some siblings only,UNION (Rule G1)
+Forged in Failure Crewneck,collection:25-50,"Brown Forged in Failure Crewneck, Orange Forged in Failure Crewneck, UNC Blue Forged in Failure Crewneck",on some siblings only,UNION (Rule G2)
+Forged in Failure Crewneck,collection:50-75,Black Forged in Failure Crewneck,on some siblings only,UNION (Rule G2)
+Forged in Failure Crewneck,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Black Forged in Failure Crewneck,shopify--color-pattern.black-2,per Rule G8
+Forged in Failure Crewneck,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Brown Forged in Failure Crewneck,shopify--color-pattern.brown,per Rule G8
+Forged in Failure Crewneck,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Orange Forged in Failure Crewneck,shopify--color-pattern.orange,per Rule G8
+Forged in Failure Crewneck,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],UNC Blue Forged in Failure Crewneck,shopify--color-pattern.unc-blue-new,per Rule G8
+Forged in Failure Crewneck,metafield:Metafield: mm-google-shopping.age_group [string],Black Forged in Failure Crewneck,(null),per Rule G8
+Forged in Failure Crewneck,metafield:Metafield: mm-google-shopping.age_group [string],Brown Forged in Failure Crewneck,adult,per Rule G8
+Forged in Failure Crewneck,metafield:Metafield: mm-google-shopping.age_group [string],Orange Forged in Failure Crewneck,(null),per Rule G8
+Forged in Failure Crewneck,metafield:Metafield: mm-google-shopping.age_group [string],UNC Blue Forged in Failure Crewneck,adult,per Rule G8
+Iron Shell Skullie,body_html,Iron Shell Skullie Off White,643 chars,longest wins (Rule G7a)
+Iron Shell Skullie,body_html,Iron Shell Skullie Dusk,642 chars,longest wins (Rule G7a)
+Iron Shell Skullie,tag:hats,Iron Shell Skullie Off White,on some siblings only,UNION (Rule G1)
+Iron Shell Skullie,collection:product-templates,Iron Shell Skullie Dusk,on some siblings only,UNION (Rule G2)
+Signature Leggings,body_html,Signature Leggings Black,926 chars,longest wins (Rule G7a)
+Signature Leggings,body_html,Signature Leggings Royal Blue,931 chars,longest wins (Rule G7a)
+Signature Leggings,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Leggings Black,shopify--color-pattern.black-7,per Rule G8
+Signature Leggings,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Signature Leggings Royal Blue,shopify--color-pattern.royal-blue,per Rule G8
+Stitched Cut Off Tee,body_html,Black Stitched Cut Off Tee,785 chars,longest wins (Rule G7a)
+Stitched Cut Off Tee,body_html,Beige Stitched Cut Off Tee,951 chars,longest wins (Rule G7a)
+Stitched Cut Off Tee,body_html,Cool Grey Stitched Cut Off Tee,986 chars,longest wins (Rule G7a)
+Stitched Cut Off Tee,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Black Stitched Cut Off Tee,"shopify--color-pattern.black-7, shopify--color-pattern.grey",per Rule G8
+Stitched Cut Off Tee,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Beige Stitched Cut Off Tee,shopify--color-pattern.beige-1,per Rule G8
+Stitched Cut Off Tee,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cool Grey Stitched Cut Off Tee,shopify--color-pattern.grey,per Rule G8
+Beater 3-Pack,body_html,Dusk Beater Three Pack,748 chars,longest wins (Rule G7a)
+Beater 3-Pack,body_html,Vintage Washed Beater 3-Pack,963 chars,longest wins (Rule G7a)
+Beater 3-Pack,body_html,Nightshade Beater 3-Pack,1551 chars,longest wins (Rule G7a)
+Beater 3-Pack,body_html,Neutral Beater 3-Pack,1617 chars,longest wins (Rule G7a)
+Beater 3-Pack,body_html,Flame Beater 3 Pack,1437 chars,longest wins (Rule G7a)
+Beater 3-Pack,body_html,Graffiti Beater Pack,1656 chars,longest wins (Rule G7a)
+Beater 3-Pack,tag:size-2xl,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,DROP (Rule G1 exception)
+Beater 3-Pack,tag:tankTops,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G1)
+Beater 3-Pack,tag:75-100,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G1)
+Beater 3-Pack,tag:multipack,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G1)
+Beater 3-Pack,tag:over-100,"Flame Beater 3 Pack, Graffiti Beater Pack",on some siblings only,UNION (Rule G1)
+Beater 3-Pack,tag:size-4xl,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,DROP (Rule G1 exception)
+Beater 3-Pack,collection:size-2xl,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:butterfly-effect,Graffiti Beater Pack,on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:smoke-drop,Dusk Beater Three Pack,on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:product-templates,"Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:size-4xl,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:tanks-tops,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:new-evergreen,"Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:in-stock,"Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack, Flame Beater 3 Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:supercharged,"Flame Beater 3 Pack, Graffiti Beater Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:black-friday,"Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack, Flame Beater 3 Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,collection:multipacks,"Dusk Beater Three Pack, Vintage Washed Beater 3-Pack, Nightshade Beater 3-Pack, Neutral Beater 3-Pack",on some siblings only,UNION (Rule G2)
+Beater 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Dusk Beater Three Pack,shopify--target-gender.unisex,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Vintage Washed Beater 3-Pack,shopify--target-gender.unisex,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Nightshade Beater 3-Pack,shopify--target-gender.unisex,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Neutral Beater 3-Pack,shopify--target-gender.unisex,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Dusk Beater Three Pack,shopify--fabric.cotton,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Vintage Washed Beater 3-Pack,shopify--fabric.cotton,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Nightshade Beater 3-Pack,shopify--fabric.cotton,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Neutral Beater 3-Pack,shopify--fabric.cotton,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Dusk Beater Three Pack,"shopify--color-pattern.black-3, shopify--color-pattern.white-new",per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Vintage Washed Beater 3-Pack,"shopify--color-pattern.black-3, shopify--color-pattern.white-new",per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Nightshade Beater 3-Pack,"shopify--color-pattern.black-3, shopify--color-pattern.white-new",per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Neutral Beater 3-Pack,"shopify--color-pattern.black-3, shopify--color-pattern.white-new",per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Dusk Beater Three Pack,shopify--sleeve-length-type.sleeveless,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Vintage Washed Beater 3-Pack,shopify--sleeve-length-type.sleeveless,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Nightshade Beater 3-Pack,shopify--sleeve-length-type.sleeveless,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Neutral Beater 3-Pack,shopify--sleeve-length-type.sleeveless,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Dusk Beater Three Pack,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Vintage Washed Beater 3-Pack,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Nightshade Beater 3-Pack,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Neutral Beater 3-Pack,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Dusk Beater Three Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Vintage Washed Beater 3-Pack,BEATER.jpg,per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Nightshade Beater 3-Pack,BEATER.jpg,per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Neutral Beater 3-Pack,BEATER.jpg,per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Flame Beater 3 Pack,BEATER.jpg,per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Graffiti Beater Pack,BEATER.jpg,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.google_product_category [string],Dusk Beater Three Pack,212,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.google_product_category [string],Vintage Washed Beater 3-Pack,212,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.google_product_category [string],Nightshade Beater 3-Pack,212,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.google_product_category [string],Neutral Beater 3-Pack,212,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.google_product_category [string],Flame Beater 3 Pack,5322,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.google_product_category [string],Graffiti Beater Pack,5322,per Rule G8
+Beater 3-Pack,metafield:Metafield: mc-facebook.google_product_category [string],Dusk Beater Three Pack,212,per Rule G8
+Beater 3-Pack,metafield:Metafield: mc-facebook.google_product_category [string],Vintage Washed Beater 3-Pack,212,per Rule G8
+Beater 3-Pack,metafield:Metafield: mc-facebook.google_product_category [string],Nightshade Beater 3-Pack,212,per Rule G8
+Beater 3-Pack,metafield:Metafield: mc-facebook.google_product_category [string],Neutral Beater 3-Pack,212,per Rule G8
+Beater 3-Pack,metafield:Metafield: mc-facebook.google_product_category [string],Flame Beater 3 Pack,5322,per Rule G8
+Beater 3-Pack,metafield:Metafield: mc-facebook.google_product_category [string],Graffiti Beater Pack,5322,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Dusk Beater Three Pack,shopify--neckline.round,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Vintage Washed Beater 3-Pack,shopify--neckline.round,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Nightshade Beater 3-Pack,shopify--neckline.round,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Neutral Beater 3-Pack,shopify--neckline.round,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Dusk Beater Three Pack,"Size,Chest,Waist
+S,48.3,48.3
+M,53.3,53.3
+L,58.4,58.4
+XL,63.5,63.5
+2XL,68.6,68.6
+3XL,78.7,73.7
+4XL,78.7,78.7",per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Vintage Washed Beater 3-Pack,"Size,Chest,Waist
+S,48.3,48.3
+M,53.3,53.3
+L,58.4,58.4
+XL,63.5,63.5
+2XL,68.6,68.6
+3XL,78.7,73.7
+4XL,78.7,78.7",per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Nightshade Beater 3-Pack,"Size,Chest,Waist
+S,48.3,48.3
+M,53.3,53.3
+L,58.4,58.4
+XL,63.5,63.5
+2XL,68.6,68.6
+3XL,78.7,73.7
+4XL,78.7,78.7",per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Neutral Beater 3-Pack,"Size,Chest,Waist
+S,48.3,48.3
+M,53.3,53.3
+L,58.4,58.4
+XL,63.5,63.5
+2XL,68.6,68.6
+3XL,78.7,73.7
+4XL,78.7,78.7",per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Dusk Beater Three Pack,adult,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Vintage Washed Beater 3-Pack,adult,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Nightshade Beater 3-Pack,adult,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Neutral Beater 3-Pack,adult,per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Dusk Beater Three Pack,shopify--age-group.adults,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Vintage Washed Beater 3-Pack,shopify--age-group.adults,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Nightshade Beater 3-Pack,shopify--age-group.adults,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Neutral Beater 3-Pack,shopify--age-group.adults,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Graffiti Beater Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Dusk Beater Three Pack,shopify--top-length-type.medium,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Vintage Washed Beater 3-Pack,shopify--top-length-type.medium,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Nightshade Beater 3-Pack,shopify--top-length-type.medium,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Neutral Beater 3-Pack,shopify--top-length-type.medium,per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Flame Beater 3 Pack,(null),per Rule G8
+Beater 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Graffiti Beater Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,price,Weighted Tee 3 - Pack,$90.0,keep per-variant (Rule G3)
+Lightweight Tee 3-Pack,price,Supercharged Lightweight Tee 3 - Pack,$100.0,keep per-variant (Rule G3)
+Lightweight Tee 3-Pack,price,Nightshade Lightweight Tee 3 - Pack,$100.0,keep per-variant (Rule G3)
+Lightweight Tee 3-Pack,price,Neutral Lightweight Tee 3 - Pack,$100.0,keep per-variant (Rule G3)
+Lightweight Tee 3-Pack,price,Smoke Lightweight Tee Three Pack,$100.0,keep per-variant (Rule G3)
+Lightweight Tee 3-Pack,price,Butterfly Lightweight Tee Three Pack,$100.0,keep per-variant (Rule G3)
+Lightweight Tee 3-Pack,body_html,Weighted Tee 3 - Pack,1510 chars,longest wins (Rule G7a)
+Lightweight Tee 3-Pack,body_html,Supercharged Lightweight Tee 3 - Pack,1480 chars,longest wins (Rule G7a)
+Lightweight Tee 3-Pack,body_html,Nightshade Lightweight Tee 3 - Pack,1774 chars,longest wins (Rule G7a)
+Lightweight Tee 3-Pack,body_html,Neutral Lightweight Tee 3 - Pack,1633 chars,longest wins (Rule G7a)
+Lightweight Tee 3-Pack,body_html,Smoke Lightweight Tee Three Pack,766 chars,longest wins (Rule G7a)
+Lightweight Tee 3-Pack,body_html,Butterfly Lightweight Tee Three Pack,784 chars,longest wins (Rule G7a)
+Lightweight Tee 3-Pack,tag:size-2xl,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,DROP (Rule G1 exception)
+Lightweight Tee 3-Pack,tag:size-3xl,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,DROP (Rule G1 exception)
+Lightweight Tee 3-Pack,tag:size-4xl,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,DROP (Rule G1 exception)
+Lightweight Tee 3-Pack,tag:multipack,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G1)
+Lightweight Tee 3-Pack,tag:size-xl,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,DROP (Rule G1 exception)
+Lightweight Tee 3-Pack,tag:75-100,"Supercharged Lightweight Tee 3 - Pack, Nightshade Lightweight Tee 3 - Pack, Neutral Lightweight Tee 3 - Pack",on some siblings only,UNION (Rule G1)
+Lightweight Tee 3-Pack,collection:smoke-drop,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:size-4xl,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:over-100,"Supercharged Lightweight Tee 3 - Pack, Nightshade Lightweight Tee 3 - Pack, Neutral Lightweight Tee 3 - Pack, Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:size-2xl,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:butterfly-effect,Butterfly Lightweight Tee Three Pack,on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:size-3xl,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:product-templates,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:supercharged,"Weighted Tee 3 - Pack, Supercharged Lightweight Tee 3 - Pack, Nightshade Lightweight Tee 3 - Pack, Neutral Lightweight Tee 3 - Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:size-xl,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,collection:multipacks,"Smoke Lightweight Tee Three Pack, Butterfly Lightweight Tee Three Pack",on some siblings only,UNION (Rule G2)
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Smoke Lightweight Tee Three Pack,shopify--fabric.cotton,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.fabric [list.metaobject_reference],Butterfly Lightweight Tee Three Pack,shopify--fabric.cotton,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Smoke Lightweight Tee Three Pack,"shopify--color-pattern.black-3, shopify--color-pattern.white-new, shopify--color-pattern.gray-2",per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Butterfly Lightweight Tee Three Pack,"shopify--color-pattern.black-3, shopify--color-pattern.white-new, shopify--color-pattern.gray-2",per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Smoke Lightweight Tee Three Pack,shopify--sleeve-length-type.short,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.sleeve-length-type [list.metaobject_reference],Butterfly Lightweight Tee Three Pack,shopify--sleeve-length-type.short,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Smoke Lightweight Tee Three Pack,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.size [list.metaobject_reference],Butterfly Lightweight Tee Three Pack,"shopify--size.s, shopify--size.m, shopify--size.l, shopify--size.xl, shopify--size.2xl, shopify--size.3xl, shopify--size.4xl",per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Weighted Tee 3 - Pack,LIGHTWEIGHT_TEE.jpg,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Supercharged Lightweight Tee 3 - Pack,LIGHTWEIGHT_TEE.jpg,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Nightshade Lightweight Tee 3 - Pack,LIGHTWEIGHT_TEE.jpg,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Neutral Lightweight Tee 3 - Pack,LIGHTWEIGHT_TEE.jpg,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Smoke Lightweight Tee Three Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart_image [file_reference],Butterfly Lightweight Tee Three Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Smoke Lightweight Tee Three Pack,shopify--neckline.round,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.neckline [list.metaobject_reference],Butterfly Lightweight Tee Three Pack,shopify--neckline.round,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Smoke Lightweight Tee Three Pack,"Size,Chest,Waist
+S,113,111.8
+M,120.7,119.4
+L,125.7,124.5
+XL,133.4,132.1
+2XL,138.4,137.2
+3XL,146.1,144.8
+4XL,151.1,149.9",per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: custom.size_chart [multi_line_text_field],Butterfly Lightweight Tee Three Pack,"Size,Chest,Waist
+S,113,111.8
+M,120.7,119.4
+L,125.7,124.5
+XL,133.4,132.1
+2XL,138.4,137.2
+3XL,146.1,144.8
+4XL,151.1,149.9",per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Smoke Lightweight Tee Three Pack,shopify--top-length-type.medium,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.top-length-type [list.metaobject_reference],Butterfly Lightweight Tee Three Pack,shopify--top-length-type.medium,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Smoke Lightweight Tee Three Pack,adult,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: mm-google-shopping.age_group [string],Butterfly Lightweight Tee Three Pack,adult,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Smoke Lightweight Tee Three Pack,shopify--age-group.adults,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.age-group [list.metaobject_reference],Butterfly Lightweight Tee Three Pack,shopify--age-group.adults,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Weighted Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Supercharged Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Nightshade Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Neutral Lightweight Tee 3 - Pack,(null),per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Smoke Lightweight Tee Three Pack,shopify--target-gender.unisex,per Rule G8
+Lightweight Tee 3-Pack,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Butterfly Lightweight Tee Three Pack,shopify--target-gender.unisex,per Rule G8
+Lightweight Tee,body_html,White Stealth Lightweight Tee,332 chars,longest wins (Rule G7a)
+Lightweight Tee,body_html,Midnight Black Lightweight Tee,365 chars,longest wins (Rule G7a)
+Lightweight Tee,collection:neutral-drop,Midnight Black Lightweight Tee,on some siblings only,UNION (Rule G2)
+Lightweight Tee,collection:stealth-drop,White Stealth Lightweight Tee,on some siblings only,UNION (Rule G2)
+Lightweight Tee,metafield:Metafield: mc-facebook.google_product_category [string],White Stealth Lightweight Tee,212,per Rule G8
+Lightweight Tee,metafield:Metafield: mc-facebook.google_product_category [string],Midnight Black Lightweight Tee,(null),per Rule G8
+Lightweight Tee,var_metafield:Variant Metafield: harmonized_system_code [string],White Stealth Lightweight Tee,620690,per Rule G9
+Lightweight Tee,var_metafield:Variant Metafield: harmonized_system_code [string],Midnight Black Lightweight Tee,610910,per Rule G9
+Faded Cutoff,tag:size-2xl,Faded Cutoff Dusk,on some siblings only,DROP (Rule G1 exception)
+Faded Cutoff,collection:size-2xl,Faded Cutoff Dusk,on some siblings only,UNION (Rule G2)
+Faded Cutoff,collection:product-templates,Faded Cutoff Dusk,on some siblings only,UNION (Rule G2)
+Faded Cutoff,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Faded Cutoff Off White,"shopify--color-pattern.black-3, shopify--color-pattern.cream",per Rule G8
+Faded Cutoff,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Faded Cutoff Dusk,"shopify--color-pattern.black-7, shopify--color-pattern.grey",per Rule G8
+Pullover,tag:Flavors,"Blackout Pullover, Cool Grey Pullover",on some siblings only,UNION (Rule G1)
+Pullover,tag:size-3xl,"Midnight Pullover, Blackout Pullover",on some siblings only,DROP (Rule G1 exception)
+Pullover,tag:size-s,Blackout Pullover,on some siblings only,DROP (Rule G1 exception)
+Pullover,tag:size-m,"Midnight Pullover, Blackout Pullover",on some siblings only,DROP (Rule G1 exception)
+Pullover,tag:size-l,"Midnight Pullover, Blackout Pullover",on some siblings only,DROP (Rule G1 exception)
+Pullover,collection:size-s,Blackout Pullover,on some siblings only,UNION (Rule G2)
+Pullover,collection:flavors-evergreen,"Blackout Pullover, Cool Grey Pullover",on some siblings only,UNION (Rule G2)
+Pullover,collection:size-l,"Midnight Pullover, Blackout Pullover",on some siblings only,UNION (Rule G2)
+Pullover,collection:cozy-collection,Midnight Pullover,on some siblings only,UNION (Rule G2)
+Pullover,collection:size-3xl,"Midnight Pullover, Blackout Pullover",on some siblings only,UNION (Rule G2)
+Pullover,collection:size-m,"Midnight Pullover, Blackout Pullover",on some siblings only,UNION (Rule G2)
+Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Midnight Pullover,shopify--color-pattern.black-white,per Rule G8
+Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Blackout Pullover,shopify--color-pattern.black-7,per Rule G8
+Pullover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cool Grey Pullover,shopify--color-pattern.grey,per Rule G8
+Hyper Mesh Shorts,body_html,White Hyper Mesh Shorts,1133 chars,longest wins (Rule G7a)
+Hyper Mesh Shorts,body_html,Black Hyper Mesh Shorts,1141 chars,longest wins (Rule G7a)
+Hyper Mesh Shorts,body_html,Blue Camo Mesh Shorts,1141 chars,longest wins (Rule G7a)
+Hyper Mesh Shorts,body_html,Sand Camo Mesh Shorts,1141 chars,longest wins (Rule G7a)
+Hyper Mesh Shorts,tag:25-50,"White Hyper Mesh Shorts, Black Hyper Mesh Shorts, Sand Camo Mesh Shorts",on some siblings only,UNION (Rule G1)
+Blended Zip Up,body_html,Blended Zip Up Black with Grey Print,1862 chars,longest wins (Rule G7a)
+Blended Zip Up,body_html,Blended Zip Up Black with Black Print,1823 chars,longest wins (Rule G7a)
+Chopper Crewneck,body_html,Chopper Crewneck Blackout,1311 chars,longest wins (Rule G7a)
+Chopper Crewneck,body_html,Chopper Crewneck Midnight,1273 chars,longest wins (Rule G7a)
+Chopper Crewneck,collection:product-templates,Chopper Crewneck Midnight,on some siblings only,UNION (Rule G2)
+Flame Cropped Hoodie,collection:product-templates,Flame Cropped Hoodie Blackout,on some siblings only,UNION (Rule G2)
+Camo Spray Tee,body_html,Blue Camo Spray Tee,591 chars,longest wins (Rule G7a)
+Camo Spray Tee,body_html,Sand Camo Spray Tee,610 chars,longest wins (Rule G7a)
+Smoke Zip Up Hoodie,tag:size-l,Smoke Zip Up Hoodie,on some siblings only,DROP (Rule G1 exception)
+Smoke Zip Up Hoodie,collection:size-l,Smoke Zip Up Hoodie,on some siblings only,UNION (Rule G2)
+Smoke Sweatshorts,body_html,Black Smoke Sweatshorts,1849 chars,longest wins (Rule G7a)
+Smoke Sweatshorts,body_html,Grey Smoke Sweatshorts,1847 chars,longest wins (Rule G7a)
+Smoke Sweatshorts,template,Black Smoke Sweatshorts,japan-collection,most common (G4/G5/G6)
+Smoke Sweatshorts,template,Grey Smoke Sweatshorts,(null),most common (G4/G5/G6)
+Smoke Sweatshorts,tag:bottoms,Black Smoke Sweatshorts,on some siblings only,UNION (Rule G1)
+Smoke Sweatshorts,tag:japandroppart1,Black Smoke Sweatshorts,on some siblings only,UNION (Rule G1)
+Smoke Sweatshorts,collection:trending,Black Smoke Sweatshorts,on some siblings only,UNION (Rule G2)
+Smoke Sweatshorts,collection:japan-drop-part-2,Black Smoke Sweatshorts,on some siblings only,UNION (Rule G2)
+Smoke Sweatshorts,collection:japan-drop-part-1,Black Smoke Sweatshorts,on some siblings only,UNION (Rule G2)
+Smoke Sweatshorts,collection:japan-drop-part-1-2,Black Smoke Sweatshorts,on some siblings only,UNION (Rule G2)
+Smoke Sweatshorts,metafield:Metafield: shopify.fabric [list.metaobject_reference],Black Smoke Sweatshorts,shopify--fabric.cotton,per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.fabric [list.metaobject_reference],Grey Smoke Sweatshorts,(null),per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Black Smoke Sweatshorts,shopify--color-pattern.floral,per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Grey Smoke Sweatshorts,(null),per Rule G8
+Smoke Sweatshorts,metafield:Metafield: mc-facebook.google_product_category [string],Black Smoke Sweatshorts,5322,per Rule G8
+Smoke Sweatshorts,metafield:Metafield: mc-facebook.google_product_category [string],Grey Smoke Sweatshorts,(null),per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.size [list.metaobject_reference],Black Smoke Sweatshorts,"shopify--size.small, shopify--size.medium, shopify--size.large, shopify--size.xl, shopify--size.2xl",per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.size [list.metaobject_reference],Grey Smoke Sweatshorts,(null),per Rule G8
+Smoke Sweatshorts,metafield:Metafield: custom.size_chart [multi_line_text_field],Black Smoke Sweatshorts,"Size,Waist,Inseam,Outseam
+S,71,13,41
+M,76,13.5,42.5
+L,81,14,44
+XL,86,14.5,45.5
+2XL,91,15,47",per Rule G8
+Smoke Sweatshorts,metafield:Metafield: custom.size_chart [multi_line_text_field],Grey Smoke Sweatshorts,(null),per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Black Smoke Sweatshorts,shopify--pants-length-type.above-the-knee,per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.pants-length-type [list.metaobject_reference],Grey Smoke Sweatshorts,(null),per Rule G8
+Smoke Sweatshorts,metafield:Metafield: custom.size_guide [list.metaobject_reference],Black Smoke Sweatshorts,(null),per Rule G8
+Smoke Sweatshorts,metafield:Metafield: custom.size_guide [list.metaobject_reference],Grey Smoke Sweatshorts,"size_guide_card.size-medium, size_guide_card.size-small, size_guide_card.size-large",per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.activity [list.metaobject_reference],Black Smoke Sweatshorts,shopify--activity.universal,per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.activity [list.metaobject_reference],Grey Smoke Sweatshorts,(null),per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Black Smoke Sweatshorts,shopify--target-gender.unisex,per Rule G8
+Smoke Sweatshorts,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Grey Smoke Sweatshorts,(null),per Rule G8
+New York Cargo Wideleg,metafield:Metafield: custom.size_chart_image [file_reference],New York Cargo Wideleg - Black,SWEATPANTS_768b4145-9631-4a90-9512-9527620a1ce2.jpg,per Rule G8
+New York Cargo Wideleg,metafield:Metafield: custom.size_chart_image [file_reference],New York Cargo Wideleg - Cool Grey,(null),per Rule G8
+Snug Cover,tag:cgsnugcover,Cool Grey Snug Cover,on some siblings only,UNION (Rule G1)
+Snug Cover,tag:mbsnugcover,Midnight Black Snug Cover,on some siblings only,UNION (Rule G1)
+Snug Cover,collection:cgsnugcover,Cool Grey Snug Cover,on some siblings only,UNION (Rule G2)
+Snug Cover,collection:mb-snug-cover,Midnight Black Snug Cover,on some siblings only,UNION (Rule G2)
+Snug Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Cool Grey Snug Cover,shopify--color-pattern.grey,per Rule G8
+Snug Cover,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Midnight Black Snug Cover,shopify--color-pattern.black-white,per Rule G8
+Tech Pants,compare_at_price,Beige Tech Pants,$70.0,keep per-variant (Rule G3)
+Tech Pants,compare_at_price,Black Tech Pants,$None,keep per-variant (Rule G3)
+Tech Pants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Beige Tech Pants,(null),per Rule G8
+Tech Pants,metafield:Metafield: shopify.fabric [list.metaobject_reference],Black Tech Pants,shopify--fabric.cotton,per Rule G8
+Tech Pants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Beige Tech Pants,shopify--color-pattern.beige-1,per Rule G8
+Tech Pants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Black Tech Pants,shopify--color-pattern.black-7,per Rule G8
+Tech Pants,metafield:Metafield: custom.size_chart [multi_line_text_field],Beige Tech Pants,"Size,Waist,Front Rise
+S,114.3,34.9
+M,119.4,36.2
+L,124.5,37.5
+XL,129.5,38.7
+2XL,134.6,40",per Rule G8
+Tech Pants,metafield:Metafield: custom.size_chart [multi_line_text_field],Black Tech Pants,(null),per Rule G8
+Tech Pants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Beige Tech Pants,(null),per Rule G8
+Tech Pants,metafield:Metafield: shopify.target-gender [list.metaobject_reference],Black Tech Pants,shopify--target-gender.unisex,per Rule G8
+Wing Sweatpants,body_html,Pink Wing Sweatpants,1290 chars,longest wins (Rule G7a)
+Wing Sweatpants,body_html,Silver Wing Sweatpants,1334 chars,longest wins (Rule G7a)
+Wing Sweatpants,body_html,Wing Sweatpants (Copy),1290 chars,longest wins (Rule G7a)
+Wing Sweatpants,collection:product-templates,Silver Wing Sweatpants,on some siblings only,UNION (Rule G2)
+Wing Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Pink Wing Sweatpants,(null),per Rule G8
+Wing Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Silver Wing Sweatpants,(null),per Rule G8
+Wing Sweatpants,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Wing Sweatpants (Copy),"shopify--color-pattern.pink, shopify--color-pattern.silver",per Rule G8
+Wing Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Pink Wing Sweatpants,5322,per Rule G8
+Wing Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Silver Wing Sweatpants,1604,per Rule G8
+Wing Sweatpants,metafield:Metafield: mc-facebook.google_product_category [string],Wing Sweatpants (Copy),5322,per Rule G8
+Wing Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Pink Wing Sweatpants,5322,per Rule G8
+Wing Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Silver Wing Sweatpants,1604,per Rule G8
+Wing Sweatpants,metafield:Metafield: mm-google-shopping.google_product_category [string],Wing Sweatpants (Copy),5322,per Rule G8
+Embossed Heavyweight Zip-up,body_html,Embossed Grey Heavyweight Zip-up,643 chars,longest wins (Rule G7a)
+Embossed Heavyweight Zip-up,body_html,Embossed Black Heavyweight Zip-up,644 chars,longest wins (Rule G7a)
+Embossed Heavyweight Zip-up,tag:size-s,Embossed Grey Heavyweight Zip-up,on some siblings only,DROP (Rule G1 exception)
+Embossed Heavyweight Zip-up,tag:size-m,Embossed Grey Heavyweight Zip-up,on some siblings only,DROP (Rule G1 exception)
+Embossed Heavyweight Zip-up,collection:size-s,Embossed Grey Heavyweight Zip-up,on some siblings only,UNION (Rule G2)
+Embossed Heavyweight Zip-up,collection:product-templates,Embossed Grey Heavyweight Zip-up,on some siblings only,UNION (Rule G2)
+Embossed Heavyweight Zip-up,collection:size-m,Embossed Grey Heavyweight Zip-up,on some siblings only,UNION (Rule G2)
+Embossed Heavyweight Zip-up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Embossed Grey Heavyweight Zip-up,shopify--color-pattern.grey,per Rule G8
+Embossed Heavyweight Zip-up,metafield:Metafield: shopify.color-pattern [list.metaobject_reference],Embossed Black Heavyweight Zip-up,shopify--color-pattern.black-7,per Rule G8
+Beater,price,White Stealth Beater,$15.0,keep per-variant (Rule G3)
+Beater,price,OG Sky Blue Beaters,$10.0,keep per-variant (Rule G3)
+Beater,body_html,White Stealth Beater,318 chars,longest wins (Rule G7a)
+Beater,body_html,OG Sky Blue Beaters,138 chars,longest wins (Rule G7a)
+Beater,tag:sale,OG Sky Blue Beaters,on some siblings only,UNION (Rule G1)
+Beater,collection:nightshade-collection,White Stealth Beater,on some siblings only,UNION (Rule G2)
+Beater,collection:og-drop,OG Sky Blue Beaters,on some siblings only,UNION (Rule G2)
+Beater,collection:stealth-drop,White Stealth Beater,on some siblings only,UNION (Rule G2)
+Beater,collection:sale,OG Sky Blue Beaters,on some siblings only,UNION (Rule G2)
+Beater,metafield:Metafield: mc-facebook.google_product_category [string],White Stealth Beater,212,per Rule G8
+Beater,metafield:Metafield: mc-facebook.google_product_category [string],OG Sky Blue Beaters,(null),per Rule G8
