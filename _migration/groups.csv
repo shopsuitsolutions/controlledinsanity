@@ -1,256 +1,256 @@
-cluster_id,tier,proposed_family,proposed_color,product_id,handle,title,type,variant_count,image_count,total_inventory,tags_count,collection_count,current_option_scheme
-1,HIGH,Track Pants,Varsity Blue Gray,9855269634336,varsity-blue-gray-track-pants,Varsity Blue & Gray Track Pants,Tracksuit,5,4,-1,5,13,
-1,HIGH,Track Pants,Forest Green,9855269896480,forest-green-track-pants,Forest Green Track Pants,Tracksuit,5,3,-1,5,13,
-2,HIGH,Track Jacket,Varsity Blue Gray,9855403393312,varsity-blue-gray-track-jacket,Varsity Blue & Gray Track Jacket,Tracksuit,7,6,-3,5,13,
-2,HIGH,Track Jacket,Forest Green,9855403819296,forest-green-track-jacket,Forest Green Track Jacket,Tracksuit,7,4,0,6,13,
-3,HIGH,Forged In Failure Crewneck,Brown,9856188907808,brown-forged-in-failure-crewneck,Brown Forged in Failure Crewneck,Sweatshirts,7,6,-1,5,9,
-3,HIGH,Forged In Failure Crewneck,UNC Blue,9856189104416,unc-blue-forged-in-failure-crewneck,UNC Blue Forged in Failure Crewneck,Sweatshirts,7,4,-2,5,9,
-4,HIGH,Lightweight Tee,White Stealth,9950544298272,white-stealth-lightweight-tee,White Stealth Lightweight Tee,T-Shirts,7,4,-5,4,12,
-4,HIGH,Lightweight Tee,Midnight Black,10020173349152,og-black-lightweight-tee,Midnight Black Lightweight Tee,T-Shirts,7,12,-156,4,12,
-5,HIGH,Track Pants,Prime Layer Frost Blue,10003280101664,sky-blue-nylon-pants,Prime Layer Frost Blue Track Pants,Tracksuit,7,3,-1,4,11,
-5,HIGH,Track Pants,Prime Layer Forest Green,10003280134432,sky-blue-nylon-pants-copy,Prime Layer Forest Green Track Pants,Tracksuit,7,3,0,4,11,
-6,HIGH,Heavyweight Sweatpants,Gunmetal Gray,10063945302304,neutral-gray-wide-leg-sweatpants,Gunmetal Gray Heavyweight Sweatpants,Evergreen Sweats,5,4,455,13,22,
-6,HIGH,Heavyweight Sweatpants,Faded Black,10065630757152,black-neutral-sweats,Faded Black Heavyweight Sweatpants,Evergreen Sweats,5,6,279,13,23,
-6,HIGH,Heavyweight Sweatpants,Navy,10279638008096,navy-heavyweight-sweatpants,Navy Heavyweight Sweatpants,Evergreen Sweats,5,8,256,12,18,
-6,HIGH,Heavyweight Sweatpants,Forest Green,10279643873568,forest-green-heavyweight-sweatpants,Forest Green Heavyweight Sweatpants,Evergreen Sweats,5,7,3,12,18,
-6,HIGH,Heavyweight Sweatpants,Washed Red,10279645380896,washed-red-heavyweight-sweatpants-copy,Washed Red Heavyweight Sweatpants,Evergreen Sweats,5,5,108,11,17,
-6,HIGH,Heavyweight Sweatpants,Heather grey,10279647084832,heather-grey-heavyweight-sweatpants,Heather grey Heavyweight Sweatpants,Evergreen Sweats,5,7,229,11,18,
-6,HIGH,Heavyweight Sweatpants,Pitch Black,10279648493856,pitch-black-heavyweight-sweatpants,Pitch Black Heavyweight Sweatpants,Evergreen Sweats,5,4,618,12,19,
-7,HIGH,Pump Cover,Blackout,10088889254176,blackout-pump-cover,Blackout Pump Cover,Evergreen Pump Cover,8,4,1922,12,24,
-7,HIGH,Pump Cover,UNC Blue,10088893448480,unc-blue-pump-cover,UNC Blue Pump Cover,Evergreen Pump Cover,8,3,-31,7,16,
-7,HIGH,Pump Cover,Cool Grey,10088901116192,cool-grey-pump-cover,Cool Grey Pump Cover,Evergreen Pump Cover,8,4,649,11,23,
-7,HIGH,Pump Cover,Oreo,10088951021856,oreo-pump-cover,Oreo Pump Cover,Evergreen Pump Cover,8,5,0,4,11,
-7,HIGH,Pump Cover,Midnight Black,10088958034208,midnight-black-pump-cover,Midnight Black Pump Cover,Evergreen Pump Cover,8,5,1532,12,24,
-7,HIGH,Pump Cover,Cherry Blossom,10137377964320,cherry-blossom-pump-cover,Cherry Blossom Pump Cover,Pump Cover,7,8,473,4,18,
-7,HIGH,Pump Cover,Navy,10402011709728,navy-pump-cover,Navy Pump Cover,Pump Cover,7,4,104,3,12,
-7,HIGH,Pump Cover,Gunmetal Grey,10444471337248,gunmetal-grey-pump-cover,Gunmetal Grey Pump Cover,Pump Cover,7,7,33,3,12,
-8,HIGH,Tee,Faded,10243224600864,faded-tee,Faded Tee,T-Shirts,7,6,0,6,14,
-8,HIGH,Tee,Black Stitched Cut Off,10525974593824,stitched-cut-off-tee,Black Stitched Cut Off Tee,Cutoff Tanktop,7,0,458,7,18,
-8,HIGH,Tee,Beige Stitched Cut Off,10526032298272,beige-stitched-cut-off-tee,Beige Stitched Cut Off Tee,Cutoff Tanktop,7,0,73,7,18,
-8,HIGH,Tee,Cool Grey Stitched Cut Off,10526132142368,cool-grey-stitched-cut-off-tee,Cool Grey Stitched Cut Off Tee,Cutoff Tanktop,7,0,267,7,18,
-9,HIGH,Faded Cutoff Off White,(same as stem),10243227975968,faded-cutoff-off-white,Faded Cutoff Off White,Cutoff Tanktop,7,9,0,8,15,
-9,HIGH,Faded Cutoff Off White,Dusk,10243228893472,faded-cutoff-dusk,Faded Cutoff Dusk,Cutoff Tanktop,7,5,0,9,17,
-10,HIGH,Smoke Pump Cover Off White,(same as stem),10243233218848,smoke-pump-cover-off-white,Smoke Pump Cover Off White,Pump Cover,7,7,8,5,15,
-10,HIGH,Smoke Pump Cover Off White,Dusk,10243233317152,smoke-pump-cover-dusk,Smoke Pump Cover Dusk,Pump Cover,7,4,32,6,16,
-11,HIGH,Wide Leg Sweats Dusk,(same as stem),10243236233504,wide-leg-sweats-dusk,Wide Leg Sweats Dusk,Sweatpants,5,7,93,10,17,
-11,HIGH,Wide Leg Sweats Dusk,Black,10243236299040,wide-leg-sweats-black,Wide Leg Sweats Black,Sweatpants,5,7,0,8,13,
-12,HIGH,Iron Shell Skullie Off White,(same as stem),10243244720416,iron-shell-skullie-off-white,Iron Shell Skullie Off White,Accessories,1,4,0,6,12,
-12,HIGH,Iron Shell Skullie Off White,Dusk,10251497341216,iron-shell-skullie-dusk,Iron Shell Skullie Dusk,Accessories,1,4,0,5,13,
-12,HIGH,Iron Shell Skullie Off White,Black Digital Print Bandana,10508241305888,black-digital-print-bandana,Black Digital Print Bandana,Accessories,1,0,-18,4,13,
-12,HIGH,Iron Shell Skullie Off White,Butterfly Black,10513651597600,butterfly-skullie-black,Butterfly Skullie Black,Accessories,1,0,-61,5,14,
-12,HIGH,Iron Shell Skullie Off White,Black Signature Hat,10513658118432,black-signature-hat,Black Signature Hat,Accessories,1,0,-18,4,13,
-13,HIGH,Smoke Zip Up Hoodie,(same as stem),10243246129440,smoke-zip-up-hoodie,Smoke Zip Up Hoodie,Zipup Hoodie,7,10,62,9,19,
-13,HIGH,Smoke Zip Up Hoodie,Grey,10320499638560,smoke-zip-up-hoodie-grey,Smoke Zip Up Hoodie Grey,Zipup Hoodie,7,2,24,8,18,
-14,HIGH,Pack,Dusk Beater Three,10243247997216,dusk-beater-three-pack,Dusk Beater Three Pack,Beater 3-Pack,7,13,0,6,13,
-14,HIGH,Pack,Vintage Washed Beater,10487451746592,vintage-washed-beater-3-pack,Vintage Washed Beater 3-Pack,Beater 3-Pack,7,11,118,6,16,
-14,HIGH,Pack,Nightshade Beater,10583013949728,nightshade-beater-3-pack-1,Nightshade Beater 3-Pack,Beater 3-Pack,7,0,768,6,16,
-14,HIGH,Pack,Neutral Beater,10583023223072,neutral-beater-3-pack,Neutral Beater 3-Pack,Beater 3-Pack,7,0,501,6,16,
-15,HIGH,Lightweight Tee Three Pack,Smoke,10243250422048,smoke-lightweight-tee-three-pack,Smoke Lightweight Tee Three Pack,Lightweight Tee 3-Pack,7,17,2,8,19,
-15,HIGH,Lightweight Tee Three Pack,Butterfly,10523495530784,butterfly-lightweight-tee-three-pack,Butterfly Lightweight Tee Three Pack,Lightweight Tee 3-Pack,7,0,1987,8,20,
-16,HIGH,Blank pump cover,(same as stem),10243548807456,waffle-knit-blank-copy,Blank pump cover,Evergreen Pump Cover,7,11,974,12,23,
-16,HIGH,Blank pump cover,Pumpcover,10243549954336,waffle-knit-blank-copy-1,Blank Pumpcover,Evergreen Pump Cover,7,6,1175,12,23,
-16,HIGH,Blank pump cover,Vintage Washed,10398653546784,vintage-washed-pump-cover,Vintage Washed Pump Cover,Pump Cover,8,6,1485,3,13,
-17,HIGH,Heavyweight Pullover,Heather Grey,10279654031648,heather-grey-heavyweight-pullover,Heather Grey Heavyweight Pullover,Evergreen Pullover,7,6,716,14,24,
-17,HIGH,Heavyweight Pullover,Forest Green,10279654162720,forest-green-heavyweight-pullover,Forest Green Heavyweight Pullover,Evergreen Pullover,7,6,302,14,22,
-17,HIGH,Heavyweight Pullover,Navy,10279654785312,navy-blue-heavyweight-pullover,Navy Heavyweight Pullover,Evergreen Pullover,7,6,533,14,22,
-17,HIGH,Heavyweight Pullover,Washed Red,10279655309600,washed-red-pullover,Washed Red Heavyweight Pullover,Evergreen Pullover,7,5,201,14,22,
-17,HIGH,Heavyweight Pullover,Pitch Black,10279655735584,pitch-black-pullover,Pitch Black Heavyweight Pullover,Evergreen Pullover,7,6,573,14,24,
-17,HIGH,Heavyweight Pullover,Gunmetal Grey,10279656489248,gunmetal-grey-pullover,Gunmetal Grey Heavyweight Pullover,Evergreen Pullover,7,6,728,14,23,
-17,HIGH,Heavyweight Pullover,Faded Black,10279657341216,faded-black-heavyweight-pullover,Faded Black Heavyweight Pullover,Evergreen Pullover,7,6,836,14,24,
-18,HIGH,Heavyweight Zip Up,Faded Black,10279660781856,faded-black-heavyweight-zip-up,Faded Black Heavyweight Zip Up,Evergreen Zip up,7,5,593,15,23,
-18,HIGH,Heavyweight Zip Up,Forest Green,10279662125344,forest-green-heavyweight-zip-up,Forest Green Heavyweight Zip Up,Evergreen Zip up,7,5,346,15,22,
-18,HIGH,Heavyweight Zip Up,Gunmetal Grey,10279662584096,gunmetal-grey-heavyweight-zip-up,Gunmetal Grey Heavyweight Zip Up,Evergreen Zip up,7,6,571,15,23,
-18,HIGH,Heavyweight Zip Up,Navy,10279663304992,navy-blue-heavyweight-zip-up,Navy Heavyweight Zip Up,Evergreen Zip up,7,3,456,15,22,
-18,HIGH,Heavyweight Zip Up,Washed Red,10279663534368,washed-red-heavyweight-zip-up,Washed Red Heavyweight Zip Up,Evergreen Zip up,7,4,297,15,22,
-18,HIGH,Heavyweight Zip Up,Pitch Black,10279663763744,pitch-black-heavyweight-zip-up,Pitch Black Heavyweight Zip Up,Evergreen Zip up,7,5,369,15,23,
-18,HIGH,Heavyweight Zip Up,Heather Grey,10279664288032,heather-grey-heavyweight-zip-up,Heather Grey Heavyweight Zip Up,Evergreen Zip up,7,5,546,15,23,
-19,HIGH,Heavyweight Zip Up,Embossed Grey,10279666057504,embossed-grey-heavyweight-zip-up,Embossed Grey Heavyweight Zip-up,Evergreen Zip up,7,4,184,14,23,
-19,HIGH,Heavyweight Zip Up,Embossed Black,10279666090272,embossed-black-heavyweight-zip-up,Embossed Black Heavyweight Zip-up,Evergreen Zip up,7,4,57,12,20,
-20,HIGH,Long Sleeve Pump Cover,Midnight,10279684178208,midnight-long-sleeve,Midnight Long Sleeve Pump Cover,Pump Cover,7,4,240,9,19,
-20,HIGH,Long Sleeve Pump Cover,Blackout,10279684243744,blackout-long-sleeve,Blackout Long Sleeve Pump Cover,Pump Cover,7,4,152,10,20,
-21,HIGH,Pullover,Midnight,10279684735264,midnight-pullover,Midnight Pullover,Evergreen Pullover,7,6,969,11,20,
-21,HIGH,Pullover,Blackout,10279684800800,midnight-pullover-copy,Blackout Pullover,Evergreen Pullover,7,7,486,13,21,
-21,HIGH,Pullover,Cool Grey,10279684964640,blackout-pullover-copy,Cool Grey Pullover,Evergreen Pullover,7,4,201,9,17,
-22,HIGH,Snug Cover,Cool Grey,10279685357856,cool-grey-snug-cover,Cool Grey Snug Cover,Snug Cover,1,2,1769,4,15,
-22,HIGH,Snug Cover,Midnight Black,10279685390624,midnight-black-snug-cover,Midnight Black Snug Cover,Snug Cover,1,3,1412,4,15,
-23,HIGH,Pump Cover,Smoke Inferno,10362711998752,smoke-inferno-pump-cover,Smoke Inferno Pump Cover,Pump Cover,7,4,585,2,12,
-23,HIGH,Pump Cover,Toxic Inferno,10362734018848,toxic-inferno-pump-cover,Toxic Inferno Pump Cover,Pump Cover,7,4,255,2,12,
-23,HIGH,Pump Cover,Electric Inferno,10362783105312,electric-inferno-pump-cover,Electric Inferno Pump Cover,Pump Cover,7,2,58,2,12,
-23,HIGH,Pump Cover,Blood red Inferno,10362822885664,blood-red-inferno-pump-cover,Blood red Inferno Pump Cover,Pump Cover,7,4,285,2,12,
-23,HIGH,Pump Cover,Silver Gradient,10393808437536,silver-gradient-pump-cover,Silver Gradient Pump Cover,Pump Cover,7,4,730,4,14,
-24,HIGH,Pump Cover,Butterfly Blue,10363305132320,smoked-out-blue-pumpcover,Butterfly Blue Pump Cover,Pump Cover,7,5,7,3,14,
-24,HIGH,Pump Cover,Paranorman Black,10363336294688,smoked-out-black-pump-cover,Paranorman Black Pump Cover,Pump Cover,7,5,23,3,13,
-24,HIGH,Pump Cover,Paranorman Blood Red,10363346387232,smoked-out-blood-red-pump-cover,Paranorman Blood Red Pump Cover,Pump Cover,7,7,16,3,13,
-24,HIGH,Pump Cover,Glossy Gray,10363357331744,smoked-out-glossy-gray-pump-cover,Glossy Gray Pump Cover,Pump Cover,7,10,9,3,13,
-24,HIGH,Pump Cover,Smoked Out Gray in Black,10363394687264,smoke-grey-with-black-pump-cover,Smoked Out Gray in Black Pump Cover,Pump Cover,7,9,0,3,11,
-25,HIGH,Pump Cover,Inferno Cropped Red,10366010163488,inferno-cropped-red-pump-cover,Inferno Cropped Red Pump Cover,cropped pump cover,5,4,524,4,15,
-25,HIGH,Pump Cover,Inferno Cropped Pink,10366025695520,inferno-cropped-pink-pump-cover,Inferno Cropped Pink Pump Cover,cropped pump cover,5,4,294,4,15,
-26,HIGH,Wide Leg Sweats,Butterfly Blue,10366247829792,smoke-blue-wide-leg-sweats,Butterfly Blue Wide Leg Sweats,Sweatpants,5,7,325,5,15,
-26,HIGH,Wide Leg Sweats,Paranorman Black,10366261395744,smoke-black-wide-leg-sweats,Paranorman Black Wide Leg Sweats,Sweatpants,5,4,93,5,14,
-26,HIGH,Wide Leg Sweats,Blood Red,10366424711456,smoke-blood-red-wide-leg-sweats,Blood Red Wide Leg Sweats,Sweatpants,5,5,217,5,14,
-26,HIGH,Wide Leg Sweats,Glossy Gray,10366459380000,smoke-glossy-gray-wide-leg-sweats,Glossy Gray Wide Leg Sweats,Sweatpants,5,4,18,5,14,
-26,HIGH,Wide Leg Sweats,Venom Green,10366478418208,smoke-green-wide-leg-sweats,Venom Green Wide Leg Sweats,Sweatpants,5,6,285,5,14,
-26,HIGH,Wide Leg Sweats,Paranorman Purple,10366493229344,smoke-purple-wide-leg-sweats,Paranorman Purple Wide Leg Sweats,Sweatpants,5,7,41,5,14,
-27,HIGH,Chained Baby Tee Midnight,(same as stem),10393898484000,chained-baby-tee-white-print,Chained Baby Tee Midnight,baby tee,5,4,82,4,13,
-27,HIGH,Chained Baby Tee Midnight,Glossy Pink,10393917554976,chained-baby-tee-pink-print,Chained Baby Tee Glossy Pink,baby tee,5,4,15,4,13,
-27,HIGH,Chained Baby Tee Midnight,Grey,10393932333344,chained-baby-tee-gray-10c,Chained Baby Tee Grey,baby tee,5,4,5,4,13,
-27,HIGH,Chained Baby Tee Midnight,Creme,10393945145632,chained-baby-tee-tan-7529c,Chained Baby Tee Creme,Cropped Tank,5,4,18,5,14,
-27,HIGH,Chained Baby Tee Midnight,Cropped Chain Tank,10393983418656,cropped-chain-tank-white-print,Cropped Chain Tank Midnight,Cropped Tank,5,2,52,5,14,
-27,HIGH,Chained Baby Tee Midnight,Cropped Chain Tank Glossy Pink,10394008813856,cropped-chain-tank-pink-print,Cropped Chain Tank Glossy Pink,Cropped Tank,5,4,22,5,14,
-27,HIGH,Chained Baby Tee Midnight,Cropped Chain Tank Gray,10394192445728,cropped-chain-tank-gray-10c,Cropped Chain Tank Gray,Cropped Tank,5,4,10,5,15,
-27,HIGH,Chained Baby Tee Midnight,Cropped Chain Tank Creme,10394207453472,cropped-chain-tank-tan-7529c,Cropped Chain Tank Creme,Cropped Tank,5,4,27,5,14,
-28,HIGH,Chrome Thermal,(same as stem),10398206722336,chrome-thermal-silver-print,Chrome Thermal,Longsleeve,7,2,0,1,8,
-28,HIGH,Chrome Thermal,Glossy Pink,10398295130400,chrome-thermal-pink-print,Chrome Thermal Glossy Pink,Longsleeve,7,4,0,1,8,
-28,HIGH,Chrome Thermal,Toxic Green,10398374363424,chrome-thermal-green-print,Chrome Thermal Toxic Green,Longsleeve,7,4,0,1,8,
-28,HIGH,Chrome Thermal,Electric Blue,10398440554784,chrome-thermal-blue-print,Chrome Thermal Electric Blue,Longsleeve,7,5,0,1,8,
-28,HIGH,Chrome Thermal,Hombre Grey Faded,10424668553504,hombre-thermal-black-faded,Hombre Thermal Grey Faded,Longsleeve,7,4,139,1,10,
-28,HIGH,Chrome Thermal,Hombre Beige Faded,10424687722784,hombre-thermal-gray-faded,Hombre Thermal Beige Faded,Longsleeve,7,5,179,1,10,
-29,HIGH,Pink Wing Sweatpants,(same as stem),10398575821088,girls-sweatpants-pink-print,Pink Wing Sweatpants,Sweatpants,5,3,102,3,12,
-29,HIGH,Pink Wing Sweatpants,Silver,10398602330400,girls-sweatpants-silver-print,Silver Wing Sweatpants,Sweatpants,5,5,114,3,13,
-29,HIGH,Pink Wing Sweatpants,Copy,10578193252640,pink-wing-sweatpants-copy,Wing Sweatpants (Copy),Sweatpants,10,3,225,3,12,
-30,HIGH,Ghost Zip Up Blood Red,(same as stem),10421717401888,ghost-zip-up-red-print,Ghost Zip Up Blood Red,Zipup Hoodie,7,5,38,5,14,
-30,HIGH,Ghost Zip Up Blood Red,Glossy Pink,10421765472544,ghost-zip-up-pink-print,Ghost Zip Up Glossy Pink,Zipup Hoodie,7,5,7,5,14,
-30,HIGH,Ghost Zip Up Blood Red,Creme,10421779628320,ghost-zip-up-gray-print,Ghost Zip Up Creme,Zipup Hoodie,7,5,56,5,14,
-30,HIGH,Ghost Zip Up Blood Red,Dusk,10421788606752,ghost-zip-up-black-print,Ghost Zip Up Dusk,Zipup Hoodie,7,4,26,5,14,
-30,HIGH,Ghost Zip Up Blood Red,Toxic Green,10421791785248,ghost-zip-up-green-print,Ghost Zip Up Toxic Green,Zipup Hoodie,7,2,86,5,14,
-31,HIGH,Chopper Crewneck Blackout,(same as stem),10421848506656,chopped-crewneck-black,Chopper Crewneck Blackout,Longsleeve,7,5,540,1,10,
-31,HIGH,Chopper Crewneck Blackout,Midnight,10421865546016,cropped-crewneck-white,Chopper Crewneck Midnight,Longsleeve,7,5,250,1,11,
-32,HIGH,Ghost Sweatpants Toxic Green,(same as stem),10421879308576,ghost-sweatpants-green-print,Ghost Sweatpants Toxic Green,Sweatpants,5,5,73,4,12,
-32,HIGH,Ghost Sweatpants Toxic Green,Blood Red,10421882487072,ghost-sweatpants-red-print,Ghost Sweatpants Blood Red,Sweatpants,5,2,227,4,12,
-32,HIGH,Ghost Sweatpants Toxic Green,Glossy Pink,10421883928864,ghost-sweatpants-pink-print,Ghost Sweatpants Glossy Pink,Sweatpants,5,4,0,4,10,
-32,HIGH,Ghost Sweatpants Toxic Green,Dusk,10421898084640,ghost-sweatpants-black-print,Ghost Sweatpants Dusk,Sweatpants,5,4,31,4,12,
-33,HIGH,Flame Cropped Hoodie Blackout,(same as stem),10423257825568,flame-cropped-hoodie-black-print,Flame Cropped Hoodie Blackout,Cropped Hoodie,5,5,58,6,17,
-33,HIGH,Flame Cropped Hoodie Blackout,Glossy Pink,10423267066144,flame-cropped-hoodie-pink-print,Flame Cropped Hoodie Glossy Pink,Cropped Hoodie,5,4,21,6,16,
-34,HIGH,Tee Pack,Weighted,10423490314528,weighted-tee-3-pack,Weighted Tee 3 - Pack,Lightweight Tee 3-Pack,7,6,49,3,12,
-34,HIGH,Tee Pack,Supercharged Lightweight,10423629545760,supercharged-lightweight-tee-3-pack,Supercharged Lightweight Tee 3 - Pack,Lightweight Tee 3-Pack,7,11,33,4,13,
-34,HIGH,Tee Pack,Nightshade Lightweight,10583053664544,nightshade-lightweight-tee-3-pack,Nightshade Lightweight Tee 3 - Pack,Lightweight Tee 3-Pack,7,0,751,4,13,
-34,HIGH,Tee Pack,Neutral Lightweight,10583122772256,neutral-lightweight-tee-3-pack-copy,Neutral Lightweight Tee 3 - Pack,Lightweight Tee 3-Pack,7,0,508,4,13,
-35,HIGH,Signature Wideleg Sweats - Pitch Black,(same as stem),10487200579872,signature-wideleg-sweats,Signature Wideleg Sweats - Pitch Black,Sweatpants,5,5,197,5,13,
-35,HIGH,Signature Wideleg Sweats - Pitch Black,Grey,10503344980256,signature-wideleg-sweats-grey,Signature Wideleg Sweats Grey,Sweatpants,5,5,280,5,13,
-35,HIGH,Signature Wideleg Sweats - Pitch Black,Faded,10541217644832,signature-wideleg-sweats-faded-black,Signature Wideleg Sweats Faded Black,Sweatpants,5,5,422,5,13,
-35,HIGH,Signature Wideleg Sweats - Pitch Black,Vintage with White Stripes,10584051581216,vintage-sweats-black-with-white-stripes,Vintage Sweats Black with White Stripes,Sweatpants,5,0,75,5,13,
-35,HIGH,Signature Wideleg Sweats - Pitch Black,Form Straight Leggings,10584068686112,form-straight-leggings-black,Form Straight Leggings Black,Sweatpants,5,0,75,5,13,
-35,HIGH,Signature Wideleg Sweats - Pitch Black,Form Straight Leggings Blue,10584071045408,form-straight-leggings-blue,Form Straight Leggings Blue,Sweatpants,5,0,75,5,13,
-35,HIGH,Signature Wideleg Sweats - Pitch Black,Morph Wide Leg,10584072192288,morph-wide-leg-sweats-black,Morph Wide Leg Sweats Black,Sweatpants,5,0,75,5,13,
-36,HIGH,Print,Blended Zip Up Black with Grey,10534199263520,blended-zip-up-black-with-grey-print,Blended Zip Up Black with Grey Print,Zipup Hoodie,7,0,462,5,15,
-36,HIGH,Print,Blended Zip Up Black with Black,10534209782048,blended-zip-up-black-with-black-print,Blended Zip Up Black with Black Print,Zipup Hoodie,7,0,491,5,15,
-37,HIGH,Print,Butterfly Zip Up Black with White,10534318899488,butterfly-zip-up-black-with-white-print,Butterfly Zip Up Black with White Print,Zipup Hoodie,7,0,478,5,15,
-37,HIGH,Print,Butterfly Zip Up Black with Blue,10534342492448,butterfly-zip-up-black-with-blue-print,Butterfly Zip Up Black with Blue Print,Zipup Hoodie,7,0,478,5,15,
-37,HIGH,Print,Butterfly Zip Up Beige with Black,10534355960096,butterfly-zip-up-beige-with-black-print,Butterfly Zip Up Beige with Black Print,Zipup Hoodie,7,0,208,5,15,
-38,MEDIUM,Butterfly Off The Shoulder Crewneck Black,(same as stem),10584099488032,butterfly-off-the-shoulder-crewneck-black,Butterfly Off The Shoulder Crewneck Black,Sweatshirts,5,0,50,5,14,
-38,MEDIUM,Butterfly Off The Shoulder Crewneck Black,Grey,10584109449504,butterfly-off-the-shoulder-crewneck-black-copy,Butterfly Off The Shoulder Crewneck Grey,Sweatshirts,5,0,50,5,14,
-39,MEDIUM,Gray Iron Therapy Gunmetal Grey Long-Sleeve Compression,(same as stem),9496858624288,iron-therapy-gunmetal-grey-long-sleeve-compression,Gray Iron Therapy Gunmetal Grey Long-Sleeve Compression,Shirts,7,5,-2,6,13,
-39,MEDIUM,Gray Iron Therapy Gunmetal Grey Long-Sleeve Compression,Signature Blue,10583936368928,signature-long-sleeve-compression-blue,Signature Long Sleeve Compression Blue,Shirts,5,0,50,6,15,
-39,MEDIUM,Gray Iron Therapy Gunmetal Grey Long-Sleeve Compression,Signature Lilac Purple,10583940006176,signature-long-sleeve-compression-lilac-purple,Signature Long Sleeve Compression Lilac Purple,Shirts,5,0,50,6,15,
-40,MEDIUM,Onyx Black Iron Therapy Short-Sleeve Compression,(same as stem),9496871665952,iron-therapy-short-sleeve-compression,Onyx Black Iron Therapy Short-Sleeve Compression,Shirts,7,5,0,5,12,
-40,MEDIUM,Onyx Black Iron Therapy Short-Sleeve Compression,Signature Lilac Purple,10583977296160,signature-short-sleeve-compression-lilac-purple,Signature Short Sleeve Compression Lilac Purple,Shirts,5,0,50,6,15,
-40,MEDIUM,Onyx Black Iron Therapy Short-Sleeve Compression,Signature Blue,10583985946912,signature-long-sleeve-compression-blue-copy,Signature Short Sleeve Compression Blue,Shirts,5,0,50,6,15,
-41,MEDIUM,Crewneck,Forest Green,9855413649696,forest-green-crewneck,Forest Green Crewneck,Sweatshirts,7,5,-11,5,14,
-41,MEDIUM,Crewneck,Black Forged in Failure,9856188776736,black-forged-in-failure-crewneck,Black Forged in Failure Crewneck,Sweatshirts,7,7,-1,5,9,
-41,MEDIUM,Crewneck,Orange Forged in Failure,9856189006112,orange-forged-in-failure-crewneck,Orange Forged in Failure Crewneck,Sweatshirts,7,6,0,5,9,
-41,MEDIUM,Crewneck,Cherry Blossom,10137381208352,cherry-blossom-crewneck,Cherry Blossom Crewneck,Sweatshirts,7,4,-9,5,13,
-42,MEDIUM,Tech Pants,Beige,9883803779360,beige-tech-pants,Beige Tech Pants,Sweatpants,5,7,0,5,11,
-42,MEDIUM,Tech Pants,Black,9883805679904,beige-tech-pants-copy,Black Tech Pants,Sweatpants,5,7,-7,5,11,
-43,MEDIUM,Heavyweight Sweatpants,Amethyst,9978524533024,amethyst-heavyweight-sweatpants,Amethyst Heavyweight Sweatpants,Sweatpants,7,6,-36,3,10,
-43,MEDIUM,Heavyweight Sweatpants,Arctic Camo,9987283648800,arctic-camo-heavyweight-sweatpants,Arctic Camo Heavyweight Sweatpants,Sweatpants,7,11,-1,5,12,
-43,MEDIUM,Heavyweight Sweatpants,Amethyst Camo,10160501817632,amethyst-camo-heavyweight-sweatpants,Amethyst Camo Heavyweight Sweatpants,Sweatpants,7,2,-1,5,12,
-44,MEDIUM,Shorts,Prime Layer Frost Blue,10003278201120,sky-blue-nylon-shorts,Prime Layer Frost Blue Shorts,Tracksuit,5,4,-1,3,11,
-44,MEDIUM,Shorts,Prime Layer Midnight Black,10003278266656,midnight-black-nylon-shorts,Prime Layer Midnight Black Shorts,Tracksuit,5,4,-2,2,9,
-44,MEDIUM,Shorts,Prime Layer Forest Green,10003278430496,forest-green-nylon-shorts,Prime Layer Forest Green Shorts,Tracksuit,5,4,0,3,11,
-45,MEDIUM,Track Jacket,Prime Layer Frost Blue,10003279118624,sky-blue-nylon-track-jacket,Prime Layer Frost Blue Track Jacket,Tracksuit,7,5,0,2,9,
-45,MEDIUM,Track Jacket,Prime Layer Forest Green,10003279282464,forest-green-nylon-track-jacket,Prime Layer Forest Green Track Jacket,Tracksuit,7,5,0,3,10,
-45,MEDIUM,Track Jacket,Prime Layer Midnight Black,10003279446304,midnight-black-nylon-track-jacket,Prime Layer Midnight Black Track Jacket,Tracksuit,7,5,0,2,9,
-46,MEDIUM,Smoke Sweatshorts,Black,10338060534048,cherry-blossom-sweat-shorts-copy,Black Smoke Sweatshorts,Shorts,5,3,-1,4,14,
-46,MEDIUM,Smoke Sweatshorts,Grey,10383282864416,grey-smoke-sweatshorts,Grey Smoke Sweatshorts,Shorts,5,3,0,2,10,
-47,MEDIUM,Camo Spray Tee,Blue,10507651383584,blue-camo-spray-tee,Blue Camo Spray Tee,T-Shirts,7,0,-23,6,15,
-47,MEDIUM,Camo Spray Tee,Sand,10507652366624,sand-camo-spray-tee,Sand Camo Spray Tee,T-Shirts,7,0,-19,6,15,
-48,MEDIUM,Mesh Shorts,White Hyper,10513525932320,white-hyper-mesh-shorts,White Hyper Mesh Shorts,Shorts,5,0,-40,2,11,
-48,MEDIUM,Mesh Shorts,Black Hyper,10513554538784,black-hyper-mesh-shorts,Black Hyper Mesh Shorts,Shorts,5,0,-46,2,11,
-48,MEDIUM,Mesh Shorts,Blue Camo,10513605624096,black-hyper-mesh-shorts-copy,Blue Camo Mesh Shorts,Shorts,5,0,-39,1,11,
-48,MEDIUM,Mesh Shorts,Sand Camo,10513610506528,sand-camo-mesh-shorts,Sand Camo Mesh Shorts,Shorts,5,0,-21,2,11,
-49,MEDIUM,New York Cargo Wideleg - Black,(same as stem),10523479408928,new-york-cargo-wideleg-black,New York Cargo Wideleg - Black,Sweatpants,5,0,491,4,13,
-49,MEDIUM,New York Cargo Wideleg - Black,Cool Grey,10523486880032,new-york-cargo-wideleg-cool-grey,New York Cargo Wideleg - Cool Grey,Sweatpants,5,0,467,4,13,
-50,MEDIUM,Hyper Compression,White,10537481404704,white-hyper-compression,White Hyper Compression,Shirts,7,0,217,6,16,
-50,MEDIUM,Hyper Compression,Black,10537493594400,black-hyper-compression,Black Hyper Compression,Shirts,7,0,210,6,16,
-51,MEDIUM,Print,Waffleknit Zip Up Black with Black,10574937751840,waffleknit-zip-up-black-with-black-print,Waffleknit Zip Up Black with Black Print,Zipup Hoodie,7,0,350,5,15,
-51,MEDIUM,Print,Waffleknit Zip Up Navy with Navy,10574944698656,waffleknit-zip-up-navy-with-navy-print,Waffleknit Zip Up Navy with Navy Print,Zipup Hoodie,7,0,351,5,15,
-51,MEDIUM,Print,Waffleknit Zip Up Grey with Grey,10574992474400,waffleknit-zip-up-grey-with-grey-print,Waffleknit Zip Up Grey with Grey Print,Zipup Hoodie,7,0,173,5,15,
-52,MEDIUM,Waffleknit Sweatpants Black with Black,(same as stem),10575718744352,waffleknit-sweatpants-black-with-black,Waffleknit Sweatpants Black with Black,Sweatpants,5,0,765,4,12,
-52,MEDIUM,Waffleknit Sweatpants Black with Black,Navy Navy Print,10575720055072,waffleknit-sweatpants-navy-with-navy-print,Waffleknit Sweatpants Navy with Navy Print,Sweatpants,5,0,752,4,12,
-52,MEDIUM,Waffleknit Sweatpants Black with Black,Grey Grey Print,10575720612128,waffleknit-sweatpants-grey-with-grey-print,Waffleknit Sweatpants Grey with Grey Print,Sweatpants,5,0,492,4,12,
-53,MEDIUM,Print,Waffleknit Pullover Black with Black,10578169594144,waffleknit-pullover,Waffleknit Pullover Black with Black Print,Waffleknit Pullover,7,0,389,9,17,
-53,MEDIUM,Print,Waffleknit Pullover Navy with Navy,10578176639264,waffleknit-pullover-navy-with-navy-print,Waffleknit Pullover Navy with Navy Print,Waffleknit Pullover,7,0,369,9,17,
-53,MEDIUM,Print,Waffleknit Pullover Grey with Grey,10578181488928,waffleknit-pullover-grey-with-grey-print,Waffleknit Pullover Grey with Grey Print,Waffleknit Pullover,7,0,262,9,17,
-54,MEDIUM,Print,Outlaw Waffleknit Zip Up Black with Grey,10580978794784,outlaw-waffleknit-zip-up,Outlaw Waffleknit Zip Up Black with Grey Print,Zipup Hoodie,7,0,346,5,15,
-54,MEDIUM,Print,Outlaw Waffleknit Zip Up Black with Beige,10580991181088,outlaw-waffleknit-zip-up-black-with-beige-print,Outlaw Waffleknit Zip Up Black with Beige Print,Zipup Hoodie,7,0,357,5,15,
-54,MEDIUM,Print,Outlaw Waffleknit Zip Up Black with Red,10580993343776,outlaw-waffleknit-zip-up-black-with-red-print,Outlaw Waffleknit Zip Up Black with Red Print,Zipup Hoodie,7,0,363,5,15,
-54,MEDIUM,Print,Outlaw Waffleknit Zip Up Grey with Beige,10581047378208,outlaw-waffleknit-zip-up-grey-with-beige-print,Outlaw Waffleknit Zip Up Grey with Beige Print,Zipup Hoodie,7,0,177,5,15,
-55,MEDIUM,Print,Reaper Waffleknit Sweatpants Black with Grey,10581118189856,reaper-waffleknit-sweatpants,Reaper Waffleknit Sweatpants Black with Grey Print,Sweatpants,5,0,761,4,12,
-55,MEDIUM,Print,Reaper Waffleknit Sweatpants Black with Beige,10581140013344,reaper-waffleknit-sweatpants-black-with-beige-print,Reaper Waffleknit Sweatpants Black with Beige Print,Sweatpants,5,0,756,4,12,
-55,MEDIUM,Print,Reaper Waffleknit Sweatpants Black with Red,10581146599712,reaper-waffleknit-sweatpants-black-with-red-print,Reaper Waffleknit Sweatpants Black with Red Print,Sweatpants,5,0,770,4,12,
-55,MEDIUM,Print,Reaper Waffleknit Sweatpants Grey with Beige,10581156299040,reaper-waffleknit-sweatpants-grey-with-beige-print,Reaper Waffleknit Sweatpants Grey with Beige Print,Sweatpants,5,0,756,4,12,
-56,MEDIUM,Print,Reaper Waffleknit Pullover Black with Grey,10582811476256,reaper-waffleknit-pullover-black-with-grey-print,Reaper Waffleknit Pullover Black with Grey Print,Waffleknit Pullover,7,0,203,9,17,
-56,MEDIUM,Print,Reaper Waffleknit Pullover Black with Beige,10582841557280,reaper-waffleknit-pullover-black-with-beige-print,Reaper Waffleknit Pullover Black with Beige Print,Waffleknit Pullover,7,0,204,9,17,
-56,MEDIUM,Print,Reaper Waffleknit Pullover Black with Red,10582842605856,reaper-waffleknit-pullover-black-with-red-print,Reaper Waffleknit Pullover Black with Red Print,Waffleknit Pullover,7,0,208,9,17,
-56,MEDIUM,Print,Reaper Waffleknit Pullover Black with Purple,10582843621664,reaper-waffleknit-pullover-black-with-purple-print,Reaper Waffleknit Pullover Black with Purple Print,Waffleknit Pullover,7,0,158,9,17,
-56,MEDIUM,Print,Reaper Waffleknit Pullover Grey with Beige,10582845391136,reaper-waffleknit-pullover-grey-with-beige-print,Reaper Waffleknit Pullover Grey with Beige Print,Waffleknit Pullover,7,0,129,9,17,
-57,MEDIUM,Print,Tombstone Waffleknit Pullover Black with Grey,10582864691488,tombstone-waffleknit-pullover-black-with-grey-print,Tombstone Waffleknit Pullover Black with Grey Print,Waffleknit Pullover,7,0,252,9,17,
-57,MEDIUM,Print,Tombstone Waffleknit Pullover Black with Beige,10582953328928,tombstone-waffleknit-pullover-black-with-beige-print,Tombstone Waffleknit Pullover Black with Beige Print,Waffleknit Pullover,7,0,254,9,17,
-57,MEDIUM,Print,Tombstone Waffleknit Pullover Black with Red,10582959980832,tombstone-waffleknit-pullover-black-with-red-print,Tombstone Waffleknit Pullover Black with Red Print,Waffleknit Pullover,7,0,256,9,17,
-57,MEDIUM,Print,Tombstone Waffleknit Pullover Grey with Beige,10582974071072,tombstone-waffleknit-pullover-grey-with-beige-print,Tombstone Waffleknit Pullover Grey with Beige Print,Waffleknit Pullover,7,0,119,9,17,
-58,LOW,(needs manual review),(unknown),10584079466784,signature-leggings-black,Signature Leggings Black,Sweatpants,5,0,50,5,13,
-58,LOW,(needs manual review),(unknown),10584084513056,signature-leggings-royal-blue,Signature Leggings Royal Blue,Sweatpants,5,0,50,5,13,
-58,LOW,(needs manual review),(unknown),9883500871968,black-liquid-pump-cover,Black Liquid Pump Cover,Pump Cover,7,21,-1,4,12,
-58,LOW,(needs manual review),(unknown),9978521780512,amethyst-pump-cover,Amethyst Pump Cover,Pump Cover,7,14,-2,3,11,
-58,LOW,(needs manual review),(unknown),9987283288352,arctic-camo-pump-cover,Arctic Camo Pump Cover,Pump Cover,7,17,-2,3,11,
-58,LOW,(needs manual review),(unknown),10137379963168,cherry-blossom-heavyweight-sweats,Cherry Blossom Heavyweight Sweats,Sweatpants,7,6,94,7,19,
-58,LOW,(needs manual review),(unknown),10137389531424,dusk-blossom-tee,Dusk Blossom Tee,T-Shirts,7,8,-9,5,13,
-58,LOW,(needs manual review),(unknown),10160450928928,amethyst-camo-pump-cover,Amethyst Camo Pump Cover,Pump Cover,7,10,0,3,11,
-58,LOW,(needs manual review),(unknown),10279666483488,cropped-midnight-pumpcover,Cropped Midnight Pumpcover,Pump Cover,5,9,296,10,19,
-58,LOW,(needs manual review),(unknown),10279666516256,cropped-blackout-pumpcover,Cropped Blackout Pumpcover,Pump Cover,5,7,131,10,20,
-58,LOW,(needs manual review),(unknown),10279666614560,cropped-cool-grey-pumpcover,Cropped Cool Grey Pumpcover,Pump Cover,5,6,13,9,18,
-58,LOW,(needs manual review),(unknown),10375885226272,imprisoned-minds-red,Blood Red Pump Cover,Pump Cover,7,2,17,2,13,
-58,LOW,(needs manual review),(unknown),10507635097888,black-with-white-butterfly-wide-leg-sweat,Black with White Butterfly Wide Leg Sweats,Sweatpants,5,0,1270,7,17,
-58,LOW,(needs manual review),(unknown),10507645157664,black-with-blue-butterfly-wide-leg-sweat,Black with Blue Butterfly Wide Leg Sweats,Sweatpants,5,0,-47,7,15,
-58,LOW,(needs manual review),(unknown),10507645944096,beige-with-black-butterfly-wide-leg-sweat,Beige with Black Butterfly Wide Leg Sweats,Sweatpants,5,0,-28,7,15,
-58,LOW,(needs manual review),(unknown),10509162184992,graffiti-pump-cover,Black with White Graffiti Pump Cover,Pump Cover,7,0,-150,2,11,
-58,LOW,(needs manual review),(unknown),10509175324960,black-with-blue-graffiti-pump-cover,Black with Blue Graffiti Pump Cover,Pump Cover,7,0,-171,2,11,
-58,LOW,(needs manual review),(unknown),10584076714272,morph-wide-leg-sweats-grey,Morph Wide Leg Sweats Grey,Sweatpants,5,0,75,5,13,
-59,LONER,Signature Shorts Royal Blue,(single-color style),10584209490208,signature-shorts-royal-blue,Signature Shorts Royal Blue,Shorts,5,0,50,7,16,
-60,LONER,Beige Scorpion Acid Wash Stringer,(single-color style),9854152343840,beige-scorpion-acid-wash-stringer,Beige Scorpion Acid Wash Stringer,Tank Tops,7,2,-1,4,12,
-61,LONER,Army Green Iron Therapy Heavyweight Tank Top,(single-color style),9854723162400,army-green-iron-therapy-heavyweight-tank-top,Army Green Iron Therapy Heavyweight Tank Top,Tank Tops,7,4,-8,4,11,
-62,LONER,Onyx Black Track Pants,(single-color style),9855269077280,onyx-black-track-pants,Onyx Black Track Pants,Tracksuit,5,5,0,2,10,
-63,LONER,Death Moth Tee,(single-color style),9883536195872,death-moth-tee,Death Moth Tee,T-Shirts,7,6,0,5,12,
-64,LONER,White Stealth Beater,(single-color style),9950542758176,white-stealth-beater,White Stealth Beater,Beater,7,4,0,3,11,
-65,LONER,Reaper Tee,(single-color style),9978513129760,reaper-tee,Reaper Tee,T-Shirts,7,6,-1,4,11,
-66,LONER,Storm Tee,(single-color style),9978518569248,storm-tee,Storm Tee,T-Shirts,7,7,0,4,11,
-67,LONER,OG Sky Blue Beaters,(single-color style),10020181639456,sky-blue-beaters,OG Sky Blue Beaters,Beater,7,4,0,4,11,
-68,LONER,Desert Cola Pump Cover,(single-color style),10035210748192,desert-cola-pump-cover,Desert Cola Pump Cover,Pump Cover,7,12,-19,4,11,
-69,LONER,Golden Era Sunset Tee,(single-color style),10035262488864,golden-era-tee,Golden Era Sunset Tee,T-Shirts,7,6,-2,5,11,
-70,LONER,Raglan 3/4 Tee Desert Cola,(single-color style),10035346571552,desert-cola-raglan-tee,Raglan 3/4 Tee Desert Cola,T-Shirts,7,4,0,5,11,
-71,LONER,Raglan 3/4 Tee Midnight Dusk,(single-color style),10035359416608,midnight-dusk-raglan-tee,Raglan 3/4 Tee Midnight Dusk,T-Shirts,7,4,-1,5,11,
-72,LONER,Desert Cola Stringer,(single-color style),10035487965472,medallion-stringer,Desert Cola Stringer,Tank Tops,7,7,-1,5,11,
-73,LONER,Cherry Blossom Sweat Shorts,(single-color style),10137383371040,cherry-blossom-sweat-shorts,Cherry Blossom Sweat Shorts,Shorts,7,4,0,4,13,
-74,LONER,Flame Pump Cover,(single-color style),10146459713824,flame-pump-cover,Flame Pump Cover,Pump Cover,7,4,0,4,14,
-75,LONER,Flame Sweatpants,(single-color style),10146460139808,flame-sweatpants,Flame Sweatpants,Sweatpants,7,4,-3,7,15,
-76,LONER,Camo Parachute Pants,(single-color style),10146460664096,camo-parachute-pants,Camo Parachute Pants,Sweatpants,7,8,-2,6,12,
-77,LONER,Leather Jacket,(single-color style),10146460926240,leather-jacket,Leather Jacket,Leather Jacket,7,10,0,4,12,
-78,LONER,Cutoff Tank Top,(single-color style),10146461122848,cutoff-tank-top,Cutoff Tank Top,Cutoff Tanktop,7,6,0,4,12,
-79,LONER,Waffle Flame Long Sleeve,(single-color style),10146461253920,waffle-flame-long-sleeve,Waffle Flame Long Sleeve,Sweatshirts,7,5,-1,5,12,
-80,LONER,Camo Jersey,(single-color style),10146461450528,camo-jersey,Camo Jersey,T-Shirts,7,6,-14,6,13,
-81,LONER,Samurai Pullover Heavyweight Hoodie,(single-color style),10146461516064,samurai-pullover-heavyweight-hoodie,Samurai Pullover Heavyweight Hoodie,Hoodies,7,4,0,6,15,
-82,LONER,Controlled Insanity Gift Card,(single-color style),10148790632736,controlled-insanity-gift-card,Controlled Insanity Gift Card,Gift Card,6,1,-745,5,13,
-83,LONER,3D shadow Heavyweight Sweatpants,(single-color style),10279649313056,3d-shadow-heavyweight-sweatpants,3D shadow Heavyweight Sweatpants,Evergreen Sweats,5,5,95,12,18,
-84,LONER,Pup Cover,(single-color style),10279685521696,pup-cover,Pup Cover,Pup Cover,5,7,281,9,18,
-85,LONER,Inferno Beanie,(single-color style),10362845200672,inferno-beanie,Inferno Beanie,Accessories,1,2,524,2,11,
-86,LONER,Evergreen beanies,(single-color style),10421876687136,black-beanie,Evergreen beanies,Accessories,6,12,2171,4,13,
-87,LONER,Flame Beater 3 Pack,(single-color style),10423639802144,beater-3-pack,Flame Beater 3 Pack,Beater 3-Pack,7,13,131,2,11,
-88,LONER,Sticker,(single-color style),10474096591136,sticker,Sticker,Accessories,1,0,2000,1,9,
-89,LONER,Test Pump Cover for reference,(single-color style),10498319384864,test-pump-cover-for-reference,Test Pump Cover for reference,Pump Cover,7,0,225,4,15,
-90,LONER,Graffiti Beater Pack,(single-color style),10508144935200,graffiti-beater-pack,Graffiti Beater Pack,Beater 3-Pack,7,0,-146,2,10,
-91,LONER,Metamorphosis Flannel Plaid,(single-color style),10513674797344,metamorphosis-flannel-plaid,Metamorphosis Flannel Plaid,Sweatshirts,7,0,-36,6,13,
-92,LONER,Tonal Web Skull Beanie,(single-color style),10580377272608,tonal-web-skull-beanie,Tonal Web Skull Beanie,Accessories,1,0,756,2,11,
-93,LONER,Collegiate Skull Beanie,(single-color style),10580381597984,tonal-web-skull-beanie-copy,Collegiate Skull Beanie,Accessories,1,0,778,2,11,
-94,LONER,Arctic Camo Sweatpants Camo White with Grey EMB,(single-color style),10583915397408,arctic-camo-sweatpants-white,Arctic Camo Sweatpants Camo White with Grey EMB,Sweatpants,5,0,515,4,12,
-95,LONER,Signature Long Sleeve Compression Black with White Text,(single-color style),10583930011936,signature-long-sleeve-compression-black-with-white-text,Signature Long Sleeve Compression Black with White Text,Shirts,5,0,50,6,15,
-96,LONER,Signature Short Sleeve Compression Black with White Text,(single-color style),10584030216480,signature-short-sleeve-compression-black-with-white-text,Signature Short Sleeve Compression Black with White Text,Shirts,5,0,50,6,15,
+family_id,family,proposed_color,product_id,handle,title,type,vendor,status,variant_count,image_count,total_inventory,tag_count,collection_count
+1,Evergreen Pump Cover,Blackout,10088889254176,blackout-pump-cover,Blackout Pump Cover,Evergreen Pump Cover,Controlled Insanity,Active,8,4,1922,12,24
+1,Evergreen Pump Cover,UNC Blue,10088893448480,unc-blue-pump-cover,UNC Blue Pump Cover,Evergreen Pump Cover,Controlled Insanity,Active,8,3,-31,7,16
+1,Evergreen Pump Cover,Cool Grey,10088901116192,cool-grey-pump-cover,Cool Grey Pump Cover,Evergreen Pump Cover,Controlled Insanity,Active,8,4,649,11,23
+1,Evergreen Pump Cover,Oreo,10088951021856,oreo-pump-cover,Oreo Pump Cover,Evergreen Pump Cover,Controlled Insanity,Active,8,5,0,4,11
+1,Evergreen Pump Cover,Midnight Black,10088958034208,midnight-black-pump-cover,Midnight Black Pump Cover,Evergreen Pump Cover,Controlled Insanity,Active,8,5,1532,12,24
+1,Evergreen Pump Cover,Cherry Blossom,10137377964320,cherry-blossom-pump-cover,Cherry Blossom Pump Cover,Pump Cover,Controlled Insanity,Active,7,8,473,4,18
+1,Evergreen Pump Cover,Navy,10402011709728,navy-pump-cover,Navy Pump Cover,Pump Cover,Controlled Insanity,Active,7,4,104,3,12
+1,Evergreen Pump Cover,Gunmetal Grey,10444471337248,gunmetal-grey-pump-cover,Gunmetal Grey Pump Cover,Pump Cover,Controlled Insanity,Active,7,7,33,3,12
+1,Evergreen Pump Cover,Amethyst,9978521780512,amethyst-pump-cover,Amethyst Pump Cover,Pump Cover,Controlled Insanity,Active,7,14,-2,3,11
+1,Evergreen Pump Cover,Amethyst Camo,10160450928928,amethyst-camo-pump-cover,Amethyst Camo Pump Cover,Pump Cover,Controlled Insanity,Active,7,10,0,3,11
+1,Evergreen Pump Cover,Arctic Camo,9987283288352,arctic-camo-pump-cover,Arctic Camo Pump Cover,Pump Cover,Controlled Insanity,Active,7,17,-2,3,11
+2,Heavyweight Sweatpants,Gunmetal Gray,10063945302304,neutral-gray-wide-leg-sweatpants,Gunmetal Gray Heavyweight Sweatpants,Evergreen Sweats,Controlled Insanity,Active,5,4,455,13,22
+2,Heavyweight Sweatpants,Faded Black,10065630757152,black-neutral-sweats,Faded Black Heavyweight Sweatpants,Evergreen Sweats,Controlled Insanity,Active,5,6,279,13,23
+2,Heavyweight Sweatpants,Navy,10279638008096,navy-heavyweight-sweatpants,Navy Heavyweight Sweatpants,Evergreen Sweats,Controlled Insanity,Active,5,8,256,12,18
+2,Heavyweight Sweatpants,Forest Green,10279643873568,forest-green-heavyweight-sweatpants,Forest Green Heavyweight Sweatpants,Evergreen Sweats,Controlled Insanity,Active,5,7,3,12,18
+2,Heavyweight Sweatpants,Washed Red,10279645380896,washed-red-heavyweight-sweatpants-copy,Washed Red Heavyweight Sweatpants,Evergreen Sweats,Controlled Insanity,Active,5,5,108,11,17
+2,Heavyweight Sweatpants,Heather grey,10279647084832,heather-grey-heavyweight-sweatpants,Heather grey Heavyweight Sweatpants,Evergreen Sweats,Controlled Insanity,Active,5,7,229,11,18
+2,Heavyweight Sweatpants,Pitch Black,10279648493856,pitch-black-heavyweight-sweatpants,Pitch Black Heavyweight Sweatpants,Evergreen Sweats,Controlled Insanity,Active,5,4,618,12,19
+2,Heavyweight Sweatpants,Amethyst,9978524533024,amethyst-heavyweight-sweatpants,Amethyst Heavyweight Sweatpants,Sweatpants,Controlled Insanity,Active,7,6,-36,3,10
+2,Heavyweight Sweatpants,Amethyst Camo,10160501817632,amethyst-camo-heavyweight-sweatpants,Amethyst Camo Heavyweight Sweatpants,Sweatpants,Controlled Insanity,Active,7,2,-1,5,12
+2,Heavyweight Sweatpants,Arctic Camo,9987283648800,arctic-camo-heavyweight-sweatpants,Arctic Camo Heavyweight Sweatpants,Sweatpants,Controlled Insanity,Active,7,11,-1,5,12
+2,Heavyweight Sweatpants,Cherry Blossom Sweats,10137379963168,cherry-blossom-heavyweight-sweats,Cherry Blossom Heavyweight Sweats,Sweatpants,Controlled Insanity,Active,7,6,94,7,19
+3,Wide Leg Sweats,Butterfly Blue,10366247829792,smoke-blue-wide-leg-sweats,Butterfly Blue Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,7,325,5,15
+3,Wide Leg Sweats,Paranorman Black,10366261395744,smoke-black-wide-leg-sweats,Paranorman Black Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,4,93,5,14
+3,Wide Leg Sweats,Blood Red,10366424711456,smoke-blood-red-wide-leg-sweats,Blood Red Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,5,217,5,14
+3,Wide Leg Sweats,Glossy Gray,10366459380000,smoke-glossy-gray-wide-leg-sweats,Glossy Gray Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,4,18,5,14
+3,Wide Leg Sweats,Venom Green,10366478418208,smoke-green-wide-leg-sweats,Venom Green Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,6,285,5,14
+3,Wide Leg Sweats,Paranorman Purple,10366493229344,smoke-purple-wide-leg-sweats,Paranorman Purple Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,7,41,5,14
+3,Wide Leg Sweats,Dusk,10243236233504,wide-leg-sweats-dusk,Wide Leg Sweats Dusk,Sweatpants,Controlled Insanity,Active,5,7,93,10,17
+3,Wide Leg Sweats,Black,10243236299040,wide-leg-sweats-black,Wide Leg Sweats Black,Sweatpants,Controlled Insanity,Active,5,7,0,8,13
+4,Heavyweight Pullover,Heather Grey,10279654031648,heather-grey-heavyweight-pullover,Heather Grey Heavyweight Pullover,Evergreen Pullover,Controlled Insanity,Active,7,6,716,14,24
+4,Heavyweight Pullover,Forest Green,10279654162720,forest-green-heavyweight-pullover,Forest Green Heavyweight Pullover,Evergreen Pullover,Controlled Insanity,Active,7,6,302,14,22
+4,Heavyweight Pullover,Navy,10279654785312,navy-blue-heavyweight-pullover,Navy Heavyweight Pullover,Evergreen Pullover,Controlled Insanity,Active,7,6,533,14,22
+4,Heavyweight Pullover,Washed Red,10279655309600,washed-red-pullover,Washed Red Heavyweight Pullover,Evergreen Pullover,Controlled Insanity,Active,7,5,201,14,22
+4,Heavyweight Pullover,Pitch Black,10279655735584,pitch-black-pullover,Pitch Black Heavyweight Pullover,Evergreen Pullover,Controlled Insanity,Active,7,6,573,14,24
+4,Heavyweight Pullover,Gunmetal Grey,10279656489248,gunmetal-grey-pullover,Gunmetal Grey Heavyweight Pullover,Evergreen Pullover,Controlled Insanity,Active,7,6,728,14,23
+4,Heavyweight Pullover,Faded Black,10279657341216,faded-black-heavyweight-pullover,Faded Black Heavyweight Pullover,Evergreen Pullover,Controlled Insanity,Active,7,6,836,14,24
+5,Heavyweight Zip Up,Faded Black,10279660781856,faded-black-heavyweight-zip-up,Faded Black Heavyweight Zip Up,Evergreen Zip up,Controlled Insanity,Active,7,5,593,15,23
+5,Heavyweight Zip Up,Forest Green,10279662125344,forest-green-heavyweight-zip-up,Forest Green Heavyweight Zip Up,Evergreen Zip up,Controlled Insanity,Active,7,5,346,15,22
+5,Heavyweight Zip Up,Gunmetal Grey,10279662584096,gunmetal-grey-heavyweight-zip-up,Gunmetal Grey Heavyweight Zip Up,Evergreen Zip up,Controlled Insanity,Active,7,6,571,15,23
+5,Heavyweight Zip Up,Navy,10279663304992,navy-blue-heavyweight-zip-up,Navy Heavyweight Zip Up,Evergreen Zip up,Controlled Insanity,Active,7,3,456,15,22
+5,Heavyweight Zip Up,Washed Red,10279663534368,washed-red-heavyweight-zip-up,Washed Red Heavyweight Zip Up,Evergreen Zip up,Controlled Insanity,Active,7,4,297,15,22
+5,Heavyweight Zip Up,Pitch Black,10279663763744,pitch-black-heavyweight-zip-up,Pitch Black Heavyweight Zip Up,Evergreen Zip up,Controlled Insanity,Active,7,5,369,15,23
+5,Heavyweight Zip Up,Heather Grey,10279664288032,heather-grey-heavyweight-zip-up,Heather Grey Heavyweight Zip Up,Evergreen Zip up,Controlled Insanity,Active,7,5,546,15,23
+6,Smoke Pump Cover,Dusk,10243233317152,smoke-pump-cover-dusk,Smoke Pump Cover Dusk,Pump Cover,Controlled Insanity,Active,7,4,32,6,16
+6,Smoke Pump Cover,Off White,10243233218848,smoke-pump-cover-off-white,Smoke Pump Cover Off White,Pump Cover,Controlled Insanity,Active,7,7,8,5,15
+6,Smoke Pump Cover,Butterfly Blue,10363305132320,smoked-out-blue-pumpcover,Butterfly Blue Pump Cover,Pump Cover,Controlled Insanity,Active,7,5,7,3,14
+6,Smoke Pump Cover,Glossy Gray,10363357331744,smoked-out-glossy-gray-pump-cover,Glossy Gray Pump Cover,Pump Cover,Controlled Insanity,Active,7,10,9,3,13
+6,Smoke Pump Cover,Paranorman Black,10363336294688,smoked-out-black-pump-cover,Paranorman Black Pump Cover,Pump Cover,Controlled Insanity,Active,7,5,23,3,13
+6,Smoke Pump Cover,Paranorman Blood Red,10363346387232,smoked-out-blood-red-pump-cover,Paranorman Blood Red Pump Cover,Pump Cover,Controlled Insanity,Active,7,7,16,3,13
+6,Smoke Pump Cover,Smoked Out Gray Black,10363394687264,smoke-grey-with-black-pump-cover,Smoked Out Gray in Black Pump Cover,Pump Cover,Controlled Insanity,Active,7,9,0,3,11
+7,Beater 3-Pack,Dusk Three,10243247997216,dusk-beater-three-pack,Dusk Beater Three Pack,Beater 3-Pack,Controlled Insanity,Active,7,13,0,6,13
+7,Beater 3-Pack,Vintage Washed,10487451746592,vintage-washed-beater-3-pack,Vintage Washed Beater 3-Pack,Beater 3-Pack,Controlled Insanity,Active,7,11,118,6,16
+7,Beater 3-Pack,Nightshade,10583013949728,nightshade-beater-3-pack-1,Nightshade Beater 3-Pack,Beater 3-Pack,Controlled Insanity,Active,7,0,768,6,16
+7,Beater 3-Pack,Neutral,10583023223072,neutral-beater-3-pack,Neutral Beater 3-Pack,Beater 3-Pack,Controlled Insanity,Active,7,0,501,6,16
+7,Beater 3-Pack,Flame,10423639802144,beater-3-pack,Flame Beater 3 Pack,Beater 3-Pack,Controlled Insanity,Active,7,13,131,2,11
+7,Beater 3-Pack,Graffiti,10508144935200,graffiti-beater-pack,Graffiti Beater Pack,Beater 3-Pack,Controlled Insanity,Active,7,0,-146,2,10
+8,Lightweight Tee 3-Pack,Weighted,10423490314528,weighted-tee-3-pack,Weighted Tee 3 - Pack,Lightweight Tee 3-Pack,Controlled Insanity,Active,7,6,49,3,12
+8,Lightweight Tee 3-Pack,Supercharged,10423629545760,supercharged-lightweight-tee-3-pack,Supercharged Lightweight Tee 3 - Pack,Lightweight Tee 3-Pack,Controlled Insanity,Active,7,11,33,4,13
+8,Lightweight Tee 3-Pack,Nightshade,10583053664544,nightshade-lightweight-tee-3-pack,Nightshade Lightweight Tee 3 - Pack,Lightweight Tee 3-Pack,Controlled Insanity,Active,7,0,751,4,13
+8,Lightweight Tee 3-Pack,Neutral,10583122772256,neutral-lightweight-tee-3-pack-copy,Neutral Lightweight Tee 3 - Pack,Lightweight Tee 3-Pack,Controlled Insanity,Active,7,0,508,4,13
+8,Lightweight Tee 3-Pack,Smoke Three,10243250422048,smoke-lightweight-tee-three-pack,Smoke Lightweight Tee Three Pack,Lightweight Tee 3-Pack,Controlled Insanity,Active,7,17,2,8,19
+8,Lightweight Tee 3-Pack,Butterfly Three,10523495530784,butterfly-lightweight-tee-three-pack,Butterfly Lightweight Tee Three Pack,Lightweight Tee 3-Pack,Controlled Insanity,Active,7,0,1987,8,20
+9,Ghost Zip Up,Blood Red,10421717401888,ghost-zip-up-red-print,Ghost Zip Up Blood Red,Zipup Hoodie,Controlled Insanity,Active,7,5,38,5,14
+9,Ghost Zip Up,Glossy Pink,10421765472544,ghost-zip-up-pink-print,Ghost Zip Up Glossy Pink,Zipup Hoodie,Controlled Insanity,Active,7,5,7,5,14
+9,Ghost Zip Up,Creme,10421779628320,ghost-zip-up-gray-print,Ghost Zip Up Creme,Zipup Hoodie,Controlled Insanity,Active,7,5,56,5,14
+9,Ghost Zip Up,Dusk,10421788606752,ghost-zip-up-black-print,Ghost Zip Up Dusk,Zipup Hoodie,Controlled Insanity,Active,7,4,26,5,14
+9,Ghost Zip Up,Toxic Green,10421791785248,ghost-zip-up-green-print,Ghost Zip Up Toxic Green,Zipup Hoodie,Controlled Insanity,Active,7,2,86,5,14
+10,Inferno Pump Cover,Blood red,10362822885664,blood-red-inferno-pump-cover,Blood red Inferno Pump Cover,Pump Cover,Controlled Insanity,Active,7,4,285,2,12
+10,Inferno Pump Cover,Electric,10362783105312,electric-inferno-pump-cover,Electric Inferno Pump Cover,Pump Cover,Controlled Insanity,Active,7,2,58,2,12
+10,Inferno Pump Cover,Flame,10146459713824,flame-pump-cover,Flame Pump Cover,Pump Cover,Controlled Insanity,Active,7,4,0,4,14
+10,Inferno Pump Cover,Smoke,10362711998752,smoke-inferno-pump-cover,Smoke Inferno Pump Cover,Pump Cover,Controlled Insanity,Active,7,4,585,2,12
+10,Inferno Pump Cover,Toxic,10362734018848,toxic-inferno-pump-cover,Toxic Inferno Pump Cover,Pump Cover,Controlled Insanity,Active,7,4,255,2,12
+11,Reaper Waffleknit Pullover,Black Grey Print,10582811476256,reaper-waffleknit-pullover-black-with-grey-print,Reaper Waffleknit Pullover Black with Grey Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,203,9,17
+11,Reaper Waffleknit Pullover,Black Beige Print,10582841557280,reaper-waffleknit-pullover-black-with-beige-print,Reaper Waffleknit Pullover Black with Beige Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,204,9,17
+11,Reaper Waffleknit Pullover,Black Red Print,10582842605856,reaper-waffleknit-pullover-black-with-red-print,Reaper Waffleknit Pullover Black with Red Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,208,9,17
+11,Reaper Waffleknit Pullover,Black Purple Print,10582843621664,reaper-waffleknit-pullover-black-with-purple-print,Reaper Waffleknit Pullover Black with Purple Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,158,9,17
+11,Reaper Waffleknit Pullover,Grey Beige Print,10582845391136,reaper-waffleknit-pullover-grey-with-beige-print,Reaper Waffleknit Pullover Grey with Beige Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,129,9,17
+12,Chained Baby Tee,Midnight,10393898484000,chained-baby-tee-white-print,Chained Baby Tee Midnight,baby tee,Controlled Insanity,Active,5,4,82,4,13
+12,Chained Baby Tee,Glossy Pink,10393917554976,chained-baby-tee-pink-print,Chained Baby Tee Glossy Pink,baby tee,Controlled Insanity,Active,5,4,15,4,13
+12,Chained Baby Tee,Grey,10393932333344,chained-baby-tee-gray-10c,Chained Baby Tee Grey,baby tee,Controlled Insanity,Active,5,4,5,4,13
+12,Chained Baby Tee,Creme,10393945145632,chained-baby-tee-tan-7529c,Chained Baby Tee Creme,Cropped Tank,Controlled Insanity,Active,5,4,18,5,14
+13,Chrome Thermal,(same as family),10398206722336,chrome-thermal-silver-print,Chrome Thermal,Longsleeve,Controlled Insanity,Active,7,2,0,1,8
+13,Chrome Thermal,Glossy Pink,10398295130400,chrome-thermal-pink-print,Chrome Thermal Glossy Pink,Longsleeve,Controlled Insanity,Active,7,4,0,1,8
+13,Chrome Thermal,Toxic Green,10398374363424,chrome-thermal-green-print,Chrome Thermal Toxic Green,Longsleeve,Controlled Insanity,Active,7,4,0,1,8
+13,Chrome Thermal,Electric Blue,10398440554784,chrome-thermal-blue-print,Chrome Thermal Electric Blue,Longsleeve,Controlled Insanity,Active,7,5,0,1,8
+14,Cropped Chain Tank,Midnight,10393983418656,cropped-chain-tank-white-print,Cropped Chain Tank Midnight,Cropped Tank,Controlled Insanity,Active,5,2,52,5,14
+14,Cropped Chain Tank,Glossy Pink,10394008813856,cropped-chain-tank-pink-print,Cropped Chain Tank Glossy Pink,Cropped Tank,Controlled Insanity,Active,5,4,22,5,14
+14,Cropped Chain Tank,Gray,10394192445728,cropped-chain-tank-gray-10c,Cropped Chain Tank Gray,Cropped Tank,Controlled Insanity,Active,5,4,10,5,15
+14,Cropped Chain Tank,Creme,10394207453472,cropped-chain-tank-tan-7529c,Cropped Chain Tank Creme,Cropped Tank,Controlled Insanity,Active,5,4,27,5,14
+15,Forged in Failure Crewneck,Black,9856188776736,black-forged-in-failure-crewneck,Black Forged in Failure Crewneck,Sweatshirts,Controlled Insanity,Active,7,7,-1,5,9
+15,Forged in Failure Crewneck,Brown,9856188907808,brown-forged-in-failure-crewneck,Brown Forged in Failure Crewneck,Sweatshirts,Controlled Insanity,Active,7,6,-1,5,9
+15,Forged in Failure Crewneck,Orange,9856189006112,orange-forged-in-failure-crewneck,Orange Forged in Failure Crewneck,Sweatshirts,Controlled Insanity,Active,7,6,0,5,9
+15,Forged in Failure Crewneck,UNC Blue,9856189104416,unc-blue-forged-in-failure-crewneck,UNC Blue Forged in Failure Crewneck,Sweatshirts,Controlled Insanity,Active,7,4,-2,5,9
+16,Ghost Sweatpants,Toxic Green,10421879308576,ghost-sweatpants-green-print,Ghost Sweatpants Toxic Green,Sweatpants,Controlled Insanity,Active,5,5,73,4,12
+16,Ghost Sweatpants,Blood Red,10421882487072,ghost-sweatpants-red-print,Ghost Sweatpants Blood Red,Sweatpants,Controlled Insanity,Active,5,2,227,4,12
+16,Ghost Sweatpants,Glossy Pink,10421883928864,ghost-sweatpants-pink-print,Ghost Sweatpants Glossy Pink,Sweatpants,Controlled Insanity,Active,5,4,0,4,10
+16,Ghost Sweatpants,Dusk,10421898084640,ghost-sweatpants-black-print,Ghost Sweatpants Dusk,Sweatpants,Controlled Insanity,Active,5,4,31,4,12
+17,Hyper Mesh Shorts,White,10513525932320,white-hyper-mesh-shorts,White Hyper Mesh Shorts,Shorts,Controlled Insanity,Active,5,0,-40,2,11
+17,Hyper Mesh Shorts,Black,10513554538784,black-hyper-mesh-shorts,Black Hyper Mesh Shorts,Shorts,Controlled Insanity,Active,5,0,-46,2,11
+17,Hyper Mesh Shorts,Blue Camo,10513605624096,black-hyper-mesh-shorts-copy,Blue Camo Mesh Shorts,Shorts,Controlled Insanity,Active,5,0,-39,1,11
+17,Hyper Mesh Shorts,Sand Camo,10513610506528,sand-camo-mesh-shorts,Sand Camo Mesh Shorts,Shorts,Controlled Insanity,Active,5,0,-21,2,11
+18,Outlaw Waffleknit Zip Up,Black Grey Print,10580978794784,outlaw-waffleknit-zip-up,Outlaw Waffleknit Zip Up Black with Grey Print,Zipup Hoodie,Controlled Insanity,Active,7,0,346,5,15
+18,Outlaw Waffleknit Zip Up,Black Beige Print,10580991181088,outlaw-waffleknit-zip-up-black-with-beige-print,Outlaw Waffleknit Zip Up Black with Beige Print,Zipup Hoodie,Controlled Insanity,Active,7,0,357,5,15
+18,Outlaw Waffleknit Zip Up,Black Red Print,10580993343776,outlaw-waffleknit-zip-up-black-with-red-print,Outlaw Waffleknit Zip Up Black with Red Print,Zipup Hoodie,Controlled Insanity,Active,7,0,363,5,15
+18,Outlaw Waffleknit Zip Up,Grey Beige Print,10581047378208,outlaw-waffleknit-zip-up-grey-with-beige-print,Outlaw Waffleknit Zip Up Grey with Beige Print,Zipup Hoodie,Controlled Insanity,Active,7,0,177,5,15
+19,Reaper Waffleknit Sweatpants,Black Grey Print,10581118189856,reaper-waffleknit-sweatpants,Reaper Waffleknit Sweatpants Black with Grey Print,Sweatpants,Controlled Insanity,Active,5,0,761,4,12
+19,Reaper Waffleknit Sweatpants,Black Beige Print,10581140013344,reaper-waffleknit-sweatpants-black-with-beige-print,Reaper Waffleknit Sweatpants Black with Beige Print,Sweatpants,Controlled Insanity,Active,5,0,756,4,12
+19,Reaper Waffleknit Sweatpants,Black Red Print,10581146599712,reaper-waffleknit-sweatpants-black-with-red-print,Reaper Waffleknit Sweatpants Black with Red Print,Sweatpants,Controlled Insanity,Active,5,0,770,4,12
+19,Reaper Waffleknit Sweatpants,Grey Beige Print,10581156299040,reaper-waffleknit-sweatpants-grey-with-beige-print,Reaper Waffleknit Sweatpants Grey with Beige Print,Sweatpants,Controlled Insanity,Active,5,0,756,4,12
+20,Tombstone Waffleknit Pullover,Black Grey Print,10582864691488,tombstone-waffleknit-pullover-black-with-grey-print,Tombstone Waffleknit Pullover Black with Grey Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,252,9,17
+20,Tombstone Waffleknit Pullover,Black Beige Print,10582953328928,tombstone-waffleknit-pullover-black-with-beige-print,Tombstone Waffleknit Pullover Black with Beige Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,254,9,17
+20,Tombstone Waffleknit Pullover,Black Red Print,10582959980832,tombstone-waffleknit-pullover-black-with-red-print,Tombstone Waffleknit Pullover Black with Red Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,256,9,17
+20,Tombstone Waffleknit Pullover,Grey Beige Print,10582974071072,tombstone-waffleknit-pullover-grey-with-beige-print,Tombstone Waffleknit Pullover Grey with Beige Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,119,9,17
+21,Butterfly Wide Leg Sweats,Black White,10507635097888,black-with-white-butterfly-wide-leg-sweat,Black with White Butterfly Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,0,1270,7,17
+21,Butterfly Wide Leg Sweats,Black Blue,10507645157664,black-with-blue-butterfly-wide-leg-sweat,Black with Blue Butterfly Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,0,-47,7,15
+21,Butterfly Wide Leg Sweats,Beige Black,10507645944096,beige-with-black-butterfly-wide-leg-sweat,Beige with Black Butterfly Wide Leg Sweats,Sweatpants,Controlled Insanity,Active,5,0,-28,7,15
+22,Butterfly Zip Up,Black White Print,10534318899488,butterfly-zip-up-black-with-white-print,Butterfly Zip Up Black with White Print,Zipup Hoodie,Controlled Insanity,Active,7,0,478,5,15
+22,Butterfly Zip Up,Black Blue Print,10534342492448,butterfly-zip-up-black-with-blue-print,Butterfly Zip Up Black with Blue Print,Zipup Hoodie,Controlled Insanity,Active,7,0,478,5,15
+22,Butterfly Zip Up,Beige Black Print,10534355960096,butterfly-zip-up-beige-with-black-print,Butterfly Zip Up Beige with Black Print,Zipup Hoodie,Controlled Insanity,Active,7,0,208,5,15
+23,Cropped Pump Cover,Blackout Pumpcover,10279666516256,cropped-blackout-pumpcover,Cropped Blackout Pumpcover,Pump Cover,Controlled Insanity,Active,5,7,131,10,20
+23,Cropped Pump Cover,Cool Grey Pumpcover,10279666614560,cropped-cool-grey-pumpcover,Cropped Cool Grey Pumpcover,Pump Cover,Controlled Insanity,Active,5,6,13,9,18
+23,Cropped Pump Cover,Midnight Pumpcover,10279666483488,cropped-midnight-pumpcover,Cropped Midnight Pumpcover,Pump Cover,Controlled Insanity,Active,5,9,296,10,19
+24,Prime Layer Shorts,Frost Blue,10003278201120,sky-blue-nylon-shorts,Prime Layer Frost Blue Shorts,Tracksuit,Controlled Insanity,Active,5,4,-1,3,11
+24,Prime Layer Shorts,Midnight Black,10003278266656,midnight-black-nylon-shorts,Prime Layer Midnight Black Shorts,Tracksuit,Controlled Insanity,Active,5,4,-2,2,9
+24,Prime Layer Shorts,Forest Green,10003278430496,forest-green-nylon-shorts,Prime Layer Forest Green Shorts,Tracksuit,Controlled Insanity,Active,5,4,0,3,11
+25,Prime Layer Track Jacket,Frost Blue,10003279118624,sky-blue-nylon-track-jacket,Prime Layer Frost Blue Track Jacket,Tracksuit,Controlled Insanity,Active,7,5,0,2,9
+25,Prime Layer Track Jacket,Forest Green,10003279282464,forest-green-nylon-track-jacket,Prime Layer Forest Green Track Jacket,Tracksuit,Controlled Insanity,Active,7,5,0,3,10
+25,Prime Layer Track Jacket,Midnight Black,10003279446304,midnight-black-nylon-track-jacket,Prime Layer Midnight Black Track Jacket,Tracksuit,Controlled Insanity,Active,7,5,0,2,9
+26,Pullover,Midnight,10279684735264,midnight-pullover,Midnight Pullover,Evergreen Pullover,Controlled Insanity,Active,7,6,969,11,20
+26,Pullover,Blackout,10279684800800,midnight-pullover-copy,Blackout Pullover,Evergreen Pullover,Controlled Insanity,Active,7,7,486,13,21
+26,Pullover,Cool Grey,10279684964640,blackout-pullover-copy,Cool Grey Pullover,Evergreen Pullover,Controlled Insanity,Active,7,4,201,9,17
+27,Signature Long Sleeve Compression,Blue,10583936368928,signature-long-sleeve-compression-blue,Signature Long Sleeve Compression Blue,Shirts,Controlled Insanity,Active,5,0,50,6,15
+27,Signature Long Sleeve Compression,Lilac Purple,10583940006176,signature-long-sleeve-compression-lilac-purple,Signature Long Sleeve Compression Lilac Purple,Shirts,Controlled Insanity,Active,5,0,50,6,15
+27,Signature Long Sleeve Compression,Black White Text,10583930011936,signature-long-sleeve-compression-black-with-white-text,Signature Long Sleeve Compression Black with White Text,Shirts,Controlled Insanity,Active,5,0,50,6,15
+28,Signature Short Sleeve Compression,Lilac Purple,10583977296160,signature-short-sleeve-compression-lilac-purple,Signature Short Sleeve Compression Lilac Purple,Shirts,Controlled Insanity,Active,5,0,50,6,15
+28,Signature Short Sleeve Compression,Blue,10583985946912,signature-long-sleeve-compression-blue-copy,Signature Short Sleeve Compression Blue,Shirts,Controlled Insanity,Active,5,0,50,6,15
+28,Signature Short Sleeve Compression,Black White Text,10584030216480,signature-short-sleeve-compression-black-with-white-text,Signature Short Sleeve Compression Black with White Text,Shirts,Controlled Insanity,Active,5,0,50,6,15
+29,Signature Wideleg Sweats,Pitch Black,10487200579872,signature-wideleg-sweats,Signature Wideleg Sweats - Pitch Black,Sweatpants,Controlled Insanity,Active,5,5,197,5,13
+29,Signature Wideleg Sweats,Grey,10503344980256,signature-wideleg-sweats-grey,Signature Wideleg Sweats Grey,Sweatpants,Controlled Insanity,Active,5,5,280,5,13
+29,Signature Wideleg Sweats,Faded Black,10541217644832,signature-wideleg-sweats-faded-black,Signature Wideleg Sweats Faded Black,Sweatpants,Controlled Insanity,Active,5,5,422,5,13
+30,Stitched Cut Off Tee,Black,10525974593824,stitched-cut-off-tee,Black Stitched Cut Off Tee,Cutoff Tanktop,Controlled Insanity,Active,7,0,458,7,18
+30,Stitched Cut Off Tee,Beige,10526032298272,beige-stitched-cut-off-tee,Beige Stitched Cut Off Tee,Cutoff Tanktop,Controlled Insanity,Active,7,0,73,7,18
+30,Stitched Cut Off Tee,Cool Grey,10526132142368,cool-grey-stitched-cut-off-tee,Cool Grey Stitched Cut Off Tee,Cutoff Tanktop,Controlled Insanity,Active,7,0,267,7,18
+31,Waffleknit Pullover,Black Black Print,10578169594144,waffleknit-pullover,Waffleknit Pullover Black with Black Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,389,9,17
+31,Waffleknit Pullover,Navy Navy Print,10578176639264,waffleknit-pullover-navy-with-navy-print,Waffleknit Pullover Navy with Navy Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,369,9,17
+31,Waffleknit Pullover,Grey Grey Print,10578181488928,waffleknit-pullover-grey-with-grey-print,Waffleknit Pullover Grey with Grey Print,Waffleknit Pullover,Controlled Insanity,Active,7,0,262,9,17
+32,Waffleknit Sweatpants,Black Black,10575718744352,waffleknit-sweatpants-black-with-black,Waffleknit Sweatpants Black with Black,Sweatpants,Controlled Insanity,Active,5,0,765,4,12
+32,Waffleknit Sweatpants,Navy Navy Print,10575720055072,waffleknit-sweatpants-navy-with-navy-print,Waffleknit Sweatpants Navy with Navy Print,Sweatpants,Controlled Insanity,Active,5,0,752,4,12
+32,Waffleknit Sweatpants,Grey Grey Print,10575720612128,waffleknit-sweatpants-grey-with-grey-print,Waffleknit Sweatpants Grey with Grey Print,Sweatpants,Controlled Insanity,Active,5,0,492,4,12
+33,Waffleknit Zip Up,Black Black Print,10574937751840,waffleknit-zip-up-black-with-black-print,Waffleknit Zip Up Black with Black Print,Zipup Hoodie,Controlled Insanity,Active,7,0,350,5,15
+33,Waffleknit Zip Up,Navy Navy Print,10574944698656,waffleknit-zip-up-navy-with-navy-print,Waffleknit Zip Up Navy with Navy Print,Zipup Hoodie,Controlled Insanity,Active,7,0,351,5,15
+33,Waffleknit Zip Up,Grey Grey Print,10574992474400,waffleknit-zip-up-grey-with-grey-print,Waffleknit Zip Up Grey with Grey Print,Zipup Hoodie,Controlled Insanity,Active,7,0,173,5,15
+34,Wing Sweatpants,Pink,10398575821088,girls-sweatpants-pink-print,Pink Wing Sweatpants,Sweatpants,Controlled Insanity,Active,5,3,102,3,12
+34,Wing Sweatpants,Silver,10398602330400,girls-sweatpants-silver-print,Silver Wing Sweatpants,Sweatpants,Controlled Insanity,Active,5,5,114,3,13
+34,Wing Sweatpants,Copy,10578193252640,pink-wing-sweatpants-copy,Wing Sweatpants (Copy),Sweatpants,Controlled Insanity,Active,10,3,225,3,12
+35,Beater,White Stealth,9950542758176,white-stealth-beater,White Stealth Beater,Beater,Controlled Insanity,Active,7,4,0,3,11
+35,Beater,OG Sky Blue Beaters,10020181639456,sky-blue-beaters,OG Sky Blue Beaters,Beater,Controlled Insanity,Active,7,4,0,4,11
+36,Blank Pump Cover,(same as family),10243548807456,waffle-knit-blank-copy,Blank pump cover,Evergreen Pump Cover,Controlled Insanity,Active,7,11,974,12,23
+36,Blank Pump Cover,Pumpcover,10243549954336,waffle-knit-blank-copy-1,Blank Pumpcover,Evergreen Pump Cover,Controlled Insanity,Active,7,6,1175,12,23
+37,Blended Zip Up,Black Grey Print,10534199263520,blended-zip-up-black-with-grey-print,Blended Zip Up Black with Grey Print,Zipup Hoodie,Controlled Insanity,Active,7,0,462,5,15
+37,Blended Zip Up,Black Black Print,10534209782048,blended-zip-up-black-with-black-print,Blended Zip Up Black with Black Print,Zipup Hoodie,Controlled Insanity,Active,7,0,491,5,15
+38,Butterfly Off The Shoulder Crewneck,Black,10584099488032,butterfly-off-the-shoulder-crewneck-black,Butterfly Off The Shoulder Crewneck Black,Sweatshirts,Controlled Insanity,Active,5,0,50,5,14
+38,Butterfly Off The Shoulder Crewneck,Grey,10584109449504,butterfly-off-the-shoulder-crewneck-black-copy,Butterfly Off The Shoulder Crewneck Grey,Sweatshirts,Controlled Insanity,Active,5,0,50,5,14
+39,Camo Spray Tee,Blue,10507651383584,blue-camo-spray-tee,Blue Camo Spray Tee,T-Shirts,Controlled Insanity,Active,7,0,-23,6,15
+39,Camo Spray Tee,Sand,10507652366624,sand-camo-spray-tee,Sand Camo Spray Tee,T-Shirts,Controlled Insanity,Active,7,0,-19,6,15
+40,Chopper Crewneck,Blackout,10421848506656,chopped-crewneck-black,Chopper Crewneck Blackout,Longsleeve,Controlled Insanity,Active,7,5,540,1,10
+40,Chopper Crewneck,Midnight,10421865546016,cropped-crewneck-white,Chopper Crewneck Midnight,Longsleeve,Controlled Insanity,Active,7,5,250,1,11
+41,Embossed Heavyweight Zip-up,Grey,10279666057504,embossed-grey-heavyweight-zip-up,Embossed Grey Heavyweight Zip-up,Evergreen Zip up,Controlled Insanity,Active,7,4,184,14,23
+41,Embossed Heavyweight Zip-up,Black,10279666090272,embossed-black-heavyweight-zip-up,Embossed Black Heavyweight Zip-up,Evergreen Zip up,Controlled Insanity,Active,7,4,57,12,20
+42,Faded Cutoff,Off White,10243227975968,faded-cutoff-off-white,Faded Cutoff Off White,Cutoff Tanktop,Controlled Insanity,Active,7,9,0,8,15
+42,Faded Cutoff,Dusk,10243228893472,faded-cutoff-dusk,Faded Cutoff Dusk,Cutoff Tanktop,Controlled Insanity,Active,7,5,0,9,17
+43,Flame Cropped Hoodie,Blackout,10423257825568,flame-cropped-hoodie-black-print,Flame Cropped Hoodie Blackout,Cropped Hoodie,Controlled Insanity,Active,5,5,58,6,17
+43,Flame Cropped Hoodie,Glossy Pink,10423267066144,flame-cropped-hoodie-pink-print,Flame Cropped Hoodie Glossy Pink,Cropped Hoodie,Controlled Insanity,Active,5,4,21,6,16
+44,Form Straight Leggings,Black,10584068686112,form-straight-leggings-black,Form Straight Leggings Black,Sweatpants,Controlled Insanity,Active,5,0,75,5,13
+44,Form Straight Leggings,Blue,10584071045408,form-straight-leggings-blue,Form Straight Leggings Blue,Sweatpants,Controlled Insanity,Active,5,0,75,5,13
+45,Graffiti Pump Cover,Black White,10509162184992,graffiti-pump-cover,Black with White Graffiti Pump Cover,Pump Cover,Controlled Insanity,Active,7,0,-150,2,11
+45,Graffiti Pump Cover,Black Blue,10509175324960,black-with-blue-graffiti-pump-cover,Black with Blue Graffiti Pump Cover,Pump Cover,Controlled Insanity,Active,7,0,-171,2,11
+46,Hombre Thermal,Grey Faded,10424668553504,hombre-thermal-black-faded,Hombre Thermal Grey Faded,Longsleeve,Controlled Insanity,Active,7,4,139,1,10
+46,Hombre Thermal,Beige Faded,10424687722784,hombre-thermal-gray-faded,Hombre Thermal Beige Faded,Longsleeve,Controlled Insanity,Active,7,5,179,1,10
+47,Hyper Compression,White,10537481404704,white-hyper-compression,White Hyper Compression,Shirts,Controlled Insanity,Active,7,0,217,6,16
+47,Hyper Compression,Black,10537493594400,black-hyper-compression,Black Hyper Compression,Shirts,Controlled Insanity,Active,7,0,210,6,16
+48,Inferno Cropped Pump Cover,Pink,10366025695520,inferno-cropped-pink-pump-cover,Inferno Cropped Pink Pump Cover,cropped pump cover,Controlled Insanity,Active,5,4,294,4,15
+48,Inferno Cropped Pump Cover,Red,10366010163488,inferno-cropped-red-pump-cover,Inferno Cropped Red Pump Cover,cropped pump cover,Controlled Insanity,Active,5,4,524,4,15
+49,Iron Shell Skullie,Off White,10243244720416,iron-shell-skullie-off-white,Iron Shell Skullie Off White,Accessories,Controlled Insanity,Active,1,4,0,6,12
+49,Iron Shell Skullie,Dusk,10251497341216,iron-shell-skullie-dusk,Iron Shell Skullie Dusk,Accessories,Controlled Insanity,Active,1,4,0,5,13
+50,Lightweight Tee,White Stealth,9950544298272,white-stealth-lightweight-tee,White Stealth Lightweight Tee,T-Shirts,Controlled Insanity,Active,7,4,-5,4,12
+50,Lightweight Tee,Midnight Black,10020173349152,og-black-lightweight-tee,Midnight Black Lightweight Tee,T-Shirts,Controlled Insanity,Active,7,12,-156,4,12
+51,Long Sleeve Pump Cover,Blackout,10279684243744,blackout-long-sleeve,Blackout Long Sleeve Pump Cover,Pump Cover,Controlled Insanity,Active,7,4,152,10,20
+51,Long Sleeve Pump Cover,Midnight,10279684178208,midnight-long-sleeve,Midnight Long Sleeve Pump Cover,Pump Cover,Controlled Insanity,Active,7,4,240,9,19
+52,Morph Wide Leg Sweats,Black,10584072192288,morph-wide-leg-sweats-black,Morph Wide Leg Sweats Black,Sweatpants,Controlled Insanity,Active,5,0,75,5,13
+52,Morph Wide Leg Sweats,Grey,10584076714272,morph-wide-leg-sweats-grey,Morph Wide Leg Sweats Grey,Sweatpants,Controlled Insanity,Active,5,0,75,5,13
+53,New York Cargo Wideleg,Black,10523479408928,new-york-cargo-wideleg-black,New York Cargo Wideleg - Black,Sweatpants,Controlled Insanity,Active,5,0,491,4,13
+53,New York Cargo Wideleg,Cool Grey,10523486880032,new-york-cargo-wideleg-cool-grey,New York Cargo Wideleg - Cool Grey,Sweatpants,Controlled Insanity,Active,5,0,467,4,13
+54,Prime Layer Track Pants,Frost Blue,10003280101664,sky-blue-nylon-pants,Prime Layer Frost Blue Track Pants,Tracksuit,Controlled Insanity,Active,7,3,-1,4,11
+54,Prime Layer Track Pants,Forest Green,10003280134432,sky-blue-nylon-pants-copy,Prime Layer Forest Green Track Pants,Tracksuit,Controlled Insanity,Active,7,3,0,4,11
+55,Raglan 3/4 Tee,Desert Cola,10035346571552,desert-cola-raglan-tee,Raglan 3/4 Tee Desert Cola,T-Shirts,Controlled Insanity,Active,7,4,0,5,11
+55,Raglan 3/4 Tee,Midnight Dusk,10035359416608,midnight-dusk-raglan-tee,Raglan 3/4 Tee Midnight Dusk,T-Shirts,Controlled Insanity,Active,7,4,-1,5,11
+56,Signature Leggings,Black,10584079466784,signature-leggings-black,Signature Leggings Black,Sweatpants,Controlled Insanity,Active,5,0,50,5,13
+56,Signature Leggings,Royal Blue,10584084513056,signature-leggings-royal-blue,Signature Leggings Royal Blue,Sweatpants,Controlled Insanity,Active,5,0,50,5,13
+57,Smoke Sweatshorts,Black,10338060534048,cherry-blossom-sweat-shorts-copy,Black Smoke Sweatshorts,Shorts,Controlled Insanity,Active,5,3,-1,4,14
+57,Smoke Sweatshorts,Grey,10383282864416,grey-smoke-sweatshorts,Grey Smoke Sweatshorts,Shorts,Controlled Insanity,Active,5,3,0,2,10
+58,Smoke Zip Up Hoodie,(same as family),10243246129440,smoke-zip-up-hoodie,Smoke Zip Up Hoodie,Zipup Hoodie,Controlled Insanity,Active,7,10,62,9,19
+58,Smoke Zip Up Hoodie,Grey,10320499638560,smoke-zip-up-hoodie-grey,Smoke Zip Up Hoodie Grey,Zipup Hoodie,Controlled Insanity,Active,7,2,24,8,18
+59,Snug Cover,Cool Grey,10279685357856,cool-grey-snug-cover,Cool Grey Snug Cover,Snug Cover,Controlled Insanity,Active,1,2,1769,4,15
+59,Snug Cover,Midnight Black,10279685390624,midnight-black-snug-cover,Midnight Black Snug Cover,Snug Cover,Controlled Insanity,Active,1,3,1412,4,15
+60,Tech Pants,Beige,9883803779360,beige-tech-pants,Beige Tech Pants,Sweatpants,Controlled Insanity,Active,5,7,0,5,11
+60,Tech Pants,Black,9883805679904,beige-tech-pants-copy,Black Tech Pants,Sweatpants,Controlled Insanity,Active,5,7,-7,5,11
+61,Track Jacket,Varsity Blue Gray,9855403393312,varsity-blue-gray-track-jacket,Varsity Blue & Gray Track Jacket,Tracksuit,Controlled Insanity,Active,7,6,-3,5,13
+61,Track Jacket,Forest Green,9855403819296,forest-green-track-jacket,Forest Green Track Jacket,Tracksuit,Controlled Insanity,Active,7,4,0,6,13
+62,Track Pants,Varsity Blue Gray,9855269634336,varsity-blue-gray-track-pants,Varsity Blue & Gray Track Pants,Tracksuit,Controlled Insanity,Active,5,4,-1,5,13
+62,Track Pants,Forest Green,9855269896480,forest-green-track-pants,Forest Green Track Pants,Tracksuit,Controlled Insanity,Active,5,3,-1,5,13
+63,(LONER),(single-color style),10279649313056,3d-shadow-heavyweight-sweatpants,3D shadow Heavyweight Sweatpants,Evergreen Sweats,Controlled Insanity,Active,5,5,95,12,18
+64,(LONER),(single-color style),10583915397408,arctic-camo-sweatpants-white,Arctic Camo Sweatpants Camo White with Grey EMB,Sweatpants,Controlled Insanity,Active,5,0,515,4,12
+65,(LONER),(single-color style),9854723162400,army-green-iron-therapy-heavyweight-tank-top,Army Green Iron Therapy Heavyweight Tank Top,Tank Tops,Controlled Insanity,Active,7,4,-8,4,11
+66,(LONER),(single-color style),9854152343840,beige-scorpion-acid-wash-stringer,Beige Scorpion Acid Wash Stringer,Tank Tops,Controlled Insanity,Active,7,2,-1,4,12
+67,(LONER),(single-color style),10508241305888,black-digital-print-bandana,Black Digital Print Bandana,Accessories,Controlled Insanity,Active,1,0,-18,4,13
+68,(LONER),(single-color style),9883500871968,black-liquid-pump-cover,Black Liquid Pump Cover,Pump Cover,Controlled Insanity,Active,7,21,-1,4,12
+69,(LONER),(single-color style),10513658118432,black-signature-hat,Black Signature Hat,Accessories,Controlled Insanity,Active,1,0,-18,4,13
+70,(LONER),(single-color style),10375885226272,imprisoned-minds-red,Blood Red Pump Cover,Pump Cover,Controlled Insanity,Active,7,2,17,2,13
+71,(LONER),(single-color style),10513651597600,butterfly-skullie-black,Butterfly Skullie Black,Accessories,Controlled Insanity,Active,1,0,-61,5,14
+72,(LONER),(single-color style),10146461450528,camo-jersey,Camo Jersey,T-Shirts,Controlled Insanity,Active,7,6,-14,6,13
+73,(LONER),(single-color style),10146460664096,camo-parachute-pants,Camo Parachute Pants,Sweatpants,Controlled Insanity,Active,7,8,-2,6,12
+74,(LONER),(single-color style),10137381208352,cherry-blossom-crewneck,Cherry Blossom Crewneck,Sweatshirts,Controlled Insanity,Active,7,4,-9,5,13
+75,(LONER),(single-color style),10137383371040,cherry-blossom-sweat-shorts,Cherry Blossom Sweat Shorts,Shorts,Controlled Insanity,Active,7,4,0,4,13
+76,(LONER),(single-color style),10580381597984,tonal-web-skull-beanie-copy,Collegiate Skull Beanie,Accessories,Controlled Insanity,Active,1,0,778,2,11
+77,(LONER),(single-color style),10148790632736,controlled-insanity-gift-card,Controlled Insanity Gift Card,Gift Card,Controlled Insanity,Active,6,1,-745,5,13
+78,(LONER),(single-color style),10146461122848,cutoff-tank-top,Cutoff Tank Top,Cutoff Tanktop,Controlled Insanity,Active,7,6,0,4,12
+79,(LONER),(single-color style),9883536195872,death-moth-tee,Death Moth Tee,T-Shirts,Controlled Insanity,Active,7,6,0,5,12
+80,(LONER),(single-color style),10035210748192,desert-cola-pump-cover,Desert Cola Pump Cover,Pump Cover,Controlled Insanity,Active,7,12,-19,4,11
+81,(LONER),(single-color style),10035487965472,medallion-stringer,Desert Cola Stringer,Tank Tops,Controlled Insanity,Active,7,7,-1,5,11
+82,(LONER),(single-color style),10137389531424,dusk-blossom-tee,Dusk Blossom Tee,T-Shirts,Controlled Insanity,Active,7,8,-9,5,13
+83,(LONER),(single-color style),10421876687136,black-beanie,Evergreen beanies,Accessories,Controlled Insanity,Active,6,12,2171,4,13
+84,(LONER),(single-color style),10243224600864,faded-tee,Faded Tee,T-Shirts,Controlled Insanity,Active,7,6,0,6,14
+85,(LONER),(single-color style),10146460139808,flame-sweatpants,Flame Sweatpants,Sweatpants,Controlled Insanity,Active,7,4,-3,7,15
+86,(LONER),(single-color style),9855413649696,forest-green-crewneck,Forest Green Crewneck,Sweatshirts,Controlled Insanity,Active,7,5,-11,5,14
+87,(LONER),(single-color style),10035262488864,golden-era-tee,Golden Era Sunset Tee,T-Shirts,Controlled Insanity,Active,7,6,-2,5,11
+88,(LONER),(single-color style),9496858624288,iron-therapy-gunmetal-grey-long-sleeve-compression,Gray Iron Therapy Gunmetal Grey Long-Sleeve Compression,Shirts,Controlled Insanity,Active,7,5,-2,6,13
+89,(LONER),(single-color style),10362845200672,inferno-beanie,Inferno Beanie,Accessories,Controlled Insanity,Active,1,2,524,2,11
+90,(LONER),(single-color style),10146460926240,leather-jacket,Leather Jacket,Leather Jacket,Controlled Insanity,Active,7,10,0,4,12
+91,(LONER),(single-color style),10513674797344,metamorphosis-flannel-plaid,Metamorphosis Flannel Plaid,Sweatshirts,Controlled Insanity,Active,7,0,-36,6,13
+92,(LONER),(single-color style),9496871665952,iron-therapy-short-sleeve-compression,Onyx Black Iron Therapy Short-Sleeve Compression,Shirts,Controlled Insanity,Active,7,5,0,5,12
+93,(LONER),(single-color style),9855269077280,onyx-black-track-pants,Onyx Black Track Pants,Tracksuit,Controlled Insanity,Active,5,5,0,2,10
+94,(LONER),(single-color style),10279685521696,pup-cover,Pup Cover,Pup Cover,Controlled Insanity,Active,5,7,281,9,18
+95,(LONER),(single-color style),9978513129760,reaper-tee,Reaper Tee,T-Shirts,Controlled Insanity,Active,7,6,-1,4,11
+96,(LONER),(single-color style),10146461516064,samurai-pullover-heavyweight-hoodie,Samurai Pullover Heavyweight Hoodie,Hoodies,Controlled Insanity,Active,7,4,0,6,15
+97,(LONER),(single-color style),10584209490208,signature-shorts-royal-blue,Signature Shorts Royal Blue,Shorts,Controlled Insanity,Active,5,0,50,7,16
+98,(LONER),(single-color style),10393808437536,silver-gradient-pump-cover,Silver Gradient Pump Cover,Pump Cover,Controlled Insanity,Active,7,4,730,4,14
+99,(LONER),(single-color style),10474096591136,sticker,Sticker,Accessories,Controlled Insanity,Active,1,0,2000,1,9
+100,(LONER),(single-color style),9978518569248,storm-tee,Storm Tee,T-Shirts,Controlled Insanity,Active,7,7,0,4,11
+101,(LONER),(single-color style),10498319384864,test-pump-cover-for-reference,Test Pump Cover for reference,Pump Cover,Controlled Insanity,Active,7,0,225,4,15
+102,(LONER),(single-color style),10580377272608,tonal-web-skull-beanie,Tonal Web Skull Beanie,Accessories,Controlled Insanity,Active,1,0,756,2,11
+103,(LONER),(single-color style),10584051581216,vintage-sweats-black-with-white-stripes,Vintage Sweats Black with White Stripes,Sweatpants,Controlled Insanity,Active,5,0,75,5,13
+104,(LONER),(single-color style),10398653546784,vintage-washed-pump-cover,Vintage Washed Pump Cover,Pump Cover,Controlled Insanity,Active,8,6,1485,3,13
+105,(LONER),(single-color style),10146461253920,waffle-flame-long-sleeve,Waffle Flame Long Sleeve,Sweatshirts,Controlled Insanity,Active,7,5,-1,5,12
