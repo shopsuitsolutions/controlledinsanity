@@ -1,0 +1,27 @@
+app,risk,why,migration_action
+Rebuy Personalization Engine,HIGH,"Data Sources, Smart Cart, upsells reference product IDs",Audit + repoint to collections
+Loox Reviews,HIGH,Reviews tied to product IDs,Submit merge CSV to Loox Support
+Shopify Bundles,HIGH,Bundle products list component variant IDs,"Enumerate bundles pre-Phase 4, update to new variant IDs"
+Loop Returns & Exchanges,HIGH,Return rules may target product IDs,Manual audit + remap
+Klaviyo,HIGH,Catalog sync + Flow triggers by product ID,Full resync + audit flows
+VerifyPass,HIGH,Discount rules on products,Manual audit + remap
+SavedBy Package Protection,HIGH,Cart injection product,Verify no product-ID rules
+Yotpo Loyalty & Rewards,HIGH,Point campaigns on products,Audit campaigns
+Translate & Adapt,MEDIUM,Translations attached to product IDs,Re-apply on new products
+QuickBooks Online,MEDIUM,Historical orders keep old IDs,No action; reports may show duplicates temporarily
+TripleWhale,MEDIUM,Attribution splits temporarily,Auto-resync
+CI x FP Analytics,MEDIUM,Custom analytics may cache product IDs,Verify with vendor
+Marpipe,MEDIUM,Ad creative automation from catalog,Auto-resync
+Trybe UGC,MEDIUM,UGC tagged to product IDs,Optional remap
+Affiliatly Affiliate Marketing,MEDIUM,Commission by variant ID,No historical impact
+Windsor.ai,MEDIUM,Ad analytics reads catalog,Auto-resync
+Shopify Flow,MEDIUM,Workflows may reference product IDs,Audit active flows
+Messaging (Shopify),LOW,No product-ID dependency,
+Shippo,LOW,Uses variant IDs; historical orders unaffected,
+ShipStation,LOW,Uses variant IDs,
+ShipBob Fulfillment,LOW,Uses variant IDs,
+FlavorCloud,LOW,Uses variant IDs,
+Shopify CLI Connector,LOW,Theme dev tool,
+Shopify Claude Connector App,LOW,This session,
+Knowledge Base (Shopify),LOW,No product-ID dependency,
+Matrixify,LOW,Migration tool itself,
