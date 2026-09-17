@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "drop_signup": {
+      "type": "drop-signup",
+      "settings": {
+        "mode": "gated",
+        "panel_side": "right",
+        "panel_offset": 56,
+        "mobile_focus": "3%",
+        "color_scheme": "scheme-5",
+        "hide_chrome": true,
+        "customer_tag": "drop-waitlist"
+      }
+    }
+  },
+  "order": ["drop_signup"]
+}
