@@ -27,7 +27,7 @@
 <div
   id="DropSignup-{{ section.id }}"
   class="drop-signup color-{{ s.color_scheme }} drop-signup--panel-{{ s.panel_side }} drop-signup--{{ s.mode }}"
-  style="--ds-ratio: {{ ratio }}; --ds-panel-offset: {{ s.panel_offset }}%; --ds-mobile-focus: {{ s.mobile_focus }}; --ds-discord-bg: {{ s.discord_color }}; --ds-discord-text: {{ s.discord_text_color }};"
+  style="--ds-ratio: {{ ratio }}; --ds-panel-offset: {{ s.panel_offset }}%; --ds-mobile-focus: {{ s.mobile_focus }}; --ds-discord-bg: {{ s.discord_color }}; --ds-discord-text: {{ s.discord_text_color }}; --ds-chrome-offset: {% if s.hide_chrome %}0px{% else %}var(--header-group-height, 0px){% endif %};"
   {{ section.shopify_attributes }}
 >
   <div class="drop-signup__hero">
@@ -162,12 +162,16 @@
 
 {% stylesheet %}
   .drop-signup {
+    display: flex;
+    align-items: center;
+    min-height: calc(100svh - var(--ds-chrome-offset, 0px));
     background: var(--color-background);
     color: var(--color-foreground);
   }
   .drop-signup__hero {
     position: relative;
     container-type: inline-size;
+    flex: none;
     width: 100%;
     max-width: 2000px;
     margin-inline: auto;
