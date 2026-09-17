@@ -103,7 +103,13 @@
 
           {% case block.type %}
             {% when 'heading' %}
-              {% if b.text != blank %}
+              {% liquid
+                assign show_heading = true
+                if posted and b.after_signup == 'hide'
+                  assign show_heading = false
+                endif
+              %}
+              {% if b.text != blank and show_heading %}
                 {% liquid
                   assign h_case = 'none'
                   if b.uppercase
@@ -120,7 +126,13 @@
               {% endif %}
 
             {% when 'text' %}
-              {% if b.text != blank %}
+              {% liquid
+                assign show_text = true
+                if posted and b.after_signup == 'hide'
+                  assign show_text = false
+                endif
+              %}
+              {% if b.text != blank and show_text %}
                 <p
                   class="drop-signup__block drop-signup__lede"
                   style="--b-space: {{ b_space }}; --b-scale: {{ b_scale }}; --b-max: {{ b.max_width }}ch;"
@@ -1025,6 +1037,17 @@
           "default": true
         },
         {
+          "type": "select",
+          "id": "after_signup",
+          "label": "After signup",
+          "info": "What happens to this element once the email is submitted.",
+          "options": [
+            { "value": "show", "label": "Keep showing" },
+            { "value": "hide", "label": "Hide" }
+          ],
+          "default": "show"
+        },
+        {
           "type": "range",
           "id": "space_above",
           "label": "Space above",
@@ -1066,6 +1089,17 @@
           "max": 60,
           "step": 2,
           "default": 34
+        },
+        {
+          "type": "select",
+          "id": "after_signup",
+          "label": "After signup",
+          "info": "What happens to this element once the email is submitted.",
+          "options": [
+            { "value": "show", "label": "Keep showing" },
+            { "value": "hide", "label": "Hide" }
+          ],
+          "default": "hide"
         },
         {
           "type": "range",
