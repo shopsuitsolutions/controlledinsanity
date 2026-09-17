@@ -27,7 +27,7 @@
 <div
   id="DropSignup-{{ section.id }}"
   class="drop-signup color-{{ s.color_scheme }} drop-signup--panel-{{ s.panel_side }} drop-signup--{{ s.mode }}"
-  style="--ds-ratio: {{ ratio }}; --ds-panel-offset: {{ s.panel_offset }}%; --ds-mobile-focus: {{ s.mobile_focus }}; --ds-discord-bg: {{ s.discord_color }}; --ds-discord-text: {{ s.discord_text_color }};"
+  style="--ds-ratio: {{ ratio }}; --ds-panel-offset: {{ s.panel_offset }}%; --ds-mobile-focus: {{ s.mobile_focus }}%; --ds-mobile-img-height: {{ s.mobile_image_height }}svh; --ds-discord-bg: {{ s.discord_color }}; --ds-discord-text: {{ s.discord_text_color }}; --ds-chrome-offset: {% if s.hide_chrome %}0px{% else %}var(--header-group-height, 0px){% endif %};"
   {{ section.shopify_attributes }}
 >
   <div class="drop-signup__hero">
@@ -172,6 +172,7 @@
     max-width: 2000px;
     margin-inline: auto;
     aspect-ratio: var(--ds-ratio);
+    min-height: calc(100svh - var(--ds-chrome-offset, 0px));
     overflow: hidden;
   }
   .drop-signup__picture {
@@ -342,11 +343,11 @@
       height: auto;
     }
     .drop-signup__img {
-      height: auto;
-      aspect-ratio: 12 / 11;
-      object-position: var(--ds-mobile-focus) center;
-      -webkit-mask-image: linear-gradient(to bottom, #000 52%, transparent 97%);
-      mask-image: linear-gradient(to bottom, #000 52%, transparent 97%);
+      height: var(--ds-mobile-img-height, 62svh);
+      aspect-ratio: auto;
+      object-position: var(--ds-mobile-focus, 30%) center;
+      -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+      mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
     }
     .drop-signup__panel,
     .drop-signup--panel-right .drop-signup__panel,
@@ -355,7 +356,7 @@
       inset: auto;
       width: 100%;
       max-width: 34rem;
-      margin: -16% auto 0;
+      margin: -12svh auto 0;
       padding: 0 2rem;
     }
     .drop-signup__headline {
@@ -416,13 +417,10 @@
     .drop-signup__hero {
       padding-block-end: 2.25rem;
     }
-    .drop-signup__img {
-      aspect-ratio: 4 / 3.9;
-    }
     .drop-signup__panel,
     .drop-signup--panel-right .drop-signup__panel,
     .drop-signup--panel-left .drop-signup__panel {
-      margin-block-start: -22%;
+      margin-block-start: -10svh;
       padding: 0 1.25rem;
     }
     .drop-signup__headline {
@@ -486,16 +484,26 @@
       "info": "Optional portrait crop for phones and tablets. Falls back to the desktop image, cropped in CSS."
     },
     {
-      "type": "select",
+      "type": "range",
       "id": "mobile_focus",
       "label": "Mobile crop focus",
-      "info": "Which side of the image to keep when it is cropped on phones and tablets. Set the subject side.",
-      "options": [
-        { "value": "3%", "label": "Left" },
-        { "value": "50%", "label": "Center" },
-        { "value": "97%", "label": "Right" }
-      ],
-      "default": "3%"
+      "info": "Where the subject sits in the image, left to right. Phones crop the image to portrait around this point.",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mobile_image_height",
+      "label": "Mobile image height",
+      "info": "Share of the screen the image takes on phones and tablets. The copy overlaps the faded bottom.",
+      "min": 40,
+      "max": 80,
+      "step": 2,
+      "unit": "%",
+      "default": 62
     },
     {
       "type": "header",

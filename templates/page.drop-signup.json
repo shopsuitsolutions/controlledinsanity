@@ -14,7 +14,8 @@
       "settings": {
         "image": "shopify://shop_images/e075fca1bed8b4137cf304b6827590e46ca44408_1.jpg",
         "image_mobile": "shopify://shop_images/a88da8ae00a44969ce91d497441172438b2413b5.jpg",
-        "mobile_focus": "3%",
+        "mobile_focus": 30,
+        "mobile_image_height": 62,
         "headline": "Get in.\nJoin the family.",
         "supporting": "It's the biggest collection we've built yet.\nGet on the list and we'll notify you the second it's live, before everyone else.",
         "email_placeholder": "name@email.com",
