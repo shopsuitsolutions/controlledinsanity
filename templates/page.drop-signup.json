@@ -1,17 +1,41 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "drop_signup": {
       "type": "drop-signup",
       "settings": {
+        "image": "shopify://shop_images/e075fca1bed8b4137cf304b6827590e46ca44408_1.jpg",
+        "mobile_focus": "3%",
+        "headline": "Get in.\nJoin the family.",
+        "supporting": "It's the biggest collection we've built yet.\nGet on the list and we'll notify you the second it's live, before everyone else.",
+        "email_placeholder": "name@email.com",
+        "email_button_label": "Notify me",
+        "customer_tag": "drop-waitlist",
+        "confirmation": "You're on the list.",
+        "discord_lead": "Early access, restock alerts, and first look at what's next.",
+        "discord_label": "Join our Discord",
+        "discord_url": "",
+        "discord_new_tab": false,
+        "reassurance": "No signup needed",
+        "discord_color": "#5865f2",
+        "discord_text_color": "#ffffff",
         "mode": "gated",
         "panel_side": "right",
         "panel_offset": 56,
-        "mobile_focus": "3%",
         "color_scheme": "scheme-5",
-        "hide_chrome": true,
-        "customer_tag": "drop-waitlist"
+        "hide_chrome": true
       }
     }
   },
-  "order": ["drop_signup"]
+  "order": [
+    "drop_signup"
+  ]
 }
