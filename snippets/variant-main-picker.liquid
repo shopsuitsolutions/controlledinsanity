@@ -105,6 +105,28 @@
               {% if product_option_value.size > longest_value and option_id_attribute %}
                 {% assign longest_value = product_option_value.size %}
               {% endif %}
+              {% if variant_style == 'swatch' %}
+                {% liquid
+                  assign featured_media = product_option_value.variant.featured_media
+
+                  # If the variant has no featured media, and we have a combined listing product, then fall back to
+                  # using the featured media of the child product that is linked to this option value.
+                  if featured_media == blank and product_option_value.product_url
+                    assign featured_media = product_option_value.variant.product.featured_media
+                  endif
+
+                  # No variant for this value with the other options selected (e.g. colour not
+                  # offered in the selected size): use the image of any variant in this colour.
+                  if featured_media == blank and image_swatch_option_key
+                    for image_swatch_variant in product_resource.variants
+                      if image_swatch_variant[image_swatch_option_key] == product_option_value.name and image_swatch_variant.featured_media
+                        assign featured_media = image_swatch_variant.featured_media
+                        break
+                      endif
+                    endfor
+                  endif
+                %}
+              {% endif %}
               <label
                 class="variant-option__button-label{% if variant_style == 'swatch' %} variant-option__button-label--has-swatch{% endif %}"
               >
@@ -126,6 +148,9 @@
                   {% if product_option_value.variant.id %}
                     data-variant-id="{{ product_option_value.variant.id }}"
                   {% endif %}
+                  {% if variant_style == 'swatch' and featured_media %}
+                    data-ci-media-id="{{ featured_media.id }}"
+                  {% endif %}
                   {% if product_option_value.selected %}
                     data-current-checked="true"
                     checked
@@ -134,27 +159,6 @@
                   {% endif %}
                 >
                 {% if variant_style == 'swatch' %}
-                  {% liquid
-                    assign featured_media = product_option_value.variant.featured_media
-
-                    # If the variant has no featured media, and we have a combined listing product, then fall back to
-                    # using the featured media of the child product that is linked to this option value.
-                    if featured_media == blank and product_option_value.product_url
-                      assign featured_media = product_option_value.variant.product.featured_media
-                    endif
-
-                    # No variant for this value with the other options selected (e.g. colour not
-                    # offered in the selected size): use the image of any variant in this colour.
-                    if featured_media == blank and image_swatch_option_key
-                      for image_swatch_variant in product_resource.variants
-                        if image_swatch_variant[image_swatch_option_key] == product_option_value.name and image_swatch_variant.featured_media
-                          assign featured_media = image_swatch_variant.featured_media
-                          break
-                        endif
-                      endfor
-                    endif
-                  %}
-
                   {% render 'swatch',
                     swatch: product_option_value.swatch,
                     variant_image: featured_media,

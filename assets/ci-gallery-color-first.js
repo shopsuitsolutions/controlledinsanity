@@ -16,12 +16,13 @@ document.addEventListener('variant:selected', (event) => {
 
   const color = input.value.trim().toLowerCase();
   if (!color) return;
+  const mediaId = input.dataset.ciMediaId || '';
 
   document.querySelectorAll('media-gallery').forEach((gallery) => {
     const moved = [
-      moveColorFirst(gallery.querySelectorAll('slideshow-slide[data-ci-color]'), color),
-      moveColorFirst(gallery.querySelectorAll('.media-gallery__grid > li[data-ci-color]'), color),
-      moveColorFirst(gallery.querySelectorAll('.dialog-zoomed-gallery > li[data-ci-color]'), color),
+      moveColorFirst(gallery.querySelectorAll('slideshow-slide[data-ci-color]'), color, mediaId),
+      moveColorFirst(gallery.querySelectorAll('.media-gallery__grid > li[data-ci-color]'), color, mediaId),
+      moveColorFirst(gallery.querySelectorAll('.dialog-zoomed-gallery > li[data-ci-color]'), color, mediaId),
     ].some(Boolean);
 
     if (moved) {
@@ -35,16 +36,25 @@ document.addEventListener('variant:selected', (event) => {
 });
 
 /**
+ * Same order the Liquid produces: the variant's own image, then the rest of that
+ * colour in their original order, then everything else.
  * @param {NodeListOf<Element>} nodes - Sibling elements in display order
  * @param {string} color - Lowercased colour name to bring forward
+ * @param {string} mediaId - Media id of the selected variant's image, if known
  * @returns {boolean} Whether anything moved
  */
-function moveColorFirst(nodes, color) {
+function moveColorFirst(nodes, color, mediaId) {
   const list = Array.from(nodes);
   if (list.length < 2) return false;
 
   const matches = list.filter((node) => node.getAttribute('data-ci-color') === color);
   if (!matches.length) return false;
+
+  if (mediaId) {
+    const heroIndex = matches.findIndex((node) => node.querySelector(`[data-media-id="${mediaId}"]`));
+    if (heroIndex > 0) matches.unshift(matches.splice(heroIndex, 1)[0]);
+  }
+
   if (matches.every((node, i) => node === list[i])) return false;
 
   const parent = list[0].parentElement;
