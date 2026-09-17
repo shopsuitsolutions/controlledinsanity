@@ -46,7 +46,7 @@
           assign image_swatch_option = block_settings.image_swatch_option | strip | downcase
           assign option_name_downcase = product_option.name | downcase
           assign image_swatch_option_key = nil
-          if swatch_count == 0 and settings.show_variant_image and image_swatch_option != blank and option_name_downcase == image_swatch_option
+          if swatch_count == 0 and settings.show_variant_image and image_swatch_option != blank and option_name_downcase == image_swatch_option and product_option.values.size > 1
             assign image_swatch_option_key = 'option' | append: product_option.position
             for image_swatch_variant in product_resource.variants
               if image_swatch_variant.featured_media

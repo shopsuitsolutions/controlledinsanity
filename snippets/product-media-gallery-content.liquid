@@ -101,9 +101,26 @@
     endif
   endif
 
+  # Optionally move the selected colour's media (matched on the alt text after the last " - ")
+  # up behind the variant image, so a colourway's shots are not buried among the others.
+  assign color_first_option = block_settings.color_first_option | strip | downcase
+  assign color_first_value = nil
+  if color_first_option != blank and selected_variant_media
+    for product_option in selected_product.options_with_values
+      assign product_option_name = product_option.name | downcase
+      if product_option_name == color_first_option and product_option.values.size > 1
+        assign color_first_key = 'option' | append: product_option.position
+        assign color_first_value = selected_product.selected_or_first_available_variant[color_first_key] | downcase
+        break
+      endif
+    endfor
+  endif
+
   assign sorted_media = '' | split: ','
   if selected_variant_media
     assign sorted_media = sorted_media | concat: selected_product.media | where: 'id', selected_variant_media.id
+    assign color_first_media = '' | split: ','
+    assign other_media = '' | split: ','
 
     for media in selected_product.media
       if block_settings.hide_variants and variant_images contains media.src and sorted_media.size > 0
@@ -112,9 +129,18 @@
 
       if media.id != selected_variant_media.id
         assign found_media = selected_product.media | where: 'id', media.id
-        assign sorted_media = sorted_media | concat: found_media
+        if color_first_value
+          assign media_color = media.alt | split: ' - ' | last | strip | downcase
+          if media_color == color_first_value
+            assign color_first_media = color_first_media | concat: found_media
+            continue
+          endif
+        endif
+        assign other_media = other_media | concat: found_media
       endif
     endfor
+
+    assign sorted_media = sorted_media | concat: color_first_media | concat: other_media
   else
     assign sorted_media = selected_product.media
   endif
