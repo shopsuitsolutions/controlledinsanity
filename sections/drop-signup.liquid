@@ -2,6 +2,7 @@
   assign s = section.settings
   assign desktop_image = s.image
   assign mobile_image = s.image_mobile | default: s.image
+  assign tablet_image = s.image_tablet | default: s.image_mobile
   assign ratio = 1.7778
   if desktop_image != blank
     assign ratio = desktop_image.aspect_ratio
@@ -28,7 +29,7 @@
 
 <div
   id="DropSignup-{{ section.id }}"
-  class="drop-signup color-{{ s.color_scheme }} drop-signup--panel-{{ s.panel_side }} drop-signup--{{ s.mode }} drop-signup--align-{{ s.text_align }}{% if s.desktop_fade %} drop-signup--fade{% endif %}{% if s.mobile_fade %} drop-signup--fade-mobile{% endif %} drop-signup--mobile-{{ s.mobile_layout }} drop-signup--mobile-valign-{{ s.mobile_panel_valign }}"
+  class="drop-signup color-{{ s.color_scheme }} drop-signup--panel-{{ s.panel_side }} drop-signup--{{ s.mode }} drop-signup--align-{{ s.text_align }}{% if s.desktop_fade %} drop-signup--fade{% endif %}{% if s.mobile_fade %} drop-signup--fade-mobile{% endif %} drop-signup--mobile-{{ s.mobile_layout }} drop-signup--mobile-valign-{{ s.mobile_panel_valign }} drop-signup--desktop-{{ s.desktop_layout }}"
   style="
     --ds-ratio: {{ ratio }};
     --ds-panel-offset: {{ s.panel_offset }}%;
@@ -37,6 +38,8 @@
     --ds-mobile-img-height: {{ s.mobile_image_height }}svh;
     --ds-mobile-pad: {{ mobile_panel_padding }};
     --ds-mobile-bottom: {{ s.mobile_panel_offset }}svh;
+    --ds-scrim-tablet: {{ s.tablet_scrim | divided_by: 100.0 }};
+    --ds-scrim-phone: {{ s.phone_scrim | divided_by: 100.0 }};
     --ds-chrome-offset: {% if s.hide_chrome %}0px{% else %}var(--header-group-height, 0px){% endif %};
     --ds-overlay: {{ overlay_opacity }};
     --ds-scale: {{ text_scale }};
@@ -49,8 +52,15 @@
       <picture class="drop-signup__picture">
         {% if s.image_mobile != blank %}
           <source
-            media="(max-width: 1023px)"
-            srcset="{{ mobile_image | image_url: width: 480 }} 480w, {{ mobile_image | image_url: width: 750 }} 750w, {{ mobile_image | image_url: width: 1024 }} 1024w, {{ mobile_image | image_url: width: 1536 }} 1536w"
+            media="(max-width: 599px)"
+            srcset="{{ mobile_image | image_url: width: 480 }} 480w, {{ mobile_image | image_url: width: 750 }} 750w, {{ mobile_image | image_url: width: 1024 }} 1024w, {{ mobile_image | image_url: width: 1200 }} 1200w"
+            sizes="100vw"
+          >
+        {% endif %}
+        {% if tablet_image != blank %}
+          <source
+            media="(min-width: 600px) and (max-width: 1023px), (min-width: 600px) and (orientation: portrait)"
+            srcset="{{ tablet_image | image_url: width: 768 }} 768w, {{ tablet_image | image_url: width: 1024 }} 1024w, {{ tablet_image | image_url: width: 1536 }} 1536w, {{ tablet_image | image_url: width: 2048 }} 2048w"
             sizes="100vw"
           >
         {% endif %}
@@ -503,14 +513,23 @@
     color: rgb(var(--color-foreground-rgb) / 0.55);
   }
 
-  @media screen and (min-width: 1024px) {
-    .drop-signup--fade .drop-signup__img {
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+    .drop-signup--desktop-true.drop-signup--fade .drop-signup__img {
       -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
       mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
     }
+    .drop-signup--desktop-fill .drop-signup__hero {
+      min-height: calc(100svh - var(--ds-chrome-offset, 0px));
+    }
+    .drop-signup--desktop-fill.drop-signup--panel-right .drop-signup__img {
+      object-position: left center;
+    }
+    .drop-signup--desktop-fill.drop-signup--panel-left .drop-signup__img {
+      object-position: right center;
+    }
   }
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px), screen and (orientation: portrait) {
     .drop-signup {
       --ds-s: calc(var(--ds-scale, 1) * var(--ds-mobile-scale, 1));
     }
@@ -545,6 +564,17 @@
     }
     .drop-signup--mobile-fill.drop-signup--mobile-valign-center .drop-signup__hero {
       justify-content: center;
+    }
+    .drop-signup--mobile-fill .drop-signup__hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(to bottom, transparent 30%, rgb(var(--color-background-rgb) / var(--ds-scrim, 0)) 100%);
+    }
+    .drop-signup--mobile-fill .drop-signup__hero {
+      --ds-scrim: var(--ds-scrim-tablet, 0);
     }
     .drop-signup--mobile-fill .drop-signup__picture {
       position: absolute;
@@ -632,6 +662,9 @@
     .drop-signup__hero {
       padding-block-end: 2.25rem;
     }
+    .drop-signup--mobile-fill .drop-signup__hero {
+      --ds-scrim: var(--ds-scrim-phone, 0);
+    }
     .drop-signup__panel,
     .drop-signup--panel-right .drop-signup__panel,
     .drop-signup--panel-left .drop-signup__panel {
@@ -701,8 +734,14 @@
     {
       "type": "image_picker",
       "id": "image_mobile",
-      "label": "Mobile image",
-      "info": "Optional portrait crop for phones and tablets. Falls back to the desktop image, cropped in CSS."
+      "label": "Phone image",
+      "info": "Tall portrait crop, about 9:19. Falls back to the desktop image, cropped in CSS."
+    },
+    {
+      "type": "image_picker",
+      "id": "image_tablet",
+      "label": "Tablet image",
+      "info": "Portrait crop, about 3:4 to 2:3. Used on tablets and any portrait screen 600px and wider. Falls back to the phone image."
     },
     {
       "type": "select",
@@ -739,6 +778,28 @@
     },
     {
       "type": "range",
+      "id": "tablet_scrim",
+      "label": "Tablet copy backdrop",
+      "info": "Only for Image fills screen. Dark gradient behind the copy on tablets. Useful when there is no tablet image and the phone image gets cropped. 0 is off.",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "phone_scrim",
+      "label": "Phone copy backdrop",
+      "info": "Only for Image fills screen. Same gradient on phones. Leave at 0 if the mobile image already fades out.",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "range",
       "id": "mobile_focus",
       "label": "Mobile crop focus",
       "info": "Where the subject sits in the image, left to right.",
@@ -771,9 +832,21 @@
       "default": 0
     },
     {
+      "type": "select",
+      "id": "desktop_layout",
+      "label": "Desktop layout",
+      "info": "Applies to landscape screens 1024px and wider. Portrait screens of any size use the mobile layout. Fills screen: the image covers the viewport, trimmed from the panel side so the subject stays in frame. True size: exact proportions, background shows below on tall screens.",
+      "options": [
+        { "value": "fill", "label": "Image fills screen" },
+        { "value": "true", "label": "Image at true size" }
+      ],
+      "default": "fill"
+    },
+    {
       "type": "checkbox",
       "id": "desktop_fade",
       "label": "Fade bottom edge on desktop",
+      "info": "Only for Image at true size.",
       "default": true
     },
     {
