@@ -13,6 +13,7 @@
       "type": "drop-signup",
       "settings": {
         "image": "shopify://shop_images/e075fca1bed8b4137cf304b6827590e46ca44408_1.jpg",
+        "image_mobile": "shopify://shop_images/a88da8ae00a44969ce91d497441172438b2413b5.jpg",
         "mobile_focus": "3%",
         "headline": "Get in.\nJoin the family.",
         "supporting": "It's the biggest collection we've built yet.\nGet on the list and we'll notify you the second it's live, before everyone else.",
@@ -29,7 +30,7 @@
         "discord_text_color": "#ffffff",
         "mode": "gated",
         "panel_side": "right",
-        "panel_offset": 56,
+        "panel_offset": 58,
         "color_scheme": "scheme-5",
         "hide_chrome": true
       }
