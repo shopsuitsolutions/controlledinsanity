@@ -120,6 +120,9 @@
   endif
   assign has_image_drop = sorted_media | has: 'media_type', 'image'
 
+  # Number of gallery images to load eagerly (above the fold); the rest get loading="lazy".
+  assign eager_media_count = block_settings.eager_media_count | default: 4
+
   # Determine if we're in single column mode (carousel or grid with one column)
   assign is_single_column = false
   if media_presentation == 'carousel' or sorted_media.size == 1 or media_presentation == 'grid' and block_settings.media_columns == 'one'
@@ -363,14 +366,21 @@
               else
                 assign media_sizes = sizes
               endif
+
+              # Only the first slides are on screen at load; lazy-load the rest so a
+              # product with many media does not download every image up front.
+              assign media_loading = nil
+              if forloop.index > eager_media_count
+                assign media_loading = 'lazy'
+              endif
           -%}
           {% if block_settings.aspect_ratio != 'adapt' and block_settings.constrain_to_viewport %}
             <div
               class="product-media-constraint-wrapper">
-              {%- render 'product-media', media: media, sizes: media_sizes, is_main_product_media: forloop.first -%}
+              {%- render 'product-media', media: media, sizes: media_sizes, loading: media_loading, is_main_product_media: forloop.first -%}
             </div>
           {% else %}
-            {%- render 'product-media', media: media, sizes: media_sizes, is_main_product_media: forloop.first -%}
+            {%- render 'product-media', media: media, sizes: media_sizes, loading: media_loading, is_main_product_media: forloop.first -%}
           {% endif %}
         {% endcapture %}
         {% capture class %}
@@ -479,13 +489,18 @@
               else
                 assign media_sizes = sizes
               endif
+
+              assign media_loading = nil
+              if forloop.index > eager_media_count
+                assign media_loading = 'lazy'
+              endif
             -%}
             {% if block_settings.aspect_ratio != 'adapt' and block_settings.constrain_to_viewport %}
               <div class="product-media-constraint-wrapper">
-                {%- render 'product-media', media: media, sizes: media_sizes, is_main_product_media: forloop.first -%}
+                {%- render 'product-media', media: media, sizes: media_sizes, loading: media_loading, is_main_product_media: forloop.first -%}
               </div>
             {% else %}
-              {%- render 'product-media', media: media, sizes: media_sizes, is_main_product_media: forloop.first -%}
+              {%- render 'product-media', media: media, sizes: media_sizes, loading: media_loading, is_main_product_media: forloop.first -%}
             {% endif %}
           </li>
         {% endfor %}
