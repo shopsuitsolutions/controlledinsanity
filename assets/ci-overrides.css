@@ -865,6 +865,35 @@ body.rebuy-scroll-lock {
   gap: 0;
 }
 
+/* Image swatches (variant picker block): restore spacing the flush Size buttons remove,
+   and draw the selected state on the tile edge instead of the theme's offset outline. */
+.variant-picker .variant-option--swatches {
+  gap: var(--ci-swatch-gap, 8px);
+}
+
+.variant-picker .variant-option--swatches .variant-option__button-label--has-swatch {
+  --focus-outline-offset: 0px;
+  --focus-outline: var(--ci-swatch-selected-width, 2px) solid var(--color-foreground);
+}
+
+.variant-picker .variant-option--swatches .variant-option__button-label--has-swatch:not(:has(:checked)):hover {
+  outline-width: 1px;
+}
+
+.variant-picker .variant-option--swatches .variant-option__button-label--has-swatch:has(:checked) {
+  outline: var(--focus-outline);
+  outline-offset: 0;
+}
+
+.variant-picker .variant-option--swatches .variant-option__button-label--has-swatch:not(:has(:checked)) .swatch--variant-image {
+  opacity: var(--ci-swatch-inactive-opacity, 1);
+  transition: opacity 0.15s ease;
+}
+
+.variant-picker .variant-option--swatches .variant-option__button-label--has-swatch:not(:has(:checked)):hover .swatch--variant-image {
+  opacity: 1;
+}
+
 .variant-option--buttons .variant-option__button-label:not(.variant-option__button-label--has-swatch) {
   min-height: 40px;
   border-radius: 0;
