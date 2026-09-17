@@ -1,0 +1,792 @@
+{
+ "butterfly-off-the-shoulder-crewneck": [
+  {
+   "color": "Black",
+   "size": "S",
+   "sku": "52320407093536",
+   "old_variant_id": "gid://shopify/ProductVariant/52320407093536",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353444634912",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "M",
+   "sku": "52320414302496",
+   "old_variant_id": "gid://shopify/ProductVariant/52320414302496",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353451843872",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "L",
+   "sku": "52320414335264",
+   "old_variant_id": "gid://shopify/ProductVariant/52320414335264",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353451876640",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "XL",
+   "sku": "52320414368032",
+   "old_variant_id": "gid://shopify/ProductVariant/52320414368032",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353451909408",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "2XL",
+   "sku": "52320414400800",
+   "old_variant_id": "gid://shopify/ProductVariant/52320414400800",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353451942176",
+   "on_hand": {
+    "NEW HOUSTON Distribution Center": 4
+   },
+   "committed": {
+    "NEW HOUSTON Distribution Center": 0
+   }
+  },
+  {
+   "color": "Grey",
+   "size": "S",
+   "sku": "52320436289824",
+   "old_variant_id": "gid://shopify/ProductVariant/52320436289824",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353473831200",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Grey",
+   "size": "M",
+   "sku": "52320443793696",
+   "old_variant_id": "gid://shopify/ProductVariant/52320443793696",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353481335072",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Grey",
+   "size": "L",
+   "sku": "52320443826464",
+   "old_variant_id": "gid://shopify/ProductVariant/52320443826464",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353481367840",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Grey",
+   "size": "XL",
+   "sku": "52320443859232",
+   "old_variant_id": "gid://shopify/ProductVariant/52320443859232",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353481400608",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Grey",
+   "size": "2XL",
+   "sku": "52320443892000",
+   "old_variant_id": "gid://shopify/ProductVariant/52320443892000",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353481433376",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 4
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  }
+ ],
+ "form-straight-leggings": [
+  {
+   "color": "Black",
+   "size": "S",
+   "sku": "52320295846176",
+   "old_variant_id": "gid://shopify/ProductVariant/52320295846176",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353331716384",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 15
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "M",
+   "sku": "52320295878944",
+   "old_variant_id": "gid://shopify/ProductVariant/52320295878944",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353331749152",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 15
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "L",
+   "sku": "52320295911712",
+   "old_variant_id": "gid://shopify/ProductVariant/52320295911712",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353331781920",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 19
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "XL",
+   "sku": "52320295944480",
+   "old_variant_id": "gid://shopify/ProductVariant/52320295944480",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353331814688",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 19
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "2XL",
+   "sku": "52320295977248",
+   "old_variant_id": "gid://shopify/ProductVariant/52320295977248",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353331847456",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 7
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "S",
+   "sku": "52320304890144",
+   "old_variant_id": "gid://shopify/ProductVariant/52320304890144",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353340760352",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 15
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "M",
+   "sku": "52320304922912",
+   "old_variant_id": "gid://shopify/ProductVariant/52320304922912",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353340793120",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 15
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "L",
+   "sku": "52320304955680",
+   "old_variant_id": "gid://shopify/ProductVariant/52320304955680",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353340825888",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 19
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "XL",
+   "sku": "52320304988448",
+   "old_variant_id": "gid://shopify/ProductVariant/52320304988448",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353340858656",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 19
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "2XL",
+   "sku": "52320305021216",
+   "old_variant_id": "gid://shopify/ProductVariant/52320305021216",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353340891424",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 7
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  }
+ ],
+ "signature-leggings": [
+  {
+   "color": "Black",
+   "size": "S",
+   "sku": "52320350437664",
+   "old_variant_id": "gid://shopify/ProductVariant/52320350437664",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353387979040",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "M",
+   "sku": "52320350470432",
+   "old_variant_id": "gid://shopify/ProductVariant/52320350470432",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353388011808",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "L",
+   "sku": "52320350503200",
+   "old_variant_id": "gid://shopify/ProductVariant/52320350503200",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353388044576",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "XL",
+   "sku": "52320350535968",
+   "old_variant_id": "gid://shopify/ProductVariant/52320350535968",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353388077344",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "2XL",
+   "sku": "52320350568736",
+   "old_variant_id": "gid://shopify/ProductVariant/52320350568736",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353388110112",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 4
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Royal Blue",
+   "size": "S",
+   "sku": "52320368853280",
+   "old_variant_id": "gid://shopify/ProductVariant/52320368853280",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353406394656",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Royal Blue",
+   "size": "M",
+   "sku": "52320368886048",
+   "old_variant_id": "gid://shopify/ProductVariant/52320368886048",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353406427424",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Royal Blue",
+   "size": "L",
+   "sku": "52320368918816",
+   "old_variant_id": "gid://shopify/ProductVariant/52320368918816",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353406460192",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Royal Blue",
+   "size": "XL",
+   "sku": "52320368951584",
+   "old_variant_id": "gid://shopify/ProductVariant/52320368951584",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353406492960",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Royal Blue",
+   "size": "2XL",
+   "sku": "52320368984352",
+   "old_variant_id": "gid://shopify/ProductVariant/52320368984352",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353406525728",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 4
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  }
+ ],
+ "signature-long-sleeve-compression": [
+  {
+   "color": "Black",
+   "size": "S",
+   "sku": "52319807439136",
+   "old_variant_id": "gid://shopify/ProductVariant/52319807439136",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352835117344",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "M",
+   "sku": "52319816483104",
+   "old_variant_id": "gid://shopify/ProductVariant/52319816483104",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352847569184",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "L",
+   "sku": "52319816515872",
+   "old_variant_id": "gid://shopify/ProductVariant/52319816515872",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352847601952",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "XL",
+   "sku": "52319816548640",
+   "old_variant_id": "gid://shopify/ProductVariant/52319816548640",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352847634720",
+   "on_hand": {
+    "NEW HOUSTON Distribution Center": 13
+   },
+   "committed": {
+    "NEW HOUSTON Distribution Center": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "2XL",
+   "sku": "52319816581408",
+   "old_variant_id": "gid://shopify/ProductVariant/52319816581408",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352847667488",
+   "on_hand": {
+    "NEW HOUSTON Distribution Center": 4
+   },
+   "committed": {
+    "NEW HOUSTON Distribution Center": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "S",
+   "sku": "52319840796960",
+   "old_variant_id": "gid://shopify/ProductVariant/52319840796960",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352872046880",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "M",
+   "sku": "52319842664736",
+   "old_variant_id": "gid://shopify/ProductVariant/52319842664736",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352873914656",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "L",
+   "sku": "52319842697504",
+   "old_variant_id": "gid://shopify/ProductVariant/52319842697504",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352873947424",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "XL",
+   "sku": "52319842730272",
+   "old_variant_id": "gid://shopify/ProductVariant/52319842730272",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352873980192",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "2XL",
+   "sku": "52319842763040",
+   "old_variant_id": "gid://shopify/ProductVariant/52319842763040",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352874012960",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 4
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "S",
+   "sku": "52319855444256",
+   "old_variant_id": "gid://shopify/ProductVariant/52319855444256",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352887054624",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "M",
+   "sku": "52319939100960",
+   "old_variant_id": "gid://shopify/ProductVariant/52319939100960",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352970744096",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "L",
+   "sku": "52319939133728",
+   "old_variant_id": "gid://shopify/ProductVariant/52319939133728",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352970776864",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "XL",
+   "sku": "52319939166496",
+   "old_variant_id": "gid://shopify/ProductVariant/52319939166496",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352970809632",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "2XL",
+   "sku": "52319939199264",
+   "old_variant_id": "gid://shopify/ProductVariant/52319939199264",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54352970842400",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 4
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  }
+ ],
+ "signature-short-sleeve-compression": [
+  {
+   "color": "Black",
+   "size": "S",
+   "sku": "52320186269984",
+   "old_variant_id": "gid://shopify/ProductVariant/52320186269984",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353219158304",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "M",
+   "sku": "52320186302752",
+   "old_variant_id": "gid://shopify/ProductVariant/52320186302752",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353219191072",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "L",
+   "sku": "52320186335520",
+   "old_variant_id": "gid://shopify/ProductVariant/52320186335520",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353219223840",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "XL",
+   "sku": "52320186368288",
+   "old_variant_id": "gid://shopify/ProductVariant/52320186368288",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353219256608",
+   "on_hand": {
+    "NEW HOUSTON Distribution Center": 13
+   },
+   "committed": {
+    "NEW HOUSTON Distribution Center": 0
+   }
+  },
+  {
+   "color": "Black",
+   "size": "2XL",
+   "sku": "52320186401056",
+   "old_variant_id": "gid://shopify/ProductVariant/52320186401056",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353219289376",
+   "on_hand": {
+    "NEW HOUSTON Distribution Center": 4
+   },
+   "committed": {
+    "NEW HOUSTON Distribution Center": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "S",
+   "sku": "52319994249504",
+   "old_variant_id": "gid://shopify/ProductVariant/52319994249504",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353027039520",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "M",
+   "sku": "52319994282272",
+   "old_variant_id": "gid://shopify/ProductVariant/52319994282272",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353027072288",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "L",
+   "sku": "52319994315040",
+   "old_variant_id": "gid://shopify/ProductVariant/52319994315040",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353027105056",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "XL",
+   "sku": "52319994347808",
+   "old_variant_id": "gid://shopify/ProductVariant/52319994347808",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353027137824",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Blue",
+   "size": "2XL",
+   "sku": "52319994380576",
+   "old_variant_id": "gid://shopify/ProductVariant/52319994380576",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353027170592",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 4
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "S",
+   "sku": "52319968002336",
+   "old_variant_id": "gid://shopify/ProductVariant/52319968002336",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353000792352",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "M",
+   "sku": "52319968035104",
+   "old_variant_id": "gid://shopify/ProductVariant/52319968035104",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353000825120",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 10
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "L",
+   "sku": "52319968067872",
+   "old_variant_id": "gid://shopify/ProductVariant/52319968067872",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353000857888",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "XL",
+   "sku": "52319968100640",
+   "old_variant_id": "gid://shopify/ProductVariant/52319968100640",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353000890656",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 13
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  },
+  {
+   "color": "Lilac Purple",
+   "size": "2XL",
+   "sku": "52319968133408",
+   "old_variant_id": "gid://shopify/ProductVariant/52319968133408",
+   "old_inventory_item_id": "gid://shopify/InventoryItem/54353000923424",
+   "on_hand": {
+    "ShipBobFulfillment-437160": 4
+   },
+   "committed": {
+    "ShipBobFulfillment-437160": 0
+   }
+  }
+ ]
+}

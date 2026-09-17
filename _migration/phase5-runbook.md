@@ -1,6 +1,6 @@
 # Phase 5 Runbook — Batch Migration Guidelines
 
-Distilled from the Evergreen Pump Cover pilot (v1 → v9). Applies to the remaining 61 families.
+Distilled from the Evergreen Pump Cover pilot (v1 → v9), updated after Batch A (2026-09-17). Applies to the remaining families.
 
 ## Per-family workflow
 
@@ -43,6 +43,7 @@ Distilled from the Evergreen Pump Cover pilot (v1 → v9). Applies to the remain
 - All `loox.*`, `reviews.rating*`, `productwiz.*`, `globo--filter--*`, `shopify--discovery--product_recommendation.*` (repopulate after via each app)
 
 ### 3. Description writing rules
+- House format (as used on the 46 merged products, not the pilot): `<p>The <strong>Name</strong> ...</p><p>...</p><h3><strong>Details</strong></h3><ul>...<li>Available in X and Y, S-2XL</li></ul>`. Colours appear only in the last Details bullet.
 - Never copy-paste the longest source description word for word — old descriptions have color-specific language and leftover AI CSS wrapper divs (`class="dad65929"`, `ds-markdown-paragraph`, etc.).
 - Write ONE purpose-built family description that captures shared specs (GSM, fabric, construction, fit, brand mantra) without mentioning any single colorway.
 - Structure: intro paragraph → brand mantra paragraph → colorway callout → bulleted Details.
@@ -61,17 +62,19 @@ Distilled from the Evergreen Pump Cover pilot (v1 → v9). Applies to the remain
 
 ### 6. Post-import inventory fix (GraphQL, not Matrixify)
 
-Matrixify Basic can only target the store's primary location, which is SHIPBOB MORENO. We need everything at ShipBobFulfillment-437160 only.
+With `Variant Fulfillment Service = shipbobfulfillment-437160` on every row, Matrixify creates each variant's only inventory level at ShipBobFulfillment-437160 (qty 0). No SHIPBOB MORENO level is created, so the deactivate step from the pilot is no longer needed. Verify with a query before assuming.
 
-Run two mutations per family:
+Run per family:
 
-1. **`inventorySetOnHandQuantities`** — one call, up to 250 items per call. Set on-hand at ShipBobFulfillment-437160 (Location ID `gid://shopify/Location/114123407648`) for every variant.
-2. **`inventoryDeactivate`** — batched aliased mutation, one call for all variants. Deactivate SHIPBOB MORENO level (`gid://shopify/InventoryLevel/154340557088?inventory_item_id=<item_id>`) for every variant.
+1. **`inventorySetQuantities`** (the non-deprecated replacement for `inventorySetOnHandQuantities`) with `name: "on_hand"`, `reason: "correction"`, a `referenceDocumentUri` like `gid://ci-migration/BatchA/2026-09-17`, and `changeFromQuantity: 0` on every row as a compare-and-swap guard. Match old variant to new inventory item by SKU, never by position. Up to 250 rows per call.
+2. **Other locations**: if a source variant was stocked at a merchant location (e.g. NEW HOUSTON Distribution Center), keep it: `inventoryActivate(inventoryItemId, locationId, onHand)` per variant. Shopify allows a variant to be stocked at both the ShipBob fulfillment-service location and a merchant location. Decision 2026-09-17 (Aiman): do not zero out Houston stock.
+3. Only if a Moreno level exists: `inventoryDeactivate` per the pilot notes below.
 
 Gotchas:
-- Negative on-hand rejected → clamp to 0
+- Negative on-hand rejected -> clamp to 0
 - Deactivate requires 0 committed at that location; if committed > 0, it silently no-ops
-- Admin UI can show ghost SHIPBOB MORENO rows for ~30 min after deactivation due to Shopify caching. API is source of truth.
+- Admin UI can show ghost location rows for ~30 min after changes due to caching. API is source of truth.
+- Reconcile after every family: sum of new on-hand per location must equal sum of source on-hand per location.
 
 ### 7. Color swatch mapping
 
@@ -125,3 +128,15 @@ If a family has a color that has no close match in your metaobjects, skip that c
 ## Rollback per family
 - Products → Drafts → find "<Family Name>" → Delete. Nothing on storefront was touched (originals still Active, drafts invisible).
 - Matrixify keeps history; re-import a reverse workbook if needed.
+
+## Batch log
+
+| Batch | Date | Families | Products | Variants | Notes |
+|---|---|---|---|---|---|
+| Pilot | 2026-09 | Evergreen Pump Cover | 8 -> 1 (`pump-cover`) | 61 | v1-v9 |
+| (bulk) | 2026-09 | 44 families | see store | | merged before Batch A; mapping/redirects still to backfill |
+| A | 2026-09-17 | Butterfly Off The Shoulder Crewneck, Form Straight Leggings, Signature Leggings, Signature Long Sleeve Compression, Signature Short Sleeve Compression | 12 -> 5 | 60 | all 65 rows OK first run; no media on sources; 612 units at ShipBob, 38 kept at Houston. Files in `_migration/batch-a/` |
+
+## Not merging (decision 2026-09-17)
+
+Raglan 3/4 Tee, Tech Pants, Track Jacket, Track Pants, Prime Layer Shorts, Prime Layer Track Jacket, Prime Layer Track Pants (16 products). Houston-only, zero or negative stock, clearance pricing, 7 without SKUs. Archive at cutover with redirects to the relevant collection.
