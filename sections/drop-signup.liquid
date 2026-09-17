@@ -236,7 +236,11 @@
                       data-drop-signup-discord
                     >
                       {% if b.show_icon %}
-                        <span class="drop-signup__discord-icon" aria-hidden="true">{{ 'icon-ci-discord.svg' | inline_asset_content }}</span>
+                        {% if b.icon_image != blank %}
+                          <span class="drop-signup__discord-icon drop-signup__discord-icon--custom" style="--b-icon: url('{{ b.icon_image | image_url: width: 200 }}');" aria-hidden="true"></span>
+                        {% else %}
+                          <span class="drop-signup__discord-icon" aria-hidden="true">{{ 'icon-ci-discord-mark.svg' | inline_asset_content }}</span>
+                        {% endif %}
                       {% endif %}
                       {{ b.label | escape }}
                     </a>
@@ -479,7 +483,7 @@
   }
   .drop-signup__discord-icon {
     display: inline-flex;
-    width: calc(1.9cqi * var(--ds-s) * var(--b-scale, 1));
+    width: calc(2.4cqi * var(--ds-s) * var(--b-scale, 1));
     height: calc(1.9cqi * var(--ds-s) * var(--b-scale, 1));
     flex: none;
   }
@@ -487,8 +491,10 @@
     width: 100%;
     height: 100%;
   }
-  .drop-signup__discord-icon svg path {
-    fill: currentColor;
+  .drop-signup__discord-icon--custom {
+    background-color: currentColor;
+    -webkit-mask: var(--b-icon) center / contain no-repeat;
+    mask: var(--b-icon) center / contain no-repeat;
   }
   .drop-signup__reassurance {
     margin: 1cqi 0 0;
@@ -584,8 +590,8 @@
       font-size: calc(1.0625rem * var(--ds-s) * var(--b-scale, 1));
     }
     .drop-signup__discord-icon {
-      width: calc(22px * var(--ds-s) * var(--b-scale, 1));
-      height: calc(22px * var(--ds-s) * var(--b-scale, 1));
+      width: calc(26px * var(--ds-s) * var(--b-scale, 1));
+      height: calc(20px * var(--ds-s) * var(--b-scale, 1));
     }
     .drop-signup__reassurance {
       margin-block-start: 0.7rem;
@@ -1205,8 +1211,14 @@
         {
           "type": "checkbox",
           "id": "show_icon",
-          "label": "Show Discord icon",
+          "label": "Show icon",
           "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Custom icon",
+          "info": "Optional. A white or black PNG or SVG on a transparent background. It is recolored to match the button text. Leave empty for the Discord logo."
         },
         {
           "type": "range",
