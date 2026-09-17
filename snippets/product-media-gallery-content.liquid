@@ -24,6 +24,12 @@
     type="module"
   ></script>
 {%- endif -%}
+{%- if block_settings.color_first_option != blank -%}
+  <script
+    src="{{ 'ci-gallery-color-first.js' | asset_url }}"
+    type="module"
+  ></script>
+{%- endif -%}
 {%- liquid
   assign selected_product = closest.product
   assign selected_variant_media = selected_product.selected_or_first_available_variant.featured_media
@@ -407,11 +413,16 @@
             --media-preview-ratio: {{ media.preview_image.aspect_ratio | default: 1.0 }};
           {% endcapture %}
         {% endif %}
+        {%- assign attributes = '' -%}
         {% if block_settings.zoom and media.media_type == 'model' %}
           {%- capture attributes -%}"{% if settings.transition_to_main_product and forloop.first %} data-view-transition-type="product-image-transition"{% endif %}{% endcapture -%}
         {% elsif block_settings.zoom %}
           {%- capture attributes -%}on:click="#zoom-dialog-{{ block_id }}/open/{{ forloop.index0 }}"{% if settings.transition_to_main_product and forloop.first %} data-view-transition-type="product-image-transition"{% endif %}{% endcapture -%}
         {% endif %}
+        {%- if color_first_option != blank -%}
+          {%- assign media_color = media.alt | split: ' - ' | last | strip | downcase | escape -%}
+          {%- assign attributes = attributes | append: ' data-ci-color="' | append: media_color | append: '"' -%}
+        {%- endif -%}
 
         {% render 'slideshow-slide',
           index: forloop.index0,
@@ -485,6 +496,9 @@
             {% endif %}
             {% if media.presentation.focal_point != blank %}
               data-focal-point="{{ media.presentation.focal_point }}"
+            {% endif %}
+            {% if color_first_option != blank %}
+              data-ci-color="{{ media.alt | split: ' - ' | last | strip | downcase | escape }}"
             {% endif %}
           >
             {%- if block_settings.zoom and media.media_type == 'image' -%}
@@ -595,6 +609,9 @@
                 ref="media[]"
                 {% if media.media_type == 'image' %}
                   on:click="/close"
+                {% endif %}
+                {% if color_first_option != blank %}
+                  data-ci-color="{{ media.alt | split: ' - ' | last | strip | downcase | escape }}"
                 {% endif %}
               >
                 {% if media.media_type == 'image' %}
