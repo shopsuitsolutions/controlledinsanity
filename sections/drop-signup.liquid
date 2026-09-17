@@ -36,6 +36,7 @@
     --ds-mobile-focus: {{ s.mobile_focus }}%;
     --ds-mobile-img-height: {{ s.mobile_image_height }}svh;
     --ds-mobile-pad: {{ mobile_panel_padding }};
+    --ds-mobile-bottom: {{ s.mobile_panel_offset }}svh;
     --ds-chrome-offset: {% if s.hide_chrome %}0px{% else %}var(--header-group-height, 0px){% endif %};
     --ds-overlay: {{ overlay_opacity }};
     --ds-scale: {{ text_scale }};
@@ -540,6 +541,7 @@
       position: relative;
       justify-content: flex-end;
       padding-block-start: 2rem;
+      padding-block-end: max(2rem, var(--ds-mobile-bottom, 4svh));
     }
     .drop-signup--mobile-fill.drop-signup--mobile-valign-center .drop-signup__hero {
       justify-content: center;
@@ -723,6 +725,17 @@
         { "value": "center", "label": "Center" }
       ],
       "default": "bottom"
+    },
+    {
+      "type": "range",
+      "id": "mobile_panel_offset",
+      "label": "Mobile copy distance from bottom",
+      "info": "Only for Image fills screen with Bottom position. Lifts the whole copy block up the screen.",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "%",
+      "default": 4
     },
     {
       "type": "range",
