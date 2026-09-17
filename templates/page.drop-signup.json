@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "drop_signup": {
@@ -6,31 +15,52 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "text": "Get in.\nJoin the family."
+            "text": "Get in.\nJoin the family.",
+            "size": 100,
+            "line_height": 102,
+            "letter_spacing": -2,
+            "uppercase": true,
+            "space_above": 0
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "It's the biggest collection we've built yet.\nGet on the list and we'll notify you the second it's live, before everyone else."
+            "text": "It's the biggest collection we've built yet.\nGet on the list and we'll notify you the second it's live, before everyone else.",
+            "size": 100,
+            "max_width": 34,
+            "space_above": 100
           }
         },
         "email_form": {
           "type": "email_form",
           "settings": {
             "placeholder": "Email Address",
-            "button_label": "Notify me"
+            "button_label": "Notify me",
+            "size": 100,
+            "button_style": "outline",
+            "button_size": "medium",
+            "button_uppercase": false,
+            "button_radius": 4,
+            "input_size": "medium",
+            "input_radius": 4,
+            "space_above": 100
           }
         },
         "confirmation": {
           "type": "confirmation",
           "settings": {
-            "text": "You're on the list."
+            "text": "You're on the list.",
+            "size": 100,
+            "uppercase": true,
+            "space_above": 100
           }
         },
         "divider": {
           "type": "divider",
-          "settings": {}
+          "settings": {
+            "space_above": 100
+          }
         },
         "discord": {
           "type": "discord",
@@ -38,24 +68,54 @@
             "lead": "Early access, restock alerts, and first look at what's next.",
             "label": "Join our Discord",
             "url": "https://discord.gg/rXt3XA5bC",
-            "reassurance": "No signup needed"
+            "reassurance": "No signup needed",
+            "new_tab": false,
+            "size": 100,
+            "small_text_size": 100,
+            "button_size": "medium",
+            "button_width": "full",
+            "uppercase": true,
+            "show_icon": true,
+            "button_radius": 4,
+            "color": "#5865f2",
+            "text_color": "#ffffff",
+            "space_above": 100
           }
         }
       },
-      "block_order": ["heading", "text", "email_form", "confirmation", "divider", "discord"],
+      "block_order": [
+        "heading",
+        "text",
+        "email_form",
+        "confirmation",
+        "divider",
+        "discord"
+      ],
       "settings": {
-        "image": "shopify://shop_images/e075fca1bed8b4137cf304b6827590e46ca44408_1.jpg",
-        "image_mobile": "shopify://shop_images/a88da8ae00a44969ce91d497441172438b2413b5.jpg",
+        "image": "shopify://shop_images/desktop-original-lossless.webp",
+        "image_mobile": "shopify://shop_images/group-portrait-mobile-long-gradient.webp",
+        "mobile_layout": "fill",
+        "mobile_panel_valign": "bottom",
         "mobile_focus": 50,
         "mobile_image_height": 60,
+        "overlay_opacity": 0,
+        "desktop_fade": true,
+        "mobile_fade": true,
         "mode": "gated",
         "customer_tag": "drop-waitlist",
+        "text_scale": 100,
+        "mobile_text_scale": 100,
+        "text_align": "center",
         "panel_side": "right",
         "panel_offset": 58,
+        "panel_valign": "center",
+        "mobile_panel_padding": 100,
         "color_scheme": "scheme-5",
         "hide_chrome": true
       }
     }
   },
-  "order": ["drop_signup"]
+  "order": [
+    "drop_signup"
+  ]
 }
