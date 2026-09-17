@@ -11,8 +11,10 @@
     assign gated = false
   endif
   assign form_id = 'DropSignupForm-' | append: section.id
-  assign email_id = 'DropSignupEmail-' | append: section.id
-  assign error_id = 'DropSignupError-' | append: section.id
+  assign text_scale = s.text_scale | divided_by: 100.0
+  assign mobile_text_scale = s.mobile_text_scale | divided_by: 100.0
+  assign mobile_panel_padding = s.mobile_panel_padding | divided_by: 100.0
+  assign overlay_opacity = s.overlay_opacity | divided_by: 100.0
 %}
 
 {% if s.hide_chrome %}
@@ -26,8 +28,19 @@
 
 <div
   id="DropSignup-{{ section.id }}"
-  class="drop-signup color-{{ s.color_scheme }} drop-signup--panel-{{ s.panel_side }} drop-signup--{{ s.mode }}"
-  style="--ds-ratio: {{ ratio }}; --ds-panel-offset: {{ s.panel_offset }}%; --ds-mobile-focus: {{ s.mobile_focus }}%; --ds-mobile-img-height: {{ s.mobile_image_height }}svh; --ds-discord-bg: {{ s.discord_color }}; --ds-discord-text: {{ s.discord_text_color }}; --ds-chrome-offset: {% if s.hide_chrome %}0px{% else %}var(--header-group-height, 0px){% endif %};"
+  class="drop-signup color-{{ s.color_scheme }} drop-signup--panel-{{ s.panel_side }} drop-signup--{{ s.mode }} drop-signup--align-{{ s.text_align }}{% if s.desktop_fade %} drop-signup--fade{% endif %}"
+  style="
+    --ds-ratio: {{ ratio }};
+    --ds-panel-offset: {{ s.panel_offset }}%;
+    --ds-panel-valign: {{ s.panel_valign }};
+    --ds-mobile-focus: {{ s.mobile_focus }}%;
+    --ds-mobile-img-height: {{ s.mobile_image_height }}svh;
+    --ds-mobile-pad: {{ mobile_panel_padding }};
+    --ds-chrome-offset: {% if s.hide_chrome %}0px{% else %}var(--header-group-height, 0px){% endif %};
+    --ds-overlay: {{ overlay_opacity }};
+    --ds-scale: {{ text_scale }};
+    --ds-mobile-scale: {{ mobile_text_scale }};
+  "
   {{ section.shopify_attributes }}
 >
   <div class="drop-signup__hero">
@@ -66,71 +79,177 @@
           endif
         %}
 
-        {% if s.headline != blank %}
-          <h1 class="drop-signup__headline">{{ s.headline | escape | newline_to_br }}</h1>
+        {% if section.blocks.size == 0 and request.design_mode %}
+          <p class="drop-signup__error">Add blocks to this section: Headline, Supporting copy, Email form, Confirmation, Divider, Discord button.</p>
         {% endif %}
 
-        {% if s.supporting != blank %}
-          <p class="drop-signup__lede">{{ s.supporting | escape | newline_to_br }}</p>
-        {% endif %}
+        {% for block in section.blocks %}
+          {% liquid
+            assign b = block.settings
+            assign b_space = b.space_above | default: 100 | divided_by: 100.0
+            assign b_scale = b.size | default: 100 | divided_by: 100.0
+          %}
 
-        {% if posted %}
-          {% if s.confirmation != blank %}
-            <p class="drop-signup__confirm" tabindex="-1" data-drop-signup-confirm>{{ s.confirmation | escape }}</p>
-          {% endif %}
-        {% else %}
-          <input type="hidden" name="contact[tags]" value="{{ s.customer_tag | escape }}">
-          <div class="drop-signup__email-row">
-            <label for="{{ email_id }}" class="visually-hidden">{{ 'blocks.email_signup.label' | t }}</label>
-            <input
-              id="{{ email_id }}"
-              class="drop-signup__input"
-              type="email"
-              name="contact[email]"
-              autocorrect="off"
-              autocapitalize="off"
-              autocomplete="email"
-              placeholder="{{ s.email_placeholder | escape }}"
-              required
-              {% if form.errors %}
-                autofocus
-                aria-invalid="true"
-                aria-describedby="{{ error_id }}"
+          {% case block.type %}
+            {% when 'heading' %}
+              {% if b.text != blank %}
+                {% liquid
+                  assign h_case = 'none'
+                  if b.uppercase
+                    assign h_case = 'uppercase'
+                  endif
+                  assign h_leading = b.line_height | divided_by: 100.0
+                  assign h_tracking = b.letter_spacing | times: 0.01
+                %}
+                <h1
+                  class="drop-signup__block drop-signup__headline"
+                  style="--b-space: {{ b_space }}; --b-scale: {{ b_scale }}; --b-leading: {{ h_leading }}; --b-tracking: {{ h_tracking }}em; --b-case: {{ h_case }};"
+                  {{ block.shopify_attributes }}
+                >{{ b.text | escape | newline_to_br }}</h1>
               {% endif %}
-            >
-            <button type="submit" class="drop-signup__submit">{{ s.email_button_label | escape }}</button>
-          </div>
-          {% if form.errors %}
-            <p id="{{ error_id }}" class="drop-signup__error" role="alert">
-              {{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}
-            </p>
-          {% endif %}
-        {% endif %}
 
-        {% if show_discord %}
-          {% if posted and gated %}
-            <hr class="drop-signup__divider">
-          {% endif %}
-          {% if s.discord_lead != blank %}
-            <p class="drop-signup__discord-lead">{{ s.discord_lead | escape }}</p>
-          {% endif %}
-          {% if s.discord_url != blank %}
-            <a
-              class="drop-signup__discord"
-              href="{{ s.discord_url }}"
-              {% if s.discord_new_tab %}target="_blank" rel="noopener"{% endif %}
-              data-drop-signup-discord
-            >
-              <span class="drop-signup__discord-icon" aria-hidden="true">{{ 'icon-ci-discord.svg' | inline_asset_content }}</span>
-              {{ s.discord_label | escape }}
-            </a>
-          {% elsif request.design_mode %}
-            <p class="drop-signup__error">Add the Discord invite URL in the section settings.</p>
-          {% endif %}
-          {% if s.reassurance != blank and s.discord_url != blank %}
-            <p class="drop-signup__reassurance">{{ s.reassurance | escape }}</p>
-          {% endif %}
-        {% endif %}
+            {% when 'text' %}
+              {% if b.text != blank %}
+                <p
+                  class="drop-signup__block drop-signup__lede"
+                  style="--b-space: {{ b_space }}; --b-scale: {{ b_scale }}; --b-max: {{ b.max_width }}ch;"
+                  {{ block.shopify_attributes }}
+                >{{ b.text | escape | newline_to_br }}</p>
+              {% endif %}
+
+            {% when 'email_form' %}
+              {% unless posted %}
+                {% liquid
+                  case b.button_size
+                    when 'small'
+                      assign submit_pad = 0.8
+                    when 'large'
+                      assign submit_pad = 1.25
+                    else
+                      assign submit_pad = 1
+                  endcase
+                  case b.input_size
+                    when 'small'
+                      assign input_pad = 0.8
+                    when 'large'
+                      assign input_pad = 1.25
+                    else
+                      assign input_pad = 1
+                  endcase
+                  assign submit_case = 'none'
+                  if b.button_uppercase
+                    assign submit_case = 'uppercase'
+                  endif
+                  assign email_id = 'DropSignupEmail-' | append: block.id
+                  assign error_id = 'DropSignupError-' | append: block.id
+                %}
+                <div
+                  class="drop-signup__block drop-signup__email"
+                  style="--b-space: {{ b_space }}; --b-scale: {{ b_scale }}; --b-submit-pad: {{ submit_pad }}; --b-input-pad: {{ input_pad }}; --b-submit-case: {{ submit_case }}; --b-submit-radius: {{ b.button_radius }}px; --b-input-radius: {{ b.input_radius }}px;"
+                  {{ block.shopify_attributes }}
+                >
+                  <input type="hidden" name="contact[tags]" value="{{ s.customer_tag | escape }}">
+                  <div class="drop-signup__email-row">
+                    <label for="{{ email_id }}" class="visually-hidden">{{ 'blocks.email_signup.label' | t }}</label>
+                    <input
+                      id="{{ email_id }}"
+                      class="drop-signup__input"
+                      type="email"
+                      name="contact[email]"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      autocomplete="email"
+                      placeholder="{{ b.placeholder | escape }}"
+                      required
+                      {% if form.errors %}
+                        autofocus
+                        aria-invalid="true"
+                        aria-describedby="{{ error_id }}"
+                      {% endif %}
+                    >
+                    <button type="submit" class="drop-signup__submit drop-signup__submit--{{ b.button_style }}">{{ b.button_label | escape }}</button>
+                  </div>
+                  {% if form.errors %}
+                    <p id="{{ error_id }}" class="drop-signup__error" role="alert">
+                      {{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}
+                    </p>
+                  {% endif %}
+                </div>
+              {% endunless %}
+
+            {% when 'confirmation' %}
+              {% if posted and b.text != blank %}
+                {% liquid
+                  assign c_case = 'none'
+                  if b.uppercase
+                    assign c_case = 'uppercase'
+                  endif
+                %}
+                <p
+                  class="drop-signup__block drop-signup__confirm"
+                  style="--b-space: {{ b_space }}; --b-scale: {{ b_scale }}; --b-case: {{ c_case }};"
+                  tabindex="-1"
+                  data-drop-signup-confirm
+                  {{ block.shopify_attributes }}
+                >{{ b.text | escape }}</p>
+              {% endif %}
+
+            {% when 'divider' %}
+              {% if show_discord %}
+                <hr
+                  class="drop-signup__block drop-signup__divider"
+                  style="--b-space: {{ b_space }};"
+                  {{ block.shopify_attributes }}
+                >
+              {% endif %}
+
+            {% when 'discord' %}
+              {% if show_discord %}
+                {% liquid
+                  case b.button_size
+                    when 'small'
+                      assign discord_pad = 0.8
+                    when 'large'
+                      assign discord_pad = 1.25
+                    else
+                      assign discord_pad = 1
+                  endcase
+                  assign d_case = 'none'
+                  if b.uppercase
+                    assign d_case = 'uppercase'
+                  endif
+                  assign small_scale = b.small_text_size | divided_by: 100.0
+                %}
+                <div
+                  class="drop-signup__block drop-signup__discord-block drop-signup__discord-block--{{ b.button_width }}"
+                  style="--b-space: {{ b_space }}; --b-scale: {{ b_scale }}; --b-small-scale: {{ small_scale }}; --b-discord-pad: {{ discord_pad }}; --b-case: {{ d_case }}; --b-radius: {{ b.button_radius }}px; --b-bg: {{ b.color }}; --b-text: {{ b.text_color }};"
+                  {{ block.shopify_attributes }}
+                >
+                  {% if b.lead != blank %}
+                    <p class="drop-signup__discord-lead">{{ b.lead | escape }}</p>
+                  {% endif %}
+                  {% if b.url != blank %}
+                    <a
+                      class="drop-signup__discord"
+                      href="{{ b.url }}"
+                      {% if b.new_tab %}target="_blank" rel="noopener"{% endif %}
+                      data-drop-signup-discord
+                    >
+                      {% if b.show_icon %}
+                        <span class="drop-signup__discord-icon" aria-hidden="true">{{ 'icon-ci-discord.svg' | inline_asset_content }}</span>
+                      {% endif %}
+                      {{ b.label | escape }}
+                    </a>
+                    {% if b.reassurance != blank %}
+                      <p class="drop-signup__reassurance">{{ b.reassurance | escape }}</p>
+                    {% endif %}
+                  {% elsif request.design_mode %}
+                    <p class="drop-signup__error">Add the Discord invite URL in this block's settings.</p>
+                  {% endif %}
+                </div>
+              {% endif %}
+          {% endcase %}
+        {% endfor %}
       {% endform %}
     </div>
   </div>
@@ -162,6 +281,7 @@
 
 {% stylesheet %}
   .drop-signup {
+    --ds-s: var(--ds-scale, 1);
     min-height: calc(100svh - var(--ds-chrome-offset, 0px));
     background: var(--color-background);
     color: var(--color-foreground);
@@ -175,11 +295,13 @@
     aspect-ratio: var(--ds-ratio);
     overflow: hidden;
   }
-  @media screen and (min-width: 1024px) {
-    .drop-signup__img {
-      -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
-      mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
-    }
+  .drop-signup__hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / var(--ds-overlay, 0));
+    pointer-events: none;
+    z-index: 1;
   }
   .drop-signup__picture {
     display: block;
@@ -196,10 +318,14 @@
     position: absolute;
     top: 7%;
     bottom: 6%;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: var(--ds-panel-valign, center);
     text-align: center;
+  }
+  .drop-signup--align-left .drop-signup__panel {
+    text-align: left;
   }
   .drop-signup--panel-right .drop-signup__panel {
     left: var(--ds-panel-offset);
@@ -213,42 +339,57 @@
     display: block;
     width: 100%;
   }
-  .drop-signup__headline {
+  .drop-signup__block {
     margin: 0;
+  }
+
+  /* Headline */
+  .drop-signup__headline {
+    margin-block-start: calc(2cqi * var(--b-space, 0));
     font-family: var(--font-heading--family);
     font-weight: var(--font-heading--weight);
     font-style: var(--font-heading--style);
-    font-size: 4.4cqi;
-    line-height: 1.02;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+    font-size: calc(4.4cqi * var(--ds-s) * var(--b-scale, 1));
+    line-height: var(--b-leading, 1.02);
+    letter-spacing: var(--b-tracking, -0.02em);
+    text-transform: var(--b-case, uppercase);
     color: var(--color-foreground-heading);
   }
+
+  /* Supporting copy */
   .drop-signup__lede {
-    margin: 1.4cqi auto 0;
-    max-width: 34ch;
-    font-size: 1.32cqi;
+    margin-block-start: calc(1.4cqi * var(--b-space, 1));
+    margin-inline: auto;
+    max-width: var(--b-max, 34ch);
+    font-size: calc(1.32cqi * var(--ds-s) * var(--b-scale, 1));
     line-height: 1.55;
     color: rgb(var(--color-foreground-rgb) / 0.78);
+  }
+  .drop-signup--align-left .drop-signup__lede {
+    margin-inline: 0;
+  }
+
+  /* Email form */
+  .drop-signup__email {
+    margin-block-start: calc(3.4cqi * var(--b-space, 1));
   }
   .drop-signup__email-row {
     display: flex;
     gap: 0.7cqi;
-    margin-block-start: 3.4cqi;
   }
   .drop-signup__input,
   .drop-signup__submit {
     font-family: inherit;
-    font-size: 1.25cqi;
+    font-size: calc(1.25cqi * var(--ds-s) * var(--b-scale, 1));
     color: var(--color-foreground);
     background: transparent;
     border: 1px solid rgb(var(--color-foreground-rgb) / 0.32);
-    border-radius: 4px;
   }
   .drop-signup__input {
     flex: 1;
     min-width: 0;
-    padding: 1.05cqi 1.2cqi;
+    padding: calc(1.05cqi * var(--b-input-pad, 1)) 1.2cqi;
+    border-radius: var(--b-input-radius, 4px);
   }
   .drop-signup__input::placeholder {
     color: rgb(var(--color-foreground-rgb) / 0.4);
@@ -257,40 +398,57 @@
     border-color: rgb(var(--color-foreground-rgb) / 0.7);
   }
   .drop-signup__submit {
-    padding: 1.05cqi 1.7cqi;
+    padding: calc(1.05cqi * var(--b-submit-pad, 1)) calc(1.7cqi * var(--b-submit-pad, 1));
     font-weight: 500;
+    text-transform: var(--b-submit-case, none);
+    border-radius: var(--b-submit-radius, 4px);
     cursor: pointer;
     white-space: nowrap;
-    transition: background 140ms ease;
+    transition: background 140ms ease, opacity 140ms ease;
   }
-  .drop-signup__submit:hover {
+  .drop-signup__submit--outline:hover {
     background: rgb(var(--color-foreground-rgb) / 0.1);
+  }
+  .drop-signup__submit--solid {
+    background: var(--color-foreground);
+    color: var(--color-background);
+    border-color: var(--color-foreground);
+    font-weight: 700;
+  }
+  .drop-signup__submit--solid:hover {
+    opacity: 0.88;
   }
   .drop-signup__error {
     margin: 1cqi 0 0;
-    font-size: 1.05cqi;
+    font-size: calc(1.05cqi * var(--ds-s));
     color: #ff9c9c;
   }
+
+  /* Confirmation */
   .drop-signup__confirm {
-    margin: 3.4cqi 0 0;
-    font-size: 1.7cqi;
+    margin-block-start: calc(3.4cqi * var(--b-space, 1));
+    font-size: calc(1.7cqi * var(--ds-s) * var(--b-scale, 1));
     font-weight: 700;
     letter-spacing: 0.01em;
-    text-transform: uppercase;
+    text-transform: var(--b-case, uppercase);
     color: var(--color-foreground-heading);
     outline: none;
   }
+
+  /* Divider */
   .drop-signup__divider {
-    margin: 3.2cqi 0 2.1cqi;
+    margin-block-start: calc(3.2cqi * var(--b-space, 1));
     border: 0;
     border-block-start: 1px solid rgb(var(--color-foreground-rgb) / 0.16);
   }
-  .drop-signup--open .drop-signup__discord-lead {
-    margin-block-start: 3cqi;
+
+  /* Discord */
+  .drop-signup__discord-block {
+    margin-block-start: calc(2.1cqi * var(--b-space, 1));
   }
   .drop-signup__discord-lead {
     margin: 0 0 1.3cqi;
-    font-size: 1.22cqi;
+    font-size: calc(1.22cqi * var(--ds-s) * var(--b-small-scale, 1));
     color: rgb(var(--color-foreground-rgb) / 0.72);
   }
   .drop-signup__discord {
@@ -298,16 +456,19 @@
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-    padding: 1.45cqi 1.5rem;
-    background: var(--ds-discord-bg);
-    color: var(--ds-discord-text);
-    font-size: 1.42cqi;
+    padding: calc(1.45cqi * var(--b-discord-pad, 1)) calc(1.5rem * var(--b-discord-pad, 1));
+    background: var(--b-bg, #5865f2);
+    color: var(--b-text, #fff);
+    font-size: calc(1.42cqi * var(--ds-s) * var(--b-scale, 1));
     font-weight: 700;
     letter-spacing: 0.01em;
-    text-transform: uppercase;
+    text-transform: var(--b-case, uppercase);
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: var(--b-radius, 4px);
     transition: filter 140ms ease;
+  }
+  .drop-signup__discord-block--fit .drop-signup__discord {
+    display: inline-flex;
   }
   .drop-signup__discord:hover {
     filter: brightness(0.92);
@@ -318,8 +479,8 @@
   }
   .drop-signup__discord-icon {
     display: inline-flex;
-    width: 1.9cqi;
-    height: 1.9cqi;
+    width: calc(1.9cqi * var(--ds-s) * var(--b-scale, 1));
+    height: calc(1.9cqi * var(--ds-s) * var(--b-scale, 1));
     flex: none;
   }
   .drop-signup__discord-icon svg {
@@ -331,11 +492,21 @@
   }
   .drop-signup__reassurance {
     margin: 1cqi 0 0;
-    font-size: 1.08cqi;
+    font-size: calc(1.08cqi * var(--ds-s) * var(--b-small-scale, 1));
     color: rgb(var(--color-foreground-rgb) / 0.55);
   }
 
+  @media screen and (min-width: 1024px) {
+    .drop-signup--fade .drop-signup__img {
+      -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+      mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+    }
+  }
+
   @media screen and (max-width: 1023px) {
+    .drop-signup {
+      --ds-s: calc(var(--ds-scale, 1) * var(--ds-mobile-scale, 1));
+    }
     .drop-signup__hero {
       container-type: normal;
       display: flex;
@@ -358,64 +529,67 @@
     .drop-signup__panel,
     .drop-signup--panel-right .drop-signup__panel,
     .drop-signup--panel-left .drop-signup__panel {
-      position: static;
+      position: relative;
       inset: auto;
       width: 100%;
       max-width: 34rem;
       margin: -12svh auto 0;
-      padding: 0 2rem;
+      padding: 0 calc(2rem * var(--ds-mobile-pad, 1));
     }
     .drop-signup__headline {
-      font-size: 2.6rem;
+      margin-block-start: calc(1.1rem * var(--b-space, 0));
+      font-size: calc(2.6rem * var(--ds-s) * var(--b-scale, 1));
     }
     .drop-signup__lede {
-      margin-block-start: 1.1rem;
-      font-size: 1rem;
-      max-width: 40ch;
+      margin-block-start: calc(1.1rem * var(--b-space, 1));
+      font-size: calc(1rem * var(--ds-s) * var(--b-scale, 1));
+      max-width: calc(var(--b-max, 34ch) + 6ch);
+    }
+    .drop-signup__email {
+      margin-block-start: calc(2rem * var(--b-space, 1));
     }
     .drop-signup__email-row {
       gap: 0.5rem;
-      margin-block-start: 2rem;
     }
     .drop-signup__input,
     .drop-signup__submit {
-      font-size: 0.9375rem;
+      font-size: calc(0.9375rem * var(--ds-s) * var(--b-scale, 1));
     }
     .drop-signup__input {
-      padding: 0.8rem 0.9rem;
+      padding: calc(0.8rem * var(--b-input-pad, 1)) 0.9rem;
     }
     .drop-signup__submit {
-      padding: 0.8rem 1.25rem;
+      padding: calc(0.8rem * var(--b-submit-pad, 1)) calc(1.25rem * var(--b-submit-pad, 1));
     }
     .drop-signup__error {
       margin-block-start: 0.6rem;
-      font-size: 0.8125rem;
+      font-size: calc(0.8125rem * var(--ds-s));
     }
     .drop-signup__confirm {
-      margin-block-start: 2rem;
-      font-size: 1.25rem;
+      margin-block-start: calc(2rem * var(--b-space, 1));
+      font-size: calc(1.25rem * var(--ds-s) * var(--b-scale, 1));
     }
     .drop-signup__divider {
-      margin: 2.25rem 0 1.5rem;
+      margin-block-start: calc(2.25rem * var(--b-space, 1));
     }
-    .drop-signup--open .drop-signup__discord-lead {
-      margin-block-start: 2rem;
+    .drop-signup__discord-block {
+      margin-block-start: calc(1.5rem * var(--b-space, 1));
     }
     .drop-signup__discord-lead {
       margin-block-end: 0.85rem;
-      font-size: 0.9375rem;
+      font-size: calc(0.9375rem * var(--ds-s) * var(--b-small-scale, 1));
     }
     .drop-signup__discord {
-      padding: 1.1rem 1.5rem;
-      font-size: 1.0625rem;
+      padding: calc(1.1rem * var(--b-discord-pad, 1)) calc(1.5rem * var(--b-discord-pad, 1));
+      font-size: calc(1.0625rem * var(--ds-s) * var(--b-scale, 1));
     }
     .drop-signup__discord-icon {
-      width: 22px;
-      height: 22px;
+      width: calc(22px * var(--ds-s) * var(--b-scale, 1));
+      height: calc(22px * var(--ds-s) * var(--b-scale, 1));
     }
     .drop-signup__reassurance {
       margin-block-start: 0.7rem;
-      font-size: 0.8125rem;
+      font-size: calc(0.8125rem * var(--ds-s) * var(--b-small-scale, 1));
     }
   }
 
@@ -427,31 +601,37 @@
     .drop-signup--panel-right .drop-signup__panel,
     .drop-signup--panel-left .drop-signup__panel {
       margin-block-start: -10svh;
-      padding: 0 1.25rem;
+      padding: 0 calc(1.25rem * var(--ds-mobile-pad, 1));
     }
     .drop-signup__headline {
-      font-size: 2rem;
+      margin-block-start: calc(0.85rem * var(--b-space, 0));
+      font-size: calc(2rem * var(--ds-s) * var(--b-scale, 1));
     }
     .drop-signup__lede {
-      margin-block-start: 0.85rem;
-      font-size: 0.9375rem;
+      margin-block-start: calc(0.85rem * var(--b-space, 1));
+      font-size: calc(0.9375rem * var(--ds-s) * var(--b-scale, 1));
+    }
+    .drop-signup__email {
+      margin-block-start: calc(1.5rem * var(--b-space, 1));
     }
     .drop-signup__email-row {
       flex-direction: column;
-      margin-block-start: 1.5rem;
     }
     .drop-signup__submit {
       width: 100%;
     }
     .drop-signup__confirm {
-      margin-block-start: 1.5rem;
+      margin-block-start: calc(1.5rem * var(--b-space, 1));
     }
     .drop-signup__divider {
-      margin: 1.85rem 0 1.25rem;
+      margin-block-start: calc(1.85rem * var(--b-space, 1));
+    }
+    .drop-signup__discord-block {
+      margin-block-start: calc(1.25rem * var(--b-space, 1));
     }
     .drop-signup__discord {
-      padding: 1rem 1.25rem;
-      font-size: 1rem;
+      padding: calc(1rem * var(--b-discord-pad, 1)) calc(1.25rem * var(--b-discord-pad, 1));
+      font-size: calc(1rem * var(--ds-s) * var(--b-scale, 1));
     }
   }
 
@@ -471,7 +651,7 @@
   "settings": [
     {
       "type": "paragraph",
-      "content": "Two-step ad landing page. Visitors submit an email (creates a customer with marketing consent), then see the Discord button. Works without JavaScript."
+      "content": "Two-step ad landing page. Each element in the panel is a block: click it in the preview to edit its copy, size and spacing. Size and spacing sliders are relative, 100% is the default look."
     },
     {
       "type": "header",
@@ -493,7 +673,7 @@
       "type": "range",
       "id": "mobile_focus",
       "label": "Mobile crop focus",
-      "info": "Where the subject sits in the image, left to right. Phones crop the image to portrait around this point.",
+      "info": "Where the subject sits in the image, left to right.",
       "min": 0,
       "max": 100,
       "step": 5,
@@ -504,7 +684,7 @@
       "type": "range",
       "id": "mobile_image_height",
       "label": "Mobile image height",
-      "info": "Share of the screen the image takes on phones and tablets. The copy overlaps the faded bottom.",
+      "info": "Share of the screen the image takes on phones and tablets.",
       "min": 40,
       "max": 80,
       "step": 2,
@@ -512,96 +692,21 @@
       "default": 62
     },
     {
-      "type": "header",
-      "content": "Copy"
-    },
-    {
-      "type": "textarea",
-      "id": "headline",
-      "label": "Headline",
-      "info": "Line breaks are kept. Shown in uppercase.",
-      "default": "Get in.\nJoin the family."
-    },
-    {
-      "type": "textarea",
-      "id": "supporting",
-      "label": "Supporting copy",
-      "default": "It's the biggest collection we've built yet.\nGet on the list and we'll notify you the second it's live, before everyone else."
-    },
-    {
-      "type": "header",
-      "content": "Email step"
-    },
-    {
-      "type": "text",
-      "id": "email_placeholder",
-      "label": "Email placeholder",
-      "default": "name@email.com"
-    },
-    {
-      "type": "text",
-      "id": "email_button_label",
-      "label": "Email button label",
-      "default": "Notify me"
-    },
-    {
-      "type": "text",
-      "id": "customer_tag",
-      "label": "Customer tag",
-      "info": "Added to the customer record so these signups can be segmented. Use a different tag per drop.",
-      "default": "drop-waitlist"
-    },
-    {
-      "type": "text",
-      "id": "confirmation",
-      "label": "Confirmation line",
-      "default": "You're on the list."
-    },
-    {
-      "type": "header",
-      "content": "Discord step"
-    },
-    {
-      "type": "text",
-      "id": "discord_lead",
-      "label": "Discord lead-in",
-      "default": "Early access, restock alerts, and first look at what's next."
-    },
-    {
-      "type": "text",
-      "id": "discord_label",
-      "label": "Discord button label",
-      "default": "Join our Discord"
-    },
-    {
-      "type": "text",
-      "id": "discord_url",
-      "label": "Discord invite URL",
-      "info": "In Discord, set the invite to never expire and unlimited uses or the button will break mid-campaign. Create a unique invite per ad campaign to see joins per creative under Server Settings > Invites."
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Dark overlay",
+      "info": "Darkens the photo so copy stays readable. 0 is off.",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "%",
+      "default": 0
     },
     {
       "type": "checkbox",
-      "id": "discord_new_tab",
-      "label": "Open Discord in a new tab",
-      "default": false
-    },
-    {
-      "type": "text",
-      "id": "reassurance",
-      "label": "Line under the Discord button",
-      "default": "No signup needed"
-    },
-    {
-      "type": "color",
-      "id": "discord_color",
-      "label": "Discord button color",
-      "default": "#5865F2"
-    },
-    {
-      "type": "color",
-      "id": "discord_text_color",
-      "label": "Discord button text color",
-      "default": "#FFFFFF"
+      "id": "desktop_fade",
+      "label": "Fade bottom edge on desktop",
+      "default": true
     },
     {
       "type": "header",
@@ -617,6 +722,49 @@
         { "value": "open", "label": "Open (always visible)" }
       ],
       "default": "gated"
+    },
+    {
+      "type": "text",
+      "id": "customer_tag",
+      "label": "Customer tag",
+      "info": "Added to every signup so they can be segmented. Use a different tag per drop.",
+      "default": "drop-waitlist"
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "range",
+      "id": "text_scale",
+      "label": "Overall text size",
+      "info": "Scales every piece of text together. Each block also has its own size.",
+      "min": 60,
+      "max": 150,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_scale",
+      "label": "Mobile text size",
+      "info": "Extra adjustment for phones and tablets only.",
+      "min": 60,
+      "max": 150,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text alignment",
+      "options": [
+        { "value": "center", "label": "Center" },
+        { "value": "left", "label": "Left" }
+      ],
+      "default": "center"
     },
     {
       "type": "header",
@@ -645,6 +793,27 @@
       "default": 56
     },
     {
+      "type": "select",
+      "id": "panel_valign",
+      "label": "Desktop panel vertical position",
+      "options": [
+        { "value": "flex-start", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "Bottom" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "mobile_panel_padding",
+      "label": "Mobile side padding",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "default": 100
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "Color scheme",
@@ -655,13 +824,440 @@
       "type": "checkbox",
       "id": "hide_chrome",
       "label": "Hide theme header and footer",
-      "info": "Hides them on this page so ad traffic has one thing to do. They still load in the background.",
+      "info": "Hides them on this page so ad traffic has one thing to do.",
       "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Headline",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Headline",
+          "info": "Line breaks are kept.",
+          "default": "Get in.\nJoin the family."
+        },
+        {
+          "type": "range",
+          "id": "size",
+          "label": "Size",
+          "min": 60,
+          "max": 160,
+          "step": 5,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "range",
+          "id": "line_height",
+          "label": "Line height",
+          "min": 90,
+          "max": 130,
+          "step": 2,
+          "unit": "%",
+          "default": 102
+        },
+        {
+          "type": "range",
+          "id": "letter_spacing",
+          "label": "Letter spacing",
+          "min": -8,
+          "max": 8,
+          "step": 1,
+          "default": -2
+        },
+        {
+          "type": "checkbox",
+          "id": "uppercase",
+          "label": "Uppercase",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "space_above",
+          "label": "Space above",
+          "min": 0,
+          "max": 200,
+          "step": 10,
+          "unit": "%",
+          "default": 0
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Supporting copy",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "info": "Line breaks are kept.",
+          "default": "It's the biggest collection we've built yet.\nGet on the list and we'll notify you the second it's live, before everyone else."
+        },
+        {
+          "type": "range",
+          "id": "size",
+          "label": "Size",
+          "min": 60,
+          "max": 160,
+          "step": 5,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "range",
+          "id": "max_width",
+          "label": "Max line length",
+          "info": "In characters. Lower wraps sooner.",
+          "min": 20,
+          "max": 60,
+          "step": 2,
+          "default": 34
+        },
+        {
+          "type": "range",
+          "id": "space_above",
+          "label": "Space above",
+          "min": 0,
+          "max": 200,
+          "step": 10,
+          "unit": "%",
+          "default": 100
+        }
+      ]
+    },
+    {
+      "type": "email_form",
+      "name": "Email form",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Shown until the visitor submits. Creates a customer with marketing consent and the section's customer tag."
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder",
+          "default": "name@email.com"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Notify me"
+        },
+        {
+          "type": "range",
+          "id": "size",
+          "label": "Text size",
+          "min": 60,
+          "max": 160,
+          "step": 5,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "options": [
+            { "value": "outline", "label": "Outlined" },
+            { "value": "solid", "label": "Solid" }
+          ],
+          "default": "outline"
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "label": "Height",
+          "options": [
+            { "value": "small", "label": "Small" },
+            { "value": "medium", "label": "Medium" },
+            { "value": "large", "label": "Large" }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_uppercase",
+          "label": "Uppercase",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "button_radius",
+          "label": "Corner radius",
+          "min": 0,
+          "max": 40,
+          "step": 2,
+          "unit": "px",
+          "default": 4
+        },
+        {
+          "type": "header",
+          "content": "Input"
+        },
+        {
+          "type": "select",
+          "id": "input_size",
+          "label": "Height",
+          "options": [
+            { "value": "small", "label": "Small" },
+            { "value": "medium", "label": "Medium" },
+            { "value": "large", "label": "Large" }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "range",
+          "id": "input_radius",
+          "label": "Corner radius",
+          "min": 0,
+          "max": 40,
+          "step": 2,
+          "unit": "px",
+          "default": 4
+        },
+        {
+          "type": "header",
+          "content": "Spacing"
+        },
+        {
+          "type": "range",
+          "id": "space_above",
+          "label": "Space above",
+          "min": 0,
+          "max": 200,
+          "step": 10,
+          "unit": "%",
+          "default": 100
+        }
+      ]
+    },
+    {
+      "type": "confirmation",
+      "name": "Confirmation",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Replaces the email form after a successful submit."
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "You're on the list."
+        },
+        {
+          "type": "range",
+          "id": "size",
+          "label": "Size",
+          "min": 60,
+          "max": 160,
+          "step": 5,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "checkbox",
+          "id": "uppercase",
+          "label": "Uppercase",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "space_above",
+          "label": "Space above",
+          "min": 0,
+          "max": 200,
+          "step": 10,
+          "unit": "%",
+          "default": 100
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "name": "Divider",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "A thin line. Shown whenever the Discord button is shown."
+        },
+        {
+          "type": "range",
+          "id": "space_above",
+          "label": "Space above",
+          "min": 0,
+          "max": 200,
+          "step": 10,
+          "unit": "%",
+          "default": 100
+        }
+      ]
+    },
+    {
+      "type": "discord",
+      "name": "Discord button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Gated mode: shown after a successful submit. Open mode: always shown."
+        },
+        {
+          "type": "text",
+          "id": "lead",
+          "label": "Lead-in line",
+          "default": "Early access, restock alerts, and first look at what's next."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Button label",
+          "default": "Join our Discord"
+        },
+        {
+          "type": "text",
+          "id": "url",
+          "label": "Discord invite URL",
+          "info": "Set the invite to never expire and unlimited uses or the button will break mid-campaign. A unique invite per ad campaign shows joins per creative under Server Settings > Invites."
+        },
+        {
+          "type": "text",
+          "id": "reassurance",
+          "label": "Line under the button",
+          "default": "No signup needed"
+        },
+        {
+          "type": "checkbox",
+          "id": "new_tab",
+          "label": "Open in a new tab",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Size"
+        },
+        {
+          "type": "range",
+          "id": "size",
+          "label": "Button text size",
+          "min": 60,
+          "max": 160,
+          "step": 5,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "range",
+          "id": "small_text_size",
+          "label": "Lead-in and under-button text size",
+          "min": 60,
+          "max": 160,
+          "step": 5,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "label": "Button height",
+          "options": [
+            { "value": "small", "label": "Small" },
+            { "value": "medium", "label": "Medium" },
+            { "value": "large", "label": "Large" }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "select",
+          "id": "button_width",
+          "label": "Button width",
+          "options": [
+            { "value": "full", "label": "Full width" },
+            { "value": "fit", "label": "Fit to text" }
+          ],
+          "default": "full"
+        },
+        {
+          "type": "header",
+          "content": "Style"
+        },
+        {
+          "type": "checkbox",
+          "id": "uppercase",
+          "label": "Uppercase",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_icon",
+          "label": "Show Discord icon",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "button_radius",
+          "label": "Corner radius",
+          "min": 0,
+          "max": 40,
+          "step": 2,
+          "unit": "px",
+          "default": 4
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Button color",
+          "default": "#5865F2"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Button text color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "header",
+          "content": "Spacing"
+        },
+        {
+          "type": "range",
+          "id": "space_above",
+          "label": "Space above",
+          "min": 0,
+          "max": 200,
+          "step": 10,
+          "unit": "%",
+          "default": 100
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Drop signup"
+      "name": "Drop signup",
+      "blocks": [
+        { "type": "heading" },
+        { "type": "text" },
+        { "type": "email_form" },
+        { "type": "confirmation" },
+        { "type": "divider" },
+        { "type": "discord" }
+      ]
     }
   ]
 }
