@@ -162,6 +162,7 @@
 
 {% stylesheet %}
   .drop-signup {
+    min-height: calc(100svh - var(--ds-chrome-offset, 0px));
     background: var(--color-background);
     color: var(--color-foreground);
   }
@@ -172,8 +173,13 @@
     max-width: 2000px;
     margin-inline: auto;
     aspect-ratio: var(--ds-ratio);
-    min-height: calc(100svh - var(--ds-chrome-offset, 0px));
     overflow: hidden;
+  }
+  @media screen and (min-width: 1024px) {
+    .drop-signup__img {
+      -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+      mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+    }
   }
   .drop-signup__picture {
     display: block;
