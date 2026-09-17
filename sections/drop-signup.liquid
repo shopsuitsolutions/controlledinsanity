@@ -28,7 +28,7 @@
 
 <div
   id="DropSignup-{{ section.id }}"
-  class="drop-signup color-{{ s.color_scheme }} drop-signup--panel-{{ s.panel_side }} drop-signup--{{ s.mode }} drop-signup--align-{{ s.text_align }}{% if s.desktop_fade %} drop-signup--fade{% endif %}"
+  class="drop-signup color-{{ s.color_scheme }} drop-signup--panel-{{ s.panel_side }} drop-signup--{{ s.mode }} drop-signup--align-{{ s.text_align }}{% if s.desktop_fade %} drop-signup--fade{% endif %}{% if s.mobile_fade %} drop-signup--fade-mobile{% endif %} drop-signup--mobile-{{ s.mobile_layout }} drop-signup--mobile-valign-{{ s.mobile_panel_valign }}"
   style="
     --ds-ratio: {{ ratio }};
     --ds-panel-offset: {{ s.panel_offset }}%;
@@ -529,8 +529,35 @@
       height: var(--ds-mobile-img-height, 62svh);
       aspect-ratio: auto;
       object-position: var(--ds-mobile-focus, 30%) center;
+    }
+    .drop-signup--mobile-stacked.drop-signup--fade-mobile .drop-signup__img {
       -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
       mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+    }
+
+    /* Mobile: image fills the screen, copy sits over it */
+    .drop-signup--mobile-fill .drop-signup__hero {
+      position: relative;
+      justify-content: flex-end;
+      padding-block-start: 2rem;
+    }
+    .drop-signup--mobile-fill.drop-signup--mobile-valign-center .drop-signup__hero {
+      justify-content: center;
+    }
+    .drop-signup--mobile-fill .drop-signup__picture {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      z-index: 0;
+    }
+    .drop-signup--mobile-fill .drop-signup__img {
+      height: 100%;
+      object-position: var(--ds-mobile-focus, 30%) top;
+    }
+    .drop-signup--mobile-fill .drop-signup__panel,
+    .drop-signup--mobile-fill.drop-signup--panel-right .drop-signup__panel,
+    .drop-signup--mobile-fill.drop-signup--panel-left .drop-signup__panel {
+      margin-block-start: 0;
     }
     .drop-signup__panel,
     .drop-signup--panel-right .drop-signup__panel,
@@ -676,6 +703,28 @@
       "info": "Optional portrait crop for phones and tablets. Falls back to the desktop image, cropped in CSS."
     },
     {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile layout",
+      "info": "Fills screen: the image is the full background and the copy sits over its lower part. Best with a tall mobile image that fades out at the bottom. Image on top: the image is cropped to a set height and the copy sits below it.",
+      "options": [
+        { "value": "fill", "label": "Image fills screen" },
+        { "value": "stacked", "label": "Image on top" }
+      ],
+      "default": "fill"
+    },
+    {
+      "type": "select",
+      "id": "mobile_panel_valign",
+      "label": "Mobile copy position",
+      "info": "Only for Image fills screen.",
+      "options": [
+        { "value": "bottom", "label": "Bottom" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "bottom"
+    },
+    {
       "type": "range",
       "id": "mobile_focus",
       "label": "Mobile crop focus",
@@ -690,7 +739,7 @@
       "type": "range",
       "id": "mobile_image_height",
       "label": "Mobile image height",
-      "info": "Share of the screen the image takes on phones and tablets.",
+      "info": "Only for Image on top. Share of the screen the image takes.",
       "min": 40,
       "max": 80,
       "step": 2,
@@ -712,6 +761,13 @@
       "type": "checkbox",
       "id": "desktop_fade",
       "label": "Fade bottom edge on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_fade",
+      "label": "Fade bottom edge on mobile",
+      "info": "Only for Image on top. Off gives a hard edge where the image meets the background.",
       "default": true
     },
     {
